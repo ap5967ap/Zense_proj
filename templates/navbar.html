@@ -1,0 +1,14 @@
+<div class="container">
+
+  <ul>
+    <li><a href="{%url 'login' %}">Login</a></li>
+    <li><a href="{%url 'register' %}">register</a></li>
+    <li><a href="{%url 'home' %}">home</a></li>
+    <li><a href="{%url 'logout' %}">logout</a></li>
+    <li><a href="#">{{user.first_name}} {{user.last_name}}</a></li>
+    {%if user.is_authenticated%}
+    <li><a href="{%url 'profile' user.username %}">profile</a></li>
+    {%endif%}
+    <li><a href="/admin/">Admin</a></li>
+  </ul>
+  </div>  

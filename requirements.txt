@@ -1,0 +1,6 @@
+django
+pillow
+django-bootstrap-datepicker-plus
+django-crispy-forms
+six
+crispy-bootstrap4
