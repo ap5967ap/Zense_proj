@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Aditya Priyadarshi/Web 2.0/Zense",
-      "program": "d:/Aditya Priyadarshi/Web 2.0/Zense/build/Debug/outDebug",
+      "cwd": "d:/Aditya Priyadarshi/Web 2.0/Zense_proj",
+      "program": "d:/Aditya Priyadarshi/Web 2.0/Zense_proj/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

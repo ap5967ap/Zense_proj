@@ -41,7 +41,7 @@ def add_income(request):
             next_date = last_date+timedelta(_re(frequency))
         status = form.cleaned_data.get('status')
         income_object = IncomeObject.objects.create(source=source, amount=amount, frequency=frequency,
-                                                    last_date=last_date, status=status, next_date=next_date, user=user, description=description)
+                                                    last_date=last_date, added=True,status=status, next_date=next_date, user=user, description=description)
         income_object.save()
         form = IncomeAdd()
         message = 'Income added successfully'
@@ -106,7 +106,8 @@ def add_object_income(request, id):
     '''Adds current period income'''
     income = get_object_or_404(IncomeObject, id=id)
     new_income = IncomeObject.objects.create(source=income.source, amount=income.amount, frequency=income.frequency, last_date=datetime.date.today(),
-                                             status=income.status, next_date=datetime.date.today()+timedelta(_re(income.frequency)), user=income.user, description=income.description)
+                                             status=income.status, next_date=datetime.date.today()+timedelta(_re(income.frequency)), user=income.user, description=income.description,
+                                             added=True)
     new_income.save()
     if timedelta(_re(income.frequency)) == 0:
         new_income.next_date = None
@@ -118,7 +119,7 @@ def delete_source_income(request, source):
     '''Delete income'''
     income = IncomeObject.objects.filter(next_date__gte = datetime.date.today(),source=source).all().delete()
     is_left=IncomeObject.objects.filter(source=source).exists()
-    if  is_left:
+    if is_left:
         for i in IncomeObject.objects.filter(source=source).all():
             i.is_active=False
             i.save()

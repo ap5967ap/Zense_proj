@@ -1,4 +1,4 @@
-from django.http import JsonResponse
+from django.http import HttpResponse, JsonResponse
 from .models import IncomeObject
 from django.contrib.auth.decorators import login_required
 from datetime import datetime, timedelta
@@ -21,31 +21,45 @@ def _re(frequency: str):
 
 def income_in_year(income, year):
     '''Returns the income in a particular year'''
-    return float(income.objects.filter(last_date__year=year).aggregate(Sum('amount'))['amount__sum'])
+    a=0
+    try:
+        a= float(income.filter(last_date__year=year).aggregate(Sum('amount'))['amount__sum'])
+    except:
+        a=0
+    return a
 
 @login_required(login_url='login/')
-def analysis_single(request,pk):
+def analysis_single(request,source):
+    inflation_dict=get_inflation().keys()
     user=request.user
-    income=IncomeObject.objects.filter(user=user,pk=pk)
+    income=IncomeObject.objects.filter(user=user,source=source,added=True)
     one_year_ago = datetime.now() - timedelta(days=365)
-    total_obj=IncomeObject.objects.filter(user=user,last_date__gte=one_year_ago,last_date__lte=datetime.now())
+    total_obj=IncomeObject.objects.filter(user=user,last_date__gte=one_year_ago,last_date__lte=datetime.now(),added=True)
     total_income=0
     for i in total_obj:
         total_income+=i.amount
-    income_obj=IncomeObject.objects.filter(user=user,pk=pk,last_date__gte=one_year_ago,last_date__lte=datetime.now())
+    income_obj=IncomeObject.objects.filter(user=user,source=source,last_date__gte=one_year_ago,last_date__lte=datetime.now(),added=True)
     income_contribution=0
     for i in income_obj:
         income_contribution+=i.amount
-    contribution=(income_contribution/total_income)*100 #income contribution in percentage
+    try:
+        contribution=(income_contribution/total_income)*100 #income contribution in percentage
+    except ZeroDivisionError:
+        contribution=0
     last_year_income=[]
     for i in income_obj:
         last_year_income.append(i.amount)
     last=income.order_by('-last_date').first()
     first_year=income.order_by('last_date').first().last_date.year
-    
-    
-    
-
+    current_year=max(inflation_dict)
+    income_all_years=[]
+    for i in range(first_year,current_year+2):
+        income_all_years.append(income_in_year(income,i))
+    contribution_all_years=[]
+    total_objs=IncomeObject.objects.filter(user=user,added=True)
+    for i in range(first_year,current_year+2):
+        contribution_all_years.append((income_in_year(income,i)/income_in_year(total_objs,i))*100)
+    return JsonResponse({'last':last.last_date.strftime("%d %b %Y"),'contribution':contribution,'last_year_income':last_year_income,'income_all_years':income_all_years,'contribution_all_years':contribution_all_years})
 
 def get_inflation():
     hdr = {'User-Agent': 'Mozilla/5.0'}

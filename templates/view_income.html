@@ -7,7 +7,7 @@
     {% for i in income %}
     <div class="card m-1">
         <div class="card-body">
-            <a href="" class="card-title">{{i.source}}<br>{{i.amount}} {{i.frequency}} {{i.last_date}} {{i.next_date}}</a>
+            <a href="{% url 'analyse_single' i.source %}" class="card-title">{{i.source}}<br>{{i.amount}} {{i.frequency}} {{i.last_date}} {{i.next_date}}</a>
             <span style="position: relative; float: right;">
                 {% if not i.status %}
                 <a href="{% url 'add_object_income' i.id %}" class="btn btn-primary"><i class="fa fa-check"></i> Add income </a>

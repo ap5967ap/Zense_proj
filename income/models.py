@@ -16,7 +16,8 @@ class IncomeObject(models.Model):
     user = models.ForeignKey(Account, on_delete=models.CASCADE)
     description = models.TextField(blank=True)
     is_active = models.BooleanField(default=True)
-    status = models.BooleanField(default=False, blank=False, null=False)
+    status = models.BooleanField(default=False, blank=False, null=False)#!Default synced status
+    added=models.BooleanField(default=False, blank=False, null=False)#!Income is credited
     def __str__(self):
         return self.source
 

@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+from datetime import timedelta
 from pathlib import Path
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -43,6 +44,10 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
     "income",
     "manager",
+    'django_crontab',
+    
+
+    
 ]
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
@@ -142,3 +147,57 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / "media"
+# settings.py
+CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
+
+
+# CELERY_BEAT_SCHEDULE = {
+#     'my-periodic-task': {
+#         'task': 'zense.tasks.my_periodic_task',
+#         'schedule': timedelta(seconds=5),  # Set your desired time interval
+
+#     },
+# }
+# CELERY_IMPORTS = [
+#     'zense.tasks',
+# ]
+# CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'  # Set your result backend
+# CELERY_ACCEPT_CONTENT = ['application/json']
+# CELERY_RESULT_SERIALIZER = 'json'
+# CELERY_TASK_SERIALIZER = 'json'
+# CELERY_RESULT_BACKEND = "django-db"
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    'formatters': {
+        'console': {
+            'format': '%(name)-12s %(levelname)-8s %(message)s'
+        },
+        'file': {
+            'format': '%(asctime)s %(name)-12s %(levelname)-8s %(message)s'
+        },
+    },
+    'handlers': {
+        'console': {
+            'class':'logging.StreamHandler',
+            'formatter': 'console'
+        },
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': 'debug.log',
+            'formatter': 'file'
+        },
+    },
+    'loggers': {
+        '': {
+            'level': 'DEBUG',
+            'handlers': ['console', 'file']
+        },
+    }
+}
+CRONJOBS = [
+    ('*/1 * * * *', 'zense.cron.print_hello'),
+]
+
+
