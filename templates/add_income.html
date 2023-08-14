@@ -1,0 +1,13 @@
+{%extends 'base.html' %}
+{%block content%}
+<div class="container">
+    <h1 class="text-center btn btn-primary">Please use this form to add only active income</h1>
+    {{message}}
+    <form action="{% url 'add_income' %}" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        {{form.media}}
+        <button type="submit" id="income_submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{%endblock content %}

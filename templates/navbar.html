@@ -8,6 +8,8 @@
     <li><a href="#">{{user.first_name}} {{user.last_name}}</a></li>
     {%if user.is_authenticated%}
     <li><a href="{%url 'profile' user.username %}">profile</a></li>
+    <li><a href="{% url 'add_income' %}">Add Income</a> </li>
+    <li><a href="{% url 'view_income' %}">View Income</a></li>
     {%endif%}
     <li><a href="/admin/">Admin</a></li>
   </ul>
