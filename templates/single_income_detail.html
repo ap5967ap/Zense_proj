@@ -1,0 +1,187 @@
+{%extends 'base.html'%} {%block content%}
+<div>
+  <canvas
+    id="myChart"
+    class="col-md-6 row"
+    url-endpoint="{% url 'chart' source %}"
+  ></canvas>
+</div>
+<div>
+  <h1 style="color: red">Year {{year}}</h1>
+  <h3>
+    This year income from {{so|capfirst}} is
+    {{income_all_years|last|floatformat}} which is
+    {{contribution|floatformat:2}}% of total income.
+  </h3>
+  <h4>Last Received {{last}}</h4>
+  <div class="container">
+    <canvas
+      id="this_year"
+      class="col-md-6 row"
+      url-endpoint="{% url 'chart' source %}"
+    ></canvas>
+  </div>
+</div>
+
+<div class="container">
+  <h1 style="color: red">Previous Years</h1>
+  <ul>
+    <li>You are earning from this source since {{first_year}}</li>
+    {%if growth|last > inflation|last%}
+    <li>Your income growth from this source beats inflation</li>
+    {%else%}
+    <li>
+      Your income growth from this source is less than inflation. You need to
+      earn more
+    </li>
+    {%endif%}
+  </ul>
+</div>
+<div>
+    <div class="container">
+      <canvas
+        id="income_contri"
+        class="col-md-6 row"
+        url-endpoint="{% url 'chart' source %}"
+      ></canvas>
+    </div>
+    <div class="container">
+      <canvas
+        id="inflation_growth"
+        class="col-md-6 row"
+        url-endpoint="{% url 'chart' source %}"
+      ></canvas>
+    </div>
+    </div>
+
+    <script>
+    var endpoint = "{% url 'chart' source %}";
+    var defaultData = [];
+    var labels = [];
+    $.ajax({
+      method: "GET",
+      url: endpoint,
+      success: function (data) {
+        console.log(data);
+        graph(data, "myChart");
+        this_year(data, "this_year");
+        income_contrib(data, "income_contri");
+        inflation_growth(data, "inflation_growth");
+      },
+      error: function (err) {
+        console.log("error");
+        console.log(err);
+      },
+    });
+    function inflation_growth(data, id) {
+      var myData = {
+        labels: data.labels,
+        datasets: [
+          {
+            type: "line",
+            label:"Inflation",
+            data: data.inflation,
+            fill: false,
+            borderColor: "red",
+            backgroundColor: "#EC492F",
+            pointBorderColor: "rgba(5,202,202,1)",
+            pointBackgroundColor: "#EC932F",
+            pointHoverBackgroundColor: "#EC932F",
+            pointHoverBorderColor: "#EC932F",
+            lineTension: 0.4,
+          },
+          {
+            type: "line",
+            label:"Income Growth",
+            data: data.growth,
+            fill: false,
+            borderColor: "green",
+            backgroundColor: "#EC932F",
+            pointBorderColor: "rgba(5,202,202,1)",
+            pointBackgroundColor: "#EC932F",
+            pointHoverBackgroundColor: "#EC932F",
+            pointHoverBorderColor: "#EC932F",
+            lineTension: 0.4,
+
+          },
+        ],
+      };
+      var ctx = document.getElementById(id).getContext("2d");
+      var chart = new Chart(ctx, {
+        type: "line",
+        data: myData,
+      });
+    }
+    function income_contrib(data, id) {
+      var labels = data.labels;
+      var ctx = document.getElementById(id).getContext("2d");
+      var chart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          datasets: [
+            {
+              label: "Previous Year Income from this source",
+              data: data.income_all_years,
+              borderColor: "green",
+              backgroundColor: "rgba(99,255,100,0.7)",
+              borderWidth: 2,
+            },
+            {
+              label: "Contributions from this source in total income",
+              data: data.contribution_all_years,
+              type: "line",
+              backgroundColor: "rgba(255,99,132,0.2)",
+              lineTension: 0.4,
+              borderColor: "rgba(255,99,132,0.9)",
+            },
+          ],
+          labels: data.labels,
+        },
+      });
+    }
+
+    function this_year(data, id) {
+      var labels = data.last_year_timings;
+      var chartdata = data.last_year_income;
+      var ctx = document.getElementById(id).getContext("2d");
+      var chart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: "Income",
+              backgroundColor: "rgba(204, 255, 0,0.9)",
+              borderColor: "yellow",
+              borderWidth: 3,
+              borderColor: "black",
+              data: chartdata,
+            },
+          ],
+        },
+      });
+    }
+    function graph(data, id) {
+      var labels = data.labels;
+      var chartLabel = data.contri_label;
+      var chartdata = [data.contribution, 100 - data.contribution];
+      var ctx = document.getElementById(id).getContext("2d");
+      var chart = new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: chartLabel,
+          datasets: [
+            {
+              label: "Contribution",
+              backgroundColor: ["rgb(255, 99, 132)", "rgba(255, 205, 86)"],
+              borderColor: "black",
+              data: chartdata,
+              hoverOffset: 4,
+            },
+          ],
+        },
+      });
+    }
+  </script>
+  {%endblock content%}
+</div>

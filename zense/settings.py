@@ -44,10 +44,6 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
     "income",
     "manager",
-    'django_crontab',
-    
-
-    
 ]
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
@@ -63,7 +59,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "zense.urls"
-
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",

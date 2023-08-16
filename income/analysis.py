@@ -1,10 +1,13 @@
-from django.http import HttpResponse, JsonResponse
+from django.http import JsonResponse
+from django.shortcuts import render
 from .models import IncomeObject
 from django.contrib.auth.decorators import login_required
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 from urllib.request import Request, urlopen
-from django.db.models import Sum,Avg
+from django.db.models import Sum
+
+
 INFLATION_DATA_LINK="https://www.macrotrends.net/countries/IND/india/inflation-rate-cpi"
 def _re(frequency: str):
     '''Returns the number of days after which the income will be repeated'''
@@ -29,10 +32,11 @@ def income_in_year(income, year):
     return a
 
 @login_required(login_url='login/')
-def analysis_single(request,source):
-    inflation_dict=get_inflation().keys()
+def analysis_single(request,id):
+    source=IncomeObject.objects.get(id=id).source
+    inflation_dict=get_inflation()
     user=request.user
-    income=IncomeObject.objects.filter(user=user,source=source,added=True)
+    income=IncomeObject.objects.filter(user=user,source__iexact=source,added=True)
     one_year_ago = datetime.now() - timedelta(days=365)
     total_obj=IncomeObject.objects.filter(user=user,last_date__gte=one_year_ago,last_date__lte=datetime.now(),added=True)
     total_income=0
@@ -47,20 +51,57 @@ def analysis_single(request,source):
     except ZeroDivisionError:
         contribution=0
     last_year_income=[]
+    last_year_timings=[]
     for i in income_obj:
-        last_year_income.append(i.amount)
+        last_year_income.append(float(i.amount))
+        last_year_timings.append(i.last_date.strftime("%d-%m-%Y"))
     last=income.order_by('-last_date').first()
     first_year=income.order_by('last_date').first().last_date.year
-    current_year=max(inflation_dict)
+    current_year=max(inflation_dict.keys())
     income_all_years=[]
     for i in range(first_year,current_year+2):
-        income_all_years.append(income_in_year(income,i))
+        income_all_years.append(int(income_in_year(income,i)))
     contribution_all_years=[]
     total_objs=IncomeObject.objects.filter(user=user,added=True)
     for i in range(first_year,current_year+2):
-        contribution_all_years.append((income_in_year(income,i)/income_in_year(total_objs,i))*100)
-    return JsonResponse({'last':last.last_date.strftime("%d %b %Y"),'contribution':contribution,'last_year_income':last_year_income,'income_all_years':income_all_years,'contribution_all_years':contribution_all_years})
-
+        contribution_all_years.append(float((income_in_year(income,i)/income_in_year(total_objs,i))*100))
+    growth=[]
+    for i in range(first_year,current_year+2):
+        try:
+            x=float(((income_in_year(income,i)-income_in_year(income,i-1))/income_in_year(income,i-1))*100)
+            growth.append(x)
+        except ZeroDivisionError:
+            growth.append(0)
+    infla=[]
+    labels=[]
+    co=0
+    for i in range(first_year,current_year+2):
+        labels.append(i)
+        try:
+            infla.append(float(inflation_dict[i]))
+        except KeyError:
+            try:
+                infla.append(infla[co-1])
+            except:
+                infla.append(0)
+        co+=1
+    contri_label=[source.capitalize(),'Rest of the income']
+    return render(request,'single_income_detail.html',context=
+                  {
+                            'last_year_timings':last_year_timings[::-1],
+                              'year':datetime.today().year,
+                              'contri_label':contri_label,
+                              'last':last.last_date.strftime("%d-%m-%Y"),
+                              'contribution':int(contribution),
+                              'last_year_income':last_year_income[::-1],
+                              'income_all_years':income_all_years,
+                              'contribution_all_years':contribution_all_years,
+                              'growth':growth,
+                              'inflation':infla,
+                              'first_year':first_year,
+                              'labels':labels,
+                              'source':id
+                  })
 def get_inflation():
     hdr = {'User-Agent': 'Mozilla/5.0'}
     req = Request(INFLATION_DATA_LINK,headers=hdr)
@@ -72,3 +113,76 @@ def get_inflation():
         c=i.find_all('td')
         data[int(c[0].text.strip())]=float(c[1].text.strip()[:-1])
     return data
+
+
+
+
+def single_analysis(request,source):
+    '''used this function as we need to pass the (serialised) data in json format to the template'''
+    source=IncomeObject.objects.get(id=source).source
+    inflation_dict=get_inflation()
+    user=request.user
+    income=IncomeObject.objects.filter(user=user,source__iexact=source,added=True)
+    one_year_ago = datetime.now() - timedelta(days=365)
+    total_obj=IncomeObject.objects.filter(user=user,last_date__gte=one_year_ago,last_date__lte=datetime.now(),added=True)
+    total_income=0
+    for i in total_obj:
+        total_income+=i.amount
+    income_obj=IncomeObject.objects.filter(user=user,source=source,last_date__gte=one_year_ago,last_date__lte=datetime.now(),added=True)
+    income_contribution=0
+    for i in income_obj:
+        income_contribution+=i.amount
+    try:
+        contribution=(income_contribution/total_income)*100 #income contribution in percentage
+    except ZeroDivisionError:
+        contribution=0
+    last_year_income=[]
+    last_year_timings=[]
+    for i in income_obj:
+        last_year_income.append(float(i.amount))
+        last_year_timings.append(i.last_date.strftime("%d-%m-%Y"))
+    last=income.order_by('-last_date').first()
+    first_year=income.order_by('last_date').first().last_date.year
+    current_year=max(inflation_dict.keys())
+    income_all_years=[]
+    for i in range(first_year,current_year+2):
+        income_all_years.append(int(income_in_year(income,i)))
+    contribution_all_years=[]
+    total_objs=IncomeObject.objects.filter(user=user,added=True)
+    for i in range(first_year,current_year+2):
+        contribution_all_years.append(float((income_in_year(income,i)/income_in_year(total_objs,i))*100))
+    growth=[]
+    for i in range(first_year,current_year+2):
+        try:
+            x=float(((income_in_year(income,i)-income_in_year(income,i-1))/income_in_year(income,i-1))*100)
+            growth.append(x)
+        except ZeroDivisionError:
+            growth.append(0)
+    infla=[]
+    labels=[]
+    co=0
+    for i in range(first_year,current_year+2):
+        labels.append(i)
+        try:
+            infla.append(float(inflation_dict[i]))
+        except KeyError:
+            try:
+                infla.append(infla[co-1])
+            except:
+                infla.append(0)
+        co+=1
+    contri_label=[source.capitalize(),'Rest of the income']
+    return JsonResponse(data={
+                              'last_year_timings':last_year_timings[::-1],
+                              'year':datetime.today().year,
+                              'contri_label':contri_label,
+                              'last':last.last_date.strftime("%d-%m-%Y"),
+                              'contribution':int(contribution),
+                              'last_year_income':last_year_income[::-1],
+                              'income_all_years':income_all_years,
+                              'contribution_all_years':contribution_all_years,
+                              'growth':growth,
+                              'inflation':infla,
+                              'first_year':first_year,
+                              'labels':labels
+                              })
