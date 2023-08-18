@@ -1,5 +1,5 @@
 <div class="container">
-
+  {% now "jS F Y" %}
   <ul>
     <li><a href="{%url 'login' %}">Login</a></li>
     <li><a href="{%url 'register' %}">register</a></li>
@@ -8,9 +8,11 @@
     <li><a href="#">{{user.first_name}} {{user.last_name}}</a></li>
     {%if user.is_authenticated%}
     <li><a href="{%url 'profile' user.username %}">profile</a></li>
-    <li><a href="{% url 'add_income' %}">Add Income</a> </li>
+    <li><a href="{% url 'add_income' %}">Add Income</a></li>
     <li><a href="{% url 'view_income' %}">View Income</a></li>
+    <li>Balance {{user.balance.balance|floatformat }}</li>
+    <li><a href="{% url 'investment_summary' %}">Investments</a></li>
     {%endif%}
     <li><a href="/admin/">Admin</a></li>
   </ul>
-  </div>  
+</div>

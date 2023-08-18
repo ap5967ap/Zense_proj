@@ -18,11 +18,11 @@ from django.contrib import admin
 from django.urls import include, path
 from . import views 
 from django.conf import settings
-from income import analysis
 from django.conf.urls.static import static
 urlpatterns = [
     path("", views.home, name="home"),
     path("admin/", admin.site.urls,name="admin"),
     path("account/", include("account.urls"),name="account"),
     path("income/", include("income.urls"),name="income"),
+    path("investment/", include("Investments.urls"),name="investment"),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

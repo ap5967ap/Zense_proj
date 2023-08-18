@@ -30,8 +30,7 @@ def income_in_year(income, year):
     except:
         a=0
     return a
-
-@login_required(login_url='login/')
+@login_required(login_url='/accounts/login/')
 def analysis_single(request,id):
     source=IncomeObject.objects.get(id=id).source
     inflation_dict=get_inflation()
@@ -116,7 +115,7 @@ def get_inflation():
 
 
 
-
+@login_required(login_url='/accounts/login/')
 def single_analysis(request,source):
     '''used this function as we need to pass the (serialised) data in json format to the template'''
     source=IncomeObject.objects.get(id=source).source

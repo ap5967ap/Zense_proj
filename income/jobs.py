@@ -39,7 +39,7 @@ def job():
                 except:
                     log.write(f"Email not sent to {user.email} on {datetime.datetime.now()}\n")
                     
-def run_continuously(self, interval=10):
+def run_continuously(self, interval=40000):
     """Continuously run, while executing pending jobs at each elapsed
     time interval.
     @return cease_continuous_run: threading.Event which can be set to
@@ -70,5 +70,5 @@ Scheduler.run_continuously = run_continuously
 
 def start_scheduler():
     scheduler = Scheduler()
-    scheduler.every(10).seconds.do(job) #!running backend cron twice a day
+    scheduler.every(40000).seconds.do(job) #!running backend cron twice a day
     scheduler.run_continuously()

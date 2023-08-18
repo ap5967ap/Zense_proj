@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container pt-5">
+    Click <a href="{% url 'previous_investment' %}">here</a> to view previous your investments
+</div>
+<div class="container pt-5 text-center">
+    As per our calculations, based on your current income, age and your previous choices, you should invest as per this calculation
+    <br> in the current year {% now "Y" %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Investment Type</th>
+                <th scope="col">Amount needed to Invest this year </th>
+                <th scope="col">Amount Invested</th>
+            </tr>
+        </thead>
+        <tbody>
+           {% for i in inv %}
+            <tr>
+                <td><a href="#">{{i.Name}}</a></td> <!--TODO  Add link --> 
+                <td> &#x20b9;​{{i.Amount}}</td>
+                <td> &#x20b9;​{{i.Invested}}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+</div>
+{% endblock content %}

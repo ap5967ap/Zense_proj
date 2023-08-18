@@ -24,7 +24,7 @@ def _re(frequency: str):
         return 0
 
 
-@login_required(login_url='login/')
+@login_required(login_url='/account/login/')
 def add_income(request):
     '''Adds income to the database'''
     form = IncomeAdd(request.POST or None)
@@ -54,7 +54,7 @@ def add_income(request):
     return render(request, 'add_income.html', {'message': message, 'form': form})
 
 
-@login_required(login_url='login/')
+@login_required(login_url='/account/login/')
 def view_income(request):
     '''View income'''
     income = IncomeObject.objects.filter(
@@ -69,7 +69,7 @@ def view_income(request):
     return render(request, 'view_income.html', {'income': income1})
 
 
-@login_required(login_url='login/')
+@login_required(login_url='/account/login/')
 def edit_income(request, id):
     income = ''
     '''Edit income'''
@@ -97,16 +97,14 @@ def edit_income(request, id):
         income = get_object_or_404(IncomeObject, id=id)
     return render(request, 'edit_income.html', {'income': income})
 
-
-@login_required(login_url='login/')
+@login_required(login_url='/account/login/')
 def delete_income(request, id):
     '''Delete income'''
     income = get_object_or_404(IncomeObject, id=id)
     income.delete()
     return redirect('view_income')
 
-
-@login_required(login_url='login/')
+@login_required(login_url='/account/login/')
 def add_object_income(request, id):
     '''Adds current period income'''
     income = get_object_or_404(IncomeObject, id=id)
@@ -122,7 +120,7 @@ def add_object_income(request, id):
     new_income.save()
     return redirect('view_income')
 
-@login_required(login_url='login/')
+@login_required(login_url='/account/login/')
 def delete_source_income(request, source):
     '''Delete income'''
     income = IncomeObject.objects.filter(next_date__gte = datetime.date.today(),source=source).all().delete()

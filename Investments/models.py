@@ -10,6 +10,14 @@ class Investment(models.Model):
     #TODO I WILL REINVEST THAT AMOUNT as my expenses are covered by active income
     #TODO I will add the amount i got by selling to to_invest
     invested_this_year=models.DecimalField(max_digits=20,decimal_places=2,default=0)
+    MF_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
+    SmallCase_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
+    trade_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
+    large_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)#!_i is how much invested this year
+    mid_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
+    small_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
+    FD_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
+    SGB_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     year=models.IntegerField(default=datetime.now().year)
     done=models.BooleanField(default=False)
     risky=models.IntegerField()#!stored in %
@@ -33,9 +41,25 @@ class MF(models.Model):
     amount=models.DecimalField(max_digits=20,decimal_places=2)
     last_date=models.DateField()
     next_date=models.DateField()
+    is_sip=models.BooleanField(default=False)
     def __str__(self):
         return f"{self.user} {self.name}"
     class Meta:
         verbose_name_plural = "Mutual Fund"
         verbose_name="Mutual Fund"
         
+choices=(('l','l'),('m','m'),('s','s'))
+class MFData(models.Model):
+    name=models.CharField(max_length=100)
+    rank=models.IntegerField()
+    choice=models.CharField(max_length=1,choices=choices)
+    d1=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    d2=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    d3=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    d4=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    d5=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    dmin=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    dmax=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    class Meta:
+        verbose_name ="Mutual Fund Data"
+        verbose_name_plural ="Mutual Fund Data"

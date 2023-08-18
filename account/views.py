@@ -1,4 +1,3 @@
-from typing import Protocol
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import login as l, logout, authenticate, get_user_model
@@ -11,10 +10,11 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_str
 from django.core.mail import EmailMessage
 from .decorators import user_not_authenticated
-from .forms import UserRegistrationForm, UserLoginForm, UserUpdateForm, SetPasswordForm, PasswordResetForm
+from .forms import UserRegistrationForm, UserLoginForm, SetPasswordForm, PasswordResetForm
 from .tokens import account_activation_token
 from .models import Account
 from balance.models import Balance
+
 def activate(request, uidb64, token):
     User = get_user_model()
     try:
@@ -91,7 +91,8 @@ def register(request):
     )
 
 
-@login_required(login_url='login')
+
+@login_required(login_url='/account/login/')
 def custom_logout(request):
     logout(request)
     messages.info(request, "Logged out successfully!")
@@ -124,12 +125,13 @@ def login(request):
         template_name="login.html",
         context={"form": form}
         )
-@login_required(login_url='login')
+    
+@login_required(login_url='/account/login/')
 def profile(request, username):
     user = get_user_model().objects.get(username=username)
     return HttpResponse(f"Hello {user.username}")
 
-@login_required(login_url='login/')
+@login_required(login_url='/account/login/')
 def password_change(request):
     user = request.user
     if request.method == 'POST':
