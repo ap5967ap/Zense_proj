@@ -6,32 +6,39 @@ from datetime import datetime
 import time
 from account.models import Account
 from balance.models import Balance
+import decimal
+
 def job():
-    all_user=Account.objects.all()
-    if datetime.now().month==1 and (datetime.now().day==1 or datetime.now().day==2 or datetime.now().day==3 or datetime.now().day==4 or datetime.now().day==5 or datetime.now().day==6 or datetime.now().day==7):
-        for user in all_user:
+    try:
+       all_user=Account.objects.all()
+       if datetime.now().month==1 and (datetime.now().day==2 or datetime.now().day==3 or datetime.now().day==4 or datetime.now().day==5 or datetime.now().day==6 or datetime.now().day==7):
+         for user in all_user:
             is_created=Investment.objects.filter(user=user,year=datetime.now().year).exists()
             if is_created:
                 continue
-            balance=Balance.objects.get(user=user)
+            try:
+                balance=Balance.objects.get(user=user)
+            except:
+                Balance.objects.create(user=user)
+                
             to_invest=balance.invest_p
             age=datetime.now().year-user.dob.year
             safe=age
             risky=100-safe
-            MF=risky/100*to_invest*20/100
-            SmallCase=risky/100*to_invest*15/100
+            MF=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(20/100)
+            SmallCase=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(15/100)
             if age <50:
-                trade=risky/100*to_invest*10/100
-                large=risky/100*to_invest*33/100
-                mid=risky/100*to_invest*14/100
-                small=risky/100*to_invest*8/100
+                trade=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(10/100)
+                large=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(33/100)
+                mid=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(14/100)
+                small=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(8/100)
             else:
                 trade=0
-                large=risky/100*to_invest*40/100
-                mid=risky/100*to_invest*15/100
-                small=risky/100*to_invest*10/100
-            FD=safe/100*to_invest*60/100
-            SGB=safe/100*to_invest*40/100
+                large=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(40/100)
+                mid=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(15/100)
+                small=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(10/100)
+            FD=decimal.Decimal(safe/100)*to_invest*decimal.Decimal(60/100)
+            SGB=decimal.Decimal(safe/100)*to_invest*decimal.Decimal(40/100)
             obj=Investment.objects.create(user=user,to_invest=to_invest,invested_this_year=0,year=datetime.now().year,
                                           done=True,
                                           risky=risky,
@@ -45,7 +52,9 @@ def job():
                                           FD=FD,
                                           SGB=SGB)
             obj.save()
-            
+    except Exception as e:
+        file=open('cron_log.log','a')
+        file.write(str(e)+'\n')
         
 def run_continuously(self, interval=86400):
     """Continuously run, while executing pending jobs at each elapsed

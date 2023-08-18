@@ -7,6 +7,7 @@ import threading
 from datetime import datetime 
 import datetime as Datetime
 import time
+import decimal
 def last_date():
     year=datetime.now().year
     month=datetime.now().month
@@ -34,6 +35,8 @@ def job():
     b=Balance.objects.all()
     if datetime.now().day==1 and b.exists() and datetime.now().month!=1:
         for i in b:
+            if i.updated.month==datetime.now().month:
+                continue
             user=i.user
             balance=Balance.objects.get(user=user)
             x=0
@@ -41,8 +44,8 @@ def job():
             for j in income:
                 x+=j.amount
             balance.last_month=x
-            balance.expense=x*0.70
-            balance.invest+=x*0.30
+            balance.expense=x*decimal.Decimal(0.70)
+            balance.invest+=x*decimal.Decimal(0.30)
             balance.invest_p=balance.invest
             balance.save()
     elif datetime.now().day==1 and b.exists() and datetime.now().month==1:
@@ -54,10 +57,10 @@ def job():
             for j in income:
                 x+=j.amount
             balance.last_month=x
-            balance.expense=x*0.70
-            balance.invest=x*0.30
+            balance.expense=x*decimal.Decimal(0.70)
+            balance.invest=x*decimal.Decimal(0.30)
             balance.save()
-def run_continuously(self, interval=10000):
+def run_continuously(self, interval=40000):
     """Continuously run, while executing pending jobs at each elapsed
     time interval.
     @return cease_continuous_run: threading.Event which can be set to
@@ -88,5 +91,5 @@ Scheduler.run_continuously = run_continuously
 
 def start_scheduler():
     scheduler = Scheduler()
-    scheduler.every(80000).seconds.do(job)
+    scheduler.every(40000).seconds.do(job)
     scheduler.run_continuously()

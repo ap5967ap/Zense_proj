@@ -4550,3 +4550,797 @@ urllib.error.URLError: <urlopen error [Errno 11001] getaddrinfo failed>
 2023-08-18 16:57:17,927 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2023-08-18 16:57:27,879 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
 2023-08-18 16:59:05,799 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:01:34,616 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:02:59,834 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:00,902 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:03:03,547 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:04,762 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:03:06,596 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:07,614 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:03:09,186 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:10,516 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:03:12,117 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:13,670 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:03:19,901 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:21,567 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:03:23,166 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:24,326 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:03:25,691 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:27,055 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:03:28,978 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:30,268 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:03:31,803 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:33,364 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:03:34,723 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:36,237 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:03:37,667 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:38,775 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:03:42,417 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:03:43,426 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:04:00,879 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:04:02,111 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:04:03,497 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:04:04,622 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:04:06,039 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:04:07,368 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:04:10,166 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:04:11,516 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:04:14,247 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:04:15,544 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:04:25,481 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:04:48,336 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:04:49,783 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:04:55,445 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:04:57,442 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:05:07,376 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:05:11,907 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:05:13,143 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:05:23,088 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:05:56,171 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:06:05,286 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:06:06,154 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:06:51,135 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:07:00,276 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:07:01,108 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:09:01,188 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:09:10,259 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:09:11,164 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:09:26,751 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:09:35,760 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:09:36,704 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:09:45,830 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:09:46,750 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:11:58,136 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:13:11,631 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:13:13,005 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:13:15,422 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:13:16,774 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:13:19,469 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:13:20,723 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:13:22,412 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:13:23,637 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:13:25,312 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:13:26,502 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:13:28,078 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:13:29,509 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:13:31,214 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:13:32,460 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:13:35,164 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:13:36,374 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:13:37,805 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:13:39,183 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:13:45,080 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:13:46,522 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:13:53,464 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:13:54,570 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:15:16,727 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:15:25,847 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:15:26,702 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:15:35,849 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:15:36,704 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:15:45,850 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:15:46,707 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:15:55,853 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:15:56,708 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:16:35,256 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:16:44,012 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:16:45,207 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:16:54,042 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:16:55,235 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:17:12,738 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:17:21,719 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:17:22,708 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:17:31,747 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:17:32,726 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:22:58,066 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:23:03,866 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 17:23:05,137 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:23:05,524 django.request ERROR    Internal Server Error: /admin/balance/balance/1/change/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: balance_balance.updated
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 1767, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 866, in get_object
+    return queryset.get(**{field.name: object_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: balance_balance.updated
+2023-08-18 17:23:06,668 django.request ERROR    Internal Server Error: /admin/balance/balance/1/change/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: balance_balance.updated
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 1767, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 866, in get_object
+    return queryset.get(**{field.name: object_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: balance_balance.updated
+2023-08-18 17:23:07,490 django.request ERROR    Internal Server Error: /admin/balance/balance/1/change/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: balance_balance.updated
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 1889, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 1747, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 1767, in _changeform_view
+    obj = self.get_object(request, unquote(object_id), to_field)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 866, in get_object
+    return queryset.get(**{field.name: object_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 633, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: balance_balance.updated
+2023-08-18 17:23:25,677 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:23:33,845 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:23:34,653 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:23:38,962 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:23:40,470 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:23:42,246 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\admin.py changed, reloading.
+2023-08-18 17:23:42,848 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:23:43,599 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:23:51,849 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:23:52,549 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:24:00,851 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:24:01,551 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:24:09,853 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:24:10,553 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:24:18,854 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:24:19,556 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:24:27,855 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:24:28,558 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:24:36,857 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:24:37,559 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:25:57,821 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:26:05,889 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:26:06,795 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:26:14,892 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:26:15,797 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:26:19,872 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\jobs.py changed, reloading.
+2023-08-18 17:26:21,135 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:26:23,893 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:26:24,646 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\jobs.py changed, reloading.
+2023-08-18 17:26:25,779 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:26:32,895 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:26:34,737 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:26:41,898 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:29:20,653 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:29:28,716 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:29:29,624 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:29:58,710 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:30:06,784 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:30:07,653 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:30:24,365 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:30:32,274 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:30:33,334 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:30:41,286 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:30:42,346 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:32:46,465 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:32:54,638 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:32:55,442 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:34:12,525 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:34:20,184 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:34:21,498 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:34:29,245 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:34:30,505 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:34:38,254 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:34:39,514 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:34:47,264 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:34:48,523 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:34:56,278 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:34:57,533 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:05,285 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:06,542 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:14,293 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:15,550 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:23,300 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:24,559 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:32,309 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:33,566 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:41,312 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:42,579 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:50,317 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:51,587 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:35:59,322 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:36:00,596 schedule     DEBUG    Running job Job(interval=9, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:38:45,273 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:40:31,383 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 17:40:32,597 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:40:49,089 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 17:40:50,197 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:40:51,148 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:40:52,156 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:40:53,165 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:40:54,169 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:40:55,173 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:40:56,178 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:40:57,182 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 17:41:21,122 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:41:23,784 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 17:41:24,968 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 17:45:48,817 django.request ERROR    Internal Server Error: /income/analyse_single/1/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\analysis.py", line 59, in analysis_single
+    first_year=income.order_by('last_date').first().last_date.year
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'last_date'
+2023-08-18 17:45:54,545 django.request ERROR    Internal Server Error: /income/analyse_single/37/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\analysis.py", line 59, in analysis_single
+    first_year=income.order_by('last_date').first().last_date.year
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'last_date'
+2023-08-18 17:46:10,350 django.request ERROR    Internal Server Error: /income/analyse_single/36/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\analysis.py", line 59, in analysis_single
+    first_year=income.order_by('last_date').first().last_date.year
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'last_date'
+2023-08-18 18:50:57,746 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:50:59,239 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:51:59,063 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:52:00,173 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:52:06,014 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:52:07,323 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:52:09,950 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:52:11,778 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:52:13,396 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:52:14,507 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:52:17,994 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:52:19,311 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:52:20,715 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:52:22,064 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:52:23,456 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:52:24,742 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:52:26,124 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:52:27,339 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:52:28,801 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:52:30,000 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:52:32,534 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:52:33,919 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:52:43,748 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:52:45,211 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:52:47,773 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:52:48,794 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:52:58,697 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:53:00,187 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:53:01,662 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:53:02,759 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:53:04,140 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:53:05,226 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:53:38,262 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:53:39,178 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:53:40,600 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:53:41,821 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:53:43,436 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:53:44,430 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:53:45,864 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:53:47,567 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:53:48,998 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:53:50,206 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:53:51,968 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:53:53,295 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:53:54,868 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:53:55,867 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:54:44,050 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:54:45,278 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:54:46,932 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:54:48,448 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:54:49,868 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:54:51,348 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:54:52,757 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:54:53,961 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:54:55,338 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:54:56,620 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:54:58,079 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:54:59,411 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:55:16,814 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:55:17,784 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:55:27,751 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 18:55:28,328 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:55:29,354 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:55:39,318 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 18:57:47,654 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:57:56,771 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 18:57:57,625 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 18:58:08,383 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:58:09,474 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:58:12,104 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:58:13,194 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:58:23,154 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 18:58:38,343 django.request WARNING  Not Found: /favicon.ico
+2023-08-18 18:58:46,865 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:58:47,856 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:58:57,822 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 18:59:14,601 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 18:59:24,615 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 18:59:34,624 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 18:59:34,721 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 18:59:36,039 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 18:59:46,002 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 18:59:56,017 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:00:06,032 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:00:16,041 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:00:26,049 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:00:36,060 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:00:46,065 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:00:59,610 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 19:01:08,746 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:01:09,586 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:01:18,777 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:01:19,597 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:01:29,608 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:01:35,444 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:01:39,615 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:01:45,455 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:01:49,628 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:01:55,470 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:01:59,638 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:02:05,481 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:02:09,650 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:02:15,494 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:02:19,661 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:02:25,502 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:02:29,688 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:02:35,513 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:02:39,698 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:02:45,521 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:02:49,713 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:02:55,534 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:02:59,722 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:03:05,541 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:03:09,733 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:03:15,561 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:03:19,739 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:03:25,572 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:03:29,749 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:03:35,584 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:03:39,758 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:03:45,596 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:03:49,767 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:03:55,606 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:03:59,775 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:04:05,617 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:04:09,786 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:04:15,629 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:04:19,797 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:04:25,639 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:04:29,812 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:04:35,650 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:04:39,821 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:04:45,661 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:04:49,834 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:04:55,672 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:04:59,845 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:05:05,683 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:05:09,854 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:05:15,755 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:05:19,870 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:05:25,804 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:05:29,887 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:05:35,814 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:05:39,896 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:05:45,826 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:05:49,909 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:05:55,844 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:05:59,919 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:06:05,853 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:06:09,929 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:06:15,900 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:06:19,942 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:06:25,912 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:06:29,956 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:06:35,925 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:06:39,966 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:06:45,943 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:06:49,979 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:06:55,982 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:07:00,041 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:07:06,050 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:07:10,063 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:07:16,061 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:07:20,078 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:07:26,129 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:07:30,090 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:07:36,145 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:07:40,103 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:07:46,155 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:07:50,113 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:07:56,216 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:08:00,126 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:08:06,277 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:08:10,139 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:08:16,285 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:08:20,149 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:08:26,294 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:08:30,157 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:08:36,307 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:08:40,172 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:08:46,318 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:08:50,185 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:08:56,326 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:09:00,194 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:09:06,350 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:09:10,202 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:09:16,381 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:09:20,214 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:09:26,390 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:09:30,226 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:09:36,405 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:09:40,240 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:09:46,416 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:09:50,251 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:09:56,472 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:10:00,264 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:10:06,484 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:10:10,275 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:10:16,494 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:10:20,285 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:10:26,507 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:10:30,299 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:10:36,517 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:10:40,306 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:10:46,531 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:10:50,318 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:10:56,547 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:11:00,347 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:11:06,589 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:11:10,373 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:11:16,616 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:11:20,387 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:11:26,635 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:11:30,398 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:11:36,702 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:11:40,410 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:11:46,748 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:11:50,422 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:11:56,851 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:12:00,429 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:12:06,891 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:12:10,439 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:12:16,978 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:12:20,447 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:12:26,991 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:12:30,459 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:12:37,000 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:12:40,471 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:12:47,015 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:12:50,483 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:12:57,031 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:13:00,493 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:13:07,046 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:13:10,505 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:13:17,057 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:13:20,515 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:13:27,068 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:13:30,580 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:13:37,076 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:13:40,592 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:13:47,088 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:13:50,601 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:13:57,095 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:14:00,610 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:14:07,107 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:14:10,626 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:14:17,114 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:14:20,638 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:14:27,126 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:14:30,646 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:14:37,134 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:14:40,654 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:14:47,139 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:14:50,666 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:14:57,145 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:15:00,677 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:15:07,151 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:15:10,686 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:15:17,164 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:15:20,691 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:15:27,172 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:15:30,701 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:15:37,181 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:15:40,709 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:15:47,190 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:15:50,716 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:15:57,198 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:16:00,734 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:16:07,207 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:16:10,741 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:16:17,214 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:16:20,750 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:16:27,220 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:16:30,761 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:16:37,229 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:16:40,769 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:16:50,780 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:16:53,012 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:17:00,787 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:17:03,026 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:17:10,797 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:17:13,035 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:17:20,893 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:17:23,046 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:17:35,191 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 19:17:43,750 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:17:45,150 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:17:55,249 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:18:05,265 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:18:15,276 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:18:25,293 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:18:41,687 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:18:51,692 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:19:01,704 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:19:11,713 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:19:14,367 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 19:19:17,201 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 19:19:18,851 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 19:19:20,602 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 19:19:22,067 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 19:19:23,692 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 19:19:33,639 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:19:43,649 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:19:53,659 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 19:19:53,883 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 19:19:55,642 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 19:19:59,736 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 19:20:01,773 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 19:20:05,833 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\jobs.py changed, reloading.
+2023-08-18 19:20:07,624 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 19:20:17,567 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})

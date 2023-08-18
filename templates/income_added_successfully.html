@@ -1,0 +1,7 @@
+{% autoescape off %}
+Hello {{ user.first_name }} {{ user.last_name }},
+Your income from {{user_income.source}} was credited successfully to your account on {% now "jS F Y " %}.
+Login into your account to view the details.
+Sincerely,
+Team
+{% endautoescape %}
