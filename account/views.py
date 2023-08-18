@@ -14,7 +14,7 @@ from .decorators import user_not_authenticated
 from .forms import UserRegistrationForm, UserLoginForm, UserUpdateForm, SetPasswordForm, PasswordResetForm
 from .tokens import account_activation_token
 from .models import Account
-
+from balance.models import Balance
 def activate(request, uidb64, token):
     User = get_user_model()
     try:
@@ -32,7 +32,8 @@ def activate(request, uidb64, token):
         return redirect('login')
     else:
         messages.error(request, "Activation link is invalid!")
-
+    balance=Balance.objects.create(user=user)
+    balance.save()
     return redirect('home')
 
 

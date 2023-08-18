@@ -15,7 +15,8 @@ class IncomeObject(models.Model):
     next_date = models.DateField(blank=False,null=False)
     user = models.ForeignKey(Account, on_delete=models.CASCADE)
     description = models.TextField(blank=True)
-    is_active = models.BooleanField(default=True)
+    is_active = models.BooleanField(default=True)#!Tells if the current source of income is active now(user earns through it) 
+    is_passive = models.BooleanField(default=False)#!Tells if the source of income is a form of passive income
     status = models.BooleanField(default=False, blank=False, null=False)#!Default synced status
     added=models.BooleanField(default=False, blank=False, null=False)#!Income is credited
     def __str__(self):

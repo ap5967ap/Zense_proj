@@ -4447,3 +4447,106 @@ Traceback (most recent call last):
 urllib.error.URLError: <urlopen error [Errno 11001] getaddrinfo failed>
 2023-08-16 04:10:32,223 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\urls.py changed, reloading.
 2023-08-16 04:10:33,877 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:49:48,558 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:49:57,805 django.request WARNING  Not Found: /favicon.ico
+2023-08-18 16:50:05,041 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:06,474 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:08,136 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:09,827 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:11,212 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:12,593 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:16,237 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:17,369 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:19,016 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:20,273 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:21,680 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:22,695 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:24,269 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:25,420 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:27,174 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:28,515 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:29,908 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:31,457 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:33,118 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:34,210 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:35,842 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:36,952 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:38,352 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:39,602 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:40,960 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:42,047 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:43,609 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:44,832 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:47,262 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:48,293 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:52,133 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:53,401 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:50:58,106 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:50:59,160 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:51:06,005 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:51:07,077 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:51:08,697 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:51:09,628 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:51:11,217 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:51:12,349 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:51:14,988 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:51:16,148 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:51:19,680 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:51:20,960 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:51:29,906 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:51:30,971 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:51:33,706 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:51:34,809 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:51:36,327 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-18 16:51:37,301 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:52:31,531 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
+2023-08-18 16:52:35,803 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:53:53,517 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\jobs.py changed, reloading.
+2023-08-18 16:53:54,655 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:53:55,591 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 16:53:56,593 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 16:53:57,595 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 16:53:58,598 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 16:53:59,600 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 16:54:00,603 schedule     DEBUG    Running job Job(interval=1, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 16:54:01,523 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\jobs.py changed, reloading.
+2023-08-18 16:54:02,653 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:54:20,376 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\jobs.py changed, reloading.
+2023-08-18 16:54:21,549 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:54:35,880 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\jobs.py changed, reloading.
+2023-08-18 16:54:36,998 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:54:46,958 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 16:54:56,959 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 16:55:06,961 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 16:55:16,963 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 16:55:20,933 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\jobs.py changed, reloading.
+2023-08-18 16:55:22,199 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:55:26,976 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\jobs.py changed, reloading.
+2023-08-18 16:55:27,966 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:55:29,504 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\jobs.py changed, reloading.
+2023-08-18 16:55:30,525 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:55:36,133 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\jobs.py changed, reloading.
+2023-08-18 16:55:37,144 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:55:38,518 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\jobs.py changed, reloading.
+2023-08-18 16:55:39,473 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:55:49,431 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 16:56:48,944 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 16:56:50,178 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:56:52,161 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 16:56:53,474 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:56:54,849 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 16:56:56,034 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:56:57,396 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 16:56:59,001 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:57:00,360 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 16:57:01,721 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:57:03,305 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 16:57:04,653 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:57:07,105 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 16:57:08,210 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:57:13,811 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 16:57:15,339 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:57:16,804 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\jobs.py changed, reloading.
+2023-08-18 16:57:17,927 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-18 16:57:27,879 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-18 16:59:05,799 django.utils.autoreload INFO     Watching for file changes with StatReloader

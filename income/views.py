@@ -4,6 +4,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib.auth.decorators import login_required
 from .models import IncomeObject
 from datetime import timedelta
+from balance.models import Balance
 from bootstrap_datepicker_plus.widgets import DatePickerInput
 from .forms import IncomeAdd
 from .analysis import analysis_single, get_inflation
@@ -43,6 +44,9 @@ def add_income(request):
         income_object = IncomeObject.objects.create(source=source, amount=amount, frequency=frequency,
                                                     last_date=last_date, added=True,status=status, next_date=next_date, user=user, description=description)
         income_object.save()
+        balance=Balance.objects.get(user=request.user)
+        balance.balance=balance.balance+amount
+        balance.save()
         form = IncomeAdd()
         message = 'Income added successfully'
         return redirect('add_income')
@@ -82,6 +86,7 @@ def edit_income(request, id):
             next_date = None
         else:
             next_date = income.last_date+timedelta(_re(frequency))
+        
         income.amount = amount
         income.frequency = frequency
         income.description = description
@@ -109,6 +114,9 @@ def add_object_income(request, id):
                                              status=income.status, next_date=datetime.date.today()+timedelta(_re(income.frequency)), user=income.user, description=income.description,
                                              added=True)
     new_income.save()
+    balance=Balance.objects.get(user=request.user)
+    balance.balance=balance.balance+income.amount
+    balance.save()
     if timedelta(_re(income.frequency)) == 0:
         new_income.next_date = None
     new_income.save()
