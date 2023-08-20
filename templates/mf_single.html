@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container pt-5">
+    <div class="row">
+        <h5>Total quantity : {{dict.0}}</h5>
+    </div>
+    <div class="row">
+        <h5>Average Buying price : {{dict.1}}</h5>
+    </div>
+</div>
+<div class="container pt-5">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Quantity</th>
+            <th scope="col">Buying price</th>
+            <th scope="col">Buy Date</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for i in l %}
+        <tr>
+            <td>{{i.quantity}}</td>
+            <td>{{i.amount}}</td>
+            <td>{{i.last_date}}</td>
+        </tr>
+            {% endfor %}
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    <td><form method="get" action="{% url 'mf_transact' %}">
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit" class="btn btn-success">Buy</button>
+    </form>
+    </td>
+    <td><form method='get' action="{% url 'mf_sell' %}">
+        <input type="hidden" name="name" value="{{name}}">
+        <button type="submit" class="btn btn-danger">Sell</button>
+    </form></td>
+    <div class="container">
+        <canvas
+          id="myChart"
+          class="col-md-6 row"
+          url-endpoint="{% url 'mf_data_single' name %}"
+        ></canvas>
+      </div>
+
+
+      <script>
+        var endpoint = "{% url 'mf_data_single' name %}";
+        var defaultData = [];
+        var labels = [];
+        $.ajax({
+        method: "GET",
+        url: endpoint,
+        success: function (data) {
+            console.log(data);
+            graph(data, "myChart");
+        },
+        error: function (err) {
+            console.log("error");
+            console.log(err);
+        },
+        });
+        function graph(data, id) {
+            var myData = {
+              labels: data.labels,
+              datasets: [
+                {
+                  type: "line",
+                  label:"Inflation",
+                  data: data.infla,
+                  fill: false,
+                  borderColor: "red",
+                  backgroundColor: "#EC492F",
+                  pointBorderColor: "#EC492F",
+                  pointBackgroundColor: "#EC492F",
+                  pointHoverBackgroundColor: "#EC492F",
+                  pointHoverBorderColor: "#EC492F",
+                  lineTension: 0.4,
+                  pointRadius: 3.5,
+                  pointHoverRadius: 3.5,
+                  yAxisID: 'ya'
+
+                },
+                {
+                    type: "line",
+                    label:"Growth",
+                    data: data.dict,
+                    fill: false,
+                    borderColor: "yellow",
+                    backgroundColor: "yellow",
+                    pointBorderColor: "yellow",
+                    pointBackgroundColor: "yellow",
+                    pointHoverBackgroundColor: "yellow",
+                    pointHoverBorderColor: "yellow",
+                    lineTension: 0.4,
+                    pointRadius: 3.5,
+                    pointHoverRadius: 3.5,
+                    yAxisID: 'ya'
+                  },
+              ],
+            };
+            var options = {
+                scales: {
+                    yAxes: [
+                    {
+                        id:'ya',
+                        display: true,
+                        ticks: {
+                            fontSize: 17,
+                            suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
+                        }
+                    },
+                    
+                    ],
+                    xAxes:[
+                        {
+                            ticks:{
+                                fontSize: 17,
+                            }
+                        }
+                    ]
+                }
+                
+            };
+            var ctx = document.getElementById(id).getContext("2d");
+            var chart = new Chart(ctx, {
+              type: "line",
+              data: myData,
+            options: options    
+            });
+          }
+      </script>
+{% endblock content %}

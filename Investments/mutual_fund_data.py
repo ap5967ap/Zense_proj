@@ -1,4 +1,4 @@
-from Investments.models import MFData
+from .models import MFData
 from bs4 import BeautifulSoup
 import requests
 import json
@@ -87,10 +87,10 @@ def prediction(symbol):
         mx=max(x)
         return (a,b,c,d,e,mn,mx)
     return forecasting_mutual_fund()    
-def func():
+def func(*args,**kwargs):
    try: 
     small="https://www.etmoney.com/mutual-funds/equity/small-cap/36"
-    MFData.objects.all().delete()
+    # MFData.objects.all().delete()
     r=requests.get(small)
     soup = BeautifulSoup(r.content, 'html5lib')
     name=""
@@ -108,7 +108,13 @@ def func():
             rank=int(i.find(class_='etm-rank').find('strong', class_='item-value').text.strip()[1:])
             symbol=dict2[name]
             a,b,c,d,e,mn,mx=prediction(symbol)
-            obj=MFData.objects.create(name=name,rank=rank,choice='s',d1=a,d2=b,d3=c,d4=d,d5=e,dmin=mn,dmax=mx)
+            try:
+                price=float(yf.download(str(symbol)+".BO",period='1d')['Close'].iloc[0])
+                prev_return=yf.Ticker(str(symbol)+".BO").get_info().get('annualHoldingsTurnover')
+            except:
+                price=0
+                prev_return=0
+            obj=MFData.objects.create(name=name,rank=rank,choice='s',d1=a,d2=b,d3=c,d4=d,d5=e,dmin=mn,dmax=mx,price=price,prev_return=prev_return)
             obj.save()
         except:
             f=open("cron_log.log",'a')
@@ -123,7 +129,13 @@ def func():
             rank=int(i.find(class_='etm-rank').find('strong', class_='item-value').text.strip()[1:])
             symbol=dict2[name]
             a,b,c,d,e,mn,mx=prediction(symbol)
-            obj=MFData.objects.create(name=name,rank=rank,choice='m',d1=a,d2=b,d3=c,d4=d,d5=e,dmin=mn,dmax=mx)
+            try:
+                price=float(yf.download(str(symbol)+".BO",period='1d')['Close'].iloc[0])
+                prev_return=yf.Ticker(str(symbol)+".BO").get_info().get('annualHoldingsTurnover')
+            except:
+                price=0
+                prev_return=0
+            obj=MFData.objects.create(name=name,rank=rank,choice='m',d1=a,d2=b,d3=c,d4=d,d5=e,dmin=mn,dmax=mx,price=price,prev_return=prev_return)
             obj.save()
         except:
             f=open("cron_log.log",'a')
@@ -138,7 +150,13 @@ def func():
             rank=int(i.find(class_='etm-rank').find('strong', class_='item-value').text.strip()[1:])
             symbol=dict2[name]
             a,b,c,d,e,mn,mx=prediction(symbol)
-            obj=MFData.objects.create(name=name,rank=rank,choice='l',d1=a,d2=b,d3=c,d4=d,d5=e,dmin=mn,dmax=mx)
+            try:
+                price=float(yf.download(str(symbol)+".BO",period='1d')['Close'].iloc[0])
+                prev_return=yf.Ticker(str(symbol)+".BO").get_info().get('annualHoldingsTurnover')
+            except:
+                price=0
+                prev_return=0
+            obj=MFData.objects.create(name=name,rank=rank,choice='l',d1=a,d2=b,d3=c,d4=d,d5=e,dmin=mn,dmax=mx,price=price,prev_return=prev_return)
             obj.save()
         except Exception as e:
             f=open("cron_log.log",'a')
@@ -146,36 +164,37 @@ def func():
    except Exception as e:
        f=open("cron_log.log",'a')
        f.write(str(e)+'\n')
-def run_continuously(self, interval=86400):
-    """Continuously run, while executing pending jobs at each elapsed
-    time interval.
-    @return cease_continuous_run: threading.Event which can be set to
-    cease continuous run.
-    Please note that it is *intended behavior that run_continuously()
-    does not run missed jobs*. For example, if you've registered a job
-    that should run every minute and you set a continuous run interval
-    of one hour then your job won't be run 60 times at each interval but
-    only once.
-    """
+# func()
+# def run_continuously(self, interval=86400):
+#     """Continuously run, while executing pending jobs at each elapsed
+#     time interval.
+#     @return cease_continuous_run: threading.Event which can be set to
+#     cease continuous run.
+#     Please note that it is *intended behavior that run_continuously()
+#     does not run missed jobs*. For example, if you've registered a job
+#     that should run every minute and you set a continuous run interval
+#     of one hour then your job won't be run 60 times at each interval but
+#     only once.
+#     """
 
-    cease_continuous_run = threading.Event()
+#     cease_continuous_run = threading.Event()
 
-    class ScheduleThread(threading.Thread):
+#     class ScheduleThread(threading.Thread):
 
-        @classmethod
-        def run(cls):
-            while not cease_continuous_run.is_set():
-                self.run_pending()
-                time.sleep(interval)
+#         @classmethod
+#         def run(cls):
+#             while not cease_continuous_run.is_set():
+#                 self.run_pending()
+#                 time.sleep(interval)
 
-    continuous_thread = ScheduleThread()
-    continuous_thread.setDaemon(True)
-    continuous_thread.start()
-    return cease_continuous_run
+#     continuous_thread = ScheduleThread()
+#     continuous_thread.setDaemon(True)
+#     continuous_thread.start()
+#     return cease_continuous_run
 
-Scheduler.run_continuously = run_continuously
+# Scheduler.run_continuously = run_continuously
 
-def start_scheduler():
-    scheduler = Scheduler()
-    scheduler.every(86400).seconds.do(func) 
-    scheduler.run_continuously()
+# def start_scheduler():
+#     scheduler = Scheduler()
+#     scheduler.every(86400).seconds.do(func) 
+#     scheduler.run_continuously()

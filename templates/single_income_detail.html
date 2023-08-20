@@ -84,37 +84,81 @@
             fill: false,
             borderColor: "red",
             backgroundColor: "#EC492F",
-            pointBorderColor: "rgba(5,202,202,1)",
-            pointBackgroundColor: "#EC932F",
-            pointHoverBackgroundColor: "#EC932F",
-            pointHoverBorderColor: "#EC932F",
+            pointBorderColor: "#EC492F",
+            pointBackgroundColor: "#EC492F",
+            pointHoverBackgroundColor: "#EC492F",
+            pointHoverBorderColor: "#EC492F",
             lineTension: 0.4,
+            pointRadius: 3.5,
+            
           },
           {
             type: "line",
             label:"Income Growth",
             data: data.growth,
             fill: false,
-            borderColor: "green",
-            backgroundColor: "#EC932F",
-            pointBorderColor: "rgba(5,202,202,1)",
-            pointBackgroundColor: "#EC932F",
-            pointHoverBackgroundColor: "#EC932F",
-            pointHoverBorderColor: "#EC932F",
+            borderColor: "blue",
+            backgroundColor: "blue",
+            pointBorderColor: "blue",
+            pointBackgroundColor: "blue",
+            pointHoverBackgroundColor: "blue",
+            pointHoverBorderColor: "blue",
             lineTension: 0.4,
-
+            pointRadius: 3.5,
           },
         ],
+      };
+      var options = {
+        scales: {
+          yAxes: [
+            {
+              type: "linear",
+              ticks: {
+                beginAtZero: true,
+                fontSize:14,
+                fontColor:'black',
+              
+              },
+            },
+          ],
+        },
       };
       var ctx = document.getElementById(id).getContext("2d");
       var chart = new Chart(ctx, {
         type: "line",
         data: myData,
+        options: options,
       });
     }
     function income_contrib(data, id) {
       var labels = data.labels;
       var ctx = document.getElementById(id).getContext("2d");
+      var options={
+        scales: {
+          yAxes: [
+            {
+              id:'ya',
+              type: "linear",
+              ticks: {
+                beginAtZero: true,
+                fontSize:14,
+                fontColor:'black',
+                barPercentage: 0.4
+              },
+            },
+            {
+              position:'right',
+              id:'yb',
+              type: "linear",
+              ticks: {
+                beginAtZero: true,
+                fontSize:14,
+                fontColor:'black',
+              },
+            }
+          ],
+        },
+      }
       var chart = new Chart(ctx, {
         type: "bar",
         data: {
@@ -125,6 +169,7 @@
               borderColor: "green",
               backgroundColor: "rgba(99,255,100,0.7)",
               borderWidth: 2,
+              yAxisID:'ya'
             },
             {
               label: "Contributions from this source in total income",
@@ -133,10 +178,12 @@
               backgroundColor: "rgba(255,99,132,0.2)",
               lineTension: 0.4,
               borderColor: "rgba(255,99,132,0.9)",
+              yAxisID:'yb'
             },
           ],
           labels: data.labels,
         },
+        options:options
       });
     }
 

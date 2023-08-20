@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container pt-5">
+<form  action="{% url 'mf_transact' %}" method="post" class="form-control">
+    {% csrf_token %}
+    <div class="form-group">
+    <label for="name">Select Mutual Fund</label>
+    <datalist id="suggestions" name="name">
+      {% for i,j in d.items %}
+      {% if i == name %}
+      <option selected>{{i}}</option>
+      {% else %}
+        <option>{{i}}</option>
+    {% endif %}
+      {% endfor %}
+    </datalist>
+    {% if name %}
+    <input autocomplete="on" class="form-control" list="suggestions" name="name" type="text" style='width:100%'  title="MF" value="{{name}}" required/>
+    {% else %}
+    <input autocomplete="on" class="form-control" list="suggestions" name="name" type="text" style='width:100%'  title="MF" required/>
+    {% endif %}
+    <small id="mutual_fund" class="form-text text-muted">Enter name of the Mutual Fund from this list. If, it is not there enter type manually. </small>
+    </div>
+    <div class="form-group">
+    <label for="amount">Enter Buy Price</label>
+    <input type="number" step="0.01" class="form-control" id="amount" name="amount" placeholder="Enter Buy Price" required value="{{price|floatformat:2}}">
+    </div>
+    <div class="form-group">
+        <label for="type">Quantity</label>
+        <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Enter quantity" required value="1">
+    </div>
+    <div class="form-group">
+    <label for="date">Buy Date</label>
+    <input type="date" class="form-control" id="date" name="date_bought" placeholder="Enter date" required max="{% now 'Y-m-j' %}" value="{% now 'Y-m-j' %}">
+    </div>
+    <div class="form-group">
+    <label for="type">Is the a Monthly SIP ? (If, yes then select) </label>
+    <small id="mutual_fund" class="form-text text-muted">Is, it a Monthly SIP or a Lumsum Investment ?. If Lumsum, don't select anythin</small>
+
+    <input type="checkbox"  id="type" name="is_sip" value="1" title=".">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+{% endblock content %} 

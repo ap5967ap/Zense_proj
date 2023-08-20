@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container pt-5">
+    <h1>Large Cap Mutual Fund</h1>
+    <br>
+    <strong>We have ranked these Funds on the basis of Previous returns, risks and other appropriate factors.
+    We have shared predictions of prices of these Fund for next 5 days and predicted minimum and maximum prices of these Fund for a month.
+    <br> <br><h2 class="container">To use Price Predictor for any other Mutual Fund, please click <a href="{% url 'mf_predict' %}">here</a></h2>
+    </strong>
+    <br>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Name of the Mutual Fund</th>
+                <th scope="col">Computed Rank in Category</th>
+                <th scope="col">Predicted Day + 1 Price</th>
+                <th scope="col">Predicted Day + 2 Price</th>
+                <th scope="col">Predicted Day + 3 Price</th>
+                <th scope="col">Predicted Day + 4 Price</th>
+                <th scope="col">Predicted Day + 5 Price</th>
+                <th scope="col">Predicted Min Price within a Month</th>
+                <th scope="col">Predicted Max Price within a Month</th>
+                <th scope="col">Previous closing Price</th>
+                <th scope="col">Annual Holding Turnover</th>
+            </tr>
+        </thead>
+        <tbody>
+           {% for i in l %}
+            <tr>
+                <td>{{ forloop.counter }}</a></td> 
+                <td>{{i.name}}</td>
+                <td>{{i.rank}}</td>
+                <td>{{i.d1|floatformat:2}}</td>
+                <td>{{i.d2|floatformat:2}}</td>
+                <td>{{i.d3|floatformat:2}}</td>
+                <td>{{i.d4|floatformat:2}}</td>
+                <td>{{i.d5|floatformat:2}}</td>
+                <td>{{i.dmin|floatformat:2}}</td>
+                <td>{{i.dmax|floatformat:2}}</td>
+                <td>{{i.price|floatformat:2}}</td>
+                <td>{{i.prev_return|floatformat:2}}</td>
+                <td><form method="get" action="{% url 'mf_transact' %}">
+                    <input type="hidden" name="name" value="{{i.name}}">
+                    <button type="submit" class="btn btn-success">Buy</button>
+                </form>
+                </td>
+                <td><form method='get' action="#">
+                    <input type="hidden" name="name" value="{{i.name}}">
+                    <button type="submit" class="btn btn-danger">Sell</button>
+                </form></td>
+            </tr>
+            {% endfor %}
+        </tbody></table>
+        
+</div>
+<br/>
+<br/>
+<hr/>
+<br/>
+<br/>
+
+<div class="container pt-5">
+    <h1>Mid Cap Mutual Fund</h1>
+    <br>
+    <strong>We have ranked these Funds on the basis of Previous returns, risks and other appropriate factors.
+        We have shared predictions of prices of these Fund for next 5 days and predicted minimum and maximum prices of these Fund for a month
+        </strong>
+    <br>
+    <br>
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Name of the Mutual Fund</th>
+                <th scope="col">Computed Rank in Category</th>
+                <th scope="col">Predicted Day + 1 Price</th>
+                <th scope="col">Predicted Day + 2 Price</th>
+                <th scope="col">Predicted Day + 3 Price</th>
+                <th scope="col">Predicted Day + 4 Price</th>
+                <th scope="col">Predicted Day + 5 Price</th>
+                <th scope="col">Predicted Min Price within a Month</th>
+                <th scope="col">Predicted Max Price within a Month</th>
+                <th scope="col">Previous closing Price</th>
+                <th scope="col">Annual Holding Turnover</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in m %}
+            <tr>
+                <td>{{ forloop.counter }}</a></td> 
+                <td>{{i.name}}</td>
+                <td>{{i.rank}}</td>
+                <td>{{i.d1|floatformat:2}}</td>
+                <td>{{i.d2|floatformat:2}}</td>
+                <td>{{i.d3|floatformat:2}}</td>
+                <td>{{i.d4|floatformat:2}}</td>
+                <td>{{i.d5|floatformat:2}}</td>
+                <td>{{i.dmin|floatformat:2}}</td>
+                <td>{{i.dmax|floatformat:2}}</td>
+                <td>{{i.price|floatformat:2}}</td>
+                <td>{{i.prev_return|floatformat:2}}</td>
+                <td><form method="get" action="{% url 'mf_transact' %}">
+                    <input type="hidden" name="name" value="{{i.name}}">
+                    <button type="submit" class="btn btn-success">Buy</button>
+                </form>
+                </td>
+                <td><form method='get' action="#">
+                    <input type="hidden" name="name" value="{{i.name}}">
+                    <button type="submit" class="btn btn-danger">Sell</button>
+                </form></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+</div>
+
+<br/>
+<br/>
+<hr/>
+<br/>
+<br/>
+
+<div class="container pt-5">
+    <h1>Small Cap Mutual Fund</h1>
+    <br>
+    <strong>We have ranked these Funds on the basis of Previous returns, risks and other appropriate factors.
+        We have shared predictions of prices of these Fund for next 5 days and predicted minimum and maximum prices of these Fund for a month
+        </strong>
+    <br>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Name of the Mutual Fund</th>
+                <th scope="col">Computed Rank in Category</th>
+                <th scope="col">Predicted Day + 1 Price</th>
+                <th scope="col">Predicted Day + 2 Price</th>
+                <th scope="col">Predicted Day + 3 Price</th>
+                <th scope="col">Predicted Day + 4 Price</th>
+                <th scope="col">Predicted Day + 5 Price</th>
+                <th scope="col">Predicted Min Price within a Month</th>
+                <th scope="col">Predicted Max Price within a Month</th>
+                <th scope="col">Previous closing Price</th>
+                <th scope="col">Annual Holding Turnover</th>
+            </tr>
+        </thead>
+        <tbody>
+           {% for i in s %}
+            <tr>
+                <td>{{ forloop.counter }}</a></td> 
+                <td>{{i.name}}</td>
+                <td>{{i.rank}}</td>
+                <td>{{i.d1|floatformat:2}}</td>
+                <td>{{i.d2|floatformat:2}}</td>
+                <td>{{i.d3|floatformat:2}}</td>
+                <td>{{i.d4|floatformat:2}}</td>
+                <td>{{i.d5|floatformat:2}}</td>
+                <td>{{i.dmin|floatformat:2}}</td>
+                <td>{{i.dmax|floatformat:2}}</td>
+                <td>{{i.price|floatformat:2}}</td>
+                <td>{{i.prev_return|floatformat:2}}</td>
+                <td><form method="get" action="{% url 'mf_transact' %}">
+                    <input type="hidden" name="name" value="{{i.name}}">
+                    <button type="submit" class="btn btn-success">Buy</button>
+                </form>
+                </td>
+                <td><form method='get' action="{% url 'mf_sell' %}">
+                    <input type="hidden" name="name" value="{{i.name}}">
+                    <button type="submit" class="btn btn-danger">Sell</button>
+                </form></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+</div>
+{% endblock content %}

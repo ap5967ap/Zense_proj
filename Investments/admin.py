@@ -12,10 +12,9 @@ class MFAdmin(admin.ModelAdmin):
     list_display=('user','name','amount','last_date','next_date')
     list_filter=('user','name','last_date','next_date')
     search_fields=('user','name','last_date','next_date')
-    list_editable=('amount','last_date','next_date')
     
 class MFDataAdmin(admin.ModelAdmin):
-    list_display=('name','rank','choice','d1','d2','d3','d4','d5','dmin','dmax')
+    list_display=('name','rank','choice','d1','d2','d3','d4','d5','dmin','dmax','price','prev_return')
     list_filter=('choice',)
     search_fields=('name','rank','choice')
 admin.site.register(Investment,InvestmentAdmin)

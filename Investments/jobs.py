@@ -1,17 +1,21 @@
+import json
+from django.core.mail import EmailMessage
 import time
-from .models import Investment
+from .models import Investment,MF as MutualFund
 from schedule import Scheduler
 import threading
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
 from account.models import Account
 from balance.models import Balance
 import decimal
+import yfinance as yf
 
-def job():
+from django.template.loader import render_to_string
+def job(do=False):
     try:
        all_user=Account.objects.all()
-       if datetime.now().month==1 and (datetime.now().day==2 or datetime.now().day==3 or datetime.now().day==4 or datetime.now().day==5 or datetime.now().day==6 or datetime.now().day==7):
+       if do or (datetime.now().month==1 and (datetime.now().day==2 or datetime.now().day==3 or datetime.now().day==4 or datetime.now().day==5 or datetime.now().day==6 or datetime.now().day==7)):
          for user in all_user:
             is_created=Investment.objects.filter(user=user,year=datetime.now().year).exists()
             if is_created:
@@ -55,8 +59,51 @@ def job():
     except Exception as e:
         file=open('cron_log.log','a')
         file.write(str(e)+'\n')
+    if do:
+        return
+    try:#!MF sip is auto paid
+        obj=MutualFund.objects.filter(is_sip=True,sold=False)
+        dict={}
+        with open('codes.json') as file:
+            dict=json.load(file)
+        dict2={key: value for d in dict for value, key in d.items()}
+        for i in obj:
+            if i.next_date==datetime.now().date():
+                symbol=dict2[i.name]
+                is_paid=MutualFund.objects.filter(user=i.user,name=i.name,last_date=i.next_date,sold=False).exists()
+                try:
+                    price=decimal.Decimal(yf.download(str(symbol)+".BO",period='1d')['Close'].iloc[0])
+                except:
+                    price=i.amount
+                quantity=decimal.Decimal(i.quantity)
+                if is_paid:
+                    continue
+                last_date=datetime.now().date()
+                next_date=datetime.now().date()+timedelta(days=30)
+                user=i.user
+                balance=Balance.objects.get(user=user)
+                d=decimal.Decimal(price)*decimal.Decimal(quantity)
+                balance.balance-=decimal.Decimal(price)*decimal.Decimal(quantity)
+                invest_obj=Investment.objects.get(user=user,year=datetime.now().year)
+                invest_obj.invested_this_year+=d
+                invest_obj.MF_i+=d
+                balance.save()
+                invest_obj.save()
+                ob=MutualFund.objects.create(user=user,name=i.name,amount=price,quantity=quantity,last_date=last_date,next_date=next_date,is_sip=True,sold=False)
+                ob.save()
+                subject=f'Paid monthly sip of {i.amount} for {i.name}'
+                message=render_to_string('sip_paid.html',{'user':user,'amount':i.amount,'name':i.name})
+                email=EmailMessage(subject,message,to=[user.email])
+                try:
+                    email.send()
+                except:
+                    with open('cron_log.log','a') as file:
+                        file.write(f"Email not sent to {user.email} on {datetime.now().date()} for SIP \n")
+    except:
+        with open('cron_log.log','a') as file:
+            file.write(f"Error in MF SIP on {datetime.now().date()}\n")
         
-def run_continuously(self, interval=86400):
+def run_continuously(self, interval=40000):
     """Continuously run, while executing pending jobs at each elapsed
     time interval.
     @return cease_continuous_run: threading.Event which can be set to
@@ -87,6 +134,6 @@ Scheduler.run_continuously = run_continuously
 
 def start_scheduler():
     scheduler = Scheduler()
-    scheduler.every(86400).seconds.do(job)
+    scheduler.every(40000).seconds.do(job)
     scheduler.run_continuously()
         

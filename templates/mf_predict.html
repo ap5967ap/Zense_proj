@@ -1,0 +1,65 @@
+{%extends 'base.html'%} {% block content %}
+
+<div class="container pt-5">
+  <form action="{% url 'mf_predict' %}" method="get">
+    <label for="opt">Select Mutual Fund</label>
+    <datalist id="suggestions" name="opt">
+      <option value="#" disabled selected>---------------</option>
+      {% for i,j in dict.items %}
+      <option>{{i}}</option>
+      {% endfor %}
+    </datalist>
+    <input autocomplete="on" list="suggestions" name="opt" type="text" style='width:100%'  title="MF"/>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{% if res %}
+<div class="container pt-5" >
+    <br>
+    <strong>
+        We have shared predictions of prices of these Fund for next 5 days and predicted minimum and maximum prices of these Fund for a month
+        </strong>
+    <br>
+    <br>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Name of the Mutual Fund</th>
+            <th scope="col">Predicted Day + 1 Price</th>
+            <th scope="col">Predicted Day + 2 Price</th>
+            <th scope="col">Predicted Day + 3 Price</th>
+            <th scope="col">Predicted Day + 4 Price</th>
+            <th scope="col">Predicted Day + 5 Price</th>
+            <th scope="col">Predicted Min Price within a Month</th>
+            <th scope="col">Predicted Max Price within a Month</th>
+            <th scope="col">Previous closing Price</th>
+            <th scope="col">Annual Holding Turnover</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>{{x}}</td>
+            <td>{{res.a|floatformat:2}}</td>
+            <td>{{res.b|floatformat:2}}</td>
+            <td>{{res.c|floatformat:2}}</td>
+            <td>{{res.d|floatformat:2}}</td>
+            <td>{{res.e|floatformat:2}}</td>
+            <td>{{res.mn|floatformat:2}}</td>
+            <td>{{res.mx|floatformat:2}}</td>
+            <td>{{res.price|floatformat:2}}</td>
+            <td>{{res.prev_return|floatformat:2}}</td>
+            <td><form method="get" action="{% url 'mf_transact' %}">
+              <input type="hidden" name="name" value="{{x}}">
+              <button type="submit" class="btn btn-success">Buy</button>
+          </form>
+          </td>
+          <td><form method='get' action="{% url 'mf_sell' %}">
+              <input type="hidden" name="name" value="{{x}}">
+              <button type="submit" class="btn btn-danger">Sell</button>
+          </form></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+{% endif %}
+{% endblock content %}

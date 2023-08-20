@@ -39,9 +39,11 @@ class MF(models.Model):
     user=models.ForeignKey(Account,on_delete=models.CASCADE)
     name=models.CharField(max_length=100)
     amount=models.DecimalField(max_digits=20,decimal_places=2)
+    quantity=models.IntegerField(default=1)
     last_date=models.DateField()
-    next_date=models.DateField()
+    next_date=models.DateField(blank=True,null=True)
     is_sip=models.BooleanField(default=False)
+    sold=models.BooleanField(default=False)
     def __str__(self):
         return f"{self.user} {self.name}"
     class Meta:
@@ -53,6 +55,8 @@ class MFData(models.Model):
     name=models.CharField(max_length=100)
     rank=models.IntegerField()
     choice=models.CharField(max_length=1,choices=choices)
+    price=models.DecimalField(default=0,max_digits=20,decimal_places=2,blank=True,null=True)
+    prev_return=models.DecimalField(default=0,max_digits=20,decimal_places=2,blank=True,null=True)
     d1=models.DecimalField(default=0,max_digits=20,decimal_places=2)
     d2=models.DecimalField(default=0,max_digits=20,decimal_places=2)
     d3=models.DecimalField(default=0,max_digits=20,decimal_places=2)
