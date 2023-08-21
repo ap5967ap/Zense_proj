@@ -46,7 +46,7 @@
                     <button type="submit" class="btn btn-success">Buy</button>
                 </form>
                 </td>
-                <td><form method='get' action="#">
+                <td><form method='get' action="{% url 'mf_sell' %}">
                     <input type="hidden" name="name" value="{{i.name}}">
                     <button type="submit" class="btn btn-danger">Sell</button>
                 </form></td>
@@ -107,7 +107,7 @@
                     <button type="submit" class="btn btn-success">Buy</button>
                 </form>
                 </td>
-                <td><form method='get' action="#">
+                <td><form method='get' action="{% url 'mf_sell' %}">
                     <input type="hidden" name="name" value="{{i.name}}">
                     <button type="submit" class="btn btn-danger">Sell</button>
                 </form></td>

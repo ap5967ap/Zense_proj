@@ -12,4 +12,5 @@ urlpatterns=[
     path('mf_data_single/<str:name>',views.mf_data_single,name='mf_data_single'),
     path('mf_prev/',views.mf_prev,name='mf_prev'),
     path('mf_sell/',views.mf_sell,name='mf_sell'),
+    path('sold_prev/',views.sold_prev,name='sold_prev'),
 ]

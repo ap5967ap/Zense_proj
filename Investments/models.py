@@ -67,3 +67,44 @@ class MFData(models.Model):
     class Meta:
         verbose_name ="Mutual Fund Data"
         verbose_name_plural ="Mutual Fund Data"
+        
+        
+class StockData(models.Model):
+    name=models.CharField(max_length=100)
+    symbol=models.CharField(max_length=100)
+    nifty50=models.BooleanField(default=False)
+    niftybank=models.BooleanField(default=False)
+    niftyit=models.BooleanField(default=False)
+    niftyfmcg=models.BooleanField(default=False)
+    niftypharma=models.BooleanField(default=False)
+    niftyauto=models.BooleanField(default=False)
+    niftyenergy=models.BooleanField(default=False)
+    niftynext50=models.BooleanField(default=False)
+    niftyhealthcare=models.BooleanField(default=False)
+    category=models.CharField(max_length=100,choices=(('l','l'),('m','m'),('s','s')))
+    price=models.DecimalField(default=0,max_digits=20,decimal_places=2,blank=True,null=True)
+    ESG=models.IntegerField(default=0)#!risky
+    ma50=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    ma200=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    pe=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    pb=models.DecimalField(default=0,max_digits=20,decimal_places=2)#?price to book
+    roe=models.DecimalField(default=0,max_digits=20,decimal_places=2)#?return on equity
+    doe=models.DecimalField(default=0,max_digits=20,decimal_places=2)#?debt to equity   
+    enterpriseToEbitda=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    week52low=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    week52high=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    dividendYield=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    rsi=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    ta=models.CharField(max_length=100,choices=(('b','b'),('s','s'),('n','n'),('sb','sb'),('ss','ss')),default='n')
+    rating=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    buysignal=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    # d1=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    # d2=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    # d3=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    # d4=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    # d5=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    # dmin=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    # dmax=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    class Meta:
+        verbose_name_plural = "Stock Data"
+        verbose_name="Stock Data"

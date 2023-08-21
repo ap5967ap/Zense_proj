@@ -132,3 +132,21 @@ cannot access local variable 'e' where it is not associated with a value
 'Invesco India Largecap Fund Direct Plan-Growth'
 'Mirae Asset Large Cap Fund Direct Plan-Growth'
 'Bandhan Large Cap Fund Direct Plan-Growth'
+
+('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+unsupported operand type(s) for +: 'NoneType' and 'str'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+'NoneType' object has no attribute 'summary'
+unsupported operand type(s) for +: 'NoneType' and 'str'
+Exchange or symbol not found.
+unsupported operand type(s) for +: 'NoneType' and 'str'
+'NoneType' object has no attribute 'summary'
+Exchange or symbol not found.
+Exchange or symbol not found.

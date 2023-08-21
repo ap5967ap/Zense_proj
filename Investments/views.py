@@ -11,6 +11,7 @@ from balance.models import Balance
 import yfinance as yf
 from income.analysis import get_inflation
 from django.db.models import Sum
+from django.contrib import messages
 
 def _yearly_average_buying_price(l):
     x=0
@@ -71,6 +72,10 @@ def mf_sell(request):
     user=request.user
     if request.method=='POST':
         name=request.POST.get('name')
+        bought=MF.objects.filter(user=user,sold=False,name=name).exists()
+        if not bought:
+            messages.error(request,'You have not bought this MF')
+            return redirect('mf_sell')
         amount=float(request.POST.get('amount'))
         date=request.POST.get('date')
         cho=request.POST.get('type')
@@ -80,7 +85,7 @@ def mf_sell(request):
             qty+=i.quantity
             i.sold=True
             i.save()
-        obj=MF.objects.create(user=user,name=name,amount=amount/qty,qty=qty,last_date=date,sold=True,is_sip=False)
+        obj=MF.objects.create(user=user,name=name,amount=amount/qty,quantity=qty,last_date=date,sold=True,is_sip=False)
         obj.save()
         bal=Balance.objects.get(user=user)
         bal.balance+=decimal.Decimal(amount)
@@ -112,6 +117,7 @@ def mf_sell(request):
         elif cho=='2':
             ...
             #TODO: add to expense
+        return redirect('mf_home')
         
     else:
         l=MF.objects.filter(user=user,sold=False)
@@ -138,13 +144,20 @@ def mf_sell(request):
 @login_required(login_url='/account/login/')
 def mf_single(request,name):
     user=request.user
-    l=MF.objects.filter(user=user,name=name,sold=False).order_by('last_date')
+    if MF.objects.filter(user=user,name=name,sold=True).exists():
+        l=MF.objects.filter(user=user,name=name).order_by('last_date')
+        l=l[:len(l)-1]
+    else:
+        l=MF.objects.filter(user=user,name=name).order_by('last_date')
     x=0
     q=0
     for j in l:
         x+=j.amount*j.quantity
         q+=j.quantity
-    dict=[q,x/q,l[0].last_date,name,l[0].is_sip]
+    try:
+        dict=[q,x/q,l[0].last_date,name,l[0].is_sip]
+    except:
+        dict=[]
     return render(request, 'mf_single.html',context={"dict":dict,'l':l,'name':name})
 
 @login_required(login_url='/account/login/')
@@ -158,7 +171,7 @@ def sold_prev(request):
     this_year_invest=0
     dict={}
     for i in lis:
-        a=MF.objects.filter(user=user,sold=True,name=i,last_date__year=datetime.now().year).order_by('last_date').first()
+        a=MF.objects.filter(user=user,sold=True,name=i,last_date__year=datetime.now().year).order_by('-last_date','-id')[0]
         ama=a.amount*a.quantity
         this_year_invest+=ama
         obb=MF.objects.filter(user=user,sold=True,name=i)
@@ -173,7 +186,7 @@ def sold_prev(request):
             till-=1
 
         dict[i]=[a.quantity,a.amount,a.last_date,i,x,x/q,ama-x]
-    return render(request, 'sold_prev.html',context={"l":l,"lis":lis,"this_year_invest":this_year_invest})
+    return render(request, 'sold_prev.html',context={"l":l,"lis":lis,"this_year_invest":this_year_invest,'dict':dict})
 
 @login_required(login_url='/account/login/')
 def mf_home(request):

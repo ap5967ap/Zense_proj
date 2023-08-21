@@ -6,6 +6,8 @@ class InvestmentsConfig(AppConfig):
     name = "Investments"
     def ready(self):
         from . import jobs
-        # from . import mutual_fund_data
-        # jobs.start_scheduler()
-        # mutual_fund_data.start_scheduler()
+        from . import stocks
+        stocks.start_scheduler()
+        from . import mutual_fund_data
+        jobs.start_scheduler()
+        mutual_fund_data.start_scheduler()

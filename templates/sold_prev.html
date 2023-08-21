@@ -1,10 +1,18 @@
 {% extends 'base.html' %} {% block content %}
-<div class="container">
-  <div class="row">
-    This year you have sold Rs. {{this_year_invest}} in Mutual Funds.
-</div>
+
 
 </div>
+{% if not dict %}
+<div class="container">
+    <div class="row">
+        <h1 class="text-center">No Mutual Funds Sold till date</h1>
+    </div>
+</div>
+{% else %}
+<div class="container">
+    <div class="row">
+      This year you have sold Rs. {{this_year_invest}} in Mutual Funds.
+  </div>
 <div class="container pt-5">
     <table class="table table-striped">
         <thead>
@@ -24,6 +32,7 @@
             <td><a href="{% url 'mf_single' j.3 %}">{{j.3}}</a></td>
             <td>{{j.0}}</td>
             <td>{{j.1}}</td>
+            <td>{{j.2}}</td>
             <td>{{j.4}}</td>
             <td>{{j.5}}</td>
             <td>{{j.6}}</td>
@@ -34,67 +43,5 @@
 </div>
 <br>
 <br>
-<div class="container">
-    <canvas
-      id="myChart"
-      class="col-md-6 row"
-      url-endpoint="{% url 'mf_prev' %}">
-
-    </canvas>
-  </div>
-  <script>
-    var endpoint = "{% url 'mf_prev' %}";
-    var defaultData = [];
-    var labels = [];
-    $.ajax({
-    method: "GET",
-    url: endpoint,
-    success: function (data) {
-        console.log(data);
-        graph(data, "myChart");
-    },
-    error: function (err) {
-        console.log("error");
-        console.log(err);
-    },
-    });
-    function graph(data, id) {
-        var myData = {
-          labels: data.year,
-          datasets: [
-            {
-              type: "bar",
-              label:"Year",
-              data: data.mf,
-              fill: true,
-              borderColor: "rgba(255, 159, 64,1)",
-              backgroundColor: "rgba(255, 159, 64, 0.2)",
-                borderWidth: 1,
-            },
-          ],
-        };
-        var options={
-            scales: {
-                yAxes: [{
-                    type: 'linear',
-                    position: 'left',
-                    ticks: {
-                        beginAtZero: true,
-                        fontSize:14,
-                        fontColor: "black",
-                        callback: function(value, index, values) {
-                            return value.toLocaleString("en-IN",{style:"currency", currency:"INR"});
-                        },
-                    }
-                }]
-            }
-        }
-        var ctx = document.getElementById(id).getContext("2d");
-        var chart = new Chart(ctx, {
-          type: "bar",
-          data: myData,
-            options:options,
-        });
-      }
-  </script>
+{% endif %}
 {% endblock content %}

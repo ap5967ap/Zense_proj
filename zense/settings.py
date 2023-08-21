@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from datetime import timedelta
 from pathlib import Path
+from django.contrib import messages
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -144,10 +145,9 @@ STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR / "static"]
 MEDIA_URL = "media/"
 MEDIA_ROOT = BASE_DIR / "media"
-# settings.py
-CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
 
 
+# CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
 # CELERY_BEAT_SCHEDULE = {
 #     'my-periodic-task': {
 #         'task': 'zense.tasks.my_periodic_task',
@@ -163,6 +163,7 @@ CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
 # CELERY_RESULT_SERIALIZER = 'json'
 # CELERY_TASK_SERIALIZER = 'json'
 # CELERY_RESULT_BACKEND = "django-db"
+
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
@@ -193,8 +194,12 @@ LOGGING = {
         },
     }
 }
-# CRONJOBS = [
-#     ('*/1 * * * *', 'zense.cron.print_hello'),
-# ]
 
 
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-secondary',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
