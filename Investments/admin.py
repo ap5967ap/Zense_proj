@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Investment,MF,MFData,StockData
+from .models import Investment,MF,MFData,StockData,Stock
 from .mutual_fund_data import func
 
 class InvestmentAdmin(admin.ModelAdmin):
@@ -22,6 +22,14 @@ class StockDataAdmin(admin.ModelAdmin):
     list_display=('name','category','rating','buysignal','symbol')
     list_filter=('category',) 
    
+   
+class StockAdmin(admin.ModelAdmin):
+    list_display=('name','symbol','quantity','price','is_active','user','date','category')
+    list_filter=('user','date','category')
+    search_fields=('user','date','category')
+    list_editable=('is_active',)
+    
+admin.site.register(Stock,StockAdmin)
 admin.site.register(Investment,InvestmentAdmin)
 admin.site.register(MF,MFAdmin)
 admin.site.register(StockData,StockDataAdmin)

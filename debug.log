@@ -10046,3 +10046,1629 @@ ValueError: The view Investments.views.previous_investment didn't return an Http
 2023-08-21 15:57:12,401 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2023-08-21 15:57:15,418 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\apps.py changed, reloading.
 2023-08-21 15:57:19,004 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:13:41,905 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:13:46,073 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:13:50,363 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:13:51,953 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:13:53,450 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:13:54,734 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:13:56,123 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:13:57,433 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:13:58,810 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:14:02,899 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:14:05,733 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:14:09,733 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:14:12,688 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:14:16,998 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:14:20,078 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:14:24,244 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:14:27,335 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:14:31,204 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:14:35,603 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:14:37,088 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:14:38,543 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:14:42,348 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:15:04,028 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:15:05,416 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:15:06,858 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:15:07,973 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:15:09,366 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:15:13,554 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:15:17,080 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:15:18,679 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:16:11,218 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:16:23,762 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-21 16:16:26,172 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:16:27,697 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-21 16:16:31,246 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:16:34,780 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-21 16:16:36,565 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:16:38,122 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\admin.py changed, reloading.
+2023-08-21 16:16:41,812 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:16:53,068 django.request ERROR    Internal Server Error: /admin/Investments/stock/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: Investments_stock
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 688, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\views\decorators\cache.py", line 62, in _wrapper_view_func
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\decorators.py", line 134, in _wrapper_view
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\options.py", line 836, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\views\main.py", line 123, in __init__
+    self.get_results(request)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\admin\views\main.py", line 279, in get_results
+    result_count = paginator.count
+                   ^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\paginator.py", line 93, in count
+    return c()
+           ^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 608, in count
+    return self.query.get_count(using=self.db)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\sql\query.py", line 568, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\sql\query.py", line 554, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: Investments_stock
+2023-08-21 16:17:21,402 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:17:57,722 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:18:02,552 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:18:06,255 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 16:18:10,592 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:19:15,612 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:19:20,352 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:19:23,602 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:19:27,992 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:19:50,236 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:19:54,022 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:19:57,541 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:20:02,193 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:20:07,106 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:20:10,773 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:20:43,528 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:20:48,365 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:20:52,913 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:20:57,540 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:21:01,908 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:21:06,497 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:21:17,526 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:21:21,822 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:21:37,578 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:21:41,950 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:22:01,935 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:22:06,139 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:22:09,566 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:22:13,268 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:22:16,912 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:22:20,624 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:22:24,098 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:22:27,818 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:22:31,896 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:22:36,522 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:22:40,675 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:22:45,299 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:22:48,197 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:22:52,916 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:34:58,076 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:35:08,837 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:35:17,827 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\urls.py changed, reloading.
+2023-08-21 16:35:22,409 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:35:27,985 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\urls.py changed, reloading.
+2023-08-21 16:35:32,123 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:35:53,822 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:35:58,772 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:36:02,961 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:36:06,748 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:36:49,385 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:36:53,882 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:38:58,210 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:39:03,032 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:39:22,611 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:39:27,301 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:40:55,278 django.request ERROR    Internal Server Error: /investment/stock_recomm/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py", line 24, in stock_recomm
+    return render(request, 'stock_recomm.html',context={"l":l,"m":m,"s":s})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'stock_predict' not found. 'stock_predict' is not a valid view function or pattern name.
+2023-08-21 16:41:07,161 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\urls.py changed, reloading.
+2023-08-21 16:41:12,030 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:41:17,852 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\urls.py changed, reloading.
+2023-08-21 16:41:21,972 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:43:41,819 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:43:46,455 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:43:52,497 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:43:56,517 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:44:01,855 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:44:06,059 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:44:11,797 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:44:16,445 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:44:20,431 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:44:24,868 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:44:29,087 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:44:32,574 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:44:36,906 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:44:40,764 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:44:44,919 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:44:49,543 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:44:54,230 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:44:58,942 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:45:02,169 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:45:06,335 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:45:18,862 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:45:22,832 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:46:23,136 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:46:28,078 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:46:32,641 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:46:36,930 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:46:40,730 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:46:44,108 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:46:52,077 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:46:56,404 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:47:01,674 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:47:05,661 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:47:09,742 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:47:13,704 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:47:18,530 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:47:21,781 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:48:54,352 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:48:58,361 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:49:04,165 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:49:08,495 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:49:13,018 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:49:16,895 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:49:20,438 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:49:24,865 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:50:54,587 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:50:59,022 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:51:03,062 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:51:07,835 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:51:11,179 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:51:14,792 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:51:17,597 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:51:22,082 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:51:29,676 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:51:34,374 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 16:54:52,290 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 16:54:56,552 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:14:03,176 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\stocks.py changed, reloading.
+2023-08-21 17:14:07,615 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:14:17,844 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\stocks.py changed, reloading.
+2023-08-21 17:14:22,714 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:15:12,333 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\stocks.py changed, reloading.
+2023-08-21 17:15:17,112 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:15:20,363 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\stocks.py changed, reloading.
+2023-08-21 17:15:24,663 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:18:07,117 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:18:11,136 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:18:11,416 django.request ERROR    Internal Server Error: /investment/stock_predict/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Investments.views.stock_predict didn't return an HttpResponse object. It returned None instead.
+2023-08-21 17:18:56,658 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:19:01,220 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:19:05,929 yfinance     DEBUG    Entering download()
+2023-08-21 17:19:05,929 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:19:05,929 yfinance     DEBUG     Entering history()
+2023-08-21 17:19:09,640 yfinance     DEBUG    IIFL.NS: Yahoo GET parameters: {'range': '1d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:19:09,645 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:19:09,953 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/IIFL.NS?range=1d&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 901
+2023-08-21 17:19:09,975 yfinance     DEBUG    IIFL.NS: yfinance received OHLC data: 2023-08-21 09:59:49 -> 2023-08-21 09:59:49
+2023-08-21 17:19:09,978 yfinance     DEBUG    IIFL.NS: OHLC after cleaning: 2023-08-21 15:29:49+05:30 -> 2023-08-21 15:29:49+05:30
+2023-08-21 17:19:09,986 yfinance     DEBUG    IIFL.NS: OHLC after combining events: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:19:09,995 yfinance     DEBUG    IIFL.NS: yfinance returning OHLC: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:19:09,995 yfinance     DEBUG     Exiting history()
+2023-08-21 17:19:09,995 yfinance     DEBUG    Exiting download()
+2023-08-21 17:19:09,995 yfinance     DEBUG    Entering download()
+2023-08-21 17:19:09,995 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:19:09,995 yfinance     DEBUG     Entering history()
+2023-08-21 17:19:10,003 yfinance     DEBUG    IIFL.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 17:19:09+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:19:10,011 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:19:10,370 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/IIFL.NS?period1=-1429488000&period2=1692618549&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 17:19:10,575 yfinance     DEBUG    IIFL.NS: yfinance received OHLC data: 2005-05-17 03:45:00 -> 2023-08-21 09:59:49
+2023-08-21 17:19:10,575 yfinance     DEBUG    IIFL.NS: OHLC after cleaning: 2005-05-17 09:15:00+05:30 -> 2023-08-21 15:29:49+05:30
+2023-08-21 17:19:10,635 yfinance     DEBUG    IIFL.NS: OHLC after combining events: 2005-05-17 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:19:10,640 yfinance     DEBUG    IIFL.NS: yfinance returning OHLC: 2005-05-17 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:19:10,640 yfinance     DEBUG     Exiting history()
+2023-08-21 17:19:10,640 yfinance     DEBUG    Exiting download()
+2023-08-21 17:19:10,648 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:19:10,885 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/IIFL.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 17:19:10,885 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 17:19:11,146 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/IIFL.NS?symbol=IIFL.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 100
+2023-08-21 17:20:15,289 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:20:16,150 yfinance     DEBUG    Entering download()
+2023-08-21 17:20:16,150 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:20:16,150 yfinance     DEBUG     Entering history()
+2023-08-21 17:20:16,303 yfinance     DEBUG    IIFL.NS: Yahoo GET parameters: {'range': '1d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:20:16,312 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:20:16,600 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/IIFL.NS?range=1d&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 901
+2023-08-21 17:20:16,608 yfinance     DEBUG    IIFL.NS: yfinance received OHLC data: 2023-08-21 09:59:49 -> 2023-08-21 09:59:49
+2023-08-21 17:20:16,624 yfinance     DEBUG    IIFL.NS: OHLC after cleaning: 2023-08-21 15:29:49+05:30 -> 2023-08-21 15:29:49+05:30
+2023-08-21 17:20:16,624 yfinance     DEBUG    IIFL.NS: OHLC after combining events: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:16,632 yfinance     DEBUG    IIFL.NS: yfinance returning OHLC: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:16,632 yfinance     DEBUG     Exiting history()
+2023-08-21 17:20:16,632 yfinance     DEBUG    Exiting download()
+2023-08-21 17:20:16,632 yfinance     DEBUG    Entering download()
+2023-08-21 17:20:16,632 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:20:16,632 yfinance     DEBUG     Entering history()
+2023-08-21 17:20:16,640 yfinance     DEBUG    IIFL.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 17:20:16+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:20:16,640 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:20:16,953 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/IIFL.NS?period1=-1429488000&period2=1692618616&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 17:20:17,143 yfinance     DEBUG    IIFL.NS: yfinance received OHLC data: 2005-05-17 03:45:00 -> 2023-08-21 09:59:49
+2023-08-21 17:20:17,148 yfinance     DEBUG    IIFL.NS: OHLC after cleaning: 2005-05-17 09:15:00+05:30 -> 2023-08-21 15:29:49+05:30
+2023-08-21 17:20:17,199 yfinance     DEBUG    IIFL.NS: OHLC after combining events: 2005-05-17 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:17,207 yfinance     DEBUG    IIFL.NS: yfinance returning OHLC: 2005-05-17 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:17,207 yfinance     DEBUG     Exiting history()
+2023-08-21 17:20:17,207 yfinance     DEBUG    Exiting download()
+2023-08-21 17:20:17,215 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:20:17,423 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/IIFL.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 17:20:17,431 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 17:20:17,652 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/IIFL.NS?symbol=IIFL.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 100
+2023-08-21 17:20:25,209 yfinance     DEBUG    Entering download()
+2023-08-21 17:20:25,216 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:20:25,218 yfinance     DEBUG     Entering history()
+2023-08-21 17:20:25,218 yfinance     DEBUG    IIFL.NS: Yahoo GET parameters: {'range': '1d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:20:25,250 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:20:25,475 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/IIFL.NS?range=1d&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 901
+2023-08-21 17:20:25,483 yfinance     DEBUG    IIFL.NS: yfinance received OHLC data: 2023-08-21 09:59:49 -> 2023-08-21 09:59:49
+2023-08-21 17:20:25,483 yfinance     DEBUG    IIFL.NS: OHLC after cleaning: 2023-08-21 15:29:49+05:30 -> 2023-08-21 15:29:49+05:30
+2023-08-21 17:20:25,499 yfinance     DEBUG    IIFL.NS: OHLC after combining events: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:25,515 yfinance     DEBUG    IIFL.NS: yfinance returning OHLC: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:25,532 yfinance     DEBUG     Exiting history()
+2023-08-21 17:20:25,532 yfinance     DEBUG    Exiting download()
+2023-08-21 17:20:25,541 yfinance     DEBUG    Entering download()
+2023-08-21 17:20:25,541 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:20:25,541 yfinance     DEBUG     Entering history()
+2023-08-21 17:20:25,549 yfinance     DEBUG    IIFL.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 17:20:25+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:20:25,565 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:20:25,822 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/IIFL.NS?period1=-1429488000&period2=1692618625&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 17:20:26,039 yfinance     DEBUG    IIFL.NS: yfinance received OHLC data: 2005-05-17 03:45:00 -> 2023-08-21 09:59:49
+2023-08-21 17:20:26,055 yfinance     DEBUG    IIFL.NS: OHLC after cleaning: 2005-05-17 09:15:00+05:30 -> 2023-08-21 15:29:49+05:30
+2023-08-21 17:20:26,170 yfinance     DEBUG    IIFL.NS: OHLC after combining events: 2005-05-17 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:26,282 yfinance     DEBUG    IIFL.NS: yfinance returning OHLC: 2005-05-17 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:26,290 yfinance     DEBUG     Exiting history()
+2023-08-21 17:20:26,306 yfinance     DEBUG    Exiting download()
+2023-08-21 17:20:26,379 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:20:26,400 yfinance     DEBUG    Entering download()
+2023-08-21 17:20:26,404 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:20:26,412 yfinance     DEBUG     Entering history()
+2023-08-21 17:20:26,420 yfinance     DEBUG    IIFL.NS: Yahoo GET parameters: {'range': '1d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:20:26,444 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:20:26,460 yfinance     DEBUG    Entering download()
+2023-08-21 17:20:26,460 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:20:26,460 yfinance     DEBUG     Entering history()
+2023-08-21 17:20:26,460 yfinance     DEBUG    IIFL.NS: Yahoo GET parameters: {'range': '1d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:20:26,468 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:20:26,614 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/IIFL.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 17:20:26,679 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 17:20:26,701 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/IIFL.NS?range=1d&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 901
+2023-08-21 17:20:26,703 yfinance     DEBUG    IIFL.NS: yfinance received OHLC data: 2023-08-21 09:59:49 -> 2023-08-21 09:59:49
+2023-08-21 17:20:26,719 yfinance     DEBUG    IIFL.NS: OHLC after cleaning: 2023-08-21 15:29:49+05:30 -> 2023-08-21 15:29:49+05:30
+2023-08-21 17:20:26,727 yfinance     DEBUG    IIFL.NS: OHLC after combining events: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:26,736 yfinance     DEBUG    IIFL.NS: yfinance returning OHLC: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:26,754 yfinance     DEBUG     Exiting history()
+2023-08-21 17:20:26,754 yfinance     DEBUG    Exiting download()
+2023-08-21 17:20:26,754 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/IIFL.NS?range=1d&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 901
+2023-08-21 17:20:26,754 yfinance     DEBUG    Entering download()
+2023-08-21 17:20:26,770 yfinance     DEBUG    IIFL.NS: yfinance received OHLC data: 2023-08-21 09:59:49 -> 2023-08-21 09:59:49
+2023-08-21 17:20:26,770 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:20:26,770 yfinance     DEBUG    IIFL.NS: OHLC after cleaning: 2023-08-21 15:29:49+05:30 -> 2023-08-21 15:29:49+05:30
+2023-08-21 17:20:26,776 yfinance     DEBUG     Entering history()
+2023-08-21 17:20:26,784 yfinance     DEBUG    IIFL.NS: OHLC after combining events: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:26,792 yfinance     DEBUG    IIFL.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 17:20:26+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:20:26,803 yfinance     DEBUG    IIFL.NS: yfinance returning OHLC: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:26,809 yfinance     DEBUG     Exiting history()
+2023-08-21 17:20:26,809 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:20:26,809 yfinance     DEBUG    Exiting download()
+2023-08-21 17:20:26,822 yfinance     DEBUG    Entering download()
+2023-08-21 17:20:26,824 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:20:26,826 yfinance     DEBUG     Entering history()
+2023-08-21 17:20:26,833 yfinance     DEBUG    IIFL.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 17:20:26+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:20:26,865 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:20:26,929 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/IIFL.NS?symbol=IIFL.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 100
+2023-08-21 17:20:27,130 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/IIFL.NS?period1=-1429488000&period2=1692618626&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 17:20:27,138 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/IIFL.NS?period1=-1429488000&period2=1692618626&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 17:20:27,315 yfinance     DEBUG    IIFL.NS: yfinance received OHLC data: 2005-05-17 03:45:00 -> 2023-08-21 09:59:49
+2023-08-21 17:20:27,331 yfinance     DEBUG    IIFL.NS: OHLC after cleaning: 2005-05-17 09:15:00+05:30 -> 2023-08-21 15:29:49+05:30
+2023-08-21 17:20:27,428 yfinance     DEBUG    IIFL.NS: yfinance received OHLC data: 2005-05-17 03:45:00 -> 2023-08-21 09:59:49
+2023-08-21 17:20:27,439 yfinance     DEBUG    IIFL.NS: OHLC after combining events: 2005-05-17 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:27,460 yfinance     DEBUG    IIFL.NS: OHLC after cleaning: 2005-05-17 09:15:00+05:30 -> 2023-08-21 15:29:49+05:30
+2023-08-21 17:20:27,516 yfinance     DEBUG    IIFL.NS: yfinance returning OHLC: 2005-05-17 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:27,524 yfinance     DEBUG     Exiting history()
+2023-08-21 17:20:27,540 yfinance     DEBUG    Exiting download()
+2023-08-21 17:20:27,567 yfinance     DEBUG    IIFL.NS: OHLC after combining events: 2005-05-17 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:27,573 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:20:27,637 yfinance     DEBUG    IIFL.NS: yfinance returning OHLC: 2005-05-17 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:20:27,637 yfinance     DEBUG     Exiting history()
+2023-08-21 17:20:27,645 yfinance     DEBUG    Exiting download()
+2023-08-21 17:20:27,703 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:20:27,837 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/IIFL.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 17:20:27,894 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 17:20:27,978 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/IIFL.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 17:20:28,022 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 17:20:28,143 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/IIFL.NS?symbol=IIFL.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 100
+2023-08-21 17:20:28,263 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/IIFL.NS?symbol=IIFL.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 100
+2023-08-21 17:20:53,931 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:21:01,171 yfinance     DEBUG    Entering download()
+2023-08-21 17:21:01,171 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:21:01,171 yfinance     DEBUG     Entering history()
+2023-08-21 17:21:01,324 yfinance     DEBUG    KEI.NS: Yahoo GET parameters: {'range': '1d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:21:01,324 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:21:01,670 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/KEI.NS?range=1d&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 920
+2023-08-21 17:21:01,678 yfinance     DEBUG    KEI.NS: yfinance received OHLC data: 2023-08-21 10:00:02 -> 2023-08-21 10:00:02
+2023-08-21 17:21:01,678 yfinance     DEBUG    KEI.NS: OHLC after cleaning: 2023-08-21 15:30:02+05:30 -> 2023-08-21 15:30:02+05:30
+2023-08-21 17:21:01,686 yfinance     DEBUG    KEI.NS: OHLC after combining events: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:21:01,686 yfinance     DEBUG    KEI.NS: yfinance returning OHLC: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:21:01,686 yfinance     DEBUG     Exiting history()
+2023-08-21 17:21:01,686 yfinance     DEBUG    Exiting download()
+2023-08-21 17:21:01,686 yfinance     DEBUG    Entering download()
+2023-08-21 17:21:01,686 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:21:01,686 yfinance     DEBUG     Entering history()
+2023-08-21 17:21:01,686 yfinance     DEBUG    KEI.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 17:21:01+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:21:01,694 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:21:01,998 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/KEI.NS?period1=-1429488000&period2=1692618661&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 17:21:02,215 yfinance     DEBUG    KEI.NS: yfinance received OHLC data: 2006-03-23 03:45:00 -> 2023-08-21 10:00:02
+2023-08-21 17:21:02,215 yfinance     DEBUG    KEI.NS: OHLC after cleaning: 2006-03-23 09:15:00+05:30 -> 2023-08-21 15:30:02+05:30
+2023-08-21 17:21:02,270 yfinance     DEBUG    KEI.NS: OHLC after combining events: 2006-03-23 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:21:02,270 yfinance     DEBUG    KEI.NS: yfinance returning OHLC: 2006-03-23 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:21:02,270 yfinance     DEBUG     Exiting history()
+2023-08-21 17:21:02,270 yfinance     DEBUG    Exiting download()
+2023-08-21 17:21:02,286 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:21:02,551 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/KEI.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 17:21:02,559 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 17:21:02,799 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/KEI.NS?symbol=KEI.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 99
+2023-08-21 17:24:03,531 django.request ERROR    Internal Server Error: /investment/stock_predict/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Investments.views.stock_predict didn't return an HttpResponse object. It returned None instead.
+2023-08-21 17:24:30,405 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:24:34,436 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:24:57,179 yfinance     DEBUG    Entering download()
+2023-08-21 17:24:57,179 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:24:57,179 yfinance     DEBUG     Entering history()
+2023-08-21 17:24:57,291 yfinance     DEBUG    HDFCLIFE.NS: Yahoo GET parameters: {'range': '1d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:24:57,299 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:24:57,558 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/HDFCLIFE.NS?range=1d&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 916
+2023-08-21 17:24:57,565 yfinance     DEBUG    HDFCLIFE.NS: yfinance received OHLC data: 2023-08-21 10:00:02 -> 2023-08-21 10:00:02
+2023-08-21 17:24:57,574 yfinance     DEBUG    HDFCLIFE.NS: OHLC after cleaning: 2023-08-21 15:30:02+05:30 -> 2023-08-21 15:30:02+05:30
+2023-08-21 17:24:57,582 yfinance     DEBUG    HDFCLIFE.NS: OHLC after combining events: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:24:57,590 yfinance     DEBUG    HDFCLIFE.NS: yfinance returning OHLC: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:24:57,590 yfinance     DEBUG     Exiting history()
+2023-08-21 17:24:57,590 yfinance     DEBUG    Exiting download()
+2023-08-21 17:24:57,638 django.request ERROR    Internal Server Error: /investment/stock_predict/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Investments.views.stock_predict didn't return an HttpResponse object. It returned None instead.
+2023-08-21 17:25:34,888 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:25:40,179 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:25:43,512 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:25:47,250 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:25:48,595 yfinance     DEBUG    Entering download()
+2023-08-21 17:25:48,595 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:25:48,595 yfinance     DEBUG     Entering history()
+2023-08-21 17:25:48,724 yfinance     DEBUG    PIDILITIND.NS: Yahoo GET parameters: {'range': '1d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:25:48,724 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:25:48,997 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/PIDILITIND.NS?range=1d&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 912
+2023-08-21 17:25:49,005 yfinance     DEBUG    PIDILITIND.NS: yfinance received OHLC data: 2023-08-21 10:00:00 -> 2023-08-21 10:00:00
+2023-08-21 17:25:49,013 yfinance     DEBUG    PIDILITIND.NS: OHLC after cleaning: 2023-08-21 15:30:00+05:30 -> 2023-08-21 15:30:00+05:30
+2023-08-21 17:25:49,021 yfinance     DEBUG    PIDILITIND.NS: OHLC after combining events: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:25:49,029 yfinance     DEBUG    PIDILITIND.NS: yfinance returning OHLC: 2023-08-21 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:25:49,029 yfinance     DEBUG     Exiting history()
+2023-08-21 17:25:49,029 yfinance     DEBUG    Exiting download()
+2023-08-21 17:25:49,077 django.request ERROR    Internal Server Error: /investment/stock_predict/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Investments.views.stock_predict didn't return an HttpResponse object. It returned None instead.
+2023-08-21 17:26:28,848 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:26:32,597 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:26:36,887 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:26:41,500 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:26:42,404 django.request ERROR    Internal Server Error: /investment/stock_predict/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Investments.views.stock_predict didn't return an HttpResponse object. It returned None instead.
+2023-08-21 17:27:12,326 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:27:27,621 django.request ERROR    Internal Server Error: /investment/stock_predict/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Investments.views.stock_predict didn't return an HttpResponse object. It returned None instead.
+2023-08-21 17:27:45,398 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:27:50,318 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:27:53,574 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:27:57,939 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:28:02,433 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:28:06,828 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:28:12,983 django.request ERROR    Internal Server Error: /investment/stock_predict/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Investments.views.stock_predict didn't return an HttpResponse object. It returned None instead.
+2023-08-21 17:28:50,097 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:28:55,587 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:29:02,472 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:29:06,833 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:31:01,877 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:31:05,742 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:31:27,056 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:31:31,457 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:31:34,485 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:31:38,247 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:31:42,940 yfinance     DEBUG    Entering download()
+2023-08-21 17:31:42,940 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:31:42,940 yfinance     DEBUG     Entering history()
+2023-08-21 17:31:43,072 yfinance     DEBUG    AXISBANK.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 17:31:43+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:31:43,072 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:31:43,350 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AXISBANK.NS?period1=-1429488000&period2=1692619303&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 17:31:43,524 yfinance     DEBUG    AXISBANK.NS: yfinance received OHLC data: 1998-11-27 03:45:00 -> 2023-08-21 10:00:00
+2023-08-21 17:31:43,535 yfinance     DEBUG    AXISBANK.NS: OHLC after cleaning: 1998-11-27 09:15:00+05:30 -> 2023-08-21 15:30:00+05:30
+2023-08-21 17:31:43,604 yfinance     DEBUG    AXISBANK.NS: OHLC after combining events: 1998-11-27 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:31:43,604 yfinance     DEBUG    AXISBANK.NS: yfinance returning OHLC: 1998-11-27 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:31:43,604 yfinance     DEBUG     Exiting history()
+2023-08-21 17:31:43,604 yfinance     DEBUG    Exiting download()
+2023-08-21 17:31:43,620 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:31:43,878 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/AXISBANK.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 17:31:43,886 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 17:31:44,116 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AXISBANK.NS?symbol=AXISBANK.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 104
+2023-08-21 17:34:02,838 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 17:34:06,857 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:34:10,168 yfinance     DEBUG    Entering download()
+2023-08-21 17:34:10,168 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:34:10,168 yfinance     DEBUG     Entering history()
+2023-08-21 17:34:10,302 yfinance     DEBUG    IOC.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 17:34:10+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:34:10,310 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:34:11,936 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/IOC.NS?period1=-1429488000&period2=1692619450&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 17:34:12,337 yfinance     DEBUG    IOC.NS: yfinance received OHLC data: 1996-04-15 03:45:00 -> 2023-08-21 10:00:02
+2023-08-21 17:34:12,342 yfinance     DEBUG    IOC.NS: OHLC after cleaning: 1996-04-15 09:15:00+05:30 -> 2023-08-21 15:30:02+05:30
+2023-08-21 17:34:12,446 yfinance     DEBUG    IOC.NS: OHLC after combining events: 1996-04-15 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:34:12,455 yfinance     DEBUG    IOC.NS: yfinance returning OHLC: 1996-04-15 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:34:12,457 yfinance     DEBUG     Exiting history()
+2023-08-21 17:34:12,461 yfinance     DEBUG    Exiting download()
+2023-08-21 17:34:12,467 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:34:14,382 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/IOC.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 17:34:14,487 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 17:34:18,677 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/IOC.NS?symbol=IOC.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 99
+2023-08-21 17:34:28,767 yfinance     DEBUG    Entering download()
+2023-08-21 17:34:28,786 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 17:34:28,797 yfinance     DEBUG     Entering history()
+2023-08-21 17:34:28,808 yfinance     DEBUG    IOC.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 17:34:28+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 17:34:28,830 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:34:32,416 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/IOC.NS?period1=-1429488000&period2=1692619468&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 17:34:32,681 yfinance     DEBUG    IOC.NS: yfinance received OHLC data: 1996-04-15 03:45:00 -> 2023-08-21 10:00:02
+2023-08-21 17:34:32,686 yfinance     DEBUG    IOC.NS: OHLC after cleaning: 1996-04-15 09:15:00+05:30 -> 2023-08-21 15:30:02+05:30
+2023-08-21 17:34:32,819 yfinance     DEBUG    IOC.NS: OHLC after combining events: 1996-04-15 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:34:32,926 yfinance     DEBUG    IOC.NS: yfinance returning OHLC: 1996-04-15 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 17:34:32,933 yfinance     DEBUG     Exiting history()
+2023-08-21 17:34:32,952 yfinance     DEBUG    Exiting download()
+2023-08-21 17:34:33,015 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 17:34:33,269 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/IOC.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 17:34:33,287 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 17:34:33,621 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/IOC.NS?symbol=IOC.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 99
+2023-08-21 17:34:45,822 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 17:51:02,433 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\stocks.py changed, reloading.
+2023-08-21 17:51:07,353 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:07:36,581 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:07:40,621 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:07:43,863 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:07:47,671 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:07:51,889 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:07:56,404 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:08:00,481 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:08:04,141 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:08:07,536 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:08:11,381 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:08:14,456 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:08:18,411 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:08:22,571 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:08:26,741 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:08:32,334 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:08:36,431 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:09:01,608 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:09:06,270 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:09:27,111 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:09:31,493 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:09:33,523 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:09:37,611 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:14:55,984 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:14:59,633 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:15:03,168 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:15:07,568 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:15:10,883 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:15:14,953 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:15:19,167 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:15:22,973 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:15:26,148 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:15:29,846 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:34:50,431 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:34:53,552 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:35:08,280 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:35:10,737 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:35:13,872 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:35:16,438 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:36:32,110 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:36:35,482 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:36:39,031 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:36:42,669 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:36:45,411 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:36:48,465 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:36:50,901 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:36:53,518 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:37:09,261 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:37:12,498 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:37:28,353 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:37:31,142 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:38:16,732 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:38:19,266 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:38:30,761 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:38:33,505 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:38:43,797 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:38:46,674 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:38:49,010 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:38:52,457 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:39:02,622 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:39:05,573 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:39:13,533 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:39:16,338 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:39:20,995 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:39:23,762 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:39:27,315 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:39:29,904 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:39:32,248 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:39:35,203 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:39:37,533 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:39:40,300 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:39:42,836 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:39:45,557 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:39:59,078 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:40:02,121 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:40:10,135 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:40:13,561 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:40:23,873 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:40:26,732 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:40:29,157 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:40:31,851 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:40:57,836 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:41:00,896 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:41:09,093 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:41:11,980 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:41:15,287 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:41:18,409 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:41:24,243 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:41:28,224 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:41:30,836 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:41:33,701 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:41:56,890 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:41:59,836 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:42:02,759 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:42:05,517 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:42:54,872 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:42:57,778 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:43:11,514 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:43:15,740 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:43:18,311 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:43:21,141 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:43:29,252 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:43:32,322 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:43:43,684 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:43:46,914 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:43:49,542 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:43:52,244 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:44:02,498 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:44:05,346 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:44:11,070 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:44:13,788 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:44:31,163 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:44:34,066 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:44:41,885 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:44:45,868 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:44:49,881 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:44:53,057 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:44:57,089 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:45:00,757 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:45:11,274 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:45:14,164 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:45:17,532 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:45:20,294 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:52:02,325 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:52:05,375 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:52:08,094 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 18:52:08,380 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/AMRUTANJAN.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 18:52:08,400 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 18:52:08,683 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AMRUTANJAN.NS?symbol=AMRUTANJAN.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 106
+2023-08-21 18:52:08,683 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 18:52:09,527 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/AMRUTANJAN.NS/sustainability?p=AMRUTANJAN.NS HTTP/1.1" 200 None
+2023-08-21 18:52:09,996 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 18:52:10,803 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/AMRUTANJAN.NS/key-statistics?p=AMRUTANJAN.NS HTTP/1.1" 200 None
+2023-08-21 18:52:11,256 yfinance     DEBUG    Entering download()
+2023-08-21 18:52:11,256 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 18:52:11,256 yfinance     DEBUG     Entering history()
+2023-08-21 18:52:11,256 yfinance     DEBUG      Entering _fetch_ticker_tz()
+2023-08-21 18:52:11,273 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 18:52:11,593 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AMRUTANJAN.NS?range=1d&interval=1d HTTP/1.1" 200 914
+2023-08-21 18:52:11,594 yfinance     DEBUG      Exiting _fetch_ticker_tz()
+2023-08-21 18:52:11,733 yfinance     DEBUG    AMRUTANJAN.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 18:52:11+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 18:52:11,735 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 18:52:12,028 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AMRUTANJAN.NS?period1=-1429488000&period2=1692624131&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 18:52:12,176 yfinance     DEBUG    AMRUTANJAN.NS: yfinance received OHLC data: 2009-11-05 03:45:00 -> 2023-08-21 09:59:53
+2023-08-21 18:52:12,182 yfinance     DEBUG    AMRUTANJAN.NS: OHLC after cleaning: 2009-11-05 09:15:00+05:30 -> 2023-08-21 15:29:53+05:30
+2023-08-21 18:52:12,220 yfinance     DEBUG    AMRUTANJAN.NS: OHLC after combining events: 2009-11-05 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 18:52:12,224 yfinance     DEBUG    AMRUTANJAN.NS: yfinance returning OHLC: 2009-11-05 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 18:52:12,225 yfinance     DEBUG     Exiting history()
+2023-08-21 18:52:12,225 yfinance     DEBUG    Exiting download()
+2023-08-21 18:52:12,230 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): scanner.tradingview.com:443
+2023-08-21 18:52:12,690 urllib3.connectionpool DEBUG    https://scanner.tradingview.com:443 "POST /india/scan HTTP/1.1" 200 None
+2023-08-21 18:52:38,389 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:52:41,642 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:52:43,227 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 18:52:43,453 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/AMRUTANJAN.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 18:52:43,453 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 18:52:43,728 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AMRUTANJAN.NS?symbol=AMRUTANJAN.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 106
+2023-08-21 18:52:43,728 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 18:52:44,597 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/AMRUTANJAN.NS/sustainability?p=AMRUTANJAN.NS HTTP/1.1" 200 None
+2023-08-21 18:52:45,020 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 18:52:45,909 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/AMRUTANJAN.NS/key-statistics?p=AMRUTANJAN.NS HTTP/1.1" 200 None
+2023-08-21 18:52:47,272 yfinance     DEBUG    Entering download()
+2023-08-21 18:52:47,273 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 18:52:47,273 yfinance     DEBUG     Entering history()
+2023-08-21 18:52:47,445 yfinance     DEBUG    AMRUTANJAN.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 18:52:47+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 18:52:47,448 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 18:52:47,731 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AMRUTANJAN.NS?period1=-1429488000&period2=1692624167&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 18:52:47,871 yfinance     DEBUG    AMRUTANJAN.NS: yfinance received OHLC data: 2009-11-05 03:45:00 -> 2023-08-21 09:59:53
+2023-08-21 18:52:47,875 yfinance     DEBUG    AMRUTANJAN.NS: OHLC after cleaning: 2009-11-05 09:15:00+05:30 -> 2023-08-21 15:29:53+05:30
+2023-08-21 18:52:47,930 yfinance     DEBUG    AMRUTANJAN.NS: OHLC after combining events: 2009-11-05 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 18:52:47,936 yfinance     DEBUG    AMRUTANJAN.NS: yfinance returning OHLC: 2009-11-05 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 18:52:47,937 yfinance     DEBUG     Exiting history()
+2023-08-21 18:52:47,938 yfinance     DEBUG    Exiting download()
+2023-08-21 18:52:47,945 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): scanner.tradingview.com:443
+2023-08-21 18:52:48,874 urllib3.connectionpool DEBUG    https://scanner.tradingview.com:443 "POST /india/scan HTTP/1.1" 200 None
+2023-08-21 18:53:07,880 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:53:11,927 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:53:38,764 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 18:53:38,974 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/DISHTV.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 18:53:38,982 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 18:53:39,294 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/DISHTV.NS?symbol=DISHTV.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 102
+2023-08-21 18:53:39,299 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 18:53:40,137 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/DISHTV.NS/sustainability?p=DISHTV.NS HTTP/1.1" 200 None
+2023-08-21 18:53:40,607 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 18:53:41,444 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/DISHTV.NS/key-statistics?p=DISHTV.NS HTTP/1.1" 200 None
+2023-08-21 18:53:41,920 yfinance     DEBUG    Entering download()
+2023-08-21 18:53:41,920 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 18:53:41,921 yfinance     DEBUG     Entering history()
+2023-08-21 18:53:41,923 yfinance     DEBUG      Entering _fetch_ticker_tz()
+2023-08-21 18:53:41,925 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 18:53:42,171 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/DISHTV.NS?range=1d&interval=1d HTTP/1.1" 200 912
+2023-08-21 18:53:42,173 yfinance     DEBUG      Exiting _fetch_ticker_tz()
+2023-08-21 18:53:42,263 yfinance     DEBUG    DISHTV.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 18:53:42+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 18:53:42,265 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 18:53:42,563 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/DISHTV.NS?period1=-1429488000&period2=1692624222&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 18:53:42,729 yfinance     DEBUG    DISHTV.NS: yfinance received OHLC data: 2007-04-18 03:45:00 -> 2023-08-21 10:00:01
+2023-08-21 18:53:42,732 yfinance     DEBUG    DISHTV.NS: OHLC after cleaning: 2007-04-18 09:15:00+05:30 -> 2023-08-21 15:30:01+05:30
+2023-08-21 18:53:42,756 yfinance     DEBUG    DISHTV.NS: OHLC after combining events: 2007-04-18 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 18:53:42,759 yfinance     DEBUG    DISHTV.NS: yfinance returning OHLC: 2007-04-18 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 18:53:42,761 yfinance     DEBUG     Exiting history()
+2023-08-21 18:53:42,761 yfinance     DEBUG    Exiting download()
+2023-08-21 18:53:42,765 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): scanner.tradingview.com:443
+2023-08-21 18:53:43,186 urllib3.connectionpool DEBUG    https://scanner.tradingview.com:443 "POST /india/scan HTTP/1.1" 200 None
+2023-08-21 18:53:43,256 django.request ERROR    Internal Server Error: /investment/stock_predict/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view Investments.views.stock_predict didn't return an HttpResponse object. It returned None instead.
+2023-08-21 18:53:53,546 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:53:56,440 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:54:06,491 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:54:09,284 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:56:36,534 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 18:56:39,652 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:56:45,417 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:56:48,144 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:58:34,819 django.request ERROR    Internal Server Error: /investment/stock_predict/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py", line 58, in stock_predict
+    data=yf.Ticker(sym+'.NS').get_info()
+                   ~~~^~~~~~
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+2023-08-21 18:58:55,097 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:58:57,702 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:59:03,260 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:59:06,639 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:59:10,489 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:59:13,587 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:59:18,263 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:59:21,155 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:59:25,639 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:59:28,719 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:59:32,035 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:59:34,888 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:59:40,403 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:59:43,068 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 18:59:54,327 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 18:59:58,107 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:00:28,385 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:00:31,113 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:00:32,528 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 19:00:32,888 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/AAATECH.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 19:00:32,893 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 19:00:33,112 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAATECH.NS?symbol=AAATECH.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 103
+2023-08-21 19:00:33,115 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 19:00:33,968 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/AAATECH.NS/sustainability?p=AAATECH.NS HTTP/1.1" 200 None
+2023-08-21 19:00:34,694 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 19:00:35,631 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/AAATECH.NS/key-statistics?p=AAATECH.NS HTTP/1.1" 200 None
+2023-08-21 19:00:36,182 yfinance     DEBUG    Entering download()
+2023-08-21 19:00:36,183 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 19:00:36,183 yfinance     DEBUG     Entering history()
+2023-08-21 19:00:36,185 yfinance     DEBUG      Entering _fetch_ticker_tz()
+2023-08-21 19:00:36,188 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 19:00:36,460 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AAATECH.NS?range=1d&interval=1d HTTP/1.1" 200 932
+2023-08-21 19:00:36,461 yfinance     DEBUG      Exiting _fetch_ticker_tz()
+2023-08-21 19:00:36,547 yfinance     DEBUG    AAATECH.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 19:00:36+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 19:00:36,549 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 19:00:36,945 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AAATECH.NS?period1=-1429488000&period2=1692624636&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 19:00:36,954 yfinance     DEBUG    AAATECH.NS: yfinance received OHLC data: 2020-11-12 03:45:00 -> 2023-08-21 09:59:04
+2023-08-21 19:00:36,957 yfinance     DEBUG    AAATECH.NS: OHLC after cleaning: 2020-11-12 09:15:00+05:30 -> 2023-08-21 15:29:04+05:30
+2023-08-21 19:00:36,973 yfinance     DEBUG    AAATECH.NS: OHLC after combining events: 2020-11-12 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 19:00:36,975 yfinance     DEBUG    AAATECH.NS: yfinance returning OHLC: 2020-11-12 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 19:00:36,976 yfinance     DEBUG     Exiting history()
+2023-08-21 19:00:36,977 yfinance     DEBUG    Exiting download()
+2023-08-21 19:00:36,981 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): scanner.tradingview.com:443
+2023-08-21 19:00:37,452 urllib3.connectionpool DEBUG    https://scanner.tradingview.com:443 "POST /india/scan HTTP/1.1" 200 None
+2023-08-21 19:00:48,968 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:00:52,568 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:01:10,402 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 19:01:10,643 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/AAATECH.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 19:01:10,652 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 19:01:10,882 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/AAATECH.NS?symbol=AAATECH.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 103
+2023-08-21 19:01:10,886 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 19:01:11,664 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/AAATECH.NS/sustainability?p=AAATECH.NS HTTP/1.1" 200 None
+2023-08-21 19:01:12,055 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 19:01:14,020 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/AAATECH.NS/key-statistics?p=AAATECH.NS HTTP/1.1" 200 None
+2023-08-21 19:01:16,341 yfinance     DEBUG    Entering download()
+2023-08-21 19:01:16,342 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 19:01:16,342 yfinance     DEBUG     Entering history()
+2023-08-21 19:01:16,427 yfinance     DEBUG    AAATECH.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 19:01:16+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 19:01:16,429 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 19:01:16,735 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/AAATECH.NS?period1=-1429488000&period2=1692624676&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 19:01:16,771 yfinance     DEBUG    AAATECH.NS: yfinance received OHLC data: 2020-11-12 03:45:00 -> 2023-08-21 09:59:04
+2023-08-21 19:01:16,774 yfinance     DEBUG    AAATECH.NS: OHLC after cleaning: 2020-11-12 09:15:00+05:30 -> 2023-08-21 15:29:04+05:30
+2023-08-21 19:01:16,788 yfinance     DEBUG    AAATECH.NS: OHLC after combining events: 2020-11-12 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 19:01:16,791 yfinance     DEBUG    AAATECH.NS: yfinance returning OHLC: 2020-11-12 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 19:01:16,792 yfinance     DEBUG     Exiting history()
+2023-08-21 19:01:16,792 yfinance     DEBUG    Exiting download()
+2023-08-21 19:01:16,795 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): scanner.tradingview.com:443
+2023-08-21 19:01:17,257 urllib3.connectionpool DEBUG    https://scanner.tradingview.com:443 "POST /india/scan HTTP/1.1" 200 None
+2023-08-21 19:01:49,879 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 19:01:50,203 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/CAREERP.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 19:01:50,209 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 19:01:50,433 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/CAREERP.NS?symbol=CAREERP.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 103
+2023-08-21 19:01:50,438 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 19:01:51,720 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/CAREERP.NS/sustainability?p=CAREERP.NS HTTP/1.1" 200 None
+2023-08-21 19:01:52,220 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 19:01:53,326 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/CAREERP.NS/key-statistics?p=CAREERP.NS HTTP/1.1" 200 None
+2023-08-21 19:01:53,889 yfinance     DEBUG    Entering download()
+2023-08-21 19:01:53,889 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 19:01:53,889 yfinance     DEBUG     Entering history()
+2023-08-21 19:01:53,889 yfinance     DEBUG      Entering _fetch_ticker_tz()
+2023-08-21 19:01:53,892 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 19:01:54,200 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/CAREERP.NS?range=1d&interval=1d HTTP/1.1" 200 901
+2023-08-21 19:01:54,202 yfinance     DEBUG      Exiting _fetch_ticker_tz()
+2023-08-21 19:01:54,217 yfinance     DEBUG    CAREERP.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 19:01:54+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 19:01:54,222 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 19:01:54,581 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/CAREERP.NS?period1=-1429488000&period2=1692624714&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 19:01:54,754 yfinance     DEBUG    CAREERP.NS: yfinance received OHLC data: 2010-10-06 03:45:00 -> 2023-08-21 09:58:57
+2023-08-21 19:01:54,757 yfinance     DEBUG    CAREERP.NS: OHLC after cleaning: 2010-10-06 09:15:00+05:30 -> 2023-08-21 15:28:57+05:30
+2023-08-21 19:01:54,780 yfinance     DEBUG    CAREERP.NS: OHLC after combining events: 2010-10-06 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 19:01:54,786 yfinance     DEBUG    CAREERP.NS: yfinance returning OHLC: 2010-10-06 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 19:01:54,788 yfinance     DEBUG     Exiting history()
+2023-08-21 19:01:54,789 yfinance     DEBUG    Exiting download()
+2023-08-21 19:01:54,792 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): scanner.tradingview.com:443
+2023-08-21 19:01:55,200 urllib3.connectionpool DEBUG    https://scanner.tradingview.com:443 "POST /india/scan HTTP/1.1" 200 None
+2023-08-21 19:02:30,073 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:02:32,756 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:03:04,030 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:03:07,130 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:03:09,414 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:03:12,059 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:03:14,460 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:03:17,052 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:03:26,129 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 19:03:26,396 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/CAREERP.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 None
+2023-08-21 19:03:26,404 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 19:03:26,767 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/CAREERP.NS?symbol=CAREERP.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 103
+2023-08-21 19:03:26,771 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 19:03:27,713 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/CAREERP.NS/sustainability?p=CAREERP.NS HTTP/1.1" 200 None
+2023-08-21 19:03:28,311 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 19:03:29,250 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/CAREERP.NS/key-statistics?p=CAREERP.NS HTTP/1.1" 200 None
+2023-08-21 19:03:30,270 yfinance     DEBUG    Entering download()
+2023-08-21 19:03:30,271 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 19:03:30,271 yfinance     DEBUG     Entering history()
+2023-08-21 19:03:30,481 yfinance     DEBUG    CAREERP.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 19:03:30+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 19:03:30,485 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 19:03:30,874 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/CAREERP.NS?period1=-1429488000&period2=1692624810&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 19:03:31,013 yfinance     DEBUG    CAREERP.NS: yfinance received OHLC data: 2010-10-06 03:45:00 -> 2023-08-21 09:58:57
+2023-08-21 19:03:31,020 yfinance     DEBUG    CAREERP.NS: OHLC after cleaning: 2010-10-06 09:15:00+05:30 -> 2023-08-21 15:28:57+05:30
+2023-08-21 19:03:31,069 yfinance     DEBUG    CAREERP.NS: OHLC after combining events: 2010-10-06 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 19:03:31,082 yfinance     DEBUG    CAREERP.NS: yfinance returning OHLC: 2010-10-06 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 19:03:31,084 yfinance     DEBUG     Exiting history()
+2023-08-21 19:03:31,086 yfinance     DEBUG    Exiting download()
+2023-08-21 19:03:31,100 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): scanner.tradingview.com:443
+2023-08-21 19:03:31,593 urllib3.connectionpool DEBUG    https://scanner.tradingview.com:443 "POST /india/scan HTTP/1.1" 200 None
+2023-08-21 19:03:51,526 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:03:54,743 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:04:48,711 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:04:52,606 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:04:55,511 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:04:58,552 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:05:01,918 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:05:06,011 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:05:10,176 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:05:13,020 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:05:21,068 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:05:24,301 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:05:27,844 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:05:30,856 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:05:41,554 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:05:44,329 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:05:52,426 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:05:55,591 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:06:01,377 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:06:04,542 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:06:29,307 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:06:32,273 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:13:30,521 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:13:33,190 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:15:03,919 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:15:07,804 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:15:33,573 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:15:37,500 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:15:41,297 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:15:44,186 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:16:04,660 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\models.py changed, reloading.
+2023-08-21 19:16:07,489 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:19:16,477 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:19:19,227 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:19:27,060 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:19:29,903 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:19:34,293 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:19:37,160 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:19:42,642 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:19:45,698 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:19:50,332 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:19:53,158 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:19:56,554 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:19:59,386 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:20:25,117 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:20:28,569 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:20:38,498 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:20:41,730 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:20:51,740 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:20:54,336 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:21:00,058 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:21:02,840 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:21:07,400 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:21:10,048 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:21:22,559 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:21:25,170 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:21:29,808 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:21:32,582 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:21:35,185 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:21:38,114 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:22:38,998 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:22:42,315 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:22:45,662 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:22:48,481 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:22:54,098 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:22:57,650 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:23:10,211 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:23:13,888 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:23:28,615 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:23:31,338 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:23:35,079 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:23:37,788 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:23:43,438 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:23:46,243 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:23:50,714 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:23:53,618 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:24:22,826 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:24:25,737 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:24:28,310 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:24:31,069 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:25:15,996 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:25:18,835 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:27:04,339 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:27:07,097 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:27:12,723 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:27:15,571 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:27:18,124 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:27:21,080 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:27:24,565 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:27:28,027 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:27:31,395 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:27:34,112 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:27:39,832 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:27:43,100 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:27:47,717 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:27:50,595 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:27:52,288 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:27:54,774 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:27:59,359 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:28:02,052 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:28:05,645 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:28:08,552 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:28:34,512 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:28:37,800 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:28:53,609 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:28:56,236 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:29:04,072 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:29:07,077 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:35:26,685 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:35:29,640 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:36:30,348 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:36:33,679 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:36:37,157 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\urls.py changed, reloading.
+2023-08-21 19:36:40,760 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:36:51,959 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\urls.py changed, reloading.
+2023-08-21 19:36:54,731 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:37:01,709 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:37:05,174 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:37:08,879 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:37:11,541 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:37:19,380 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:37:22,156 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:37:36,939 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:37:40,320 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:37:43,676 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:37:46,549 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:37:48,794 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:37:51,725 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:37:54,276 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:37:57,031 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:38:00,521 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:38:03,279 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:44:50,201 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:44:53,180 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:44:56,447 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:44:59,040 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:45:03,395 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:45:06,827 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:45:38,454 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:45:41,074 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:45:43,406 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:45:46,021 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:45:48,270 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:45:50,762 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:49:07,927 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:49:10,636 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:51:17,993 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:51:21,350 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:51:23,692 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:51:26,305 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:51:34,359 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:51:37,353 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:51:39,739 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:51:42,252 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:51:51,222 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:51:54,861 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:51:57,844 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:52:00,633 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:52:04,027 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:52:07,189 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:52:10,000 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:52:12,570 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:52:15,282 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:52:18,175 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:52:21,805 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:52:24,659 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:53:51,152 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:53:53,835 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:54:38,977 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:54:42,497 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:54:45,902 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:54:49,702 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:54:53,119 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:54:56,240 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:54:59,797 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:55:02,601 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:55:09,328 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:55:12,046 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:55:14,833 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:55:18,266 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:55:23,268 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:55:25,860 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:55:41,364 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:55:44,240 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:55:47,644 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:55:50,181 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:56:02,573 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:56:05,542 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:56:08,960 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:56:12,595 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:56:14,776 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:56:17,591 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:56:20,004 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:56:22,845 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 19:58:07,549 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 19:58:10,357 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:02:46,590 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:02:49,348 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:02:52,873 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:02:56,575 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:02:59,211 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:03:02,587 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:03:07,460 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:03:10,238 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:03:12,800 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:03:15,973 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:03:19,373 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:03:22,209 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:03:24,557 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:03:27,337 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:03:30,781 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:03:33,661 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:03:43,903 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:03:51,698 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:07:51,199 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:07:53,850 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:07:58,284 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:08:01,466 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:08:04,852 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:08:07,696 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:08:11,021 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:08:13,510 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:08:16,782 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:08:19,326 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:08:22,562 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:08:25,394 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:08:33,148 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:08:36,005 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:08:41,596 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:08:44,209 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:09:02,246 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:09:05,214 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:09:08,736 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:09:11,476 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:10:43,951 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\urls.py changed, reloading.
+2023-08-21 20:10:46,640 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:11:19,096 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:11:21,587 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:12:08,375 django.request ERROR    Internal Server Error: /investment/stock_home/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py", line 338, in stock_home
+    return render(request, 'stock_home.html',context={"dict":dict,"total":total_portfolio,"this_year_invest":this_year_invest,'l_i':l_i,'m_i':m_i,'s_i':s_i})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'stock_prev' not found. 'stock_prev' is not a valid view function or pattern name.
+2023-08-21 20:12:20,267 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\urls.py changed, reloading.
+2023-08-21 20:12:22,891 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:12:25,464 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\urls.py changed, reloading.
+2023-08-21 20:12:29,184 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:12:48,268 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\urls.py changed, reloading.
+2023-08-21 20:12:50,696 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:13:21,203 django.request ERROR    Internal Server Error: /investment/stock_home/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py", line 338, in stock_home
+    return render(request, 'stock_home.html',context={"dict":dict,"total":total_portfolio,"this_year_invest":this_year_invest,'l_i':l_i,'m_i':m_i,'s_i':s_i})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'stock_single' not found. 'stock_single' is not a valid view function or pattern name.
+2023-08-21 20:14:32,154 django.request ERROR    Internal Server Error: /investment/stock_home/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py", line 338, in stock_home
+    return render(request, 'stock_home.html',context={"dict":dict,"total":total_portfolio,"this_year_invest":this_year_invest,'l_i':l_i,'m_i':m_i,'s_i':s_i})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'stock_sell' not found. 'stock_sell' is not a valid view function or pattern name.
+2023-08-21 20:15:08,173 django.request ERROR    Internal Server Error: /investment/stock_transact/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py", line 296, in stock_transact
+    return render(request, 'stock_transact.html',context={"lis":lis,"name":name,"price":price})
+                                                                                        ^^^^^
+UnboundLocalError: cannot access local variable 'price' where it is not associated with a value
+2023-08-21 20:15:15,464 django.request ERROR    Internal Server Error: /investment/stock_transact/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py", line 296, in stock_transact
+    return render(request, 'stock_transact.html',context={"lis":lis,"name":name,"price":price})
+                                                                                        ^^^^^
+UnboundLocalError: cannot access local variable 'price' where it is not associated with a value
+2023-08-21 20:15:53,598 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:15:56,258 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 20:15:59,090 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 20:16:01,804 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:43:30,650 django.request ERROR    Internal Server Error: /investment/stock_predict/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py", line 38, in stock_predict
+    symbol=ns().get(name.upper())
+                    ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'upper'
+2023-08-21 22:44:18,510 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:44:28,952 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:44:33,275 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:44:36,722 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:44:37,812 django.request ERROR    Internal Server Error: /investment/stock_predict/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py", line 39, in stock_predict
+    symbol=ns().get(name.upper())
+                    ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'upper'
+2023-08-21 22:44:44,971 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:44:48,454 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:44:52,738 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:44:56,712 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:45:30,165 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:45:34,588 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:45:37,393 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:45:42,017 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:45:45,748 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:45:49,791 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:45:53,242 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:45:56,621 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:46:46,008 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:46:51,238 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:46:54,665 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:46:59,128 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:48:49,797 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:48:54,219 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:49:11,920 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:49:15,833 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:49:43,835 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:49:48,761 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:49:52,541 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:49:57,809 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:50:01,895 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\views.py changed, reloading.
+2023-08-21 22:50:05,750 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-21 22:50:14,121 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 22:50:14,459 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v6/finance/quoteSummary/ARIHANTSUP.NS?modules=financialData&modules=quoteType&modules=defaultKeyStatistics&modules=assetProfile&modules=summaryDetail&ssl=true HTTP/1.1" 200 2886
+2023-08-21 22:50:14,492 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query1.finance.yahoo.com:443
+2023-08-21 22:50:14,760 urllib3.connectionpool DEBUG    https://query1.finance.yahoo.com:443 "GET /ws/fundamentals-timeseries/v1/finance/timeseries/ARIHANTSUP.NS?symbol=ARIHANTSUP.NS&type=trailingPegRatio&period1=1676851200&period2=1692662400 HTTP/1.1" 200 106
+2023-08-21 22:50:14,762 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 22:50:15,552 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/ARIHANTSUP.NS/sustainability?p=ARIHANTSUP.NS HTTP/1.1" 200 None
+2023-08-21 22:50:16,336 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): finance.yahoo.com:443
+2023-08-21 22:50:17,983 urllib3.connectionpool DEBUG    https://finance.yahoo.com:443 "GET /quote/ARIHANTSUP.NS/key-statistics?p=ARIHANTSUP.NS HTTP/1.1" 200 None
+2023-08-21 22:50:18,641 yfinance     DEBUG    Entering download()
+2023-08-21 22:50:18,649 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-21 22:50:18,649 yfinance     DEBUG     Entering history()
+2023-08-21 22:50:18,665 yfinance     DEBUG      Entering _fetch_ticker_tz()
+2023-08-21 22:50:18,673 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 22:50:19,022 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/ARIHANTSUP.NS?range=1d&interval=1d HTTP/1.1" 200 931
+2023-08-21 22:50:19,022 yfinance     DEBUG      Exiting _fetch_ticker_tz()
+2023-08-21 22:50:22,339 yfinance     DEBUG    ARIHANTSUP.NS: Yahoo GET parameters: {'period1': '1924-09-14 05:30:00+05:30', 'period2': '2023-08-21 22:50:22+05:30', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-21 22:50:22,347 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-21 22:50:22,561 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/ARIHANTSUP.NS?period1=-1429488000&period2=1692638422&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 None
+2023-08-21 22:50:22,659 yfinance     DEBUG    ARIHANTSUP.NS: yfinance received OHLC data: 2017-03-29 03:45:00 -> 2023-08-21 09:59:35
+2023-08-21 22:50:22,684 yfinance     DEBUG    ARIHANTSUP.NS: OHLC after cleaning: 2017-03-29 09:15:00+05:30 -> 2023-08-21 15:29:35+05:30
+2023-08-21 22:50:22,716 yfinance     DEBUG    ARIHANTSUP.NS: OHLC after combining events: 2017-03-29 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 22:50:22,724 yfinance     DEBUG    ARIHANTSUP.NS: yfinance returning OHLC: 2017-03-29 00:00:00+05:30 -> 2023-08-21 00:00:00+05:30
+2023-08-21 22:50:22,724 yfinance     DEBUG     Exiting history()
+2023-08-21 22:50:22,724 yfinance     DEBUG    Exiting download()
+2023-08-21 22:50:22,740 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): scanner.tradingview.com:443
+2023-08-21 22:50:23,106 urllib3.connectionpool DEBUG    https://scanner.tradingview.com:443 "POST /india/scan HTTP/1.1" 200 None

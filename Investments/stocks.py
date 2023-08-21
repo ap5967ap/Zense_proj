@@ -401,7 +401,7 @@ def func():
         tot+=5
         if dividendYield>=5:
             rating+=5
-        elif dividendYield>=4:
+        elif dividendYield>=3:
             rating+=4
         elif dividendYield>=2:
             rating+=3

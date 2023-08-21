@@ -1,0 +1,125 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+  <div class="row">
+    This year you have invested Rs. {{this_year_invest}} in Stocks.
+</div>
+<div class="row">
+    Your total portfolio value is Rs. {{total}} in Stocks.
+</div>
+</div>
+<div class="container pt-5">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Stock</th>
+            <th scope="col">Quantity Bought till date</th>
+            <th scope="col">Average buying price</th>
+            <th scope="col">1st buy Date</th>
+            <th scope="col">Category</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for i,j in dict.items %}
+        <tr>
+            <td><a href="{#% url 'stock_single' j.3 %#}">{{j.3}}</a></td>
+            <td>{{j.0}}</td>
+            <td>{{j.1|floatformat:2}}</td>
+            <td>{{j.2}}</td>
+            <td>{{j.4}}</td>
+    
+            <td><form method="get" action="{% url 'stock_transact' %}">
+                <input type="hidden" name="name" value="{{i}}">
+                <button type="submit" class="btn btn-success">Buy</button>
+            </form>
+            </td>
+            <td><form method='get' action="{#% url 'stock_sell' %#}">
+                <input type="hidden" name="name" value="{{i}}">
+                <button type="submit" class="btn btn-danger">Sell</button>
+            </form></td>
+            {% endfor %}
+        </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<br>
+<div class="container">
+    <canvas
+      id="myChart"
+      class="col-md-6 row"
+      url-endpoint="{% url 'stock_prev' %}">
+
+    </canvas>
+  </div>
+  <script>
+    var endpoint = "{% url 'stock_prev' %}";
+    var defaultData = [];
+    var labels = [];
+    $.ajax({
+    method: "GET",
+    url: endpoint,
+    success: function (data) {
+        console.log(data);
+        graph(data, "myChart");
+    },
+    error: function (err) {
+        console.log("error");
+        console.log(err);
+    },
+    });
+    function graph(data, id) {
+        var myData = {
+          labels: data.year,
+          datasets: [
+            {
+              type: "bar",
+              label:"Large",
+              data: data.la,
+              fill: true,
+              borderColor: "black",
+              backgroundColor: "red",
+                borderWidth: 1,
+            },
+            {
+                type: "bar",
+                label:"Mid Cap",
+                data: data.ma,
+                fill: true,
+                borderColor: "black",
+                backgroundColor: "blue",
+                  borderWidth: 1,
+            },
+            {
+                type: "bar",
+                label:"Large Cap",
+                data: data.sa,
+                fill: true,
+                borderColor: "green",
+                backgroundColor: "green",
+                  borderWidth: 1,
+              },
+          ],
+        };
+        var options={
+            scales: {
+                xAxes: [{
+                  stacked: true
+                }],
+                yAxes: [{
+                  stacked: true
+                }]
+              },
+            legend: {
+                display: true,
+            },
+            maintainAspectRatio: false,
+        }
+        var ctx = document.getElementById(id).getContext("2d");
+        var chart = new Chart(ctx, {
+          type: "bar",
+          data: myData,
+            options:options,
+        });
+      }
+  </script>
+{% endblock content %}

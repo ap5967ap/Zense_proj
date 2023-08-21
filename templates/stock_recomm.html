@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container pt-5">
+    <h1>Large Cap Stock</h1>
+    <br>
+    <strong>We have ranked these stocks on the basis of Previous returns, risks, indicators like P/E, ROE, RSI, etc. and created a rating out of 5.
+    We are also sharing buy signals for these stocks ranked out of 5.
+    <br> <br><h2 class="container">To use Price Predictor for any other Stock, please click <a href="{% url 'stock_predict' %}">here</a></h2>
+    </strong>
+    <br>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Name of the Stock</th>
+                <th scope="col">Price</th>
+                <th scope="col">Rating (out of 5)</th>
+                <th scope="col">Buy Signal (out of 5)</th>
+            </tr>
+        </thead>
+        <tbody>
+           {% for i in l %}
+            <tr>
+                <td>{{ forloop.counter }}</a></td> 
+                <td><a href="{% url 'stock_predict' %}?name={{i.name}}">{{i.name}}</a></td>
+                <td>{{i.price|floatformat:2}}</td>
+                <td>{{i.rating}}</td>
+                <td>{{i.buysignal}}</td>
+                <td><form method="get" action="#">
+                    <input type="hidden" name="name" value="{{i.name}}">
+                    <button type="submit" class="btn btn-success">Buy</button>
+                </form>
+                </td>
+                <td><form method='get' action="#">
+                    <input type="hidden" name="name" value="{{i.name}}">
+                    <button type="submit" class="btn btn-danger">Sell</button>
+                </form></td>
+            </tr>
+            {% endfor %}
+        </tbody></table>
+        
+</div>
+<br/>
+<br/>
+<hr/>
+<br/>
+<br/>
+
+<div class="container pt-5">
+    <h1>Mid Cap Stock</h1>
+    <br>
+    <strong>We have ranked these stocks on the basis of Previous returns, risks, indicators like P/E, ROE, RSI, etc. and created a rating out of 5.
+    We are also sharing buy signals for these stocks ranked out of 5.
+    <br> <br><h2 class="container">To use Price Predictor for any other Stock, please click <a href="{% url 'stock_predict' %}">here</a></h2>
+    </strong>
+    <br>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Name of the Stock</th>
+                <th scope="col">Price</th>
+                <th scope="col">Rating (out of 5)</th>
+                <th scope="col">Buy Signal (out of 5)</th>
+            </tr>
+        </thead>
+        <tbody>
+           {% for i in m %}
+            <tr>
+                <td>{{ forloop.counter }}</a></td> 
+                <td><a href="{% url 'stock_predict' %}?name={{i.name}}">{{i.name}}</a></td>
+                <td>{{i.price|floatformat:2}}</td>
+                <td>{{i.rating}}</td>
+                <td>{{i.buysignal}}</td>
+                <td><form method="get" action="{% url 'stock_transact' %}">
+                    <input type="hidden" name="name" value="{{i.name}}">
+                    <button type="submit" class="btn btn-success">Buy</button>
+                </form>
+                </td>
+                <td><form method='get' action="#">
+                    <input type="hidden" name="name" value="{{i.name}}">
+                    <button type="submit" class="btn btn-danger">Sell</button>
+                </form></td>
+            </tr>
+            {% endfor %}
+        </tbody></table>
+        
+</div>
+<br/>
+<br/>
+<hr/>
+<br/>
+<br/>
+
+
+<div class="container pt-5">
+    <h1>Small Cap Stock</h1>
+    <br>
+    <strong>We have ranked these stocks on the basis of Previous returns, risks, indicators like P/E, ROE, RSI, etc. and created a rating out of 5.
+    We are also sharing buy signals for these stocks ranked out of 5.
+    <br> <br><h2 class="container">To use Price Predictor for any other Stock, please click <a href="{% url 'stock_predict' %}">here</a></h2>
+    </strong>
+    <br>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Name of the Stock</th>
+                <th scope="col">Price</th>
+                <th scope="col">Rating (out of 5)</th>
+                <th scope="col">Buy Signal (out of 5)</th>
+            </tr>
+        </thead>
+        <tbody>
+           {% for i in s %}
+            <tr>
+                <td>{{ forloop.counter }}</a></td> 
+                <td><a href="{% url 'stock_predict' %}?name={{i.name}}">{{i.name}}</a></td>
+                <td>{{i.price|floatformat:2}}</td>
+                <td>{{i.rating}}</td>
+                <td>{{i.buysignal}}</td>
+                <td><form method="get" action="#">
+                    <input type="hidden" name="name" value="{{i.name}}">
+                    <button type="submit" class="btn btn-success">Buy</button>
+                </form>
+                </td>
+                <td><form method='get' action="#">
+                    <input type="hidden" name="name" value="{{i.name}}">
+                    <button type="submit" class="btn btn-danger">Sell</button>
+                </form></td>
+            </tr>
+            {% endfor %}
+        </tbody></table>
+        
+</div>
+<br/>
+<br/>
+<hr/>
+<br/>
+<br/>
+
+{% endblock content %}

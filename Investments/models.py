@@ -68,7 +68,23 @@ class MFData(models.Model):
         verbose_name ="Mutual Fund Data"
         verbose_name_plural ="Mutual Fund Data"
         
-        
+
+class Stock(models.Model):
+    name=models.CharField(max_length=100)
+    symbol=models.CharField(max_length=100)
+    quantity=models.IntegerField(default=1)
+    price=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    is_active=models.BooleanField(default=True)
+    user=models.ForeignKey(Account,on_delete=models.CASCADE)
+    date=models.DateField()
+    category=models.CharField(max_length=100,choices=(('l','l'),('m','m'),('s','s')))
+    sell_price=models.DecimalField(default=0,max_digits=20,decimal_places=2,blank=True,null=True)
+    def __str__(self):
+        return f"{self.user} {self.name}"
+    class Meta:
+        verbose_name_plural = "Stock"
+        verbose_name="Stock"
+
 class StockData(models.Model):
     name=models.CharField(max_length=100)
     symbol=models.CharField(max_length=100)
@@ -81,7 +97,7 @@ class StockData(models.Model):
     niftyenergy=models.BooleanField(default=False)
     niftynext50=models.BooleanField(default=False)
     niftyhealthcare=models.BooleanField(default=False)
-    category=models.CharField(max_length=100,choices=(('l','l'),('m','m'),('s','s')))
+    category=models.CharField(max_length=100,choices=(('l','l'),('m','m'),('s','s'),('n','n')))
     price=models.DecimalField(default=0,max_digits=20,decimal_places=2,blank=True,null=True)
     ESG=models.IntegerField(default=0)#!risky
     ma50=models.DecimalField(default=0,max_digits=20,decimal_places=2)
@@ -98,13 +114,6 @@ class StockData(models.Model):
     ta=models.CharField(max_length=100,choices=(('b','b'),('s','s'),('n','n'),('sb','sb'),('ss','ss')),default='n')
     rating=models.DecimalField(default=0,max_digits=20,decimal_places=2)
     buysignal=models.DecimalField(default=0,max_digits=20,decimal_places=2)
-    # d1=models.DecimalField(default=0,max_digits=20,decimal_places=2)
-    # d2=models.DecimalField(default=0,max_digits=20,decimal_places=2)
-    # d3=models.DecimalField(default=0,max_digits=20,decimal_places=2)
-    # d4=models.DecimalField(default=0,max_digits=20,decimal_places=2)
-    # d5=models.DecimalField(default=0,max_digits=20,decimal_places=2)
-    # dmin=models.DecimalField(default=0,max_digits=20,decimal_places=2)
-    # dmax=models.DecimalField(default=0,max_digits=20,decimal_places=2)
     class Meta:
         verbose_name_plural = "Stock Data"
         verbose_name="Stock Data"
