@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container pt-5">
+<h1>Fixed Deposit</h1>
+<form method="post" action="{% url 'fd_sell' %}">
+  {% csrf_token %}
+  <div class="container">
+    <div class="form-group">
+      <label for="cars">Choose FD</label>
+      <select name="name" id="cars">
+        {% for i in fd %}
+        <option value="{{i.name}}">{{i.name}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="date">Sell Date</label>
+      <input type="date" class="form-control" id="date" name="sell_date"  placeholder="Enter date" required max="{% now 'Y-m-j' %}" value="{% now 'Y-m-j' %}"/>
+    </div>
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input type="number" step="0.01" class="form-control" id="amount" name="sell_price" placeholder="Enter Money got after selling" required/>
+        
+  </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+</div>
+{% endblock content %}

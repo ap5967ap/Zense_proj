@@ -1,7 +1,7 @@
 import json
 from django.core.mail import EmailMessage
 import time
-from .models import Investment,MF as MutualFund
+from .models import Investment,MF as MutualFund,Other
 from schedule import Scheduler
 import threading
 from datetime import datetime, timedelta
@@ -102,7 +102,29 @@ def job(do=False):
     except:
         with open('cron_log.log','a') as file:
             file.write(f"Error in MF SIP on {datetime.now().date()}\n")
-        
+    try:
+        fd=Other.objects.filter(category='FD',is_active=True,sell_date=datetime.now().date())
+        for i in fd:
+            i.is_active=False
+            i.save()
+            bal=Balance.objects.get(user=i.user)
+            bal.balance+=decimal.Decimal(i.sell_price)
+            bal.save()
+            ...#!Investment
+            #TODOExpense
+            subject=f'FD {i.name} matured'
+            message=render_to_string('fd_sold.html',{'user':user,'amount':i.price,'name':i.name,'s':i.sell_price})
+            email=EmailMessage(subject,message,to=[user.email])
+            try:
+                email.send()
+            except:
+                with open('cron_log.log','a') as file:
+                    file.write(f"Email not sent to {user.email} on {datetime.now().date()} for SIP \n")
+    except Exception as e:
+        file=open('cron_log.log','a')
+        file.write(str(e)+'\n')  
+
+
 def run_continuously(self, interval=40000):
     """Continuously run, while executing pending jobs at each elapsed
     time interval.

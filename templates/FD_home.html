@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Fixed Deposit</h1>
+<div class="container">
+    Invested this year : {{inv.FD_i}}<br> 
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Bank</th>
+                <th>Amount</th>
+                <th>Interest(Per Year)</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Amount on Maturation</th>
+                <th>Matured </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in fd %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.price}}</td>
+                <td>{{i.interest}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.sell_date}}</td>
+                <td>{{i.sell_price}}</td>
+                <td><input type="checkbox"  name="is_active" disabled value="{{i.id}}" {% if i.is_active %} checked {% endif %}></td>
+                {% if i.is_active %}
+                <td><a href="{% url 'fd_sell' %}">Break FD </a></td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+</div>
+
+{% endblock content %}

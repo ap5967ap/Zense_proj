@@ -9,7 +9,6 @@ from .models import MF,Investment,MFData,StockData,Stock
 from django.contrib.auth.decorators import login_required
 from datetime import datetime, timedelta
 from .mutual_fund_data import prediction
-from .stocks import prediction as stock_prediction
 from balance.models import Balance
 import yfinance as yf
 from income.analysis import get_inflation
@@ -340,16 +339,29 @@ def stock_home(request):
         for j in l:
             x+=j.price*j.quantity
             q+=j.quantity
-        dict[i]=[q,x/q,l[0].date,i,l[0].category]
+        dict[i]=[q,x/q,l[len(l)-1].date,i,l[0].category]
         total_portfolio+=x
     return render(request, 'stock_home.html',context={"dict":dict,"total":total_portfolio,"this_year_invest":this_year_invest,'l_i':l_i,'m_i':m_i,'s_i':s_i})
 
 def _yearly_average_buying_price(l):
     x=0
+    q=0
     for i in l:
         x+=i.amount*i.quantity
-    return x/len(l)
+        q+=i.quantity
+    return x/q
 
+
+def _yearly_average_buying_price2(l:list[Stock]):
+    x=0
+    q=0
+    for i in l:
+        if i.is_active:
+            x+=i.price*i.quantity
+        else:
+            x+=i.sell_price*i.quantity
+        q+=i.quantity
+    return x/q
 
 @login_required(login_url='/account/login/')
 def mf_data_single(request,name):
@@ -398,6 +410,183 @@ def mf_prev(request):
     return JsonResponse(data={'mf':mf,'year':year})
 
 
+
+@login_required(login_url='/account/login/')
+def stock_data_single(request,name):
+    l=Stock.objects.filter(name=name,user=request.user).order_by('date')
+    start_year=l[0].date.year
+    end_year=datetime.now().year
+    dict=[]
+    for i in range(start_year,end_year+1):
+        try:
+            x=((_yearly_average_buying_price2(l.filter(date__year=i))-_yearly_average_buying_price2(l.filter(date__year=i-1)))/_yearly_average_buying_price2(l.filter(date__year=i-1))*100)
+            dict.append(x)
+        except ZeroDivisionError:
+            dict.append(0)
+    inflation_dict=get_inflation()
+    infla=[]
+    labels=[]
+    co=0
+    for i in range(start_year,end_year+1):
+        labels.append(i)
+        try:
+            infla.append(float(inflation_dict[i]))
+        except KeyError:
+            try:
+                infla.append(infla[co-1])
+            except:
+                infla.append(0)
+        co+=1
+    return JsonResponse(data={
+                            'dict':dict,
+                            'infla':infla,
+                            'labels':labels,
+                            })
+
+
+@login_required(login_url='/account/login/')
+def stock_single(request,name):
+    user=request.user
+    l=[]
+    if Stock.objects.filter(user=user,name=name,is_active=True).exists():
+        l=Stock.objects.filter(user=user,name=name,is_active=True).order_by('date')
+    x=0
+    q=0
+    for j in l:
+        x+=j.price*j.quantity
+        q+=j.quantity
+    dict=[]
+    try:
+        dict=[q,x/q,l[0].date,name,l[0].category]
+    except:
+        dict=[]
+    closed=Stock.objects.filter(user=user,name=name,is_active=False).order_by('date')
+    pl=[]
+    mylist={}
+    for i in closed:
+        mylist[i.id]=[i.quantity,i.sell_price,i.date,i.sell_price*i.quantity-i.price]
+    return render(request, 'stock_single.html',context={"dict":dict,'l':l,'name':name,'closed':closed,'pl':mylist})
+
+@login_required(login_url='/account/login/')    
+def stock_sell(request):
+    user=request.user
+    if request.method=='POST':
+        name=request.POST.get('name')
+        bought=Stock.objects.filter(user=user,is_active=True,name__iexact=name).exists()
+        if not bought:
+            messages.error(request,'You have not bought this Stock')
+            return redirect('stock_home')
+        quantity=int(request.POST.get('quantity'))
+        a2=quantity
+        amount=float(request.POST.get('amount'))#!per stock sell price
+        date=request.POST.get('date')
+        cho=request.POST.get('type')
+        l=Stock.objects.filter(user=user,is_active=True,name=name).order_by('date')
+        ll=l
+        qty=0
+        for i in l:
+            qty+=i.quantity
+        if qty<quantity:
+            messages.error(request,'You have not bought this much quantity')
+            return redirect('stock_sell')
+        pro=0
+        while quantity>0:
+            if l[0].quantity>quantity:
+                l[0].quantity-=quantity
+                pro+=quantity*l[0].price
+                l[0].save()
+                quantity=0
+            else:
+                quantity-=l[0].quantity
+                pro+=l[0].quantity*l[0].price
+                l[0].delete()
+                l=l[1:]
+        obj=Stock.objects.create(user=user,symbol=ll[0].symbol,name=name,price=pro,date=date,category=l[0].category,quantity=a2,sell_price=amount,is_active=False)
+        obj.save()
+        bal=Balance.objects.get(user=user)
+        bal.balance+=decimal.Decimal(amount)
+        bal.save()
+        if cho=='1':
+            inv=Investment.objects.get(user=user,year=datetime.now().year)
+            inv.to_invest+=decimal.Decimal(amount)
+            inv.save()
+            inv=Investment.objects.get(user=user,year=datetime.now().year)
+            age=datetime.now().year-user.dob.year
+            to_invest=inv.to_invest
+            inv.safe=age
+            inv.risky=100-inv.safe
+            inv.MF=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(20/100)
+            inv.SmallCase=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
+            if age <50:
+                inv.trade=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
+                inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(33/100)
+                inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(14/100)
+                inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(8/100)
+            else:
+                inv.trade=0
+                inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
+                inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
+                inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
+            inv.FD=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(60/100)
+            inv.SGB=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(40/100)
+            inv.save()
+        elif cho=='2':
+            ...
+            #TODO: add to expense
+        return redirect('stock_home')
+    else:
+        l=Stock.objects.filter(user=user,is_active=True)
+        l_unique=[]
+        dict2=ns()
+        name=''
+        try:
+            name=request.GET.get('name')
+        except:
+            pass
+        qty=0
+        obb=Stock.objects.filter(user=user,name=name,is_active=True)
+        for i in obb:
+            qty+=i.quantity
+        for i in l:
+            if i.name not in l_unique:
+                l_unique.append(i.name)
+        return render(request, 'stock_sell.html',context={"l":l_unique,"name":name})
+
+@login_required(login_url='/account/login/')
+def stock_prev_sold(request):
+    user=request.user
+    l=Stock.objects.filter(user=user,is_active=False).order_by('date')
+    lis=[]
+    for i in l:
+        if i.name not in lis:
+            lis.append(i.name)
+    this_year_invest=0
+    dict={}
+    #!price-told price of bought stock
+    #!sell_price-price at which each stock was sold
+    for i in lis:
+        a=Stock.objects.filter(user=user,is_active=False,name__iexact=i,date__year=datetime.now().year).order_by('-date','-id')
+        obb=Stock.objects.filter(user=user,is_active=False,name__iexact=i).order_by('-date','-id')
+        if not obb:
+            continue
+        temp=0
+        for i in a:
+            temp+=i.quantity*i.sell_price
+        this_year_invest+=temp
+        x=0
+        q=0
+        pro=0
+        avg=0
+        name=obb[0].name
+        for j in obb :
+            x+=j.price
+            q+=j.quantity
+            avg+=j.sell_price*j.quantity
+            pro+=j.price
+        dict[i]=[q,avg/q,a[0].date,name,x,x/q,avg-x]
+    return render(request, 'stock_prev.html',context={"l":l,"lis":lis,"this_year_invest":this_year_invest,'dict':dict})
+
+
 @login_required(login_url='/account/login/')
 def mf_sell(request):
     user=request.user
@@ -421,10 +610,10 @@ def mf_sell(request):
         bal=Balance.objects.get(user=user)
         bal.balance+=decimal.Decimal(amount)
         bal.save()
-        inv=Investment.objects.get(user=user,year=datetime.now().year)
-        inv.to_invest+=decimal.Decimal(amount)
-        inv.save()
         if cho=='1':
+            inv=Investment.objects.get(user=user,year=datetime.now().year)
+            inv.to_invest+=decimal.Decimal(amount)
+            inv.save()
             inv=Investment.objects.get(user=user,year=datetime.now().year)
             age=datetime.now().year-user.dob.year
             to_invest=inv.to_invest
@@ -597,7 +786,27 @@ def mf_recomm(request):
 
 @login_required(login_url='/account/login/')
 def investment_summary(request):
-    inv_obj=Investment.objects.get(user=request.user,year=datetime.now().year)
+    year=request.GET.get('name')
+    if not year:
+        year=datetime.now().year
+    try:
+        inv_obj=Investment.objects.get(user=request.user,year=year)
+        mf={'Name':'Mutual Funds','Amount':inv_obj.MF,'Invested':inv_obj.MF_i}
+        smallcase={'Name':'SmallCase','Amount':inv_obj.SmallCase,'Invested':inv_obj.SmallCase_i}
+        trade={'Name':'Trade','Amount':inv_obj.trade,'Invested':inv_obj.trade_i}
+        large={'Name':'Large Cap Equity','Amount':inv_obj.large,'Invested':inv_obj.large_i}
+        mid={'Name':'Mid Cap Equity','Amount':inv_obj.mid,'Invested':inv_obj.mid_i}
+        small={'Name':'Small Cap Equity','Amount':inv_obj.small,'Invested':inv_obj.small_i}
+        FD={'Name':'Fixed Deposits','Amount':inv_obj.FD,'Invested':inv_obj.FD_i}
+        SGB={'Name':'Sovereign Gold Bonds','Amount':inv_obj.SGB,'Invested':inv_obj.SGB_i}
+        inv_obj=[mf,smallcase,trade,large,mid,small,FD,SGB]
+        return render(request, 'investment_summary.html',context={"inv":inv_obj,'year':year})
+    except:
+        return render(request, 'investment_summary.html',context={'year':year})
+
+@login_required(login_url='/account/login/')
+def previous_investment(request):
+    inv_obj=Investment.objects.get(user=request.user,year=year)
     mf={'Name':'Mutual Funds','Amount':inv_obj.MF,'Invested':inv_obj.MF_i}
     smallcase={'Name':'SmallCase','Amount':inv_obj.SmallCase,'Invested':inv_obj.SmallCase_i}
     trade={'Name':'Trade','Amount':inv_obj.trade,'Invested':inv_obj.trade_i}
@@ -609,10 +818,6 @@ def investment_summary(request):
     inv_obj=[mf,smallcase,trade,large,mid,small,FD,SGB]
     return render(request, 'investment_summary.html',context={"inv":inv_obj})
 
-
-@login_required(login_url='/account/login/')
-def previous_investment(request):
-    ...
 
 
 @login_required(login_url='/account/login/')

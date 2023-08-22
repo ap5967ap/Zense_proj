@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container pt-5">
+  {% include 'messages.html' %}
+<form action="{% url 'stock_sell' %}" method="post" class="form-control">
+    {% csrf_token %}
+    <div class="form-group">
+    <label for="name">Select Stock</label>
+    <datalist id="suggestions" name="name">
+      {% for i in l %}
+        <option>{{i}}</option>
+      {% endfor %}
+    </datalist>
+    {% if name %}
+    <input autocomplete="on" class="form-control" list="suggestions" name="name" type="text" style='width:100%'  title="MF" value="{{name}}" required/>
+    {% else %}
+    <input autocomplete="on" class="form-control" list="suggestions" name="name" type="text" style='width:100%'  title="MF" required/>
+    {% endif %}
+    </div>
+    <div class="form-group">
+    <label for="amount">Sell Price</label>
+    <input type="number" step="0.01" class="form-control" id="amount" name="amount" placeholder="Enter Sell Price" required value="{{price|floatformat:2}}">
+    </div>
+    <div class="form-group">
+    <label for="quantity">Quantity</label>
+    <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Enter quantity" required value="1">
+    <div class="form-group">
+    <label for="date">Sell Date</label>
+    <input type="date" class="form-control" id="date" name="date" placeholder="Enter date" required max="{% now 'Y-m-j' %}" value="{% now 'Y-m-j' %}">
+    </div>  
+    <div class="form-group">
+    <label for="type">What you want to do with this money </label>
+    <select class="form-control" id="type" name="type" title=".">
+        <option value="1">Invest</option>
+        <option value="2">Withdraw</option>
+    </select>
+    <small id="mutual_fund" class="form-text text-muted">Do you want to invest this money again or withdraw it for compensating expenses ?</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+{% endblock content %} 

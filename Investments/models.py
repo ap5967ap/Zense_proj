@@ -117,3 +117,20 @@ class StockData(models.Model):
     class Meta:
         verbose_name_plural = "Stock Data"
         verbose_name="Stock Data"
+        
+        
+class Other(models.Model):
+    name=models.CharField(max_length=100)
+    price=models.DecimalField(default=0,max_digits=20,decimal_places=2)
+    user=models.ForeignKey(Account,on_delete=models.CASCADE)
+    date=models.DateField()
+    is_active=models.BooleanField(default=True)
+    interest=models.DecimalField(default=0,max_digits=20,decimal_places=2,blank=True,null=True)
+    sell_price=models.DecimalField(default=0,max_digits=20,decimal_places=2,blank=True,null=True)
+    sell_date=models.DateField(blank=True,null=True)
+    category=models.CharField(max_length=100,choices=(('FD','FD'),('SGB','SGB'),('Smallcase','Smallcase')))
+    def __str__(self):
+        return f"{self.user} {self.name}"
+    class Meta:
+        verbose_name_plural = "Other"
+        verbose_name="Other"

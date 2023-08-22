@@ -18,11 +18,22 @@
 
 {% if not no %}
 <div class="container pt-5">
-
+  {%include 'messages.html'%}
 
 <div class="container pt-5">
   <div class="col">
-    <h3>{{name}} - {{price}}</h3>
+    <div class="row"><h3>{{name}} - {{price}}</h3><br><br><br><br>
+        <form method="get" action="{% url 'stock_transact' %}">
+          <input type="hidden" name="name" value="{{name}}">
+          <button type="submit" class="btn btn-success">Buy</button>
+      </form>
+      
+      <form method='get' action="{% url 'stock_sell' %}">
+          <input type="hidden" name="name" value="{{name}}">
+          <button type="submit" class="btn btn-danger">Sell</button>
+      </form>
+      </div>
+    </div>
     {% if o.category == 'l' %}
     <h5>Large Cap</h5>
     {% elif o.category == 'm' %}
@@ -340,7 +351,8 @@
 <br>
 <br>
 <div class="container">
-    {%include 'messages.html'%}
+
 </div>
 {% endif %}
+
 {% endblock content %}

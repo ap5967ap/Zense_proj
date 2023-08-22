@@ -1,0 +1,45 @@
+{% extends 'base.html' %} {% block content %}
+
+
+</div>
+{% if not dict %}
+<div class="container">
+    <div class="row">
+        <h1 class="text-center">No Stocks Sold till date</h1>
+    </div>
+</div>
+{% else %}
+<div class="container">
+    <div class="row">
+      This year you have sold Rs. {{this_year_invest}} .
+  </div>
+<div class="container pt-5">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Name of the Stock</th>
+            <th scope="col">Quantity </th>
+            <th scope="col">Average Selling Price</th>
+            <th scope="col">Investment</th>
+            <th scope="col">Average buying price</th>
+            <th scope="col">P/L</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for i,j in dict.items %}
+        <tr>
+            <td><a href="{% url 'stock_single' j.3 %}">{{j.3}}</a></td>
+            <td>{{j.0}}</td>
+            <td>{{j.1}}</td>
+            <td>{{j.4}}</td>
+            <td>{{j.5}}</td>
+            <td>{{j.6}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<br>
+<br>
+{% endif %}
+{% endblock content %}

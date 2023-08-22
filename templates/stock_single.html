@@ -3,15 +3,38 @@
 <div class="container pt-5">
     <div class="row">
         <h3>{{name}}</h3>
+        <form method="get" action="{% url 'stock_transact' %}">
+            <input type="hidden" name="name" value="{{name}}">
+            <button type="submit" class="btn btn-success">Buy</button>
+        </form>
+        <form method='get' action="{% url 'stock_sell' %}">
+            <input type="hidden" name="name" value="{{name}}">
+            <button type="submit" class="btn btn-danger">Sell</button>
+        </form>
+        <h5>Stock Predictor - Click <a href="{% url 'stock_predict' %}?name={{name}}">here</a></h5>
     </div>
+    {% if dict.4 == 'l' %}
+    <div class="row">
+        <h5>Market Cap : Large Cap</h5>
+    </div>
+    {% elif dict.4 == 'm' %}
+    <div class="row">
+        <h5>Market Cap : Mid Cap</h5>
+    </div>
+    {% else %}
+    <div class="row">
+        <h5>Market Cap : Small Cap</h5>
+    </div>
+    {% endif %}
     <div class="row">
         <h5>Total quantity : {{dict.0}}</h5>
     </div>
     <div class="row">
-        <h5>Average Buying price : {{dict.1}}</h5>
+        <h5>Average Buying price : {{dict.1|floatformat:2}}</h5>
     </div>
 </div>
 <div class="container pt-5">
+    <h3 class="container">OPEN POSITIONS</h3>
     <table class="table table-striped">
         <thead>
         <tr>
@@ -24,34 +47,51 @@
             {% for i in l %}
         <tr>
             <td>{{i.quantity}}</td>
-            <td>{{i.amount}}</td>
-            <td>{{i.last_date}}</td>
+            <td>{{i.price|floatformat:2}}</td>
+            <td>{{i.date}}</td>
         </tr>
             {% endfor %}
         </tr>
         </tbody>
     </table>
     </div>
-    <td><form method="get" action="{% url 'mf_transact' %}">
-        <input type="hidden" name="name" value="{{name}}">
-        <button type="submit" class="btn btn-success">Buy</button>
-    </form>
-    </td>
-    <td><form method='get' action="{% url 'mf_sell' %}">
-        <input type="hidden" name="name" value="{{name}}">
-        <button type="submit" class="btn btn-danger">Sell</button>
-    </form></td>
+
+
+    <div class="container pt-5">
+        <h3 class="container">CLOSED POSITIONS</h3>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Quantity</th>
+                <th scope="col">Selling price</th>
+                <th scope="col">Sell Date</th>
+                <th scope="col">Profit/Loss</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for i,j in pl.items %}
+            <tr>
+                <td>{{j.0}}</td>
+                <td>{{j.1|floatformat:2}}</td>
+                <td>{{j.2}}</td>
+                <td>{{j.3}}</td>
+            </tr>
+                {% endfor %}
+            </tr>
+            </tbody>
+        </table>
+        </div>
     <div class="container">
         <canvas
           id="myChart"
           class="col-md-6 row"
-          url-endpoint="{% url 'mf_data_single' name %}"
+          url-endpoint="{% url 'stock_data_single' name %}"
         ></canvas>
       </div>
 
 
       <script>
-        var endpoint = "{% url 'mf_data_single' name %}";
+        var endpoint = "{% url 'stock_data_single' name %}";
         var defaultData = [];
         var labels = [];
         $.ajax({

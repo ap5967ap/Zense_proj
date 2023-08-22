@@ -1,0 +1,34 @@
+{% extends 'base.html' %} 
+{% block content %}
+<div class="container pt-5">
+<h1>Fixed Deposit</h1>
+<form method="post" action="{% url 'fd_buy' %}">
+  {% csrf_token %}
+  <div class="container">
+    <div class="form-group">
+      <label for="name">Bank Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter Bank Name" required/>
+    </div>
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input type="number" step="0.01" class="form-control" id="amount" name="price" placeholder="Enter Amount" required/>
+    </div>
+    <div class="form-group">
+      <label for="interest">Interest (%/yr)</label>
+      <input type="number" step="0.01" class="form-control" id="interest" name="interest" placeholder="Enter Interest" required/>
+    </div>
+    <div class="form-group">
+      <label for="date">Start Date</label>
+      <input type="date" class="form-control" id="date" name="date" placeholder="Enter date" required max="{% now 'Y-m-j' %}" value="{% now 'Y-m-j' %}"/>
+    </div>
+    <div class="form-group">
+      <label for="date">End Date</label>
+      <input type="date" class="form-control" id="date" name="sell_date" placeholder="Enter date" required/>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</div>
+</form>
+</div>
+{% endblock content %}
+```

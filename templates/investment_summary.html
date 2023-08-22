@@ -2,11 +2,14 @@
 
 {% block content %}
 <div class="container pt-5">
-    Click <a href="{% url 'previous_investment' %}">here</a> to view previous your investments
+    <form method="get" action="{% url 'investment_summary' %}">
+        <input type="number" name="name" placeholder="Enter Year" class="form-control" min="1900" max="{% now 'Y' %}">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 </div>
 <div class="container pt-5 text-center">
     As per our calculations, based on your current income, age and your previous choices, you should invest as per this calculation
-    <br> in the current year {% now "Y" %}
+    <br> in the current year {{year}}
     <table class="table table-striped">
         <thead>
             <tr>
