@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<h3>WANTS ACTIVE</h3>
+{% if lis %}
 <div class="container pt-5">
+    <h3>WANTS ACTIVE</h3>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -18,7 +18,7 @@
         <tbody>
             {% for i in lis %}
             <tr>
-                <td><a href="#">{{i.source}}</a></td>
+                <td><a href="{% url 'single_needs' i.source %}">{{i.source}}</a></td>
                 {% if i.price == i.amount_added %}
                 <td style="color: green;">{{i.price}}</td>
                 {% else %}
@@ -31,10 +31,12 @@
             </tr>
             {% endfor %}
         </tbody>
+        </table>
 </div>
-
-<h3>WANTS USED</h3>
+{% endif %}
+{% if lis2 %}
 <div class="container pt-5">
+    <h3>WANTS USED</h3>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -45,14 +47,16 @@
             </tr>
         </thead>
         <tbody>
-            {% for i in lis %}
+            {% for i in lis2 %}
             <tr>
-                <td><a href="#">{{i.source}}</a></td>
+                <td><a href="{% url 'single_needs' i.source %}">{{i.source}}</a></td>
                 <td>{{i.price}}</td>
                 <td>{{i.category}}</td>
                 <td>{{i.buy_date}}</td>
             </tr>
             {% endfor %}
         </tbody>
+        </table>
 </div>
+{% endif %}
 {% endblock content %}

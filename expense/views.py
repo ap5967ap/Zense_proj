@@ -110,12 +110,21 @@ def add_needs(request):
 
 @login_required(login_url='/account/login/')
 def single_needs(request,source):
-    need=Needs.objects.filter(user=request.user,source=source).order_by('-last_date')
+    need=Needs.objects.filter(user=request.user,source=source).order_by('-last_date','-id')
     inv=Expense.objects.get(user=request.user,date__month=datetime.now().month,date__year=datetime.now().year)
     is_buy_date=datetime.now().date()>=need[0].buy_date
     xx=need[0].price-need[0].amount_added
-    x=int(xx/(need[0].amount)*30)
-    return render(request,'single_needs.html',{'n':need[0],'nn':need,'source':source,'inv':inv,'is_buy_date':is_buy_date,'xx':xx,'x':x})
+    x=max(30,int(xx/(need[0].amount)*30))
+    lis=[need[len(need)-1].amount_added]
+    dict={}
+    c=0
+    for i in range(len(need)-2,-1,-1):
+        lis.append(need[i].amount_added-need[i+1].amount_added)
+    lis.reverse()
+    for i in need:
+        dict[i]=[i,lis[c]]
+        c+=1
+    return render(request,'single_needs.html',{'n':need[0],'nn':dict,'source':source,'inv':inv,'is_buy_date':is_buy_date,'xx':xx,'x':x})
 
 @login_required(login_url='/account/login/')
 def withdraw(request,id):
@@ -125,6 +134,7 @@ def withdraw(request,id):
     bal.save()
     for i in Needs.objects.filter(user=request.user,source=need.source):
         i.is_active=False
+        i.priority=0
         i.save()
     messages.success(request,'Withdrawn successfully')
     return redirect('needs_view')
@@ -143,6 +153,7 @@ def add_need_to_expense(request,id):
     bal.save()
     for i in Needs.objects.filter(user=request.user,source=need.source):
         i.is_active=False
+        i.priority=0
         i.save()
     messages.success(request,'Added successfully')
     return redirect('needs_view')
@@ -154,26 +165,41 @@ def use_to_fund_other(request):
         amount=decimal.Decimal(request.POST.get('amount'))
         source=request.POST.get('source')
         dest=request.POST.get('dest')
-        source_obj=Needs.objects.filter(source=source,user=request.user,is_active=True).order_by('-last_date').first()
-        dest_obj=Needs.objects.filter(source=dest,user=request.user,is_active=True).order_by('-last_date').first()
+        source_obj=dest_obj=None
+        try:
+            source_obj=Needs.objects.filter(source=source,user=request.user,is_active=True).order_by('-last_date').first()
+            dest_obj=Needs.objects.filter(source=dest,user=request.user,is_active=True).order_by('-last_date').first()
+        except:
+            pass
         if source_obj and dest_obj:
+            if amount > dest_obj.amount_added:
+                messages.error(request,'You can not transfer more than the amount added')
+                return redirect('use_to_fund_other')
             dest_obj.amount_added-=amount
             dest_obj.remarks=f'Gave money for {source_obj.source} on {datetime.now().date()}'
             dest_obj.save()
             source_obj.amount_added+=amount
             source_obj.remarks=f'Received money from {dest_obj.source} on {datetime.now().date()}'
             source_obj.save()
-        messages.success(request,'Added successfully')
-        return redirect('needs_view')
+            messages.success(request,'Added successfully')
+            return redirect('needs_view')
+        else:
+            messages.error(request,'An error occured')
+            return redirect('use_to_fund_other')
     else:
         lis=Needs.objects.filter(user=request.user,is_active=True)
         l=[]
+        l2=[]
         for i in lis:
             if i.source not in l:
                 l.append(i.source)
+                l2.append(i)
         id=request.GET.get('id')
-        i=Needs.objects.get(id=id)
-        return render(request,'use_to_fund_other.html',{'id':i,'l':l})
+        try:
+            i=Needs.objects.get(id=id)
+        except: 
+            pass
+        return render(request,'use_to_fund_other.html',{'id':i,'l':l2})
 
 
 @login_required(login_url='/account/login/')
@@ -207,6 +233,10 @@ def add_need_to_investment(request,id):
     inv.FD=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(60/100)
     inv.SGB=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(40/100)
     inv.save()
+    for i in Needs.objects.filter(user=request.user,source=need.source):
+        i.is_active=False
+        i.priority=0
+        i.save()
     return redirect('needs_view')
 
 
@@ -216,7 +246,7 @@ def use_buffer(request,id):
     need=Needs.objects.get(id=id)
     x=need.price-need.amount_added
     if inv.buffer2 and datetime.now().date()>=need.buy_date and inv.buffer2>=(need.price-need.amount_added) and (need.price>need.amount_added):
-        new_need=Needs.objects.create(source=need.source,amount=(need.price-need.amount_added),price=need.price,last_date=datetime.now().date(),buy_date=need.buy_date,user=request.user,category=need.category,priority=need.priority,next_date=need.next_date,remarks="Added money from buffer")
+        new_need=Needs.objects.create(source=need.source,amount=(need.price-need.amount_added),price=need.price,last_date=datetime.now().date(),buy_date=need.buy_date,user=request.user,category=need.category,priority=need.priority,next_date=need.next_date,amount_added=need.amount_added+x,remarks="Added money from buffer")
         new_need.save()
         inv.buffer2=inv.buffer2-x
         inv.needs_i=inv.needs_i+x
@@ -226,7 +256,7 @@ def use_buffer(request,id):
         bal.balance=bal.balance-x
         bal.save()
         messages.success(request,'Added successfully')
-        return redirect(f'/expense/needs_view/{need.source}/')
+        return redirect(f'/expense/single_needs/{need.source}/')
     
     
 @login_required(login_url='/account/login/')
@@ -237,7 +267,7 @@ def increase_buy_date(request,id):
         need.buy_date=datetime.strptime(request.POST.get('buy_date'),' %Y-%m-%d')
         need.save()
         messages.success(request,'Buy date extended successfully')
-        return redirect(f'/expense/needs_view/{need.source}/')
+        return redirect(f'/expense/single_needs/{need.source}/')
     else:
         need=Needs.objects.get(id=id)
         more=need.price-need.amount_added
@@ -256,7 +286,7 @@ def needs_view(request):
             income2.append(i.source)
     income1.sort(key=lambda x: x.priority)
     
-    income3 = Needs.objects.filter(user=request.user,is_active=True).order_by('-last_date')
+    income3 = Needs.objects.filter(user=request.user,is_active=False).order_by('-last_date')
     income4 = []
     income5 = []
     for i in income3:
@@ -602,3 +632,32 @@ def delete_source_wants(request, source):
             i.is_active=False
             i.save()
     return redirect('view_wants')
+
+
+@login_required(login_url='/account/login/')
+def change_priority(request):
+    l=[]
+    lis=[]
+    obj=Needs.objects.filter(user=request.user,is_active=True)
+    for i in obj:
+        if i.source not in l:
+            l.append(i.source)
+            lis.append(i)
+    if request.method=='POST':
+        dict={}
+        for i in request.POST:
+            if i!='csrfmiddlewaretoken':
+                dict[i]=request.POST.get(i)
+                # x=Needs.objects.filter(user=request.user,source=i)
+        x=list(dict.values())
+        if len(x) != len(set(x)):
+            messages.error(request,'Priority should be unique')
+            return redirect('change_priority')
+        for i in dict:
+            obj2=Needs.objects.filter(user=request.user,source=i)
+            for j in obj2:
+                j.priority=dict[i]
+                j.save()
+        return redirect('needs_view')        
+    else:
+        return render(request,'change_priority.html',{'lis':lis,'c':len(lis)})

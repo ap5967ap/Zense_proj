@@ -13,20 +13,23 @@
             <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter amount">
         </div>
         <div class="form-group">
-            <label for="date">Date</label>
-            <input type="date" class="form-control" id="date" name="last_date" placeholder="Enter date" max="{% now 'j-m-Y' %}" value="{% now 'j-m-Y' %}">
+            <label for="date">Current Date</label>
+            <input type="date" class="form-control" id="date" name="last_date" placeholder="Enter date" max="{% now 'Y-m-j' %}" readonly value="{% now 'Y-m-j' %}">
         </div>
         <div class="form-group">
-            <label for="category">category</label>
-            <select class="form-control" id="category" name="category">
+            <label for="category">Category</label>
+            {% if i %}
+            <datalist id="suggestions" name="category">
             {% for i in l %}
             <option value="{{i}}">{{i}}</option>
             {% endfor %}
-            </select>
+            {% endif %}
+            </datalist>
+            <input autocomplete="on" class="form-control" list="suggestions" type="text" id="source" value="{{source}}" name="category" placeholder="Name of the Want">
         </div>
         <div class="form-group">
             <label for="Buy date">Enter the date on which you want to buy this item</label>
-            <input type="date" class="form-control" id="Buy date" name="buy_date" placeholder="Enter date" min="{% now 'j-m-Y' %}">
+            <input type="date" class="form-control" id="Buy date" name="buy_date" placeholder="Enter date" min="{% now 'Y-m-j' %}">
         </div>
         {% include 'messages.html' %}
         {% if messages.error %}

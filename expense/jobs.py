@@ -117,8 +117,8 @@ def job(do=False):
     all_needs=Needs.objects.filter(is_active=True).order_by('priority')
     if all_needs.exists():
         for i in all_needs:
-            if i.next_date == datetime.now().date() and i.is_active:
-                if_added=Needs.objects.filter(source=i.source,last_date__month=one_month_ago().month,date__year=one_month_ago().year).exists()
+            if  (i.next_date == datetime.now().date() and i.is_active):
+                if_added=Needs.objects.filter(source=i.source,last_date__month=datetime.now().month,last_date__year=datetime.now().year).exists()
                 if if_added:
                     continue
                 xx=i.amount
@@ -129,15 +129,16 @@ def job(do=False):
                 to_add=min(xx,z-y)
                 if to_add>max_add:
                     to_add=max_add
-                if y>=z:
+                if y>=z or to_add==0:
                     subject=f"Amount for {i.source} fully saved."
                     message=render_to_string('needs_mail.html',{'user':i.user,'needs':i,'err':False})
                     email=EmailMessage(subject,message,to=[i.user.email])
                     try :
                         email.send()
                     except:
-                        log.write(f"Email not sent to {user.email} on {datetime.now()}\n")
+                        log.write(f"Email not sent to {i.user.email} on {datetime.now()}\n")
                     continue
+                bal=Balance.objects.get(user=i.user)
                 if bal.balance<to_add:
                     subject=f"Amount for {i.source} not saved due to low balance."
                     message=render_to_string('needs_mail.html',{'user':i.user,'needs':i,'err':'You do not have enough balance'})
@@ -145,7 +146,7 @@ def job(do=False):
                     try :
                         email.send()
                     except:
-                        log.write(f"Email not sent to {user.email} on {datetime.now()}\n")
+                        log.write(f"Email not sent to {i.user.email} on {datetime.now()}\n")
                     continue
                 bal=Balance.objects.get(user=i.user)
                 x=Needs.objects.create(source=i.source,amount=to_add,amount_added=i.amount_added+to_add,price=i.price,last_date=datetime.now().date(),next_date=datetime.now().date()+timedelta(days=30),buy_date=i.buy_date,user=i.user,is_active=True,category=i.category,priority=i.priority) 
@@ -166,7 +167,7 @@ def job(do=False):
                 try :
                     email.send()
                 except:
-                    log.write(f"Email not sent to {user.email} on {datetime.now()}\n")
+                    log.write(f"Email not sent to {i.user.email} on {datetime.now()}\n")
                 continue
             if i.price > i.amount_added:
                 subject=f"Amount for {i.source} is not fully saved"
@@ -175,7 +176,7 @@ def job(do=False):
                 try :
                     email.send()
                 except:
-                    log.write(f"Email not sent to {user.email} on {datetime.now()}\n")
+                    log.write(f"Email not sent to {i.user.email} on {datetime.now()}\n")
                 continue
                 
 def run_continuously(self, interval=86400):

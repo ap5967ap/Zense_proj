@@ -55,6 +55,7 @@ class Needs(models.Model):
     amount_added=models.DecimalField(max_digits=20,decimal_places=2,blank=True,null=True) #!amount added to the need
     priority=models.IntegerField(default=0) #!priority of the need
     remarks=models.CharField(max_length=255,blank=True,null=True) #!remarks for the need
+
     def __str__(self):
         return self.source
     class Meta:

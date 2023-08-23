@@ -17334,3 +17334,1308 @@ AttributeError: 'RequestSite' object has no attribute 'get'
 2023-08-23 03:01:42,532 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2023-08-23 03:01:45,970 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
 2023-08-23 03:01:49,991 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:06:10,336 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:38:35,699 django.request WARNING  Not Found: /favicon.ico
+2023-08-23 22:43:18,903 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:47:10,134 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:47:37,286 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:49:27,015 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\views.py", line 7, in home
+    return render(request, "home.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 208, in render
+    return template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 177, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'view_needs' not found. 'view_needs' is not a valid view function or pattern name.
+2023-08-23 22:51:58,356 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\admin.py changed, reloading.
+2023-08-23 22:52:03,347 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:52:05,899 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\admin.py changed, reloading.
+2023-08-23 22:52:10,098 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:52:13,545 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\admin.py changed, reloading.
+2023-08-23 22:52:17,021 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:52:23,583 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\admin.py changed, reloading.
+2023-08-23 22:52:27,168 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:52:41,277 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\admin.py changed, reloading.
+2023-08-23 22:52:45,355 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:53:16,530 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\admin.py changed, reloading.
+2023-08-23 22:53:20,563 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:53:23,698 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\admin.py changed, reloading.
+2023-08-23 22:53:27,534 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:53:33,940 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\admin.py changed, reloading.
+2023-08-23 22:53:38,187 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:53:42,483 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\admin.py changed, reloading.
+2023-08-23 22:53:46,453 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:53:54,409 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:53:58,805 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:55:00,196 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:55:04,364 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:56:09,185 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:56:13,852 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:56:17,504 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:56:21,203 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:56:24,481 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:56:28,073 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:56:58,351 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:57:03,564 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:57:06,931 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:57:12,250 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:57:14,203 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:57:18,679 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:57:22,493 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:57:27,114 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:57:31,837 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:57:36,091 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:57:38,188 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:57:42,006 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:57:45,702 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:57:49,904 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:57:52,879 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:57:56,643 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:58:02,230 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:58:06,788 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:58:18,539 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:58:23,005 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-23 22:58:36,351 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-23 22:58:40,935 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:05:22,778 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:05:34,375 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:07:43,242 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:07:47,882 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:07:59,189 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:08:03,490 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:08:09,517 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:08:13,365 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:08:16,352 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:08:20,454 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:08:24,709 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:08:29,616 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:08:38,548 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:08:43,909 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:08:45,980 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:08:49,924 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:09:23,148 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:09:26,878 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:09:49,768 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:09:53,839 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:09:58,330 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:10:02,499 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:10:22,648 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:10:27,856 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:10:36,007 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:10:39,893 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:10:43,274 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:10:47,733 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:10:51,113 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:10:55,488 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:10:57,549 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:11:01,031 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:11:04,561 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:11:08,952 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:11:12,669 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:11:17,262 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:11:30,187 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\urls.py changed, reloading.
+2023-08-24 00:11:35,144 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:11:43,321 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\urls.py changed, reloading.
+2023-08-24 00:11:47,481 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:33:28,516 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 00:33:32,917 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:36:49,116 django.request ERROR    Internal Server Error: /expense/single_needs/Phone/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'change_priority'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 118, in single_needs
+    return render(request,'single_needs.html',{'n':need[0],'nn':need,'source':source,'inv':inv,'is_buy_date':is_buy_date,'xx':xx,'x':x})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 11: 'change_priority', expected 'endblock'. Did you forget to register or load this tag?
+2023-08-24 00:37:12,548 django.request ERROR    Internal Server Error: /expense/single_needs/Phone/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 118, in single_needs
+    return render(request,'single_needs.html',{'n':need[0],'nn':need,'source':source,'inv':inv,'is_buy_date':is_buy_date,'xx':xx,'x':x})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 1389, in url
+    args.append(parser.compile_filter(value))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '%'}?days={{x}}">increase buy date by about {{x}} days or use your <a href="{% url 'use_to_fund_other' from '%'}?days={{x}}">increase buy date by about {{x}} days or use your <a href="{% url 'use_to_fund_other'
+2023-08-24 00:37:13,002 django.request ERROR    Internal Server Error: /expense/single_needs/Phone/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 118, in single_needs
+    return render(request,'single_needs.html',{'n':need[0],'nn':need,'source':source,'inv':inv,'is_buy_date':is_buy_date,'xx':xx,'x':x})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 1389, in url
+    args.append(parser.compile_filter(value))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '%'}?days={{x}}">increase buy date by about {{x}} days or use your <a href="{% url 'use_to_fund_other' from '%'}?days={{x}}">increase buy date by about {{x}} days or use your <a href="{% url 'use_to_fund_other'
+2023-08-24 00:37:14,554 django.request ERROR    Internal Server Error: /expense/single_needs/Phone/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 118, in single_needs
+    return render(request,'single_needs.html',{'n':need[0],'nn':need,'source':source,'inv':inv,'is_buy_date':is_buy_date,'xx':xx,'x':x})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\defaulttags.py", line 1389, in url
+    args.append(parser.compile_filter(value))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '%'}?days={{x}}">increase buy date by about {{x}} days or use your <a href="{% url 'use_to_fund_other' from '%'}?days={{x}}">increase buy date by about {{x}} days or use your <a href="{% url 'use_to_fund_other'
+2023-08-24 00:42:55,019 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:42:58,864 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:44:08,676 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:44:12,816 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:44:22,099 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:44:26,387 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:44:28,600 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:44:32,743 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:44:35,243 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:44:39,155 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:44:48,156 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:44:52,127 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:45:02,165 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:45:06,110 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:45:16,512 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:45:20,570 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:45:30,524 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:45:40,556 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:45:49,489 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:45:53,927 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:46:31,830 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:46:36,273 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:46:59,649 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:47:03,710 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:47:13,667 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:47:43,071 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:47:47,392 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:47:53,902 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:47:57,579 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:48:07,530 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:48:20,806 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:48:24,766 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:48:34,739 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:48:45,783 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:48:50,569 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:49:00,525 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:49:13,982 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:49:27,591 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:49:34,031 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:49:38,379 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:49:48,362 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:50:01,916 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:50:33,007 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:50:46,504 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:50:59,795 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:51:13,353 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:51:23,463 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:51:33,574 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:51:43,821 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:51:54,251 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:52:05,014 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:52:16,576 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:52:29,782 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:52:42,782 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:52:47,788 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:56:24,050 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\admin.py changed, reloading.
+2023-08-24 00:56:28,415 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:59:05,076 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 00:59:08,987 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 00:59:28,937 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 00:59:49,042 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:00:09,186 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:00:29,443 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:00:35,250 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:00:40,029 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:00:43,506 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:00:47,510 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:00:59,065 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:01:03,330 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:01:23,292 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:02:24,159 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:02:27,742 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:02:47,701 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:04:02,640 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:04:25,820 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:04:49,122 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:05:12,422 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:05:35,639 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:05:58,953 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:06:22,337 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:06:45,578 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:07:08,852 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:07:32,518 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:07:55,976 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:08:19,723 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:08:43,379 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:09:07,593 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:09:31,150 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:09:54,956 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:10:18,451 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:10:42,162 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:11:05,970 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:11:29,473 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:11:53,331 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:12:16,849 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:12:41,359 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:13:04,956 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:13:28,666 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:13:52,262 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:14:15,871 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:14:39,731 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:15:03,122 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:15:26,885 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:15:50,592 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:16:14,380 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:16:38,107 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:17:01,596 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:17:25,497 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:17:49,337 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:18:13,402 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:18:36,973 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:19:00,482 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:19:24,262 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:19:48,264 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:20:11,907 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:20:35,638 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:20:59,278 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:21:23,708 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:21:47,426 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:22:11,073 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:22:34,713 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:22:58,419 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:23:22,068 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:23:45,836 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:24:09,532 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:24:33,038 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:24:56,445 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:25:20,149 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:25:43,860 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:26:07,554 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:26:31,564 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:26:55,885 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:27:19,374 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:27:42,887 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:28:06,583 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:28:30,299 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:28:53,833 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:29:17,276 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:29:40,955 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:30:04,608 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:30:28,272 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:30:51,822 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:31:15,531 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:31:39,015 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:32:02,778 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:32:26,504 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:32:49,829 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:33:13,743 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:33:37,498 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:34:01,074 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:34:24,964 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:34:48,625 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:35:11,809 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:35:35,059 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:35:58,314 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:36:21,412 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:36:41,467 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:37:05,747 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:37:35,793 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:38:05,573 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:38:38,298 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:39:08,652 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:39:38,305 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:40:08,221 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:40:39,806 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:41:09,665 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:41:40,224 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:42:09,963 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:42:40,572 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:43:10,290 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:43:40,907 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:43:45,257 django.request ERROR    Internal Server Error: /expense/single_needs/Phone/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 115, in single_needs
+    is_buy_date=datetime.now().date()>=need[0].buy_date
+                                       ~~~~^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 450, in __getitem__
+    return qs._result_cache[0]
+           ~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+2023-08-24 01:44:00,910 schedule     DEBUG    Running job Job(interval=20, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:44:15,055 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:44:18,616 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:44:21,131 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:44:24,201 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:52:05,684 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:52:08,440 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:52:18,384 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:52:36,352 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:52:53,417 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:53:09,973 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:53:26,310 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:53:36,447 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:53:56,230 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:54:22,915 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:54:49,205 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:55:16,013 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:55:35,394 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:55:38,399 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:55:48,351 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:56:05,069 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:56:18,257 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:56:21,568 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:56:24,451 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:56:34,419 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:56:44,426 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:56:54,430 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:57:04,435 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:57:14,441 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:57:24,444 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:57:34,463 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:57:44,476 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:57:54,480 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:58:04,483 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:58:14,489 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:58:24,496 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:58:34,503 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:58:44,507 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:58:46,892 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:58:49,857 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:58:59,814 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:59:05,705 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:59:08,630 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:59:10,891 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:59:13,635 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:59:23,593 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:59:33,609 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 01:59:43,121 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:59:47,165 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 01:59:49,479 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 01:59:52,667 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:00:02,639 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:00:12,654 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:00:22,666 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:00:32,677 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:00:42,683 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:00:52,694 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:01:02,704 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:01:12,711 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:01:22,723 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:01:24,139 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 02:01:27,277 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:01:29,657 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 02:01:32,452 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:01:34,832 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 02:01:37,677 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:01:39,449 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 02:01:42,142 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:01:52,092 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:02:17,116 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 02:02:19,762 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:02:29,736 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:02:39,826 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:02:49,836 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:02:59,844 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:03:09,850 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:03:19,866 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:03:29,886 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:03:39,902 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:03:49,921 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:03:59,930 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:04:09,939 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:04:19,952 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:04:29,964 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:04:39,969 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:04:49,987 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:05:00,001 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:05:10,031 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:05:20,040 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:05:30,050 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:05:40,060 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:05:50,068 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:06:00,076 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:06:10,084 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:06:20,099 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:06:30,113 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:06:40,123 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:06:50,132 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:07:00,142 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:07:10,151 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:07:20,164 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:07:30,174 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:07:40,181 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:07:50,192 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:08:00,202 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:08:10,211 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:08:20,220 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:08:30,227 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:08:40,233 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:08:50,237 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:09:00,249 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:09:10,258 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:09:20,270 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:09:30,279 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:09:40,288 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:09:50,302 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:10:00,309 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:10:10,323 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:10:20,329 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:10:30,337 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:10:40,347 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:10:50,352 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:11:00,361 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:11:10,370 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:11:20,379 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:11:30,388 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:11:40,396 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:11:50,411 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:12:00,420 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:12:10,428 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:12:20,442 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:12:30,452 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:12:40,462 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:12:50,472 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:13:00,477 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:13:10,481 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:13:20,487 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:13:30,499 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:13:40,510 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:13:50,520 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:14:00,530 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:14:10,539 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:14:20,548 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:14:30,553 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:14:40,560 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:14:50,569 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:15:00,573 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:15:10,583 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:15:20,592 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:15:30,606 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:15:40,616 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:15:50,625 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:16:00,635 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:16:10,642 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:16:20,656 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:16:30,679 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:16:40,690 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:16:50,699 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:16:59,347 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:17:02,286 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:17:04,740 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:17:07,518 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:17:17,487 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:17:27,503 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:17:37,512 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:17:47,517 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:17:57,527 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:18:05,679 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:18:09,121 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:18:11,612 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:18:15,206 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:18:17,587 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:18:20,220 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:18:23,088 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:18:25,823 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:18:28,273 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:18:30,915 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:18:32,852 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:18:35,316 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:18:45,254 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:18:55,273 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:19:05,284 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:19:15,290 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:19:25,320 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:19:35,329 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:19:45,338 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:19:55,354 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:20:05,363 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:20:15,012 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:20:18,456 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:20:20,771 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:20:23,577 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:20:25,840 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:20:28,673 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:20:54,186 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:20:56,924 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:21:06,885 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:21:16,894 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:21:26,904 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:21:36,916 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:21:46,933 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:21:56,948 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:22:06,954 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:22:16,966 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:22:26,977 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:22:36,986 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:22:46,995 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:22:57,007 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:23:07,017 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:23:17,025 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:23:27,033 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:23:37,046 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:23:47,051 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:23:57,064 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:24:07,073 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:24:17,083 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:24:27,092 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:24:37,104 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:24:47,108 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:24:57,116 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:25:07,132 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:25:17,150 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:25:27,156 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:25:37,163 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:25:47,184 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:25:57,195 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:26:07,213 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:26:17,218 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:26:27,226 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:26:37,238 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:26:47,245 schedule     DEBUG    Running job Job(interval=10, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:26:51,222 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 02:26:54,305 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:27:54,225 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:28:54,243 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:29:54,253 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:30:22,140 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:30:24,772 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:30:36,169 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:30:39,047 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:30:52,521 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:30:55,966 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:31:55,926 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:31:56,557 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:31:59,399 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:32:01,254 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:32:03,958 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:32:06,322 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:32:09,460 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:32:13,189 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:32:16,157 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:32:19,854 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:32:22,994 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:32:25,212 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:32:27,920 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:32:29,694 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:32:33,538 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:32:35,351 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:32:39,085 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:32:50,608 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:32:53,964 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:33:00,735 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:33:04,639 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:33:07,301 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:33:09,866 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:34:19,424 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:34:22,137 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:34:23,879 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:34:27,108 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:34:31,112 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:34:34,227 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:34:45,418 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:34:48,484 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:34:53,068 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:34:56,479 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:34:59,521 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:35:02,316 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:35:05,686 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:35:08,441 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:35:11,868 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:35:15,498 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:35:49,316 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:35:53,207 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:35:55,698 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:35:59,476 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:36:02,386 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:36:05,747 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:36:19,445 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:36:22,503 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:36:25,916 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:36:28,834 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:36:33,330 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:36:36,601 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:36:46,863 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:36:49,458 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:36:51,879 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:36:55,553 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:37:27,856 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:37:30,707 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:38:15,139 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:38:17,993 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:39:17,953 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:39:33,536 django.request ERROR    Internal Server Error: /expense/single_needs/Phone/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 118, in single_needs
+    lis=[need[-1].amount_added]
+         ~~~~^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 429, in __getitem__
+    raise ValueError("Negative indexing is not supported.")
+ValueError: Negative indexing is not supported.
+2023-08-24 02:39:46,974 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:39:49,931 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:39:52,440 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:39:55,403 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:39:56,353 django.request ERROR    Internal Server Error: /expense/single_needs/Phone/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 120, in single_needs
+    lis.append(i.amount_added-need[j-1].amount_added)
+               ^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'amount_added'
+2023-08-24 02:39:57,660 django.request ERROR    Internal Server Error: /expense/single_needs/Phone/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 120, in single_needs
+    lis.append(i.amount_added-need[j-1].amount_added)
+               ^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'amount_added'
+2023-08-24 02:40:23,831 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:40:27,795 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:40:28,738 django.request ERROR    Internal Server Error: /expense/single_needs/Phone/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 121, in single_needs
+    lis.append(i.amount_added-need[j-1].amount_added)
+               ^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'amount_added'
+2023-08-24 02:40:48,307 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:40:51,492 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:40:52,450 django.request ERROR    Internal Server Error: /expense/single_needs/Phone/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 121, in single_needs
+    lis.append(i.amount_added-need[j-1].amount_added)
+               ^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'amount_added'
+2023-08-24 02:41:00,584 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:41:03,570 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:41:05,909 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:41:08,850 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:41:09,106 django.request ERROR    Internal Server Error: /expense/single_needs/Phone/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 120, in single_needs
+    lis.append(i.amount_added-need[j-1].amount_added)
+                              ~~~~^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 429, in __getitem__
+    raise ValueError("Negative indexing is not supported.")
+ValueError: Negative indexing is not supported.
+2023-08-24 02:41:28,538 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:41:31,153 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:42:11,636 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:42:14,847 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:42:21,700 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:42:24,652 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:42:34,163 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:42:36,994 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:42:45,208 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:42:49,762 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:42:52,150 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:42:55,101 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:43:15,020 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:43:18,427 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:43:22,458 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:43:26,277 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:43:29,245 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:43:32,005 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:43:38,181 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:43:41,269 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:43:43,099 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:43:46,073 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:43:48,014 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:43:50,963 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:43:58,404 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:44:02,367 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:44:06,740 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:44:09,346 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:44:17,146 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:44:20,877 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:44:23,425 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:44:26,646 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:44:28,941 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:44:32,374 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:44:34,174 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:44:37,133 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:44:42,139 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:44:45,475 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:44:53,840 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:44:57,085 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:45:57,041 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:46:57,053 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:47:36,430 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:47:39,812 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:47:42,277 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:47:45,702 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:47:48,254 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:47:51,499 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:48:51,462 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:49:51,478 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:50:51,490 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:51:18,445 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:51:22,911 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:51:25,929 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:51:29,082 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:51:35,702 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:51:39,234 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:51:40,984 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:51:43,837 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:52:21,629 django.security.csrf WARNING  Forbidden (CSRF token missing.): /expense/use_to_fund_other/
+2023-08-24 02:52:43,782 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:53:43,798 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:54:43,808 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:55:42,831 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:55:46,204 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:55:48,626 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:55:52,176 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:55:53,946 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:55:56,639 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:55:58,931 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:56:02,213 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:57:02,165 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:58:02,178 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:58:28,340 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:58:31,605 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:58:33,429 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 02:58:36,940 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 02:59:36,894 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 02:59:54,047 django.request WARNING  Not Found: /expense/needs_view/Phone/
+2023-08-24 03:00:36,900 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:01:36,912 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:02:36,920 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:02:53,417 django.request ERROR    Internal Server Error: /expense/single_needs/Phone/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 122, in single_needs
+    lis.append(need[i].amount_added-need[i+1].amount_added)
+               ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'NoneType' and 'decimal.Decimal'
+2023-08-24 03:03:31,742 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:03:34,642 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:03:36,566 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:03:39,671 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:03:59,242 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:04:02,256 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:04:04,737 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:04:07,525 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:04:39,374 django.request WARNING  Not Found: /expense/needs_view/Phone/
+2023-08-24 03:05:03,326 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:05:06,100 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:06:06,048 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:06:47,615 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\models.py changed, reloading.
+2023-08-24 03:06:49,961 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:07:00,684 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\models.py changed, reloading.
+2023-08-24 03:07:03,428 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:07:32,932 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:07:36,490 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:07:39,120 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:07:41,810 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:08:41,773 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:09:21,096 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:09:25,038 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:09:27,420 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:09:30,100 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:09:38,112 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:09:41,760 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:10:21,256 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:10:23,897 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:11:23,869 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:12:23,882 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:12:58,997 django.request ERROR    Internal Server Error: /expense/use_to_fund_other/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 194, in use_to_fund_other
+    i=Needs.objects.get(id=id)
+      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+expense.models.Needs.DoesNotExist: Needs matching query does not exist.
+2023-08-24 03:13:23,889 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:14:23,896 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:15:23,902 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:15:32,820 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:15:35,597 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:15:38,246 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:15:41,440 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:15:44,985 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:15:48,201 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:15:51,807 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:15:54,644 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:15:56,479 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:15:59,639 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:16:18,785 django.request ERROR    Internal Server Error: /expense/use_to_fund_other/
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\decorators.py", line 23, in _wrapper_view
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py", line 198, in use_to_fund_other
+    i=Needs.objects.get(id=id)
+      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+expense.models.Needs.DoesNotExist: Needs matching query does not exist.
+2023-08-24 03:16:59,590 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:17:35,868 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:17:40,220 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:17:43,183 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-24 03:17:46,708 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:18:46,647 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:19:46,655 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:20:46,661 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:21:46,668 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:22:46,675 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:23:46,679 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:24:23,661 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 03:24:26,615 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:25:26,589 schedule     DEBUG    Running job Job(interval=60, unit=seconds, do=job, args=(), kwargs={})
+2023-08-24 03:25:32,996 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 03:25:35,735 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:25:39,111 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 03:25:41,724 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:25:45,697 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 03:25:48,499 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-24 03:26:12,062 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\jobs.py changed, reloading.
+2023-08-24 03:26:15,119 django.utils.autoreload INFO     Watching for file changes with StatReloader

@@ -15,3 +15,11 @@ class AdminWants(admin.ModelAdmin):
     ordering=('-last_date',)
     
 admin.site.register(Wants,AdminWants)
+
+class AdminNeeds(admin.ModelAdmin):
+    list_display=('user','source','amount','price','last_date','next_date','is_active','buy_date','amount_added','priority','remarks')
+    list_filter=('user','source')
+    search_fields=('user','source')
+    ordering=('-last_date',)
+    
+admin.site.register(Needs,AdminNeeds)

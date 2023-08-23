@@ -150,3 +150,4 @@ unsupported operand type(s) for +: 'NoneType' and 'str'
 'NoneType' object has no attribute 'summary'
 Exchange or symbol not found.
 Exchange or symbol not found.
+Email not sent to ap@ap.com on 2023-08-24 00:50:22.990906

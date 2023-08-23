@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container pt-5">
+<h4>Select Distinct Priority</h4>
+{% include 'messages.html' %}
+<form action="{% url 'change_priority' %}" method="post">
+    {% csrf_token %}
+    {% for i in lis %}
+    <div class="form-control">
+        <label for="priority">{{i.source}}</label>
+        <input type="number" name="{{i.source}}" id="{{i.id}}" value="{{i.priority}}" min ='1' max="{{c}}">
+    </div>
+    {% endfor %}
+    <input type="submit" value="Submit" class="btn btn-primary">
+</form>
+</div>
+{% endblock content %}

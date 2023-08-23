@@ -19,4 +19,5 @@ urlpatterns = [
     path("use_buffer/<int:id>/", views.use_buffer, name="use_buffer"),
     path("increase_buy_date/<int:id>/", views.increase_buy_date, name="increase_buy_date"),
     path("needs_view/", views.needs_view, name="needs_view"),
+    path("change_priority/", views.change_priority, name="change_priority"),
 ]
