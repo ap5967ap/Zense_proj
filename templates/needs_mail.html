@@ -1,0 +1,13 @@
+{% autoescape off %}
+Hi {{ user.first_name }} {{ user.last_name }},
+
+{% if err %}
+{{ err }}. Please login to your account and make changes accordingly.
+{% else %}
+You have successfully saved Rs. {{ needs.amount }} for {{ needs.source }}. Now, you can login to account and either choose buy this item or add it back to your account.
+Congratulations, for being a disciplined.
+{% endif %}
+Thank you
+Team
+{% endautoescape %}
+

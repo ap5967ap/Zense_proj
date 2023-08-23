@@ -16,7 +16,7 @@ from django.db.models import Sum
 from django.contrib import messages
 from .stocks import rsi_,ns
 from tradingview_ta import TA_Handler, Interval, Exchange
-
+from expense.models import *
 
 
 @login_required(login_url='/account/login/')
@@ -531,8 +531,12 @@ def stock_sell(request):
             inv.SGB=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(40/100)
             inv.save()
         elif cho=='2':
-            ...
-            #TODO: add to expense
+            inv=Expense.objects.get(user=request.user,date__month=datetime.now().month,date__year=datetime.now().year)
+            inv.to_expense += decimal.Decimal(amount)
+            inv.wants += decimal.Decimal(amount)*decimal.Decimal(0.60)
+            inv.needs += decimal.Decimal(amount)*decimal.Decimal(0.40)
+            inv.save()
+            #* DONE: add to expense
         return redirect('stock_home')
     else:
         l=Stock.objects.filter(user=user,is_active=True)
@@ -563,7 +567,7 @@ def stock_prev_sold(request):
     this_year_invest=0
     dict={}
     #!price-told price of bought stock
-    #!sell_price-price at which each stock was sold
+    #!sell_price->price at which each stock was sold
     for i in lis:
         a=Stock.objects.filter(user=user,is_active=False,name__iexact=i,date__year=datetime.now().year).order_by('-date','-id')
         obb=Stock.objects.filter(user=user,is_active=False,name__iexact=i).order_by('-date','-id')
@@ -635,8 +639,11 @@ def mf_sell(request):
             inv.SGB=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(40/100)
             inv.save()
         elif cho=='2':
-            ...
-            #TODO: add to expense
+            inv=Expense.objects.get(user=request.user,date__month=datetime.now().month,date__year=datetime.now().year)
+            inv.to_expense += decimal.Decimal(amount)
+            inv.wants += decimal.Decimal(amount)*decimal.Decimal(0.60)
+            inv.needs += decimal.Decimal(amount)*decimal.Decimal(0.40)
+            inv.save()
         return redirect('mf_home')
         
     else:
@@ -804,19 +811,6 @@ def investment_summary(request):
     except:
         return render(request, 'investment_summary.html',context={'year':year})
 
-@login_required(login_url='/account/login/')
-def previous_investment(request):
-    inv_obj=Investment.objects.get(user=request.user,year=year)
-    mf={'Name':'Mutual Funds','Amount':inv_obj.MF,'Invested':inv_obj.MF_i}
-    smallcase={'Name':'SmallCase','Amount':inv_obj.SmallCase,'Invested':inv_obj.SmallCase_i}
-    trade={'Name':'Trade','Amount':inv_obj.trade,'Invested':inv_obj.trade_i}
-    large={'Name':'Large Cap Equity','Amount':inv_obj.large,'Invested':inv_obj.large_i}
-    mid={'Name':'Mid Cap Equity','Amount':inv_obj.mid,'Invested':inv_obj.mid_i}
-    small={'Name':'Small Cap Equity','Amount':inv_obj.small,'Invested':inv_obj.small_i}
-    FD={'Name':'Fixed Deposits','Amount':inv_obj.FD,'Invested':inv_obj.FD_i}
-    SGB={'Name':'Sovereign Gold Bonds','Amount':inv_obj.SGB,'Invested':inv_obj.SGB_i}
-    inv_obj=[mf,smallcase,trade,large,mid,small,FD,SGB]
-    return render(request, 'investment_summary.html',context={"inv":inv_obj})
 
 
 

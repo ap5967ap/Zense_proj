@@ -1,6 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container pt-5">
 <h1>Fixed Deposit</h1>
+<h5>This month will be added to your needs part of expense. </h5>
 <form method="post" action="{% url 'fd_sell' %}">
   {% csrf_token %}
   <div class="container">

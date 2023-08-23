@@ -1,7 +1,6 @@
 import time
 from .models import Balance
 from income.models import IncomeObject
-from django.db.models import F
 from schedule import Scheduler
 import threading
 from datetime import datetime 

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    {% include 'messages.html' %}
+    <form action="{% url 'add_wants' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="source">Expense</label>
+            <datalist id="sourcel" name="source">
+                {% for i in l %}
+                <option>{{i}}</option>
+                {% endfor %}
+              </datalist>
+            <input autocomplete="on" class="form-control" list="sourcel" type="text" id="source" value="{{source}}" name="source" placeholder="Name of the Expense">
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="number" step="0.01" class="form-control" id="amount" name="amount" placeholder="Enter amount" value="{{amount}}" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" class="form-control" id="date" name="last_date" placeholder="Enter date" required value="{% now 'Y-m-j' %}">
+        </div>
+        <div class="form-group">
+            <label for="freq">Freqency</label>
+            <select class="form-control" id="freq" name="frequency">
+                <option>Daily</option>
+                <option>Weekly</option>
+                <option selected>Monthly</option>
+                <option>Quarterly</option>
+                <option>Biannually</option>
+                <option>Yearly</option>
+                <option>Once</option>
+            </select>
+        </div>
+        <div>
+            <label for="op1">Do you want to pay this expense automatically ?(if frequency is not "Once")</label>
+            <input type="checkbox" id="op1" name="status" value="1"/>
+        </div>
+        <div>
+            <label for="op2">Is this an Emergency </label>
+            <input type="checkbox" id="op2" name="is_emergency"/>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock content %}

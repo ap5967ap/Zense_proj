@@ -1,0 +1,14 @@
+{% autoescape off %}
+Hello {{ user.first_name }} {{ user.last_name }},
+{% if err %}
+Your expense for {{income.source}} was not paid.
+Error message: {{err}}
+{% else %}
+Your expense for {{income.source}} was paid successfully.
+Balance after payment: {{user.balance.balance|floatformat }}
+{% endif %}
+Login into your account to view the details.
+
+Sincerely,
+Team
+{% endautoescape %}

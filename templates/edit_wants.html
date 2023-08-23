@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% now "jS F Y " %}
+<div class="container">
+<form method="post" action="{% url 'edit_wants' income.id %}">
+    {% csrf_token %}
+    <input type="text" name="source" class="form-control" value="{{income.source}}" placeholder="Source" disabled>
+    <input type="number" name="amount" class="form-control" value="{{income.amount}}" placeholder="Amount" >
+    <select name="frequency" class="form-control" title="frequency">
+        {% if income.frequency == 'Daily' %}
+        <option value="daily" selected>Daily</option>
+        {% else %}
+        <option value="daily">Daily</option>
+        {% endif %}
+        {% if income.frequency == 'Weekly' %}
+        <option value="weekly" selected >Weekly</option>
+        {% else %}
+        <option value="weekly" >Weekly</option>
+        {% endif %}
+        {% if income.frequency == 'Monthly' %}
+        <option value="monthly" selected >Monthly</option>
+        {% else %}
+        <option value="monthly" >Monthly</option>
+        {% endif %}
+        {% if income.frequency == 'Yearly' %}
+        <option value="yearly" selected >Yearly</option>
+        {% else %}
+        <option value="yearly" >Yearly</option>
+        {% endif %}
+        {% if income.frequency == 'Once' %}
+        <option value="once" selected >Once</option>
+        {% else %}
+        <option value="once" >Once</option>
+        {% endif %}
+    </select>
+
+    <input type="text" name="last_date" class="form-control" value="{{income.last_date}}" placeholder="Last Date" disabled>
+    {% if not income.frequency == 'Once' %}
+    <input type="checkbox" name="status" class="form-control" value="True" {% if income.status %} checked {% endif %} title="Sync automatically"> Sync with calendar<br>
+    {% endif %}
+    <button type="submit" id="income_submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+{% endblock content %}

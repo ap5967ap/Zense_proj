@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container pt-5">
+    <form method="post" action="{% url 'add_needs' %}">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="needs">Name of the Want</label>
+            <input type="text" class="form-control" id="needs" name="source" placeholder="Enter want">
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter amount">
+        </div>
+        <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" class="form-control" id="date" name="last_date" placeholder="Enter date" max="{% now 'j-m-Y' %}" value="{% now 'j-m-Y' %}">
+        </div>
+        <div class="form-group">
+            <label for="category">category</label>
+            <select class="form-control" id="category" name="category">
+            {% for i in l %}
+            <option value="{{i}}">{{i}}</option>
+            {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Buy date">Enter the date on which you want to buy this item</label>
+            <input type="date" class="form-control" id="Buy date" name="buy_date" placeholder="Enter date" min="{% now 'j-m-Y' %}">
+        </div>
+        {% include 'messages.html' %}
+        {% if messages.error %}
+        <div class="form-group">
+            <label for="buffer">Do you want to use your buffer worth Rs. {{bu}} saved from previous months ?</label>
+            <input type="checkbox" class="form-control" id="buffer" name="buffer" value="True">
+        </div>
+        {% endif %}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div> 
+{% endblock content %}

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h3>WANTS ACTIVE</h3>
+<div class="container pt-5">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Source</th>
+                <th scope="col">Price of the Item</th>
+                <th scope="col">Amount saved till Date</th>
+                <th scope="col">Category</th>
+                <th scope="col">Buy Date</th>
+                <th scope="col">Priority</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in lis %}
+            <tr>
+                <td><a href="#">{{i.source}}</a></td>
+                {% if i.price == i.amount_added %}
+                <td style="color: green;">{{i.price}}</td>
+                {% else %}
+                <td>{{i.price}}</td>
+                {% endif %}
+                <td>{{i.amount_added}}</td>
+                <td>{{i.category}}</td>
+                <td>{{i.buy_date}}</td>
+                <td>{{i.priority}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+</div>
+
+<h3>WANTS USED</h3>
+<div class="container pt-5">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Source</th>
+                <th scope="col">Price of the Item</th>
+                <th scope="col">Category</th>
+                <th scope="col">Buy Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in lis %}
+            <tr>
+                <td><a href="#">{{i.source}}</a></td>
+                <td>{{i.price}}</td>
+                <td>{{i.category}}</td>
+                <td>{{i.buy_date}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+</div>
+{% endblock content %}

@@ -30,6 +30,8 @@ def income_in_year(income, year):
     except:
         a=0
     return a
+
+
 @login_required(login_url='/accounts/login/')
 def analysis_single(request,id):
     source=IncomeObject.objects.get(id=id).source
@@ -85,7 +87,7 @@ def analysis_single(request,id):
                 infla.append(0)
         co+=1
     contri_label=[source.capitalize(),'Rest of the income']
-    return render(request,'single_income_detail.html',context=
+    return render(request,'single_extra_detail.html',context=
                   {
                             'last_year_timings':last_year_timings[::-1],
                               'year':datetime.today().year,
@@ -101,6 +103,9 @@ def analysis_single(request,id):
                               'labels':labels,
                               'source':id
                   })
+
+
+
 def get_inflation():
     hdr = {'User-Agent': 'Mozilla/5.0'}
     req = Request(INFLATION_DATA_LINK,headers=hdr)
@@ -183,5 +188,6 @@ def single_analysis(request,source):
                               'growth':growth,
                               'inflation':infla,
                               'first_year':first_year,
-                              'labels':labels
+                              'labels':labels,
+                              
                               })

@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %}
+<form action="{% url 'use_to_fund_other' %}" method="post">
+  <div class="form-control">
+    <label for="name">Select Want to which money is to be added</label>
+    <datalist id="suggestions" name="source">
+      {% for i in l %}
+      <option>{{i.source}} - {{i.amount_added}}</option>
+      {% endfor %}
+    </datalist>
+    {% if i.source %}
+    <input autocomplete="on" class="form-control" list="suggestions" name="source" type="text" style='width:100%' title="Wants" value="{{i.source}}" required /> 
+    {% else %}
+    <input autocomplete="on" class="form-control" list="suggestions" name="source" type="text" style='width:100%' title="Wants" required /> 
+    {% endif %}
+  </div>
+    <div class="form-control">
+        <label for="amount">Enter the Amount you want to transfer</label>
+        <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter amount" required />
+    </div>
+    <div class="form-control">
+        <label for="dest">Enter Want from which money is to be funded</label>
+        <datalist id="suggestions" name="dest">
+            {% for i in l %}
+            <option>{{i.source}} - {{i.amount_added}}</option>
+            {% endfor %}
+        </datalist>
+        <input autocomplete="on" class="form-control" list="suggestions" name="dest" type="text" style='width:100%' title="Wants" required />
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock content %}

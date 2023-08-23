@@ -1,0 +1,280 @@
+{%extends 'base.html'%} 
+
+{%block content%}
+<div class="container">
+    <h1>{{source|capfirst}}</h1>
+    {% if lis.0.status %}
+    <h5 style="color: green">This expense is synced automatically</h5>
+    <a href="{% url 'edit_wants' lis.0.id %}" class="btn btn-primary"><i class="fa fa-pen"></i>Edit this and all future deductions. </a>
+    
+    {% else %}
+    <h5 style="color: red">This expense is not synced automatically</h5>
+    {% endif %}
+    <a href="{% url 'delete_source_wants' lis.0.source %}" class="btn btn-danger"><i class="fa fa-trash"> Stop all future payments </i></a>
+</div>
+<div class="container pt-5">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">S.No.</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Date</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {%for i in lis%}
+        <tr>
+          <td>{{forloop.counter}}</td>
+          <td>{{i.amount}}</td>
+          <td>{{i.last_date}}</td>
+          <td><a href="{% url 'delete_wants' i.id %}" class="btn btn-danger"><i class="fa fa-trash"></i>Delete this from list</a></td>
+        </tr>
+        {%endfor%}
+      </tbody>
+</div>
+<div>
+  <canvas
+    id="myChart"
+    class="col-md-6 row"
+    url-endpoint="{% url 'chart_expense' source %}"
+  ></canvas>
+</div>
+<div>
+  <h1 style="color: red">Year {{year}}</h1>
+  <h3>
+    This year expense from {{so|capfirst}} is
+    {{income_all_years|last|floatformat}} which is
+    {{contribution|floatformat:2}}% of total expense.
+  </h3>
+  <h4>Last Received {{last}}</h4>
+  <div class="container">
+    <canvas
+      id="this_year"
+      class="col-md-6 row"
+      url-endpoint="{% url 'chart_expense' source %}"
+    ></canvas>
+  </div>
+</div>
+
+<div class="container">
+  <h1 style="color: red">Previous Years</h1>
+  <ul>
+    <li>You are earning from this source since {{first_year}}</li>
+    {%if growth|last > inflation|last%}
+    <li style="color: red;">Your expense grows faster than inflation. You need to look into it.</li>
+    {%else%}
+    <li style="color: green">
+        Your expense grows slower than inflation.
+    </li>
+    {%endif%}
+  </ul>
+</div>
+<div>
+    <div class="container">
+      <canvas
+        id="income_contri"
+        class="col-md-6 row"
+        url-endpoint="{% url 'chart_expense' source %}"
+      ></canvas>
+    </div>
+    <div class="container">
+      <canvas
+        id="inflation_growth"
+        class="col-md-6 row"
+        url-endpoint="{% url 'chart_expense' source %}"
+      ></canvas>
+    </div>
+    </div>
+
+    <script>
+    var endpoint = "{% url 'chart_expense' source %}";
+    var defaultData = [];
+    var labels = [];
+    $.ajax({
+      method: "GET",
+      url: endpoint,
+      success: function (data) {
+        console.log(data);
+        graph(data, "myChart");
+        this_year(data, "this_year");
+        income_contrib(data, "income_contri");
+        inflation_growth(data, "inflation_growth");
+      },
+      error: function (err) {
+        console.log("error");
+        console.log(err);
+      },
+    });
+    function inflation_growth(data, id) {
+      var myData = {
+        labels: data.labels,
+        datasets: [
+          {
+            type: "line",
+            label:"Inflation",
+            data: data.inflation,
+            fill: false,
+            borderColor: "red",
+            backgroundColor: "#EC492F",
+            pointBorderColor: "#EC492F",
+            pointBackgroundColor: "#EC492F",
+            pointHoverBackgroundColor: "#EC492F",
+            pointHoverBorderColor: "#EC492F",
+            lineTension: 0.4,
+            pointRadius: 3.5,
+            
+          },
+          {
+            type: "line",
+            label:"Expense Growth",
+            data: data.growth,
+            fill: false,
+            borderColor: "blue",
+            backgroundColor: "blue",
+            pointBorderColor: "blue",
+            pointBackgroundColor: "blue",
+            pointHoverBackgroundColor: "blue",
+            pointHoverBorderColor: "blue",
+            lineTension: 0.4,
+            pointRadius: 3.5,
+          },
+        ],
+      };
+      var options = {
+        scales: {
+          yAxes: [
+            {
+              type: "linear",
+              ticks: {
+                beginAtZero: true,
+                fontSize:14,
+                fontColor:'black',
+              
+              },
+            },
+          ],
+        },
+      };
+      var ctx = document.getElementById(id).getContext("2d");
+      var chart_expense = new Chart(ctx, {
+        type: "line",
+        data: myData,
+        options: options,
+      });
+    }
+    function income_contrib(data, id) {
+      var labels = data.labels;
+      var ctx = document.getElementById(id).getContext("2d");
+      var options={
+        scales: {
+          yAxes: [
+            {
+              id:'ya',
+              type: "linear",
+              ticks: {
+                beginAtZero: true,
+                fontSize:14,
+                fontColor:'black',
+                barPercentage: 0.4
+              },
+            },
+            {
+              position:'right',
+              id:'yb',
+              type: "linear",
+              ticks: {
+                beginAtZero: true,
+                fontSize:14,
+                fontColor:'black',
+              },
+            }
+          ],
+        },
+      }
+      var chart_expense = new Chart(ctx, {
+        type: "bar",
+        data: {
+          datasets: [
+            {
+              label: "Previous Year Expense from this source",
+              data: data.income_all_years,
+              borderColor: "green",
+              backgroundColor: "rgba(99,255,100,0.7)",
+              borderWidth: 2,
+              yAxisID:'ya'
+            },
+            {
+              label: "Contributions from this source in total Wants ",
+              data: data.contribution_all_years,
+              type: "line",
+              backgroundColor: "rgba(255,99,132,0.2)",
+              lineTension: 0.4,
+              borderColor: "rgba(255,99,132,0.9)",
+              yAxisID:'yb'
+            },
+          ],
+          labels: data.labels,
+        },
+        options:options
+      });
+    }
+
+    function this_year(data, id) {
+      var labels = data.last_year_timings;
+      var chartdata = data.last_year_income;
+      var ctx = document.getElementById(id).getContext("2d");
+      var chart_expense = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: data.source,
+              backgroundColor: "rgba(204, 255, 0,0.9)",
+              borderColor: "yellow",
+              borderWidth: 3,
+              borderColor: "black",
+              data: chartdata,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                  fontSize:14,
+                  fontColor:'black',
+                },
+              },
+            ],
+          },
+        },
+      });
+    }
+    function graph(data, id) {
+      var labels = data.labels;
+      var chartLabel = [data.source,"Other sources"];
+      var chartdata = [data.contribution, 100 - data.contribution];
+      var ctx = document.getElementById(id).getContext("2d");
+      var chart_expense = new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: chartLabel,
+          datasets: [
+            {
+              label: "Contribution",
+              backgroundColor: ["rgb(255, 99, 132)", "rgba(255, 205, 86)"],
+              borderColor: "black",
+              data: chartdata,
+              hoverOffset: 4,
+            },
+          ],
+        },
+      });
+    }
+  </script>
+  {%endblock content%}
+</div>

@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container pt-5">
+    <h3>{{n.source}}</h3>
+    <p>Amount saved till date: {{n.amount_added}}</p>
+    <p>Amount needed: {{n.price}}</p>
+    <p>Category: {{n.category}}</p>
+    <p>Buy Date: {{n.buy_date}}</p>
+    <p>Priority: {{n.priority}}</p>
+    <h5>To change priority of item click <a href="{% change_priority %}">here</a> </h5>
+</div>
+<div class="container pt-5">
+{% if inv.buffer2 and is_buy_date and n.price > n.amount_added and xx < inv.buffer2 %}
+You have not saved enough amount to buy {{n.source}}. Do you want to use your remaining buffer worth Rs. {{inv.buffer2}} 
+<a href="{% url 'use_buffer' n.id %}">Yes</a>
+{% endif %}
+{% if is_buy_date and n.price > n.amount_added %}
+You have not saved enough amount to buy {{n.source}}. You can either <a href="{% url 'increase_buy_date' n.id %'}?days={{x}}">increase buy date by about {{x}} days or use your <a href="{% url 'use_to_fund_other' %}"> other wants money </a> to buy this item.
+{% endif %}
+{% if n.price <= n.amount_added %}
+Congratulations, you are now eligible to buy this item.
+<a href="{% url 'withdraw' n.id %}">BUY</a>
+You can also, choose to add this item back to your account and increase this month's expense budget.
+<a href="{% url 'add_need_to_expense' n.id %}">ADD TO EXPENSE</a> and Distribute the Money among Needs and Wants.
+You, can also choose to add this to your account and increase your investment budget.
+<a href="{% url 'add_need_to_investment' n.id %}">ADD TO INVESTMENT</a> and Distribute the Money among various assest classes.
+Use, this money to fund your other wants by clicking <a href="{% url 'use_to_fund_other' %}?id={{n.id}}">here.</a>
+{% else %}
+Use, this money to fund your other wants by clicking <a href="{% url 'use_to_fund_other' %}?id={{n.id}}">here.</a>
+or you can also choose to add this money to your account and increase this month's expense budget by clicking  <a href ="{% url 'add_need_to_expense' n.id %}">here</a>.
+or you can also choose to add this money to your account and increase your investment budget by clicking  <a href ="{% url 'add_need_to_investment' n.id %}">here</a>.
+{% endif %}
+<div class="container pt-5">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">S.No</th>
+                <th scope="col">Date</th>
+                <th scope="col">Amount Added</th>
+                <th scope="col">Remarks (if any) </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in nn %}
+            <tr>
+                <td>{{forloop.counter}}</a></td>
+                <td>{{i.last_date}}</td>
+                <td>{{i.amount}}</td>
+                {% if i.remarks %}
+                <td>{{i.remarks}}</td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+</div>
+</div>
+{% endblock content %}

@@ -1,13 +1,10 @@
 import datetime
-from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib.auth.decorators import login_required
 from .models import IncomeObject
 from datetime import timedelta
 from balance.models import Balance
-from bootstrap_datepicker_plus.widgets import DatePickerInput
 from .forms import IncomeAdd
-from .analysis import analysis_single, get_inflation
 
 
 def _re(frequency: str):

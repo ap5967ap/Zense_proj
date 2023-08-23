@@ -4,6 +4,7 @@ from .models import *
 from django.shortcuts import render,redirect
 from django.contrib.auth.decorators import login_required
 from datetime import datetime
+from expense.models import Expense
 from balance.models import Balance
 from django.template.loader import render_to_string
 from django.core.mail import EmailMessage
@@ -53,7 +54,10 @@ def FD_sell(request):
         bal=Balance.objects.get(user=user)
         bal.balance+=decimal.Decimal(fd.sell_price)
         bal.save()
-        ... #!EXPENSE
+        inv=Expense.objects.get(user=user,date__month=datetime.now().month,date__year=datetime.now().year)
+        inv.to_expense+=decimal.Decimal(fd.sell_price)
+        inv.wants+=decimal.Decimal(fd.sell_price)
+        inv.save() 
         return redirect('fd')
     else:
         messages.warning(request,'Consider using user current balance and emerency fund and try avoiding selling FD before maturity.')
