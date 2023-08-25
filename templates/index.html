@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        
+    {% load static %}
+  <title>GoldPulse</title>
+  <meta content="Personal Finance Manager Fintech" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'images/favicon.png' %}" rel="icon">
+  <link href="{% static 'images/favicon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style_index.css' %}" rel="stylesheet">
+    
+  
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:goldpulsemoney@gmail.com">goldpulsemoney@gmail.com</a>
+        <i class="bi bi-phone-fill phone-icon"></i> +91 99999 99999
+      </div>
+      <div class="social-links d-none d-md-block">
+        <a href="https://twitter.com/goldpulsemoney" target="_blank" class="twitter"><i class="bi bi-twitter"  rel="noopener noreferrer"></i></a>
+        <a href="https://www.instagram.com/goldpulsemoney/" target="_blank" class="instagram"><i class="bi bi-instagram" rel="noopener noreferrer"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'home' %}" class="logo"><img src="{% static 'images/goldpress.svg' %}" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+      <h1>Welcome to GoldPulse</h1>
+      <h2>A Personalised Financial Manager for You</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      <a href="{% url 'login' %}" class="btn-get-started">Login</a>
+      <a href="{% url 'register' %}" class="btn-get-started">Register</a>
+
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img src="{% static 'images/about.webp' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3>Are you facing challenges in managing your finances and feeling the need to save for your desires, such as vacations, phones, or outings, causing emotional distress?  </h3>
+            <p class="fst-italic">
+              Meet GoldPulse, your personal financial manager. We will make things simple for you.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Manage and Analyse your income </li>
+              <li><i class="bi bi-check-circle"></i> Know where you spent </li>
+              <li><i class="bi bi-check-circle"></i> Just tell us your goals and we will help you achieve them.</li>
+            </ul>
+            <p>
+              Not only that, We will help you with your investments and savings. We will help you to invest in the best mutual funds and stocks by giving you the best recommendations.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="box">
+              <span>01</span>
+              <h4>Expertise and Guidance</h4>
+              <p>Financial planner which offers a tailored advice for effective budgeting, achieving life goals, and navigating investments.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
+            <div class="box">
+              <span>02</span>
+              <h4>Personalized Approach </h4>
+              <p>Our personalized method adapts to your unique financial journey which helps you towards financial triumph.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <span>03</span>
+              <h4>Time-Saving </h4>
+              <p>Our efficient tools and streamlined processes save you time, allowing you to focus on what truly matters while we handle the complexities of your finances.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Clients Section ======= -->
+    
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Services</span>
+          <h2></h2><br>
+          <p style="font-style: italic;">Just as you keep track of your body's pulse, Let GoldPulse handle your financial pulse.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class='bx bx-dollar' ></i></div>
+              <h4>Income Management </h4>
+              <p>Manage and Analyse your income over various time periods and sources.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4>Expense Management</h4>
+              <p>We have broken down your expense into two categories - Needs and Wants</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class='bx bxs-home' ></i></div>
+              <h4>Needs Management</h4>
+              <p>We meticulously analyze and adapt to match your evolving needs, ensuring they are consistently fulfilled. </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
+            <div class="icon-box">
+              <div class="icon"><i class='bx bx-wifi' ></i></div>
+              <h4>Wants Management</h4>
+              <p>We go beyond needs, understanding your financial desires. We considers both your necessities and aspirations, crafting a plan that aligns with your wants for a fulfilling financial journey.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-box">
+              <div class="icon"><i class='bx bx-candles' ></i></div>
+              <h4>Investments</h4>
+              <p>We help you diversify your investments among various assest classes so that you earn maximum with minimum risk.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
+            <div class="icon-box">
+              <div class="icon"><i class='bx bx-trending-up'></i></div>
+              <h4>Bonus : Price Predictor and Stock Analyser</h4>
+              <p>We have a price predicting algorithm which helps you predict prices of Mutual Funds and a stock analyser which tells the quality and potential of a stock. </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3 style="color:gold">What are you waiting for?</h3>
+          <p style="color:cornsilk"> Begin your smooth financial journey by registering with GoldPulse.</p>
+          <button class="button-85" role="button"><a href="{#% url 'login_register' %#}" style="color:whitesmoke">Login or Register</a></button>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Pricing</span>
+          <h2></h2><br>
+          <p>Are you worried that we also will eat your budget ?</p>
+        </div>
+
+        <div class="row" id="pricingdiv">
+
+          
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
+            <div class="box featured">
+              <h3>Free</h3>
+              <h4><sup>&#x20B9;</sup>0<span> / month</span></h4>
+              <ul>
+                <li>Don't worry</li>
+                <li>It's free</li>
+                <li>Forever</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#cta" class="btn-buy">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+   
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Contact Us</span>
+          <h2></h2><br>
+          <p style="color:#bbbbbb">Still have questions? Reach out to us to clear your confusions.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p style="color:#aaaaaa">IIIT Bengaluru, Infosys Gate 10, Hosur Road, Bengaluru, 560100</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p><a href="mailto:goldpulsemoney@gmail.com" style="color:#aaaaaa">goldpulsemoney@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p style="color:#aaaaaa">+91 99999 99999</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" style="flex:auto;justify-content:center;align-items:center">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3889.9714597716425!2d77.65800760453764!3d12.845119870378358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m0!4m5!1s0x3bae135aeb7f340f%3A0x3ad86af40d2ac611!2sInternational%20Institute%20of%20Information%20Technology%2C%20Bangalore%2C%2026%2FC%2C%20Hosur%20Rd%2C%20Electronics%20City%20Phase%201%2C%20Electronic%20City%2C%20Bengaluru%2C%20Karnataka%20560100!3m2!1d12.8449599!2d77.6632162!5e0!3m2!1sen!2sin!4v1692966672022!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>GoldPulse</h3>
+              <p>
+                IIITB, Electronic City <br>
+                Bengaluru 560100<br><br>
+                <strong>Phone:</strong> +91 99999 99999<br>
+                <strong>Email:</strong> goldpulsemoney@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://twitter.com/goldpulsemoney" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/goldpulsemoney/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="#services">Services</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="#services">Income Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="#services">Expense Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="#services">Needs Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="#services">Wants Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="#services">Investments</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="#services">Price Predictor</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="#services">Stock Analyser</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Message from Creator</h4>
+            <p style="color:rgba(255, 255, 255, 0.8); font-style:italic">
+                Discover financial empowerment through our Personal Financial Manager bot. Seamlessly integrated into our website, this intelligent tool empowers you to take control of your finances with ease. Effortlessly plan budgets, track expenses, set savings goals, and receive personalized insights. Whether you're saving for a dream vacation or securing your future, our bot is your reliable partner on this journey. Say goodbye to financial stress and hello to a brighter, more secure tomorrow. Join us today and embark on the path to financial well-being.
+                
+                <div class="circular_image">
+                    <img src="{% static 'images/logo.jpg' %}"/>
+                </div>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>GoldPulse</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center nav-link scrollto"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main_index.js' %}"></script>
+
+</body>
+
+</html>

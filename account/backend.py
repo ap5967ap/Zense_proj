@@ -5,6 +5,7 @@ from django.db.models import Q
 UserModel = get_user_model()
 
 class EmailBackend(ModelBackend):
+    '''Custom backend implementation to authenticate users either with email or username '''
     def authenticate(self, request, username=None, password=None, **kwargs):
         try:
             user = UserModel.objects.get(Q(username__iexact=username) | Q(email__iexact=username))

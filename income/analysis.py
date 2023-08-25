@@ -8,6 +8,7 @@ from urllib.request import Request, urlopen
 from django.db.models import Sum
 
 
+
 INFLATION_DATA_LINK="https://www.macrotrends.net/countries/IND/india/inflation-rate-cpi"
 def _re(frequency: str):
     '''Returns the number of days after which the income will be repeated'''
@@ -87,7 +88,7 @@ def analysis_single(request,id):
                 infla.append(0)
         co+=1
     contri_label=[source.capitalize(),'Rest of the income']
-    return render(request,'single_extra_detail.html',context=
+    return render(request,'single_income_detail.html',context=
                   {
                             'last_year_timings':last_year_timings[::-1],
                               'year':datetime.today().year,

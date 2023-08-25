@@ -1,3 +1,4 @@
+import datetime
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import login as l, logout, authenticate, get_user_model
@@ -10,7 +11,7 @@ from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.encoding import force_bytes, force_str
 from django.core.mail import EmailMessage
 from .decorators import user_not_authenticated
-from .forms import UserRegistrationForm, UserLoginForm, SetPasswordForm, PasswordResetForm
+from .forms import SetPasswordForm
 from .tokens import account_activation_token
 from .models import Account
 from balance.models import Balance
@@ -34,7 +35,7 @@ def activate(request, uidb64, token):
         messages.error(request, "Activation link is invalid!")
     balance=Balance.objects.create(user=user)
     balance.save()
-    return redirect('home')
+    return redirect('login')
 
 
 def activateEmail(request, user, to_email):
@@ -48,83 +49,80 @@ def activateEmail(request, user, to_email):
     })
     email = EmailMessage(mail_subject, message, to=[to_email])
     if email.send():
-        messages.success(request, f'Dear <b>{user}</b>, please go to you email <b>{to_email}</b> inbox and click on \
-                received activation link to confirm and complete the registration. <b>Note:</b> Check your spam folder.')
+        system_messages = messages.get_messages(request)
+        for message in system_messages:
+            pass
+        messages.success(request, f'Dear {user}, please go to you email {to_email} inbox and click on \
+                received activation link to confirm and complete the registration. Note: Check your spam folder.')
     else:
         messages.error(
             request, f'Problem sending email to {to_email}, check if you typed it correctly.')
 
-
+@user_not_authenticated(redirect_url='home')#TODO: user dashboard
 def register(request):
     if request.method == "POST":
-        form = UserRegistrationForm(request.POST)
-        if form.is_valid():
-            if form.cleaned_data.get('password1') != form.cleaned_data.get('password2'):
-                messages.error(request, "Passwords don't match")
-                return redirect('register')
-            if form.cleaned_data.get('dob') > form.cleaned_data.get('dob').today():
-                messages.error(request, "Date of birth can't be in future")
-                return redirect('register')
-            if Account.objects.filter(email__iexact=form.cleaned_data.get('email')).exists():
-                messages.error(request, "Email already exists")
-                return redirect('register')
-            if Account.objects.filter(username__iexact=form.cleaned_data.get('username')).exists():
-                messages.error(request, "Username already exists")
-                return redirect('register')
-            user = form.save(commit=False)
-            user.is_active = False
-            user.save()
-            activateEmail(request, user, form.cleaned_data.get('email'))
-            return redirect('home')
-
-        else:
-            for error in list(form.errors.values()):
-                messages.error(request, error)
+            e1=e2=e3=e4=e5=e6=e7=''
+            first=request.POST.get('first')
+            last=request.POST.get('last')
+            dob=datetime.datetime.strptime(request.POST.get('dob'),'%Y-%m-%d').date()
+            pan=request.POST.get('pan').upper()
+            phone=request.POST.get('phone')
+            email=request.POST.get('email')
+            username=request.POST.get('username')
+            password1=request.POST.get('password1')
+            password2=request.POST.get('password2')
+            if not (first and last): 
+                e1='Name cannot be empty'
+            if dob >= datetime.datetime.now().date() or (not dob):
+                e2="Date of birth cannot be greater than today's date"
+            if len(pan)!=10:
+                e3='Invalid PAN'
+            if Account.objects.filter(pan__iexact=pan).exists():
+                e3='PAN already exists'
+            if len(phone)!=10:
+                e4='Invalid Phone Number'
+            if Account.objects.filter(email__iexact=email).exists():
+                e5='Email already exists'
+            if Account.objects.filter(username__iexact=username).exists():
+                e6='Username already exists'
+            if password1!=password2:
+                e7='Passwords do not match'
+            if e1 or e2 or e3 or e4 or e5 or e6 or e7:
+                return render(request,'register.html',{'e1':e1,'e2':e2,'e3':e3,'e4':e4,'e5':e5,'e6':e6,'e7':e7})
+            else:
+                try:
+                    user=Account.objects.create_user(first_name=first,last_name=last,username=username,email=email,dob=dob,pan=pan,phone=phone,password=password1)
+                    user.is_active=False
+                    user.save()
+                    activateEmail(request,user,email)
+                    return redirect('login')
+                except:
+                    return render(request,'register.html',{'e8':'Password must contain at least 8 characters, 1 uppercase letter, 1 lowercase letter, 1 number and 1 special character'})
 
     else:
-        form = UserRegistrationForm()
-
-    return render(
-        request=request,
-        template_name="register.html",
-        context={"form": form}
-    )
+        return render(request=request,template_name="register.html")
 
 
 
 @login_required(login_url='/account/login/')
 def custom_logout(request):
     logout(request)
-    messages.info(request, "Logged out successfully!")
     return redirect("home")
 
+@user_not_authenticated(redirect_url='home')#TODO: user dashboard
 def login(request):
     if request.method == "POST":
-        form = UserLoginForm(request=request, data=request.POST)
-        if form.is_valid():
-            user = authenticate(
-                username=form.cleaned_data["username"],
-                password=form.cleaned_data["password"],
-            )
-            if user is not None:
-                l(request, user)
-                messages.success(request, f"Hello <b>{user.username}</b>! You have been logged in")
-                return redirect("home")
+        username=request.POST.get('username')
+        password=request.POST.get('password')
+        user = authenticate(username=username,password=password)
+        if user is not None:
+            l(request, user)
+            return redirect("home") #TODO: user dashboard
 
         else:
-            for key, error in list(form.errors.items()):
-                if key == 'captcha' and error[0] == 'This field is required.':
-                    messages.error(request, "You must pass the reCAPTCHA test")
-                    continue
-                
-                messages.error(request, error) 
-
-    form = UserLoginForm()
-    return render(
-        request=request,
-        template_name="login.html",
-        context={"form": form}
-        )
+            messages.error(request, "Invalid username or password")
+            return redirect("login")
+    return render(request=request,template_name="login.html")
     
 @login_required(login_url='/account/login/')
 def profile(request, username):
@@ -141,8 +139,7 @@ def password_change(request):
             messages.success(request, "Your password has been changed")
             return redirect('login')
         else:
-            for error in list(form.errors.values()):
-                messages.error(request, error)
+            pass
 
     form = SetPasswordForm(user)
     return render(request, 'password_reset_confirm.html', {'form': form})
@@ -150,9 +147,7 @@ def password_change(request):
 @user_not_authenticated
 def password_reset_request(request):
     if request.method == 'POST':
-        form = PasswordResetForm(request.POST)
-        if form.is_valid():
-            user_email = form.cleaned_data['email']
+            user_email = request.POST.get('username')
             associated_user = get_user_model().objects.filter(Q(email=user_email) | Q(username=user_email)).first()
             if associated_user:
                 subject = "Password Reset request"
@@ -167,30 +162,19 @@ def password_reset_request(request):
                 if email.send():
                     messages.success(request,
                         """
-                        <h2>Password reset sent</h2><hr>
-                        <p>
                             We've emailed you instructions for setting your password, if an account exists with the email you entered. 
                             You should receive them shortly.<br>If you don't receive an email, please make sure you've entered the address 
                             you registered with, and check your spam folder.
-                        </p>
                         """
                     )
                 else:
-                    messages.error(request, "Problem sending reset password email, <b>SERVER PROBLEM</b>")
+                    messages.error(request, "Problem sending reset password email, SERVER PROBLEM")
+            else:
+                messages.error(request, "User does not exist")
+            return redirect('login')
 
-            return redirect('home')
 
-        for key, error in list(form.errors.items()):
-            if key == 'captcha' and error[0] == 'This field is required.':
-                messages.error(request, "You must pass the reCAPTCHA test")
-                continue
-
-    form = PasswordResetForm()
-    return render(
-        request=request, 
-        template_name="password_reset.html", 
-        context={"form": form}
-        )
+    return render(request=request, template_name="password_reset.html")
 
 def passwordResetConfirm(request, uidb64, token):
     User = get_user_model()
@@ -202,19 +186,19 @@ def passwordResetConfirm(request, uidb64, token):
 
     if user is not None and account_activation_token.check_token(user, token):
         if request.method == 'POST':
-            form = SetPasswordForm(user, request.POST)
-            if form.is_valid():
-                form.save()
-                messages.success(request, "Your password has been set. You may go ahead and <b>log in </b> now.")
-                return redirect('home')
+            password=request.POST.get('password1')
+            confirm_password=request.POST.get('password2')
+            if password!=confirm_password:
+                messages.error(request, "Passwords do not match")
+                return redirect('password_reset_confirm',uidb64=uidb64,token=token)
             else:
-                for error in list(form.errors.values()):
-                    messages.error(request, error)
-
-        form = SetPasswordForm(user)
-        return render(request, 'password_reset_confirm.html', {'form': form})
+                user.set_password(password)
+                user.save()
+                messages.success(request, "Your password has been set. You may go ahead and log in now.")
+                return redirect('login')
+        else:
+            return render(request, 'password_reset_confirm.html', {'uid': uidb64, 'token': token })
     else:
         messages.error(request, "Link is expired")
-
-    messages.error(request, 'Something went wrong, redirecting back to Homepage')
-    return redirect("home")
+    messages.error(request, "An error occured")
+    return redirect("login")

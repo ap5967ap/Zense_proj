@@ -1,34 +1,141 @@
-{% extends "base.html" %}
-{% load crispy_forms_tags %}
-{% block content %}
-    <div class="content-section container">
-        <form method="POST">
-            {% if messages %}
-    {% for message in messages %}
-    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert" id="message">
-      {{ message }}
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-       <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    {% endfor %}
-{% endif %}
-            {% csrf_token %}
-            <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Join Today</legend>
-                {{ form.as_p }}
-            </fieldset>
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
 
-            By registering, you accept the Terms of Service and Privacy Notice
+    <!-- Title Page-->
+    <title>Registration Form</title>
 
-            <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">Sign Up</button>
+    <!-- Icons font CSS-->
+    <link href="{% static 'register/vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'register/vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="{% static 'register/vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'register/vendor/datepicker/daterangepicker.css' %}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{% static 'register/css/main.css' %}" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680" >
+            <div class="card card-4" >
+                <div class="card-body" >
+                    <h2 class="title" >Registration Form</h2>
+                    <form method="POST" action="{% url 'register' %}">
+                        {% csrf_token %}
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">First Name</label>
+                                    <input class="input--style-4" type="text" name="first" required>
+                                    <p style="color:red">{{e1}}</p>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Last Name</label>
+                                    <input class="input--style-4" type="text" name="last" required>
+                                    <p style="color:red">{{e1}}</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Date of Birth</label>
+                                        <input type="date" max="{% now 'Y-m-j' %}" name="dob" required>
+                                    <p style="color:red">{{e2}}</p>
+
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Pan Number</label>
+                                    <input class="input--style-4" type="text" name="pan" maxlength="10" required minlength="10">
+                                    <p style="color:red">{{e3}}</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <input class="input--style-4" type="email" name="email" required>
+                                    <p style="color:red">{{e5}}</p>
+
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Phone Number</label>
+                                    <input class="input--style-4" type="text" name="phone" maxlength="10" required minlength="10">
+                                    <p style="color:red">{{e4}}</p>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Username</label>
+                                    <input class="input--style-4" type="text" name="username" required>
+                                    <p style="color:red">{{e6}}</p>
+
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Password</label>
+                                    <input class="input--style-4" type="password" name="password1" required>
+                                    <p style="color:red">{{e7}}</p>
+                                    <p style="color:red">{{e8}}</p>
+
+
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Confirm Password</label>
+                                    <input class="input--style-4" type="password" name="password2" required>
+                                    <p style="color:red">{{e7}}</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        </div>
+                    </form>
+                    <br>
+                    <div class="container pt-5" style="color:bisque; font-size:medium">Already have an account? <a href="{% url 'login' %}">Login</a></div>
+                </div>
             </div>
-        </form>
-        <div class="border-top pt-3">
-            <small class="text-muted">
-                Already Have An Account? <a class="ml-2" href="{%url 'login' %}">Sign In</a>
-            </small>
         </div>
     </div>
-{% endblock content %}
+
+    <!-- Jquery JS-->
+    <script src="{% static 'register/vendor/jquery/jquery.min.js' %}"></script>
+    <!-- Vendor JS-->
+    <script src="{% static 'register/vendor/select2/select2.min.js' %}"></script>
+    <script src="{% static 'register/vendor/datepicker/moment.min.js' %}"></script>
+    <script src="{% static 'register/vendor/datepicker/daterangepicker.js' %}"></script>
+
+    <!-- Main JS-->
+    <script src="{% static 'register/js/global.js' %}"></script>
+
+</body>
+</html>

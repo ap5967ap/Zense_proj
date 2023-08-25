@@ -1,7 +1,7 @@
 from django.shortcuts import redirect
 
 def user_not_authenticated(function=None, redirect_url='/'):
-    
+    '''checks if user is authenticated or not and if authenticated redirects to given url'''
     def decorator(view_func):
         def _wrapped_view(request, *args, **kwargs):
             if request.user.is_authenticated:
