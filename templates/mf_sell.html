@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="container pt-5">
+<div>
+<div class="container pt-5" style="display: flex; align-items:center;justify-content:center;">
   {% include 'messages.html' %}
 <form  action="{% url 'mf_sell' %}" method="post" class="form-control">
     {% csrf_token %}
@@ -43,5 +44,6 @@
     <button type="submit" class="btn btn-primary" disabled>Submit</button>
     {% endif %}
 </form>
+</div>
 </div>
 {% endblock content %} 

@@ -1,0 +1,20 @@
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+.navbar22{
+    display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  padding: 10px
+}
+.txt_navbar{
+    font-size: large;
+}
+.nav_text{
+    font-size: large;
+    color:azure;
+}
+  .dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }

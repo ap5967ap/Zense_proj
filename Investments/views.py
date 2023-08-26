@@ -654,6 +654,7 @@ def mf_sell(request):
             dict=json.load(file)
         dict2={key: value for d in dict for value, key in d.items()}
         name=''
+        price=0
         try:
             name=request.GET.get('name')
             price=decimal.Decimal(yf.download(str(dict2.get(name))+".BO",period='1d')['Close'].iloc[0])

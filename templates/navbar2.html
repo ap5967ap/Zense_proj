@@ -1,0 +1,38 @@
+<div class="container">
+    {% now "jS F Y" %}
+    <h1>NAVBAR 2</h1>
+    <ul>
+      <li><a href="{%url 'login' %}">Login</a></li>
+      <li><a href="{%url 'register' %}">register</a></li>
+      <li><a href="{%url 'home' %}">home</a></li>
+      <li><a href="{%url 'logout' %}">logout</a></li>
+      <li><a href="#">{{user.first_name}} {{user.last_name}}</a></li>
+      {%if user.is_authenticated%}
+      <li><a href="{%url 'profile' user.username %}">profile</a></li>
+      <li><a href="{% url 'add_income' %}">Add Income</a></li>
+      <li><a href="{% url 'view_income' %}">View Income</a></li>
+      <li>Balance {{user.balance.balance|floatformat }}</li>
+      <li><a href="{% url 'investment_summary' %}">Investments</a></li>
+      <li><a href="{% url 'mf_recomm' %}">MF Recommendations</a></li>
+      <li><a href="{% url 'mf_predict' %}">MF Predictor</a></li>
+      <li><a href="{% url 'mf_transact' %}">Buy MF</a></li>
+      <li><a href="{% url 'mf_home' %}">MF Home</a></li>
+      <li><a href="{% url 'sold_prev' %}">Sold Prev MF</a></li>
+      <li><a href="{% url 'stock_home' %}">Stock Home</a></li>
+      <li><a href="{% url 'stock_recomm' %}">Stock Recommendations</a></li>
+      <li><a href="{% url 'stock_predict' %}">Stock Predictor</a></li>
+      <li><a href="{% url 'stock_transact' %}">Buy Stock</a></li>
+      <li><a href="{% url 'stock_prev_sold' %}">Sold Prev Stock</a></li>
+      <li><a href="{% url 'fd_home' %}">FD Home</a></li>
+      <li><a href="{% url 'fd_buy' %}">Buy FD</a></li>
+      <li><a href="{% url 'fd_sell' %}">Sell FD</a></li>
+      <li><a href="{% url 'add_wants' %}">Wants Add</a></li>
+      <li><a href="{% url 'view_wants' %}">Wants View</a></li>
+      <li><a href="{% url 'add_needs' %}">Add Needs</a></li>
+      <li><a href="{% url 'needs_view' %}">View Needs</a></li>
+      <li><a href="{% url 'change_priority' %}">Change Priority</a></li>
+      {%endif%}
+      <li><a href="/admin/">Admin</a></li>
+    </ul>
+  </div>
+  

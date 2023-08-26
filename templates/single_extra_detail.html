@@ -5,11 +5,11 @@
     <h1>{{source|capfirst}}</h1>
     {% if lis.0.status %}
     <h5 style="color: green">This expense is synced automatically</h5>
-    <a href="{% url 'edit_wants' lis.0.id %}" class="btn btn-primary"><i class="fa fa-pen"></i>Edit this and all future deductions. </a>
     
     {% else %}
     <h5 style="color: red">This expense is not synced automatically</h5>
     {% endif %}
+    <a href="{% url 'edit_wants' lis.0.id %}" class="btn btn-primary"><i class="fa fa-pen"></i>Edit this and all future deductions. </a>
     <a href="{% url 'delete_source_wants' lis.0.source %}" class="btn btn-danger"><i class="fa fa-trash"> Stop all future payments </i></a>
 </div>
 <div class="container pt-5">
@@ -32,6 +32,7 @@
         </tr>
         {%endfor%}
       </tbody>
+      </table>
 </div>
 <div>
   <canvas

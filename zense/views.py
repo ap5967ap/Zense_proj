@@ -9,4 +9,4 @@ def home(request):
 
 def temp(request):
     if request.user.is_superuser:
-        return render(request, "base.html", {})
+        return render(request, "base1.html", {})

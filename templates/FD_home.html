@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
-
 {% block content %}
-<h1>Fixed Deposit</h1>
 <div class="container">
+    <h1>Fixed Deposit</h1>
+    {% if not inv.FD_i %}
+    Invested this year : 0<br> 
+    {% else %}
     Invested this year : {{inv.FD_i}}<br> 
+    {% endif %}
     <table class="table table-striped">
         <thead>
             <tr>
@@ -32,6 +35,6 @@
             </tr>
             {% endfor %}
         </tbody>
-</div>
-
+        </table>
+        </div>
 {% endblock content %}

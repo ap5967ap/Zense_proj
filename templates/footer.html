@@ -1,0 +1,63 @@
+{% load static %}
+<link href="{% static 'css/style_index.css' %}" rel="stylesheet">
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>GoldPulse</h3>
+              <p>
+                IIITB, Electronic City <br>
+                Bengaluru 560100<br><br>
+                <strong>Phone:</strong> +91 99999 99999<br>
+                <strong>Email:</strong> goldpulsemoney@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://twitter.com/goldpulsemoney" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/goldpulsemoney/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="{% url 'income_summary' %}">Income</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="{#% url 'expense_summary' %#}">Expense</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="#">Investments</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Income</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="{% url 'income_summary' %}">Income Summary</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="{% url 'add_income' %}">Add Income</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="{% url 'view_income' %}">View Income</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Message from Creator</h4>
+            <p style="color:rgba(255, 255, 255, 0.8); font-style:italic">
+                Discover financial empowerment through our Personal Financial Manager bot. Seamlessly integrated into our website, this intelligent tool empowers you to take control of your finances with ease. Effortlessly plan budgets, track expenses, set savings goals, and receive personalized insights. Whether you're saving for a dream vacation or securing your future, our bot is your reliable partner on this journey. Say goodbye to financial stress and hello to a brighter, more secure tomorrow. Join us today and embark on the path to financial well-being.
+                
+                <div class="circular_image">
+                    <img src="{% static 'images/logo.jpg' %}"/>
+                </div>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>GoldPulse</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->

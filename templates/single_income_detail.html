@@ -1,59 +1,134 @@
 {%extends 'base.html'%} {%block content%}
-<div>
-  <canvas
-    id="myChart"
-    class="col-md-6 row"
-    url-endpoint="{% url 'chart' source %}"
-  ></canvas>
-</div>
-<div>
-  <h1 style="color: red">Year {{year}}</h1>
-  <h3>
+<div class="container">
+<h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><u>{{so|capfirst}} in the year {{year}}. 
+  
+</u></h2>
+
+<br><br>
+  <h5>
     This year income from {{so|capfirst}} is
     {{income_all_years|last|floatformat}} which is
     {{contribution|floatformat:2}}% of total income.
-  </h3>
-  <h4>Last Received {{last}}</h4>
-  <div class="container">
+    {%if growth|last > inflation|last%}
+    Your income growth from this source beats inflation currently.
+    {%else%}
+    
+      Your income growth from this source is less than inflation currently. You need to
+      earn more
+    
+    {%endif%}
+  </h5>
+
+    <div class="container">
+      <br>
+      <a href="{% url 'delete_source_income' my.0.source %}" class="btn btn-danger" id="ale"><i class="fa fa-trash"> Stop all future payments </i></a>
+      <br>
+      <br>
+
+  </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"></th>
+
+          <th scope="col">Frequency</th>
+          <th scope="col">Last Date</th>
+          <th scope="col">Next Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          {% if not my.0.status %}
+          <td><a href="{% url 'add_income' %}?name={{my.0.source}}" class="btn btn-outline-primary" style="background-color: #0069d9; color:whitesmoke" >Add Income</a>(Not Synced automatically)</td>
+          {% else %}
+          <td><button type="button" disabled class="btn btn-outline-success" style="background-color: green; color:white"> Synced automatically</button></td>
+
+          {% endif %}
+          <td><a href="{% url 'edit_income' my.0.id %}" class="btn btn-outline-primary" style="background-color: #0069d9; color:whitesmoke">Edit Income</a></td>
+          <td>{{my.0.frequency}}</td>
+          <td>{{my.0.last_date}}</td>
+          <td>{{my.0.next_date}}</td>
+          </tr>
+          </tbody>
+          </table>
+          
+  <div>
+    <br><br>
+
     <canvas
-      id="this_year"
+      id="myChart"
       class="col-md-6 row"
       url-endpoint="{% url 'chart' source %}"
     ></canvas>
   </div>
+  <div class="container">
+    <canvas
+    id="this_year"
+    class="col-md-6 row"
+    url-endpoint="{% url 'chart' source %}"
+    ></canvas>
+  </div>
+  <br><br><br>
+
 </div>
 
-<div class="container">
-  <h1 style="color: red">Previous Years</h1>
-  <ul>
-    <li>You are earning from this source since {{first_year}}</li>
-    {%if growth|last > inflation|last%}
-    <li>Your income growth from this source beats inflation</li>
-    {%else%}
-    <li>
-      Your income growth from this source is less than inflation. You need to
-      earn more
-    </li>
-    {%endif%}
-  </ul>
+<div class="container" style="display:flex;align-items:center">
+  <br><br><br>
+  <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><u>{{so|capfirst}} in Previous Years</u></h2>
+
 </div>
-<div>
     <div class="container">
+
+<br><br><br>
+
+    <div>
       <canvas
         id="income_contri"
         class="col-md-6 row"
         url-endpoint="{% url 'chart' source %}"
       ></canvas>
     </div>
-    <div class="container">
+    <div>
       <canvas
         id="inflation_growth"
         class="col-md-6 row"
         url-endpoint="{% url 'chart' source %}"
       ></canvas>
     </div>
-    </div>
+    <br><br><br>
+    <br><br><br>
 
+
+  </div>
+  <div class="container pt-5">
+    <div class="container" style="display:flex;align-items:center">
+      <br><br><br>
+      <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><u>All Previous Credits from this source</u></h2>
+    </div>
+    <br><br>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">S.No.</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Date</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {%for i in my %}
+        <tr>
+          <td>{{forloop.counter}}</td>
+          <td>{{i.amount}}</td>
+          <td>{{i.last_date}}</td>
+          <td><a href="{% url 'delete_income' i.id %}" class="btn btn-danger"><i class="fa fa-trash"></i>Delete this from list</a></td>
+        </tr>
+        {%endfor%}
+      </tbody>
+      </table>
+</div>
+  <br><br><br>
     <script>
     var endpoint = "{% url 'chart' source %}";
     var defaultData = [];
@@ -159,6 +234,7 @@
           ],
         },
       }
+      
       var chart = new Chart(ctx, {
         type: "bar",
         data: {
@@ -229,6 +305,14 @@
         },
       });
     }
+  </script>
+  <script>
+    x=document.getElementById("ale")
+    x.addEventListener("click",function(){
+      if(!confirm("Are you sure you want to stop all future payments from this source?")){
+        event.preventDefault()
+      }
+    })
   </script>
   {%endblock content%}
 </div>

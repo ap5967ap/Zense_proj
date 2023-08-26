@@ -1,36 +1,100 @@
-<div class="container">
-  {% now "jS F Y" %}
-  <ul>
-    <li><a href="{%url 'login' %}">Login</a></li>
-    <li><a href="{%url 'register' %}">register</a></li>
-    <li><a href="{%url 'home' %}">home</a></li>
-    <li><a href="{%url 'logout' %}">logout</a></li>
-    <li><a href="#">{{user.first_name}} {{user.last_name}}</a></li>
-    {%if user.is_authenticated%}
-    <li><a href="{%url 'profile' user.username %}">profile</a></li>
-    <li><a href="{% url 'add_income' %}">Add Income</a></li>
-    <li><a href="{% url 'view_income' %}">View Income</a></li>
-    <li>Balance {{user.balance.balance|floatformat }}</li>
-    <li><a href="{% url 'investment_summary' %}">Investments</a></li>
-    <li><a href="{% url 'mf_recomm' %}">MF Recommendations</a></li>
-    <li><a href="{% url 'mf_predict' %}">MF Predictor</a></li>
-    <li><a href="{% url 'mf_transact' %}">Buy MF</a></li>
-    <li><a href="{% url 'mf_home' %}">MF Home</a></li>
-    <li><a href="{% url 'sold_prev' %}">Sold Prev MF</a></li>
-    <li><a href="{% url 'stock_home' %}">Stock Home</a></li>
-    <li><a href="{% url 'stock_recomm' %}">Stock Recommendations</a></li>
-    <li><a href="{% url 'stock_predict' %}">Stock Predictor</a></li>
-    <li><a href="{% url 'stock_transact' %}">Buy Stock</a></li>
-    <li><a href="{% url 'stock_prev_sold' %}">Sold Prev Stock</a></li>
-    <li><a href="{% url 'fd_home' %}">FD Home</a></li>
-    <li><a href="{% url 'fd_buy' %}">Buy FD</a></li>
-    <li><a href="{% url 'fd_sell' %}">Sell FD</a></li>
-    <li><a href="{% url 'add_wants' %}">Wants Add</a></li>
-    <li><a href="{% url 'view_wants' %}">Wants View</a></li>
-    <li><a href="{% url 'add_needs' %}">Add Needs</a></li>
-    <li><a href="{% url 'needs_view' %}">View Needs</a></li>
-    <li><a href="{% url 'change_priority' %}">Change Priority</a></li>
-    {%endif%}
-    <li><a href="/admin/">Admin</a></li>
-  </ul>
-</div>
+{%load static%}
+<link rel="stylesheet" href="{% static 'css/try.css' %}" />
+<header class="section-header" style="background-color: black;z-index:500;position:relative ">
+  <nav class="navbar p-md-0 navbar-expand-sm navbar-light border-bottom" style="background-color: black;">
+    <div class="container" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop4" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse"  id="navbarTop4">
+        <ul class="navbar-nav  ml-auto" >
+          
+         
+
+          <li class="nav-item">
+            <a href="{#% url 'profile' %#}" class="nav-link">
+             <p style="color: white;"> Welcome {{user.first_name}} {{user.last_name}}!</p>
+             
+            </a>
+        </li> 
+          <li >
+            <a class = "nav-link" href ="{% url 'logout' %}"><p style="color:white">Logout</p></a>
+          </li>
+          <li>
+            <a class="nav-link"><p style="color:white">{% now 'jS M Y' %}</p></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+    <div class="header-main" style="background-color: black; z-index:500;position:relative">
+    <div class="col-lg-2 col-md-3 col-6" style="display: flex; align-items: center; justify-items:center">
+      <a href="{% url 'home' %}" class="brand-wrap" style="margin-right: auto;">
+        <img src="{% static 'images/goldpress.svg' %}" alt="" class="img-fluid" style="max-width: 70;" >
+      </a>
+      <!-- brand-wrap.// -->
+    </div>
+    <nav class="navbar navbar-expand-lg" style="background-color: black; z-index:500;position:relative ; justify-content:space-evenly;">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="{% url 'income_summary' %}" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Income
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="{% url 'income_summary' %}">Income Summary</a></li>
+        
+                <li><a class="dropdown-item" href="{% url 'add_income' %}">Add Income</a></li>
+                <li><a class="dropdown-item" href="{% url 'view_income' %}">View Income</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Expense
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    </section>
+</header>

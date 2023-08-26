@@ -1,13 +1,55 @@
 {%extends 'base.html' %}
 {%block content%}
-<div class="container">
-    <h1 class="text-center btn btn-primary">Please use this form to add only active income</h1>
-    {{message}}
-    <form action="{% url 'add_income' %}" method="post">
-        {% csrf_token %}
-        {{form.as_p}}
-        {{form.media}}
-        <button type="submit" id="income_submit" class="btn btn-primary">Submit</button>
-    </form>
+<div>
+    <div class="container pt-5" style="display:flex;justify-content:center;align-items:center">
+        <form action="{% url 'add_income' %}" method="post" >
+            {% csrf_token %}
+            <div class="form-group">
+            <datalist id="sor">
+                {% for i in l %}
+                <option value="{{i}}">
+                {% endfor %}
+            </datalist>
+            <label for="sosr" >Source</label>
+            {% if name %}
+            <input type="text" list="sor"  class="form-control" name="source" id="sosr" value="{{name}}"required>
+            {% else %}
+            <input type="text" list="sor"  class="form-control" name="source" id="sosr" required>
+            {% endif %}
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="number" step="0.01" class="form-control" id="amount" name="amount" placeholder="Enter amount" value="{{amount}}" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" id="date" name="last_date" placeholder="Enter date" required value="{% now 'Y-m-j' %}" max="{% now 'Y-m-j' %}">
+            </div>
+            <div class="form-group">
+                <label for="freq">Freqency</label>
+                <select class="form-control" id="freq" name="frequency">
+                    <option>Daily</option>
+                    <option>Weekly</option>
+                    <option selected>Monthly</option>
+                    <option>Yearly</option>
+                    <option>Once</option>
+                </select>
+            </div>
+            <div>
+                <label for="op1">Do you want to sync the income for this source automatically (after next frequency time) ?</label>
+                <input type="checkbox" id="op1" name="status" value="1"/>
+            </div>
+            <div class="form-group">
+                <label for="descript">Description</label>
+                <input type="textarea" rows="4" cols="500" name="description" id="descript" placeholder="Enter description">
+            </div>
+            <button type="submit" class="btn btn-outline-primary" style="background-color:#0069d9;color:whitesmoke" >Submit</button>
+        </form>
+        <br><br>
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+
 </div>
 {%endblock content %}

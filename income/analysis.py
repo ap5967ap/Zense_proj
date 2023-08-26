@@ -66,7 +66,10 @@ def analysis_single(request,id):
     contribution_all_years=[]
     total_objs=IncomeObject.objects.filter(user=user,added=True)
     for i in range(first_year,current_year+2):
-        contribution_all_years.append(float((income_in_year(income,i)/income_in_year(total_objs,i))*100))
+        try:
+            contribution_all_years.append(float((income_in_year(income,i)/income_in_year(total_objs,i))*100))
+        except ZeroDivisionError:
+            contribution_all_years.append(0)
     growth=[]
     for i in range(first_year,current_year+2):
         try:
@@ -88,6 +91,7 @@ def analysis_single(request,id):
                 infla.append(0)
         co+=1
     contri_label=[source.capitalize(),'Rest of the income']
+    my=IncomeObject.objects.filter(user=user,added=True,source=source).order_by('-last_date')
     return render(request,'single_income_detail.html',context=
                   {
                             'last_year_timings':last_year_timings[::-1],
@@ -102,7 +106,10 @@ def analysis_single(request,id):
                               'inflation':infla,
                               'first_year':first_year,
                               'labels':labels,
-                              'source':id
+                              'source':id,
+                              'so':source,
+                              'my':my,
+                              
                   })
 
 
@@ -155,7 +162,10 @@ def single_analysis(request,source):
     contribution_all_years=[]
     total_objs=IncomeObject.objects.filter(user=user,added=True)
     for i in range(first_year,current_year+2):
-        contribution_all_years.append(float((income_in_year(income,i)/income_in_year(total_objs,i))*100))
+        try:
+            contribution_all_years.append(float((income_in_year(income,i)/income_in_year(total_objs,i))*100))
+        except ZeroDivisionError:
+            contribution_all_years.append(0)
     growth=[]
     for i in range(first_year,current_year+2):
         try:
@@ -190,5 +200,4 @@ def single_analysis(request,source):
                               'inflation':infla,
                               'first_year':first_year,
                               'labels':labels,
-                              
                               })
