@@ -3,7 +3,7 @@ from .models import Investment,MF,MFData,StockData,Stock,Other
 from .mutual_fund_data import func
 from .other import fd_sync
 class InvestmentAdmin(admin.ModelAdmin):
-    list_display=('user','year','to_invest','invested_this_year','done','risky','safe','MF','SmallCase','trade','large','mid','small','FD','SGB')
+    list_display=('user','year','to_invest','invested_this_year','done','risky','safe','MF','large','mid','small','FD','SGB')
     list_filter=('user','year','done')
     search_fields=('user','year','done')
     list_editable=('done',)
@@ -35,6 +35,9 @@ class OtherAdmin(admin.ModelAdmin):
     list_filter=('user','date','category')
     search_fields=('user','date','category')
     list_editable=('is_active',)
+    
+    
+    
 admin.site.register(Stock,StockAdmin)
 admin.site.register(Investment,InvestmentAdmin)
 admin.site.register(MF,MFAdmin)

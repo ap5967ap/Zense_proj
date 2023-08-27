@@ -1,11 +1,11 @@
 {% for message in messages %}
 <div class="container-fluid p-0">
     {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
-    <p style="color: green !important;">{{ message }}</p>
+    <h5 style="color: green !important;">{{ message }}</h5>
     {% elif message.level == DEFAULT_MESSAGE_LEVELS.INFO  %}
-    <p style="color: yellow !important;">{{ message }}</p>
+    <h5 style="color: yellow !important;">{{ message }}</h5>
     {% else %}
-    <p style="color: red !important;">{{ message }}</p>
+    <h5 style="color: red !important;">{{ message }}</h5>
     {% endif %}
 </div>
 {% endfor %}

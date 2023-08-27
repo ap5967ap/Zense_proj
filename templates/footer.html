@@ -39,6 +39,21 @@
 
             </ul>
           </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Expense</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a class="nav-link scrollto" href="{% url 'expense_summary' %}">Expense Summary</a></li>
+                <li><i class="bx bx-chevron-right"></i><a class="nav-link scrollto" href="{% url 'category' %}">Expense in Category (Needs) </a></li>
+                <li><i class="bx bx-chevron-right"></i><a class="nav-link scrollto" href="{% url 'add_needs' %}">Add Money in Wants</a></li>
+                <li><i class="bx bx-chevron-right"></i><a class="nav-link scrollto" href="{% url 'needs_view' %}">View All Wants</a></li>
+                <li><i class="bx bx-chevron-right"></i><a class="nav-link scrollto" href="{% url 'add_wants' %}">Add Money in Needs</a></li>
+                <li><i class="bx bx-chevron-right"></i><a class="nav-link scrollto" href="{% url 'view_wants' %}">View All Needs</a></li>
+                <li><i class="bx bx-chevron-right"></i><a class="nav-link scrollto" href="{% url 'use_to_fund_other' %}">Transfer Money Between Wants</a></li>
+                <li><i class="bx bx-chevron-right"></i><a class="nav-link scrollto" href="{% url 'change_priority' %}">Change Priority in Wants</a></li>
+
+            </ul>
+          </div>
+
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Message from Creator</h4>

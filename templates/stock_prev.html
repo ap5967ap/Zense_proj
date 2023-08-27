@@ -10,7 +10,7 @@
 {% else %}
 <div class="container">
     <div class="row">
-      This year you have sold Rs. {{this_year_invest}} .
+      <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> This year you have sold Rs. {{this_year_invest}} .</h4>
   </div>
 <div class="container pt-5">
     <table class="table table-striped">
@@ -29,15 +29,27 @@
         <tr>
             <td><a href="{% url 'stock_single' j.3 %}">{{j.3}}</a></td>
             <td>{{j.0}}</td>
-            <td>{{j.1}}</td>
-            <td>{{j.4}}</td>
-            <td>{{j.5}}</td>
-            <td>{{j.6}}</td>
+            <td>{{j.1|floatformat:2}}</td>
+            <td>{{j.4|floatformat:2}}</td>
+            <td>{{j.5|floatformat:2}}</td>
+            <td>{{j.6|floatformat:2}}</td>
         </tr>
         {% endfor %}
         </tbody>
     </table>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 </div>

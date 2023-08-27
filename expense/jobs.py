@@ -10,6 +10,8 @@ from .views import _re
 import decimal
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
+
+
 def one_month_ago():
     '''Returns the date one month ago'''
     return datetime.now()-timedelta(days=30)
@@ -104,7 +106,8 @@ def job(do=False):
                 user_income.user.save()
                 new_income=Wants.objects.create(source=user_income.source, amount=user_income.amount, frequency=user_income.frequency, last_date=datetime.now().date(),
                                              status=user_income.status, next_date=datetime.now().date()+timedelta(_re(user_income.frequency)), user=user_income.user,
-                                             is_active=user_income.is_active)
+                                             is_active=user_income.is_active,
+                                             category=user_income.category)
                 new_income.save()   
                 subject=f"Expense for {user_income.source} debited successfully"
                 message=render_to_string('wants_mail.html',{'user':user,'income':user_income,'balance':balance})

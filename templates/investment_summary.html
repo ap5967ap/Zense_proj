@@ -1,15 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container pt-5">
+<div class="container pt-5" style="display:flex;align-items:center;justify-content:center;">
     <form method="get" action="{% url 'investment_summary' %}">
-        <input type="number" name="name" placeholder="Enter Year" class="form-control" min="1900" max="{% now 'Y' %}">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="row">
+            <div class="col">
+                <input type="number" name="name" placeholder="Enter Year" class="form-control" min="1900" max="{% now 'Y' %}">
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-outline-primary"  style="background-color: #0069d9; color:whitesmoke">Submit</button>
+                    </div>
+        </div>
     </form>
 </div>
 <div class="container pt-5 text-center">
-    As per our calculations, based on your current income, age and your previous choices, you should invest as per this calculation
-    <br> in the current year {{year}}
+    <h5>As per our calculations, based on your current income, expenses and previous choices, you should invest as per this calculation
+    <br> in the year {{year}}</h5>
+    <br>
+    <br>
+
     <table class="table table-striped">
         <thead>
             <tr>
@@ -21,12 +30,28 @@
         <tbody>
            {% for i in inv %}
             <tr>
-                <td><a href="#">{{i.Name}}</a></td> <!--TODO  Add link --> 
+                {% if i.Name == 'Mutual Funds' %}
+                <td><a href="{% url 'mf_home' %}">{{i.Name}}</a></td>  
+                {% elif i.Name == 'Large Cap Equity' %}
+                <td><a href="{% url 'stock_home' %}">{{i.Name}}</a></td>  
+                {% elif i.Name == 'Mid Cap Equity' %}
+                <td><a href="{% url 'stock_home' %}">{{i.Name}}</a></td>  
+                {% elif i.Name == 'Small Cap Equity' %}
+                <td><a href="{% url 'stock_home' %}">{{i.Name}}</a></td>  
+                {% elif i.Name == 'Fixed Deposits' %}
+                <td><a href="{% url 'fd_home' %}">{{i.Name}}</a></td>  
+                {% else %}
+                <td><a href="{#% url 'fd_home' %#}">{{i.Name}}</a></td><!--TODO  Add link -->
+                {% endif %}
                 <td> &#x20b9;​{{i.Amount}}</td>
                 <td> &#x20b9;​{{i.Invested}}</td>
 
             </tr>
             {% endfor %}
         </tbody>
+        </table>
+        <br>
+        <br>
+        <br>
 </div>
 {% endblock content %}

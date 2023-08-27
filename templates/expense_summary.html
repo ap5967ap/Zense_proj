@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <form action="{% url 'expense_summary' %}" method="get">
+        <div class="form-group row">
+            <div class="col">
+            <label for="year">Select Year</label>
+            <select class="form-control" id="year" name="year">
+                {% for i in yr %}
+                <option value="{{i}}">{{i}}</option>
+                {% endfor %}
+            </select>
+            </div>
+            <div class="col">
+            <label for="month">Select Month</label>
+            <select class="form-control" id="month" name="month" >
+                <option value='1'>1</option>
+                <option value='2'>2</option>
+                <option value='3'>3</option>
+                <option value='4'>4</option>
+                <option value='5'>5</option>
+                <option value='6'>6</option>
+                <option value='7'>7</option>
+                <option value='8'>8</option>
+                <option value='9'>9</option>
+                <option value='10'>10</option>
+                <option value='11'>11</option>
+                <option value='12'>12</option>
+            </select>
+            </div>
+            <div class="col pt-4">
+                <label for="submit"></label>
+                <button type="submit" class="btn btn-outline-primary" style="background-color: blue; color:whitesmoke " >Submit</button>
+            </div>
+        </div>
+    </form>
+    <div class="container pt-5">
+        {% if ex == '85' %}
+        <h4 class="container" style="display:flex;align-items:center;justify-content:center;color:red;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Data for this month and year does not exist. </h4>
+        {% else %}
+        <h4 class="container" style="display:flex;align-items:center;justify-content:center;">Summary of Expenses for this Month </h4>
+        <table class="table table-striped">
+            <tr>
+              <th>Allowed Expense</th>
+              <td> Rs. {{ex.to_expense|floatformat:2}}</td>
+            </tr>
+            <tr>
+              <th>Expense Used this Month</th>
+              <td> Rs. {{ex.used_this_month|floatformat:2}}</td>
+            </tr>
+            <tr>
+                <th>Expense for Needs Left </th>
+                <td> Rs. {{ex.wants|floatformat:2}}</td>
+            </tr>
+            <tr>
+                <th>Expense for Wants Left </th>
+                <td> Rs. {{ex.needs|floatformat:2}}</td>
+            </tr>
+            <tr>
+                <th>Amount used in Wants</th>
+                <td> Rs. {{ex.wants_i|floatformat:2}}</td>
+            </tr>
+            <tr>
+                <th>Amount used in Needs</th>
+                <td> Rs. {{ex.needs_i|floatformat:2}}</td>
+            </tr>
+            <tr>
+                <th>Buffer in Wants</th>
+                <td> Rs. {{ex.buffer2|floatformat:2}}</td>
+            </tr>
+            <tr>
+                <th>Buffer in Needs</th>
+                <td> Rs. {{ex.buffer2|floatformat:2}}</td>
+            </tr>
+          </table>
+          {% endif %}
+          <br><br>
+    </div>
+</div>
+<hr style="color: black;">
+<div class="container">
+    <h4 class="container" style="display:flex;align-items:center;justify-content:center;">Analysis By Categories</h4>
+    <br><br>
+    <form action="{% url 'expense_summary' %}" method="post">
+        {% csrf_token %}
+        <div class="form-group row">
+            <div class="col">
+            <label for="year">Select Start Date</label>
+            <input type="date" class="form-control" id="start_date" name="start" value="{{start}}"required>
+            </div>
+            <div class="col">
+            <label for="month">Select End Date</label>
+            <input type="date" class="form-control" id="end_date" name="end" value="{{end}}"required>
+            </div>
+            <div class="col pt-4">
+                <label for="submit"></label>
+                <button type="submit" class="btn btn-outline-primary" style="background-color: blue; color:whitesmoke " >Submit</button>
+            </div>
+
+        </div>
+    </form>
+    <br><br>
+    {% if d %}
+    <h4 class="container" style="display:flex;align-items:center;justify-content:center;">Data from {{startd}} to {{endd}}</h4>
+    <h6 style="color:black ;display:flex;align-items:center;justify-content:center;">To get detailed view of each category <a href="{% url 'category' %}">click </a></h6>
+    <table class="table table-striped">
+          <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Amount Spent</th>
+          </tr>
+            {% for i,j in d.items %}
+          <tr>
+            {% if i == 'None' %}
+            <th>Undefined Category</th>
+            {% else %}
+            <th><a href="{% url 'category' %}">{{i}}</a></th>
+            {% endif %}
+            <td>Rs. {{j|floatformat:2}}</td>
+          </tr>
+          {% endfor %}
+      </table>
+      <br><br>
+      {% endif %}
+</div>
+<script>
+    document.getElementById("month").selectedIndex = {{month}}-1;
+</script>
+{% endblock content %}

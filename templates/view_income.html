@@ -30,7 +30,7 @@
                 <td>{{i.last_date}}</td>
                 <td>{{i.next_date}}</td>
                 {% if i.status %}
-                <td><button disabled class="btn btn-outline-success" style="background-color:green">Income Synced</button></td>
+                <td><button disabled class="btn btn-outline-success" style="background-color:green ;color:whitesmoke">Income Synced</button></td>
                 {% else %}
                 <td><a href="{% url 'add_income' %}?name={{i.source}}" class="btn btn-outline-primary" style="background-color:#0069d9;color:whitesmoke">Add Income</a></td>
                 {% endif %}    

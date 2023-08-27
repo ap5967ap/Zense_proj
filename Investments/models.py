@@ -11,8 +11,6 @@ class Investment(models.Model):
     #TODO I will add the amount i got by selling to to_invest
     invested_this_year=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     MF_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
-    SmallCase_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
-    trade_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     large_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)#!_i is how much invested this year
     mid_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     small_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
@@ -23,8 +21,6 @@ class Investment(models.Model):
     risky=models.IntegerField()#!stored in %
     safe=models.IntegerField()#!stored in %
     MF=models.IntegerField() #!Stored in currency
-    SmallCase=models.IntegerField() #!Stored in currency 
-    trade=models.IntegerField(default=0) #!Stored in currency
     large=models.IntegerField() #!Stored in currency
     mid=models.IntegerField() #!Stored in currency
     small=models.IntegerField() #!Stored in currency

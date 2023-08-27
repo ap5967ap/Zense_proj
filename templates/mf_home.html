@@ -1,10 +1,11 @@
 {% extends 'base.html' %} {% block content %}
-<div class="container">
+<div class="container" >
+    <h2 style="display:flex;align-items:center;justify-content:center;">Mutual Funds </h2>
   <div class="row">
-    This year you have invested Rs. {{this_year_invest}} in Mutual Funds.
+    <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">This year you have invested Rs. {{this_year_invest}} in Mutual Funds.</h4>
 </div>
 <div class="row">
-    Your total portfolio value is Rs. {{total}} in Mutual Fund.
+    <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Total portfolio value is Rs. {{total}} in Mutual Fund.</h4>
 </div>
 </div>
 <div class="container pt-5">
@@ -34,17 +35,20 @@
             {% endif %}
             <td><form method="get" action="{% url 'mf_transact' %}">
                 <input type="hidden" name="name" value="{{i}}">
-                <button type="submit" class="btn btn-success">Buy</button>
+                <button type="submit" class="btn btn-outline-success" style="background-color: green;color:whitesmoke">Buy</button>
             </form>
             </td>
             <td><form method='get' action="{% url 'mf_sell' %}">
                 <input type="hidden" name="name" value="{{i}}">
-                <button type="submit" class="btn btn-danger">Sell</button>
+                <button type="submit" class="btn btn-outline-danger" style="background-color: red;color:whitesmoke">Sell</button>
             </form></td>
             {% endfor %}
         </tr>
         </tbody>
     </table>
+    
+<br>
+<br>
 </div>
 <br>
 <br>
@@ -55,6 +59,8 @@
       url-endpoint="{% url 'mf_prev' %}">
 
     </canvas>
+<br>
+<br>
   </div>
   <script>
     var endpoint = "{% url 'mf_prev' %}";
@@ -78,7 +84,7 @@
           datasets: [
             {
               type: "bar",
-              label:"Year",
+              label:"Amount Invested in Mutual Funds",
               data: data.mf,
               fill: true,
               borderColor: "rgba(255, 159, 64,1)",

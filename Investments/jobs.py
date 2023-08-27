@@ -29,18 +29,10 @@ def job(do=False):
             age=datetime.now().year-user.dob.year
             safe=age
             risky=100-safe
-            MF=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(20/100)
-            SmallCase=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(15/100)
-            if age <50:
-                trade=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(10/100)
-                large=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(33/100)
-                mid=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(14/100)
-                small=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(8/100)
-            else:
-                trade=0
-                large=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(40/100)
-                mid=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(15/100)
-                small=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(10/100)
+            MF=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(35/100)
+            large=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(40/100)
+            mid=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(15/100)
+            small=decimal.Decimal(risky/100)*to_invest*decimal.Decimal(10/100)
             FD=decimal.Decimal(safe/100)*to_invest*decimal.Decimal(60/100)
             SGB=decimal.Decimal(safe/100)*to_invest*decimal.Decimal(40/100)
             obj=Investment.objects.create(user=user,to_invest=to_invest,invested_this_year=0,year=datetime.now().year,
@@ -48,8 +40,6 @@ def job(do=False):
                                           risky=risky,
                                           safe=safe,
                                           MF=MF,
-                                          SmallCase=SmallCase,
-                                          trade=trade,
                                           large=large,
                                           mid=mid,
                                           small=small,

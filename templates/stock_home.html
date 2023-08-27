@@ -2,9 +2,9 @@
 <div class="container">
   {% include 'messages.html' %}
   <div class="row">
-    This year you have invested Rs. {{this_year_invest}} in Stocks.
+    <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> This year you have invested Rs. {{this_year_invest}} in Stocks.</h4>
   </div>
-  <div class="row">Your total portfolio value is Rs. {{total}} in Stocks.</div>
+  <div class="row"><h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Total portfolio value is Rs. {{total}} in Stocks.</h4></div>
 </div>
 <div class="container pt-5">
   <table class="table table-striped">
@@ -48,6 +48,9 @@
       </tr>
     </tbody>
   </table>
+<br />
+<br />
+
 </div>
 <br />
 <br />
@@ -57,7 +60,21 @@
     class="col-md-6 row"
     url-endpoint="{% url 'stock_prev' %}"
   >
+<br />
+<br />
+<br />
+
   </canvas>
+<br />
+<br />
+<br />
+
+</div>
+<div>
+  <br>
+  <br>
+  <br>
+  <br>
 </div>
 <script>
   var endpoint = "{% url 'stock_prev' %}";

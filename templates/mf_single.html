@@ -10,6 +10,20 @@
     <div class="row">
         <h5>Average Buying price : {{dict.1}}</h5>
     </div>
+    <div class="row">
+    <div class="col">
+        <form method="get" action="{% url 'mf_transact' %}">
+            <input type="hidden" name="name" value="{{name}}">
+            <button type="submit" class="btn btn-outline-success" style="background-color: green;color:whitesmoke">Buy</button>
+        </form>
+    </div>
+    <div class="col">
+        <form method='get' action="{% url 'mf_sell' %}">
+            <input type="hidden" name="name" value="{{name}}">
+            <button type="submit" class="btn btn-outline-danger" style="background-color: red;color:whitesmoke">Sell</button>
+        </form>
+        </div>
+    </div>
 </div>
 <div class="container pt-5">
     <table class="table table-striped">
@@ -32,15 +46,7 @@
         </tbody>
     </table>
     </div>
-    <td><form method="get" action="{% url 'mf_transact' %}">
-        <input type="hidden" name="name" value="{{name}}">
-        <button type="submit" class="btn btn-success">Buy</button>
-    </form>
-    </td>
-    <td><form method='get' action="{% url 'mf_sell' %}">
-        <input type="hidden" name="name" value="{{name}}">
-        <button type="submit" class="btn btn-danger">Sell</button>
-    </form></td>
+    
     <div class="container">
         <canvas
           id="myChart"

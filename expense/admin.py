@@ -9,7 +9,7 @@ class AdminExpenseObject(admin.ModelAdmin):
 admin.site.register(Expense,AdminExpenseObject)
 
 class AdminWants(admin.ModelAdmin):
-    list_display=('user','source','amount','frequency','last_date','next_date','is_active','status')
+    list_display=('user','source','amount','frequency','last_date','next_date','is_active','status','category')
     list_filter=('user','source','amount','frequency','last_date','next_date','is_active','status')
     search_fields=('user','source','amount','frequency','last_date','next_date','is_active','status')
     ordering=('-last_date',)

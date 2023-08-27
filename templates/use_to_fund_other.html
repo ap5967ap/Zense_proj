@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
-{% include 'messages.html' %}
 <form action="{% url 'use_to_fund_other' %}" method="post">
+  {% include 'messages.html' %}
   {% csrf_token %}
   <div>
     <label for="name">Select Want to which money is to be added</label>

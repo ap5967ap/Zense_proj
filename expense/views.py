@@ -8,7 +8,7 @@ from balance.models import Balance
 from django.contrib import messages
 from income.analysis import get_inflation,income_in_year
 from Investments.models import Investment
-
+from django.db.models import Sum
 
 def _re(frequency: str)->int:
     '''Returns the number of days after will be repeated'''
@@ -198,7 +198,7 @@ def use_to_fund_other(request):
         try:
             i=Needs.objects.get(id=id)
         except: 
-            pass
+            i=''
         return render(request,'use_to_fund_other.html',{'id':i,'l':l2})
 
 
@@ -219,17 +219,9 @@ def add_need_to_investment(request,id):
     inv.safe=age
     inv.risky=100-inv.safe
     inv.MF=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(20/100)
-    inv.SmallCase=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
-    if age <50:
-        inv.trade=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
-        inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(33/100)
-        inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(14/100)
-        inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(8/100)
-    else:
-        inv.trade=0
-        inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
-        inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
-        inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
+    inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
+    inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
+    inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
     inv.FD=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(60/100)
     inv.SGB=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(40/100)
     inv.save()
@@ -484,16 +476,17 @@ def add_wants(request):
         x=Expense.objects.get(user=user,date__month=datetime.now().month,date__year=datetime.now().year)
         x.used_this_month=x.used_this_month+decimal.Decimal(amount)
         x.wants_i=x.wants_i+decimal.Decimal(amount)
+        category=request.POST.get('category')
         x.save()         
         if _re(frequency)==0:
-            obj=Wants.objects.create(source=source,amount=amount,frequency=frequency,last_date=last_date,user=user,status=False)
+            obj=Wants.objects.create(source=source,amount=amount,frequency=frequency,last_date=last_date,user=user,status=False,category=category)
             obj.save()
         else:
             next_date=datetime.strptime(last_date,"%Y-%m-%d")+timedelta(_re(frequency))
             status=request.POST.get('status')
             if not status:
                 status=False
-            obj=Wants.objects.create(source=source,amount=amount,frequency=frequency,last_date=last_date,status=status,is_active=True,next_date=next_date,user=user)
+            obj=Wants.objects.create(source=source,amount=amount,frequency=frequency,last_date=last_date,status=status,is_active=True,next_date=next_date,user=user,category=category)
             obj.save()
         messages.success(request,'Added successfully')
         bal=Balance.objects.get(user=user)
@@ -504,16 +497,23 @@ def add_wants(request):
         lis=Wants.objects.filter(user=request.user)
         source=''
         amount=''
+        category=''
+        lis=Wants.objects.filter(user=request.user).order_by('-last_date')
+        lis2=[]
+        for i in lis:
+            if i.category not in lis2:
+                lis2.append(i.category)
         try:
             source=request.GET.get('name')
             if source:
                 amount=Wants.objects.filter(user=request.user,source__iexact=source).order_by('-last_date')[0].amount
+                category=Wants.objects.filter(user=request.user,source__iexact=source).order_by('-last_date')[0].category
         except:...  
         l=[]
         for i in lis:
             if i.source not in l:
                 l.append(i.source)
-    return render(request,'add_wants.html',{'l':l,'source':source,'amount':amount})
+    return render(request,'add_wants.html',{'l':l,'source':source,'amount':amount,'cat':lis2,'cc':category})
 
 
 
@@ -613,11 +613,11 @@ def add_object_wants(request, id):
     bal.save()
     if income.frequency == 'Once':
         new_income = Wants.objects.create(source=income.source, amount=income.amount, frequency=income.frequency, last_date=datetime.date.today(),
-                                      status=income.status, next_date=None, user=income.user)
+                                      status=income.status, next_date=None, user=income.user,category=income.category)
         new_income.save()
     else:
         new_income = Wants.objects.create(source=income.source, amount=income.amount, frequency=income.frequency, last_date=datetime.date.today(),
-                                             status=income.status, next_date=datetime.date.today()+timedelta(_re(income.frequency)), user=income.user)
+                                             status=income.status, next_date=datetime.date.today()+timedelta(_re(income.frequency)), user=income.user,category=income.category)
         new_income.save()
     return redirect('view_wants')
 
@@ -661,3 +661,66 @@ def change_priority(request):
         return redirect('needs_view')        
     else:
         return render(request,'change_priority.html',{'lis':lis,'c':len(lis)})
+    
+    
+@login_required(login_url='/account/login/')
+def expense_summary(request):
+    lis=lis2=start=end=lis3=''
+    d=''
+    if request.method == 'POST':
+        start=datetime.strptime(request.POST.get('start'),"%Y-%m-%d")
+        start=start-timedelta(1)
+        end=datetime.strptime(request.POST.get('end'),"%Y-%m-%d")
+        lis=Wants.objects.filter(user=request.user,last_date__gte=start,last_date__lte=end).order_by('-last_date')
+        lis2=[]
+        for i in lis:
+            if i.category not in lis2:
+                lis2.append(i.category)
+        lis3=[]
+        for i in lis2:
+            lis3.append(Wants.objects.filter(user=request.user,category=i,last_date__gte=start,last_date__lte=end).aggregate(Sum('amount'))['amount__sum'])
+        d=dict(zip(lis2,lis3))
+        start=(start+timedelta(1)).date()
+        end=end.date()
+    sl=[]
+    g=Wants.objects.filter(user=request.user).order_by('-last_date').first().last_date
+    for i in range(g.year,datetime.now().year+1):
+        sl.append(i)
+    month=datetime.now().month
+    year=datetime.now().year
+    try:    
+        month=request.GET.get('month')
+        year=request.GET.get('year')
+    except:
+        pass
+    ex=''
+    if not (month and year):
+        month=datetime.now().month
+        year=datetime.now().year
+    if month and year:
+        try:
+            ex=Expense.objects.get(user=request.user,date__month=month,date__year=year)
+        except:
+            ex='85'
+
+    return render(request,'expense_summary.html',{'startd':start,'endd':end,'d':d,'lis':lis,'lis2':lis2,'start':g,'end':end,'lis3':lis3,'total':sum(lis3),'yr':sl,'ex':ex,'month':month,'year':year})
+    
+    
+    
+def category(request):
+    start=end=lis=category=''
+    if request.method == 'POST':
+        start=datetime.strptime(request.POST.get('start'),"%Y-%m-%d")
+        start=start-timedelta(1)
+        end=datetime.strptime(request.POST.get('end'),"%Y-%m-%d")
+        category=request.POST.get('category')
+        lis=Wants.objects.filter(user=request.user,last_date__gte=start,last_date__lte=end,category__iexact=category).order_by('-last_date')
+        start=(start+timedelta(1)).date()
+        end=end.date()
+    lis3=Wants.objects.filter(user=request.user).order_by('-last_date')
+    lis2=[]
+    for i in lis3:
+        if i.category not in lis2:
+            lis2.append(i.category)
+    return render(request, 'single_category.html', {'lis': lis,'lis2':lis2,'start':start,'end':end,'category':category})
+    

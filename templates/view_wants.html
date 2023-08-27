@@ -1,22 +1,47 @@
+
 {%extends 'base.html' %}
 {% load static %}
 {% block content %}
-{% now "jS F Y " %}
-<div class="col-md-7 col-lg-7" style="height: 450px;">
-    <!-- List of all the tasks for the day -->
-    {% for i in income %}
-    <div class="card m-1">
-        <div class="card-body">
-            <a href="{% url 'analyse_single_wants' i.source %}">{{i.source}}</a><br>{{i.amount}} {{i.frequency}} {{i.last_date}} {{i.next_date}}
-            <span style="position: relative; float: right;">
-                {% if not i.status %}
-                <a href="{% url 'add_wants' %}?name={{i.source}}" class="btn btn-primary"><i class="fa fa-check"></i> Add Want </a>
+
+<div class="container pt-5">
+    <h1 style="color: black; display:flex;align-items:center;justify-content:center;"><strong>Needs Expense Sources</strong></h1>
+    <br>
+    <br>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Source</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Frequency</th>
+                <th scope="col">Last Recieved Date</th>
+                <th scope="col">Upcoming Date</th>
+                <th scope="col">Spend </th>
+            </tr>
+        </thead>
+        <tbody>
+           {% for i in income %}
+            <tr>
+                <td>{{ forloop.counter }}</a></td> 
+                <td><a href="{% url 'analyse_single_wants' i.source %}">{{i.source}}</a></td>
+                <td>{{i.amount|floatformat:2}}</td>
+                <td>{{i.frequency}}</td>
+                <td>{{i.last_date}}</td>
+                <td>{{i.next_date}}</td>
+                {% if i.status %}
+                <td><button disabled class="btn btn-outline-success" style="background-color:green;color:whitesmoke">Payment Paid automatically </button></td>
                 {% else %}
-                <a class="btn btn-success disabled" > Wants synced automatically </a>
-                {% endif %}
-            </span>
-        </div>
-    </div>
-   {% endfor %}
+                <td><a href="{% url 'add_wants' %}?name={{i.source}}" class="btn btn-outline-primary" style="background-color:#0069d9;color:whitesmoke">Make Payment</a></td>
+                {% endif %}    
+            </tr>
+            {% endfor %}
+        </tbody></table>
+        <br><br><br>
 </div>
+<br/>
+<br/>
+<hr/>
+<br/>
+<br/>
 {%endblock content %}

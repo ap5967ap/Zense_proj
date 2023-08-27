@@ -3,8 +3,8 @@
 {% block content %}
 <div class="container pt-5">
 <h4>Select Distinct Priority</h4>
-{% include 'messages.html' %}
 <form action="{% url 'change_priority' %}" method="post">
+    {% include 'messages.html' %}
     {% csrf_token %}
     {% for i in lis %}
     <div class="form-control">

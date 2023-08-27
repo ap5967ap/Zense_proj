@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="container pt-5">
+    <form method="post" action="{% url 'category' %}">
+        {% csrf_token %}
+        <div class="form-group row">
+            <div class="col">
+            <label for="year">Select Start Date</label>
+            <input type="date" class="form-control" id="start_date" name="start" value="{{start}}"required>
+            </div>
+            <div class="col">
+            <label for="month">Select End Date</label>
+            <input type="date" class="form-control" id="end_date" name="end" value="{{end}}"required>
+            </div>
+            <div class="col">
+                <datalist id="sor">
+                    {% for i in lis2 %}
+                    <option value="{{i}}">
+                    {% endfor %}
+                </datalist>
+                <label for="sosr" >Category</label>
+                <input type="text" list="sor"  class="form-control" name="category" id="sosr" required>
+            </div>
+            <div class="col pt-4">
+                <label for="submit"></label>
+                <button type="submit" class="btn btn-outline-primary" style="background-color: blue; color:whitesmoke " >Submit</button>
+            </div>
+
+        </div>
+    </form>
+
+
+    <br><br>
+    <br><br>
+    {% if lis %}
+    <h4 class="container" style="display:flex;align-items:center;justify-content:center;">Analysis for {{category}} from {{start}} to {{end}} </h4>
+    <br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+           {% for i in lis %}
+            <tr>
+                <td><a href="{% url 'analyse_single_wants' i.source %}">{{i.source}}</a></td> 
+                <td> {{i.last_date}}</td>
+                <td> &#x20b9;{{i.amount}}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+        {% else %}
+        <h4 class="container" style="display:flex;align-items:center;justify-content:center;color:red;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+            Data for this month and year does not exist. </h4>
+    {% endif %}
+    <br>
+    <br>
+    <br>
+    <br>
+
+    </div>
+
+{% endblock content %}

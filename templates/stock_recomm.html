@@ -27,12 +27,12 @@
                 <td>{{i.price|floatformat:2}}</td>
                 <td>{{i.rating}}</td>
                 <td>{{i.buysignal}}</td>
-                <td><form method="get" action="#">
+                <td><form method="get" action="{% url 'stock_transact' %}">
                     <input type="hidden" name="name" value="{{i.name}}">
                     <button type="submit" class="btn btn-success">Buy</button>
                 </form>
                 </td>
-                <td><form method='get' action="#">
+                <td><form method='get' action="{% url 'stock_sell' %}">
                     <input type="hidden" name="name" value="{{i.name}}">
                     <button type="submit" class="btn btn-danger">Sell</button>
                 </form></td>
@@ -79,7 +79,7 @@
                     <button type="submit" class="btn btn-success">Buy</button>
                 </form>
                 </td>
-                <td><form method='get' action="#">
+                <td><form method='get' action="{% url 'stock_sell' %}">
                     <input type="hidden" name="name" value="{{i.name}}">
                     <button type="submit" class="btn btn-danger">Sell</button>
                 </form></td>
@@ -122,12 +122,12 @@
                 <td>{{i.price|floatformat:2}}</td>
                 <td>{{i.rating}}</td>
                 <td>{{i.buysignal}}</td>
-                <td><form method="get" action="#">
+                <td><form method="get" action="{% url 'stock_transact' %}">
                     <input type="hidden" name="name" value="{{i.name}}">
                     <button type="submit" class="btn btn-success">Buy</button>
                 </form>
                 </td>
-                <td><form method='get' action="#">
+                <td><form method='get' action="{% url 'stock_sell' %}">
                     <input type="hidden" name="name" value="{{i.name}}">
                     <button type="submit" class="btn btn-danger">Sell</button>
                 </form></td>

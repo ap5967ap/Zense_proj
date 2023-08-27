@@ -20,4 +20,6 @@ urlpatterns = [
     path("increase_buy_date/<int:id>/", views.increase_buy_date, name="increase_buy_date"),
     path("needs_view/", views.needs_view, name="needs_view"),
     path("change_priority/", views.change_priority, name="change_priority"),
+    path("category/", views.category, name="category"),
+    path("expense_summary/", views.expense_summary, name="expense_summary"),
 ]

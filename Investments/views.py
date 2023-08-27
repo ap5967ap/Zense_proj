@@ -475,7 +475,7 @@ def stock_sell(request):
         bought=Stock.objects.filter(user=user,is_active=True,name__iexact=name).exists()
         if not bought:
             messages.error(request,'You have not bought this Stock')
-            return redirect('stock_home')
+            return redirect('stock_sell')
         quantity=int(request.POST.get('quantity'))
         a2=quantity
         amount=float(request.POST.get('amount'))#!per stock sell price
@@ -516,17 +516,9 @@ def stock_sell(request):
             inv.safe=age
             inv.risky=100-inv.safe
             inv.MF=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(20/100)
-            inv.SmallCase=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
-            if age <50:
-                inv.trade=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
-                inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(33/100)
-                inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(14/100)
-                inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(8/100)
-            else:
-                inv.trade=0
-                inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
-                inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
-                inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
+            inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
+            inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
+            inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
             inv.FD=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(60/100)
             inv.SGB=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(40/100)
             inv.save()
@@ -624,17 +616,9 @@ def mf_sell(request):
             inv.safe=age
             inv.risky=100-inv.safe
             inv.MF=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(20/100)
-            inv.SmallCase=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
-            if age <50:
-                inv.trade=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
-                inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(33/100)
-                inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(14/100)
-                inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(8/100)
-            else:
-                inv.trade=0
-                inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
-                inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
-                inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
+            inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
+            inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
+            inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
             inv.FD=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(60/100)
             inv.SGB=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(40/100)
             inv.save()
@@ -800,14 +784,12 @@ def investment_summary(request):
     try:
         inv_obj=Investment.objects.get(user=request.user,year=year)
         mf={'Name':'Mutual Funds','Amount':inv_obj.MF,'Invested':inv_obj.MF_i}
-        smallcase={'Name':'SmallCase','Amount':inv_obj.SmallCase,'Invested':inv_obj.SmallCase_i}
-        trade={'Name':'Trade','Amount':inv_obj.trade,'Invested':inv_obj.trade_i}
         large={'Name':'Large Cap Equity','Amount':inv_obj.large,'Invested':inv_obj.large_i}
         mid={'Name':'Mid Cap Equity','Amount':inv_obj.mid,'Invested':inv_obj.mid_i}
         small={'Name':'Small Cap Equity','Amount':inv_obj.small,'Invested':inv_obj.small_i}
         FD={'Name':'Fixed Deposits','Amount':inv_obj.FD,'Invested':inv_obj.FD_i}
         SGB={'Name':'Sovereign Gold Bonds','Amount':inv_obj.SGB,'Invested':inv_obj.SGB_i}
-        inv_obj=[mf,smallcase,trade,large,mid,small,FD,SGB]
+        inv_obj=[mf,large,mid,small,FD,SGB]
         return render(request, 'investment_summary.html',context={"inv":inv_obj,'year':year})
     except:
         return render(request, 'investment_summary.html',context={'year':year})

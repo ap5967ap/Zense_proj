@@ -50,7 +50,7 @@
                 <li><a class="dropdown-item" href="{% url 'income_summary' %}">Income Summary</a></li>
         
                 <li><a class="dropdown-item" href="{% url 'add_income' %}">Add Income</a></li>
-                <li><a class="dropdown-item" href="{% url 'view_income' %}">View Income</a></li>
+                <li><a class="dropdown-item" href="{% url 'view_income' %}">View All Income</a></li>
               </ul>
             </li>
           </ul>
@@ -67,9 +67,16 @@
                 Expense
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="{% url 'expense_summary' %}">Expense Summary</a></li>
+                <li><a class="dropdown-item" href="{% url 'category' %}">Expense in Category (Needs) </a></li>
+                <li><a class="dropdown-item" href="{% url 'add_needs' %}">Add Money in Wants</a></li>
+                <li><a class="dropdown-item" href="{% url 'needs_view' %}">View All Wants</a></li>
+                <li><a class="dropdown-item" href="{% url 'add_wants' %}">Add Money in Needs</a></li>
+                <li><a class="dropdown-item" href="{% url 'view_wants' %}">View All Needs</a></li>
+                <li><a class="dropdown-item" href="{% url 'use_to_fund_other' %}">Transfer Money Between Wants</a></li>
+                <li><a class="dropdown-item" href="{% url 'change_priority' %}">Change Priority in Wants</a></li>
+
+
               </ul>
             </li>
           </ul>
