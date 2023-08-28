@@ -1,7 +1,7 @@
 import json
 from django.core.mail import EmailMessage
 import time
-from .models import Investment,MF as MutualFund,Other
+from .models import Investment,MF as MutualFund,Other,SGB as gold
 from schedule import Scheduler
 import threading
 from datetime import datetime, timedelta
@@ -10,7 +10,7 @@ from account.models import Account
 from balance.models import Balance
 import decimal
 import yfinance as yf
-
+from expense.models import Expense
 from django.template.loader import render_to_string
 def job(do=False):
     try:
@@ -100,8 +100,29 @@ def job(do=False):
             bal=Balance.objects.get(user=i.user)
             bal.balance+=decimal.Decimal(i.sell_price)
             bal.save()
-            ...#!Investment
-            #TODOExpense
+            balance.expense+=i.sell_price*decimal.Decimal(0.70)
+            balance.invest+=i.sell_price*decimal.Decimal(0.30)
+            inv=Investment.objects.get(user=user,year=datetime.now().year)
+            inv.to_invest+=decimal.Decimal(i.sell_price*decimal.Decimal(0.30))
+            inv.save()
+            inv=Investment.objects.get(user=user,year=datetime.now().year)
+            age=datetime.now().year-user.dob.year
+            to_invest=inv.to_invest
+            inv.safe=age
+            inv.risky=100-inv.safe
+            inv.save()
+            inv.MF=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(20/100)
+            inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
+            inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
+            inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
+            inv.FD=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(60/100)
+            inv.SGB=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(40/100)
+            inv.save()
+            inv=Expense.objects.get(user=user,date__month=datetime.now().month,date__year=datetime.now().year)
+            inv.to_expense += decimal.Decimal(i.sell_price*decimal.Decimal(0.70))
+            inv.wants += decimal.Decimal(i.sell_price*decimal.Decimal(0.70))*decimal.Decimal(0.60)
+            inv.needs += decimal.Decimal(i.sell_price*decimal.Decimal(0.70))*decimal.Decimal(0.40)
+            inv.save()
             subject=f'FD {i.name} matured'
             message=render_to_string('fd_sold.html',{'user':user,'amount':i.price,'name':i.name,'s':i.sell_price})
             email=EmailMessage(subject,message,to=[user.email])
@@ -114,6 +135,31 @@ def job(do=False):
         file=open('cron_log.log','a')
         file.write(str(e)+'\n')  
 
+    try:
+        lis=gold.objects.filter(is_active=True,sell_date__gte=datetime.now().date())
+        for i in lis:
+            user=i.user
+            subject=f'SGB {i.price} {i.date} matured'
+            email=EmailMessage(subject,f'SGB {i.price} {i.date} matured. Login into your account to sell it.',to=[user.email])
+            try:
+                email.send()
+            except:
+                with open('cron_log.log','a') as file:
+                    file.write(f"Email not sent to {user.email} on {datetime.now().date()} for SIP \n")
+    except Exception as e:
+        file=open('cron_log.log','a')
+        file.write(str(e)+'\n')
+    
+    try:
+        lis=gold.objects.filter(is_active=True,sell_date__lt=datetime.now().date())
+        for i in lis:
+            if (datetime.now().date-i.date).days in [365,365*2,365*3,365*4,365*5,365*6,365*7,365*8,365*9,365*10,365*11]:
+                bal=Balance.objects.get(user=i.user)
+                bal.balance+=decimal.Decimal(i.price*2.5/100)
+                bal.save()
+    except Exception as e:
+        file=open('cron_log.log','a')
+        file.write(str(e)+'\n')
 
 def run_continuously(self, interval=40000):
     """Continuously run, while executing pending jobs at each elapsed

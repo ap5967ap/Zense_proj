@@ -218,6 +218,7 @@ def add_need_to_investment(request,id):
     to_invest=inv.to_invest
     inv.safe=age
     inv.risky=100-inv.safe
+    inv.save()
     inv.MF=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(20/100)
     inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
     inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
@@ -343,6 +344,8 @@ def analysis_single_wants(request,source):
                 infla.append(0)
         co+=1
     contri_label=[source.capitalize(),'Rest of the Wants']
+    my=Wants.objects.filter(user=user,source=source).order_by('-last_date')
+    
     return render(request,'single_extra_detail.html',context=
                   {
                             'last_year_timings':last_year_timings[::-1],
@@ -360,6 +363,7 @@ def analysis_single_wants(request,source):
                               'source':source,
                               'lis':lis,
                               'source':source,
+                              'my':my,
                               
                   })
 

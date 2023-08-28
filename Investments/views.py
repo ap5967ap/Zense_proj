@@ -515,6 +515,7 @@ def stock_sell(request):
             to_invest=inv.to_invest
             inv.safe=age
             inv.risky=100-inv.safe
+            inv.save()
             inv.MF=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(20/100)
             inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
             inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
@@ -615,6 +616,7 @@ def mf_sell(request):
             to_invest=inv.to_invest
             inv.safe=age
             inv.risky=100-inv.safe
+            inv.save()
             inv.MF=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(20/100)
             inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
             inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)

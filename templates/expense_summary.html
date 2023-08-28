@@ -2,6 +2,8 @@
 
 {% block content %}
 <div class="container">
+    {% include 'messages.html' %}
+
     <form action="{% url 'expense_summary' %}" method="get">
         <div class="form-group row">
             <div class="col">

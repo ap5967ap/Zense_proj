@@ -2,7 +2,9 @@
 {% block content %}
 <div class="container" style="display:flex;align-items:center;justify-content:center;">
 <form  action="{% url 'mf_transact' %}" method="post" class="form-control">
+  {% include 'messages.html' %}
     {% csrf_token %}
+
     <div class="form-group">
     <label for="name">Select Mutual Fund</label>
     <datalist id="suggestions" name="name">
@@ -39,7 +41,7 @@
 
     <input type="checkbox"  id="type" name="is_sip" value="1" title=".">
     </div>
-    <button type="submit" class="btn btn-outline-primary" style="background-color: dark blue;color:whitesmoke">Submit</button>
+    <button type="submit" class="btn btn-outline-primary" style="background-color: blue;color:whitesmoke">Submit</button>
 </form>
 </div>
 </div>

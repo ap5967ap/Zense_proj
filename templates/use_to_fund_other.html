@@ -1,8 +1,9 @@
 {% extends 'base.html' %} {% block content %}
+<div class="container">
 <form action="{% url 'use_to_fund_other' %}" method="post">
   {% include 'messages.html' %}
   {% csrf_token %}
-  <div>
+  <div class="form-group">
     <label for="name">Select Want to which money is to be added</label>
     <datalist id="suggestions" name="source">
       {% for i in l %}
@@ -15,11 +16,11 @@
     <input autocomplete="on" class="form-control" list="suggestions" name="source" type="text" style='width:100%' title="Wants" required /> 
     {% endif %}
   </div>
-    <div >
+    <div class="form-group">
         <label for="amount">Enter the Amount you want to transfer</label>
         <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter amount" required />
     </div>
-    <div>
+    <div class="form-group">
         <label for="dest">Enter Want from which money is to be funded</label>
         <datalist id="suggestions" name="dest">
             {% for i in l %}
@@ -31,4 +32,13 @@
    
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
 {% endblock content %}

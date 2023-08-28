@@ -4,6 +4,8 @@
 {% now "jS F Y " %}
 <div class="container">
 <form method="post" action="{% url 'edit_wants' income.id %}">
+    {% include 'messages.html' %}
+
     {% csrf_token %}
     <input type="text" name="source" class="form-control" value="{{income.source}}" placeholder="Source" disabled>
     <input type="number" name="amount" class="form-control" value="{{income.amount}}" placeholder="Amount" >

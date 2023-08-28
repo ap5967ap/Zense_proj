@@ -3,7 +3,7 @@ from django.contrib import messages
 from .models import *
 from django.shortcuts import render,redirect
 from django.contrib.auth.decorators import login_required
-from datetime import datetime
+from datetime import datetime, timedelta
 from expense.models import Expense
 from balance.models import Balance
 from django.template.loader import render_to_string
@@ -12,9 +12,83 @@ from django.core.mail import EmailMessage
 def FD_home(request):
     user=request.user
     fd=Other.objects.filter(user=user,category='FD')
-    investment=Investment.objects.filter(user=user,year=datetime.now().year)
+    investment=Investment.objects.get(user=user,year=datetime.now().year)
     return render(request,'FD_home.html',{'fd':fd,'inv':investment})
 
+@login_required(login_url='/account/login')
+def SGB_home(request):
+    user=request.user
+    sgb=SGB.objects.filter(user=user)
+    investment=Investment.objects.get(user=user,year=datetime.now().year)
+    dd=datetime.now().date()
+    return render(request,'sgb_home.html',{'fd':sgb,'inv':investment,'dd':dd})
+
+@login_required(login_url='/account/login')
+def SGB_buy(request):
+    user=request.user
+    if request.method=="POST":
+        price=float(request.POST.get('price'))
+        date=datetime.strptime(request.POST.get('date'),'%Y-%m-%d')
+        duration=int(request.POST.get('duration'))
+        SGB.objects.create(user=user,price=price,date=date,duration=duration,sell_date=date+timedelta(days=365*duration))
+        inv=Investment.objects.get(user=user,year=datetime.now().year)
+        inv.SGB_i+=decimal.Decimal(price)
+        inv.invested_this_year+=decimal.Decimal(price)
+        inv.save()
+        bal=Balance.objects.get(user=user)
+        bal.balance-=decimal.Decimal(price)
+        bal.save()
+        return redirect('sgb_home')
+    return render(request, 'sgb_buy.html')
+        
+def SGB_sell(request):
+    user=request.user
+    if request.method=='POST':
+        id=request.POST.get('id')
+        sell_price=float(request.POST.get('sell_price'))
+        sgb=SGB.objects.get(user=user,id=id)
+        if sgb.sell_date >= datetime.now().date():
+            e1='SGB can be sold only after maturity'
+            return render(request,'sgb_sell.html',{'e1':e1})
+        else:
+            sgb.sell_price=sell_price
+            sgb.is_active=False
+            sgb.save() 
+            i=sgb
+            bal=Balance.objects.get(user=i.user)
+            bal.balance+=decimal.Decimal(i.sell_price)
+            bal.save()
+            balance=bal
+            user=i.user
+            balance.expense+=i.sell_price*decimal.Decimal(0.70)
+            balance.invest+=i.sell_price*decimal.Decimal(0.30)
+            inv=Investment.objects.get(user=user,year=datetime.now().year)
+            inv.to_invest+=decimal.Decimal(i.sell_price*decimal.Decimal(0.30))
+            inv.save()
+            inv=Investment.objects.get(user=user,year=datetime.now().year)
+            age=datetime.now().year-user.dob.year
+            to_invest=inv.to_invest
+            inv.safe=age
+            inv.risky=100-inv.safe
+            inv.save()
+            inv.MF=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(20/100)
+            inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
+            inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
+            inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
+            inv.FD=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(60/100)
+            inv.SGB=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(40/100)
+            inv.save()
+            inv=Expense.objects.get(user=user,date__month=datetime.now().month,date__year=datetime.now().year)
+            inv.to_expense += decimal.Decimal(i.sell_price*decimal.Decimal(0.70))
+            inv.wants += decimal.Decimal(i.sell_price*decimal.Decimal(0.70))*decimal.Decimal(0.60)
+            inv.needs += decimal.Decimal(i.sell_price*decimal.Decimal(0.70))*decimal.Decimal(0.40)
+            inv.save()
+            return redirect('sgb_home')
+    else:
+        sgb=SGB.objects.filter(user=user,is_active=True, sell_date__lte=datetime.now().date())
+        return render(request,'sgb_sell.html',{'sgb':sgb})
+        
+    
 
 
 @login_required(login_url='/account/login')
@@ -73,8 +147,31 @@ def fd_sync(*args,**kwargs):
             bal=Balance.objects.get(user=i.user)
             bal.balance+=decimal.Decimal(i.sell_price)
             bal.save()
-            ...#!Investment
-            #TODOExpense
+            balance=bal
+            user=i.user
+            balance.expense+=i.sell_price*decimal.Decimal(0.70)
+            balance.invest+=i.sell_price*decimal.Decimal(0.30)
+            inv=Investment.objects.get(user=user,year=datetime.now().year)
+            inv.to_invest+=decimal.Decimal(i.sell_price*decimal.Decimal(0.30))
+            inv.save()
+            inv=Investment.objects.get(user=user,year=datetime.now().year)
+            age=datetime.now().year-user.dob.year
+            to_invest=inv.to_invest
+            inv.safe=age
+            inv.risky=100-inv.safe
+            inv.save()
+            inv.MF=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(20/100)
+            inv.large=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(40/100)
+            inv.mid=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(15/100)
+            inv.small=decimal.Decimal(inv.risky/100)*to_invest*decimal.Decimal(10/100)
+            inv.FD=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(60/100)
+            inv.SGB=decimal.Decimal(inv.safe/100)*to_invest*decimal.Decimal(40/100)
+            inv.save()
+            inv=Expense.objects.get(user=user,date__month=datetime.now().month,date__year=datetime.now().year)
+            inv.to_expense += decimal.Decimal(i.sell_price*decimal.Decimal(0.70))
+            inv.wants += decimal.Decimal(i.sell_price*decimal.Decimal(0.70))*decimal.Decimal(0.60)
+            inv.needs += decimal.Decimal(i.sell_price*decimal.Decimal(0.70))*decimal.Decimal(0.40)
+            inv.save()
             subject=f'FD {i.name} matured'
             message=render_to_string('fd_sold.html',{'user':i.user,'amount':i.price,'name':i.name,'s':i.sell_price})
             email=EmailMessage(subject,message,to=[i.user.email])

@@ -24,4 +24,7 @@ urlpatterns=[
     path('fd_home/',other.FD_home,name='fd_home'),
     path('fd_buy/',other.FD_buy,name='fd_buy'),
     path('fd_sell/',other.FD_sell,name='fd_sell'),
+    path('sgb_home/',other.SGB_home,name='sgb_home'),
+    path('sgb_buy/',other.SGB_buy,name='sgb_buy'),
+    path('sgb_sell/',other.SGB_sell,name='sgb_sell'),
 ]

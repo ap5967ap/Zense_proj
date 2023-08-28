@@ -2,16 +2,19 @@
 
 {% block content %}
 <div class="container pt-5">
+    {% include 'messages.html' %}
+
     <h3>{{n.source}}</h3>
-    <p>Amount saved till date: {{n.amount_added}}</p>
-    <p>Amount needed: {{n.price}}</p>
-    <p>Category: {{n.category}}</p>
-    <p>Buy Date: {{n.buy_date}}</p>
-    <p>Priority: {{n.priority}}</p>
+    <h5>Amount saved till date: {{n.amount_added}}</h5>
+    <h5>Amount needed: {{n.price}}</h5>
+    <h5>Category: {{n.category}}</h5>
+    <h5>Buy Date: {{n.buy_date}}</h5>
+    <h5>Priority: {{n.priority}}</h5>
     {% if n.priority %}
     <h5>To change priority of item click <a href="{% url 'change_priority' %}">here</a> </h5>
 </div>
 <div class="container pt-5">
+    <h6>
 {% if inv.buffer2 and is_buy_date and n.price > n.amount_added and xx < inv.buffer2 %}
 You have not saved enough amount to buy {{n.source}}. Do you want to use your remaining buffer worth Rs. {{inv.buffer2}} 
 <a href="{% url 'use_buffer' n.id %}">Yes</a>
@@ -31,9 +34,13 @@ Use, this money to fund your other wants by clicking <a href="{% url 'use_to_fun
 Use, this money to fund your other wants by clicking <a href="{% url 'use_to_fund_other' %}?id={{n.id}}">here.</a>
 or you can also choose to add this money to your account and increase this month's expense budget by clicking  <a href ="{% url 'add_need_to_expense' n.id %}">here</a>.
 or you can also choose to add this money to your account and increase your investment budget by clicking  <a href ="{% url 'add_need_to_investment' n.id %}">here</a>.
+</h6>
 {% endif %}
 {% endif %}
 <div class="container pt-5">
+    <br>
+    <br>
+
     <table class="table table-striped">
         <thead>
             <tr>
@@ -55,6 +62,18 @@ or you can also choose to add this money to your account and increase your inves
             </tr>
             {% endfor %}
         </tbody>
-</div>
+        </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </div>
 {% endblock content %}

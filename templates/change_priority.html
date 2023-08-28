@@ -7,12 +7,28 @@
     {% include 'messages.html' %}
     {% csrf_token %}
     {% for i in lis %}
-    <div class="form-control">
+    <div>
         <label for="priority">{{i.source}}</label>
-        <input type="number" name="{{i.source}}" id="{{i.id}}" value="{{i.priority}}" min ='1' max="{{c}}">
+        <input type="number" name="{{i.source}}" class="form-control" id="{{i.id}}" value="{{i.priority}}" min ='1' max="{{c}}">
     </div>
     {% endfor %}
-    <input type="submit" value="Submit" class="btn btn-primary">
+    <br>
+    <input type="submit" value="Submit" class="btn btn-outline-primary" style="background-color: blue;color:whitesmoke">
 </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 </div>
 {% endblock content %}

@@ -2,6 +2,7 @@
 {% block content %}
 <div class="container pt-5">
   {% include 'messages.html' %}
+  
 <form action="{% url 'stock_sell' %}" method="post" class="form-control">
     {% csrf_token %}
     <div class="form-group">

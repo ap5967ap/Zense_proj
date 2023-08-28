@@ -3,36 +3,34 @@
 <div class="container">
     {% include 'messages.html' %}
 
-    <h1>Fixed Deposit</h1>
-    {% if not inv.FD_i %}
+    <h1>Sovereign Gold Bonds</h1>
+    {% if not inv.SGB_i %}
     Invested this year : 0<br> 
     {% else %}
-    Invested this year : {{inv.FD_i}}<br> 
+    Invested this year : {{inv.SGB_i}}<br> 
     {% endif %}
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Bank</th>
-                <th>Amount</th>
-                <th>Interest(Per Year)</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-                <th>Amount on Maturation</th>
-                <th>Matured </th>
+                <th>Price</th>
+                <th>Buy Date</th>
+                <th>Sell Date</th>
+                <th>Sell / Sell Price</th>
+                <th>Sell Price (If Sold)</th>
             </tr>
         </thead>
         <tbody>
             {% for i in fd %}
             <tr>
-                <td>{{i.name}}</td>
                 <td>{{i.price}}</td>
-                <td>{{i.interest}}</td>
                 <td>{{i.date}}</td>
                 <td>{{i.sell_date}}</td>
+                {% if not i.is_active %}
                 <td>{{i.sell_price}}</td>
-                <td><input type="checkbox"  name="is_active" disabled value="{{i.id}}" {% if i.is_active %} checked {% endif %}></td>
-                {% if i.is_active %}
-                <td><a href="{% url 'fd_sell' %}">Break FD </a></td>
+                {% else %}
+                {% if i.sell_date <= dd %}
+                <td><a href="/sgb_sell/{{i.id}}">Sell</a></td>
+                {% endif %}
                 {% endif %}
             </tr>
             {% endfor %}

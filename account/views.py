@@ -117,7 +117,7 @@ def login(request):
         user = authenticate(username=username,password=password)
         if user is not None:
             l(request, user)
-            return redirect("home") #TODO: user dashboard
+            return redirect("income_summary") #TODO: user dashboard
 
         else:
             messages.error(request, "Invalid username or password")

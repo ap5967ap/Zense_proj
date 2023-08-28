@@ -71,10 +71,15 @@
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
       <h1>Welcome to GoldPulse</h1>
       <h2>A Personalised Financial Manager for You</h2>
+      {% if not user.is_authenticated %}
       <a href="#about" class="btn-get-started scrollto">Get Started</a>
       <a href="{% url 'login' %}" class="btn-get-started">Login</a>
       <a href="{% url 'register' %}" class="btn-get-started">Register</a>
-
+      {% else %}  
+      <a href="{% url 'income_summary' %}" class="btn-get-started">Go to Income </a>
+      <a href="##" class="btn-get-started">Hi {{user.username}}</a>
+      <a href="{% url 'balance' %}" class="btn-get-started">Balance</a>
+      {% endif %}
 
     </div>
   </section><!-- End Hero -->
@@ -206,17 +211,18 @@
     </section>
 
     <section id="cta" class="cta">
+      {% if not user.is_authenticated %}
       <div class="container" data-aos="zoom-in">
 
         <div class="text-center">
           <h3 style="color:gold">What are you waiting for?</h3>
           <p style="color:cornsilk"> Begin your smooth financial journey by registering with GoldPulse.</p>
-          <button class="button-85" role="button"><a href="{#% url 'login_register' %#}" style="color:whitesmoke">Login or Register</a></button>
+          <button class="button-85" role="button"><a href="{% url 'register' %}" style="color:whitesmoke">Register</a></button>
         </div>
 
       </div>
+      {% endif %}
     </section>
-
     
     <section id="pricing" class="pricing">
       <div class="container">
@@ -349,7 +355,7 @@
                 Discover financial empowerment through our Personal Financial Manager bot. Seamlessly integrated into our website, this intelligent tool empowers you to take control of your finances with ease. Effortlessly plan budgets, track expenses, set savings goals, and receive personalized insights. Whether you're saving for a dream vacation or securing your future, our bot is your reliable partner on this journey. Say goodbye to financial stress and hello to a brighter, more secure tomorrow. Join us today and embark on the path to financial well-being.
                 
                 <div class="circular_image">
-                    <img src="{% static 'images/logo.jpg' %}"/>
+                    <img src="{% static 'images/logo.jpg' %}" alt="Logo"/>
                 </div>
             </p>
           </div>

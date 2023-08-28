@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container" style="display:flex;justify-content:center;height: 500px;">
+    <form action="">
+        <div class="form-group" style="border: 2px solid gold;border-radius:6%;;">
+            <input type="text" class="form-control" value="{{acc.first_name}} {{acc.last_name}}" disabled style="background-color:black; color:whitesmoke">
+        </div>
+        <div class="form-group" style="border: 2px solid gold;border-radius:6%;;">
+            <input type="email" class="form-control" value="{{acc.email}}" disabled style="background-color:black; color:whitesmoke">
+        </div>
+        <div class="form-group" style="border: 2px solid gold;border-radius:6%;;">
+            <input type="text" class="form-control" value="{{acc.phone}}" disabled style="background-color:black; color:whitesmoke">
+        </div>
+        <div class="form-group" style="border: 2px solid gold;border-radius:6%;;">
+            <input type="text" class="form-control" value="{{acc.dob}}" disabled style="background-color:black; color:whitesmoke">
+        </div>
+        <div class="form-group" style="border: 2px solid gold;border-radius:6%;;">
+            <input type="text" class="form-control" value="{{acc.pan}}" disabled style="background-color:black; color:whitesmoke">
+        </div>
+        <div class="form-group" style="border: 2px solid gold;border-radius:6%;;">
+            <input type="text" class="form-control" value="{{acc.username}}" disabled style="background-color:black; color:whitesmoke">
+        </div>
+        <div class="form-group" style="border: 2px solid gold;border-radius:6%;;">
+            <input type="text" class="form-control" value="{{acc.last_login}}" disabled style="background-color:black; color:whitesmoke">
+        </div>
+        <div class="form-group" style="border: 2px solid gold;border-radius:6%;;">
+            <input type="text" class="form-control" value="{{acc.date_joined}}" disabled style="background-color:black; color:whitesmoke">
+
+            </div>
+    </form>
+    </div>
+
+{% endblock content %}

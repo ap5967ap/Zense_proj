@@ -4,6 +4,8 @@
 
 <div class="container pt-5">
     <form method="post" action="{% url 'category' %}">
+    {% include 'messages.html' %}
+
         {% csrf_token %}
         <div class="form-group row">
             <div class="col">

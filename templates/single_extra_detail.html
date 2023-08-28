@@ -1,19 +1,111 @@
-{%extends 'base.html'%} 
-
-{%block content%}
+{%extends 'base.html'%} {%block content%}
 <div class="container">
-  <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><u>{{source|capfirst}}</u>
-    
-    {% if lis.0.status %}
-    <h5 style="color: green">This expense is synced automatically</h5>
-    
-    {% else %}
-    <h5 style="color: red">This expense is not synced automatically</h5>
-    {% endif %}
-    <a href="{% url 'edit_wants' lis.0.id %}" class="btn btn-primary"><i class="fa fa-pen"></i>Edit this and all future deductions. </a>
-    <a href="{% url 'delete_source_wants' lis.0.source %}" class="btn btn-danger"><i class="fa fa-trash"> Stop all future payments </i></a>
+  {% include 'messages.html' %}
+  
+<h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><u>{{source|capfirst}}</u>
+  
+</u></h2>
+
+<br><br>
+  <h5>
+    This year expense from {{so|capfirst}} is
+    {{income_all_years|last|floatformat}} which is
+    {{contribution|floatformat:2}}% of total expense.
+    {%if growth|last > inflation|last%}
+    Your expense grows faster than inflation. You need to look into it.
+    {%else%}
+    Your expense grows slower than inflation.
+    {%endif%}
+  </h5>
+
+    <div class="container">
+      <br>
+      <a href="{% url 'delete_source_wants' lis.0.source %}" class="btn btn-danger" id="ale"><i class="fa fa-trash"> Stop all future payments </i></a>
+      <br>
+      <br>
+
+  </div>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col"></th>
+
+          <th scope="col">Frequency</th>
+          <th scope="col">Last Date</th>
+          <th scope="col">Next Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          {% if not my.0.status %}
+          <td><a href="{% url 'add_wants' %}?name={{my.0.source}}" class="btn btn-outline-primary" style="background-color: #0069d9; color:whitesmoke" >Pay for this needs</a>(Not Synced automatically)</td>
+          {% else %}
+          <td><button type="button" disabled class="btn btn-outline-success" style="background-color: green; color:white"> Synced automatically</button></td>
+
+          {% endif %}
+          <td><a href="{% url 'edit_wants' my.0.id %}" class="btn btn-outline-primary" style="background-color: #0069d9; color:whitesmoke">Edit Income</a></td>
+          <td>{{my.0.frequency}}</td>
+          <td>{{my.0.last_date}}</td>
+          <td>{{my.0.next_date}}</td>
+          </tr>
+          </tbody>
+          </table>
+          
+  <div>
+    <br><br>
+
+    <canvas
+      id="myChart"
+      class="col-md-6 row"
+      url-endpoint="{% url 'chart_expense' source %}"
+    ></canvas>
+  </div>
+  <div class="container">
+    <canvas
+    id="this_year"
+    class="col-md-6 row"
+    url-endpoint="{% url 'chart_expense' source %}"
+    ></canvas>
+  </div>
+  <br><br><br>
+
 </div>
-<div class="container pt-5">
+
+<div class="container" style="display:flex;align-items:center">
+  <br><br><br>
+  <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><u>{{so|capfirst}} in Previous Years</u></h2>
+
+</div>
+    <div class="container">
+
+<br><br><br>
+
+    <div>
+      <canvas
+        id="income_contri"
+        class="col-md-6 row"
+        url-endpoint="{% url 'chart_expense' source %}"
+      ></canvas>
+    </div>
+    <div>
+      <canvas
+        id="inflation_growth"
+        class="col-md-6 row"
+        url-endpoint="{% url 'chart_expense' source %}"
+      ></canvas>
+    </div>
+    <br><br><br>
+    <br><br><br>
+
+
+  </div>
+  <div class="container pt-5">
+    <div class="container" style="display:flex;align-items:center">
+      <br><br><br>
+      <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><u>All Previous Credits from this source</u></h2>
+    </div>
+    <br><br>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -24,7 +116,7 @@
         </tr>
       </thead>
       <tbody>
-        {%for i in lis%}
+        {%for i in my %}
         <tr>
           <td>{{forloop.counter}}</td>
           <td>{{i.amount}}</td>
@@ -34,60 +126,11 @@
         {%endfor%}
       </tbody>
       </table>
-</div>
-<div>
-  <canvas
-    id="myChart"
-    class="col-md-6 row"
-    url-endpoint="{% url 'chart_expense' source %}"
-  ></canvas>
-</div>
-<div>
-  <h1 style="color: red">Year {{year}}</h1>
-  <h3>
-    This year expense from {{so|capfirst}} is
-    {{income_all_years|last|floatformat}} which is
-    {{contribution|floatformat:2}}% of total expense.
-  </h3>
-  <h4>Last Received {{last}}</h4>
-  <div class="container">
-    <canvas
-      id="this_year"
-      class="col-md-6 row"
-      url-endpoint="{% url 'chart_expense' source %}"
-    ></canvas>
-  </div>
-</div>
+      <br><br><br>
+      <br><br><br>
+      <br><br><br>
+    </div>
 
-<div class="container">
-  <h1 style="color: red">Previous Years</h1>
-  <ul>
-    <li>You are earning from this source since {{first_year}}</li>
-    {%if growth|last > inflation|last%}
-    <li style="color: red;">Your expense grows faster than inflation. You need to look into it.</li>
-    {%else%}
-    <li style="color: green">
-        Your expense grows slower than inflation.
-    </li>
-    {%endif%}
-  </ul>
-</div>
-<div>
-    <div class="container">
-      <canvas
-        id="income_contri"
-        class="col-md-6 row"
-        url-endpoint="{% url 'chart_expense' source %}"
-      ></canvas>
-    </div>
-    <div class="container">
-      <canvas
-        id="inflation_growth"
-        class="col-md-6 row"
-        url-endpoint="{% url 'chart_expense' source %}"
-      ></canvas>
-    </div>
-    </div>
 
     <script>
     var endpoint = "{% url 'chart_expense' source %}";

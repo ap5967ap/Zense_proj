@@ -3,6 +3,8 @@
 {% block content %}
 <div class="container pt-5" style="display:flex;align-items:center;justify-content:center;">
     <form method="get" action="{% url 'investment_summary' %}">
+        {% include 'messages.html' %}
+
         <div class="row">
             <div class="col">
                 <input type="number" name="name" placeholder="Enter Year" class="form-control" min="1900" max="{% now 'Y' %}">

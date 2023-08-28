@@ -46,6 +46,7 @@ def job():
             balance.expense=x*decimal.Decimal(0.70)
             balance.invest+=x*decimal.Decimal(0.30)
             balance.invest_p=balance.invest
+            balance.updated=datetime.now().date()
             balance.save()
     elif datetime.now().day==1 and b.exists() and datetime.now().month==1:
         for i in b:
@@ -58,6 +59,7 @@ def job():
             balance.last_month=x
             balance.expense=x*decimal.Decimal(0.70)
             balance.invest=x*decimal.Decimal(0.30)
+            balance.updated=datetime.now().date()
             balance.save()
 def run_continuously(self, interval=40000):
     """Continuously run, while executing pending jobs at each elapsed

@@ -2,6 +2,8 @@
 {% block content %}
 <div class="container pt-5">
 <h1>Fixed Deposit</h1>
+{% include 'messages.html' %}
+
 <form method="post" action="{% url 'fd_buy' %}">
   {% csrf_token %}
   <div class="container">
@@ -31,4 +33,3 @@
 </form>
 </div>
 {% endblock content %}
-```

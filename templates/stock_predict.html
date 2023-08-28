@@ -18,340 +18,522 @@
 
 {% if not no %}
 <div class="container pt-5">
-  {%include 'messages.html'%}
-
-<div class="container pt-5">
-  <div class="col">
-    <div class="row"><h3>{{name}} - {{price}}</h3><br><br><br><br>
-        <form method="get" action="{% url 'stock_transact' %}">
-          <input type="hidden" name="name" value="{{name}}">
-          <button type="submit" class="btn btn-success">Buy</button>
-      </form>
-      
-      <form method='get' action="{% url 'stock_sell' %}">
-          <input type="hidden" name="name" value="{{name}}">
-          <button type="submit" class="btn btn-danger">Sell</button>
-      </form>
-      </div>
-    </div>
-    {% if o.category == 'l' %}
-    <h5>Large Cap</h5>
-    {% elif o.category == 'm' %}
-    <h5>Mid Cap</h5>
-    {% elif o.category == 's' %}
-    <h5>Small Cap</h5>
-    {% else %}
-    <h5>Not Available</h5>
-    {% endif %}
-  </div>
-  <div class="col">
-    {% if o.nifty50 %}
-    <div class="row container pt-5">
-      <h5 style="color: green">This stock is in Nifty50 index.</h5>
-    </div>
-    {%endif%} {% if o.niftybank %}
-    <div class="row container pt-5">
-      <h5 style="color: green">This stock is in Nifty Bank index.</h5>
-    </div>
-    {%endif%} {% if o.niftyit %}
-    <div class="row container pt-5">
-      <h5 style="color: green">This stock is in Nifty IT index.</h5>
-    </div>
-    {%endif%} {% if o.niftyfmcg %}
-    <div class="row container pt-5">
-      <h5 style="color: green">This stock is in Nifty FMCG index.</h5>
-    </div>
-    {%endif%} {% if o.niftypharma %}
-    <div class="row container pt-5">
-      <h5 style="color: green">This stock is in Nifty Pharma index.</h5>
-    </div>
-    {%endif%} {% if o.niftyauto %}
-    <div class="row container pt-5">
-      <h5 style="color: green">This stock is in Nifty Auto index.</h5>
-    </div>
-    {%endif%} {% if o.niftyenergy %}
-    <div class="row container pt-5">
-      <h5 style="color: green">This stock is in Nifty Energy index.</h5>
-    </div>
-    {%endif%} {% if o.niftynext50 %}
-    <div class="row container pt-5">
-      <h5 style="color: green">This stock is in Nifty Next 50 index.</h5>
-    </div>
-    {%endif%} {% if o.niftyhealthcare %}
-    <div class="row container pt-5">
-      <h5 style="color: green">This stock is in Nifty Healthcare index.</h5>
-    </div>
-    {%endif%} {% if o.isniftynext50 %}
-    <div class="row container pt-5">
-      <h5 style="color: green">This stock is in Nifty Next 50 index.</h5>
-    </div>
-    {%endif%}
-  </div>
-</div>
-<div class="container pt-5">
-  <div class="row">
+  <div class="container pt-5">
     <div class="col">
-      {% if o.pe <= 10 %}
-      <h5 style="color: green">
-        P/E - {{o.pe}} 
-      </h5>
-      {% elif o.pe > 10 and o.pe <= 15 %}
-      <h5 style="color: yellowgreen">
-        P/E - {{o.pe}} 
-      </h5>
-      {% elif o.pe <= 25 %}
-      <h5 style="color: yellow">
-        P/E - {{o.pe}} 
-      </h5>
-      {% elif o.pe <= 30 %}
-      <h5 style="color: orange">
-        P/E - {{o.pe}} 
-      </h5>
-      {% else %}
-      <h5 style="color: red">
-        P/E - {{o.pe}} 
-      </h5>
-      {% endif %}
-    </div>
-    <div class="col">
-      {% if o.pb <= 1 %}
-      <h5 style="color: green">
-        P/B - {{o.pb}} 
-      </h5>
-      {% elif o.pb <= 3 %}
-      <h5 style="color: yellowgreen">
-        P/B - {{o.pb}} 
-      </h5>
-      {% elif o.pb <= 5 %}
-      <h5 style="color: yellow">
-        P/B - {{o.pb}} 
-      </h5>
-      {% elif o.pb <= 9 %}
-      <h5 style="color: orange">
-        P/B - {{o.pb}} 
-      </h5>
-      {% else %}
-      <h5 style="color: red">
-        P/B - {{o.pb}} 
-      </h5>
-      {% endif %}
-    </div>
-    <div class="col">
-        {% if o.roe >= 0.20 %}
-        <h5 style="color: green">
-          ROE - {{o.roe}} 
-        </h5>
-        {% elif o.roe >= 0.15 %}
-        <h5 style="color: yellowgreen">
-          ROE - {{o.roe}} 
-        </h5>
-        {% elif o.roe >= 0.10 %}
-        <h5 style="color: yellow">ROE - {{o.roe}} 
-        {% elif o.roe >= 0.05 %}
-        <h5 style="color: orange">ROE - {{o.roe}} 
-        {% else %}
-        <h5 style="color: red">
-          ROE - {{o.roe}} 
-        </h5>
-        {% endif %}
-      </div>
-      <div class="col">
+      <div class="row"><h3>{{name}} - {{price}}</h3><br><br><br><br>
+          <form method="get" action="{% url 'stock_transact' %}">
+            <input type="hidden" name="name" value="{{name}}">
+            <button type="submit" class="btn btn-success">Buy</button>
+        </form>
         
-      </div>
-  </div>
-  <div class="row">
-      <div class="col">
-        {% if o.doe <= 0.5 %}
-      <h5 style="color: green">
-        Debt to Equity - {{o.doe}} 
-      </h5>
-        {% elif o.doe <= 1 %}
-        <h5 style="color: yellowgreen">
-          Debt to Equity - {{o.doe}}
-        </h5>
-        {% elif o.doe <= 2 %}
-        <h5 style="color: yellow">
-          Debt to Equity - {{o.doe}}
-        </h5>
-        {% elif o.doe <= 3 %}
-        <h5 style="color: orange">
-          Debt to Equity - {{o.doe}}
-        </h5>
-        {% else %}
-        <h5 style="color: red">
-          Debt to Equity - {{o.doe}}
-        </h5>
-        {% endif %}
-  </div>
-  <div class="col">
-    {% if o.enterpriseToEbitda <= 10 %}
-    <h5 style="color: green">
-      EV/EBDITA - {{o.enterpriseToEbitda}}
-    </h5>
-    {% elif o.enterpriseToEbitda <= 15 %}
-    <h5 style="color: yellowgreen">
-      EV/EBDITA - {{o.enterpriseToEbitda}}
-    </h5>
-    {% elif o.enterpriseToEbitda <= 20 %}
-    <h5 style="color: yellow">
-      EV/EBDITA - {{o.enterpriseToEbitda}}
-    </h5>
-    {% elif o.enterpriseToEbitda <= 25 %}
-    <h5 style="color: orange">
-      EV/EBDITA - {{o.enterpriseToEbitda}}
-    </h5>
-    {% else %}
-    <h5 style="color: red">
-      EV/EBDITA - {{o.enterpriseToEbitda}}
-    </h5>
-    {% endif %}
-</div>
-    <div clas="col">
-        {% if o.dividendYield >= 5 %}
-        <h5 style="color: green">
-          Dividend Yield - {{o.dividendYield}}
-        </h5>
-        {% elif o.dividendYield >= 3 %}
-        <h5 style="color: yellowgreen">
-          Dividend Yield - {{o.dividendYield}}
-        </h5>
-        {% elif o.dividendYield >= 2 %}
-        <h5 style="color: yellow">
-          Dividend Yield - {{o.dividendYield}}
-        </h5>
-        {% elif o.dividendYield >= 1 %}
-        <h5 style="color: orange">
-          Dividend Yield - {{o.dividendYield}}
-        </h5>
-        {% else %}
-        <h5 style="color: red">
-          Dividend Yield - {{o.dividendYield}}
-        </h5>
-        {% endif %}
-    </div>
-    <div class="col">
-        {% if o.ESG == 100 %}
-        <h5 style="color: red">
-          ESG - Data Unable to Fetch
-        </h5>
-        {%elif o.ESG < 10 %}
-        <h5 style="color: green">
-          ESG - {{o.ESG}}
-        </h5>
-        {% elif o.ESG < 20 %}
-        <h5 style="color: yellowgreen">
-          ESG - {{o.ESG}}
-        </h5>
-        {% elif o.ESG < 30 %}
-        <h5 style="color: yellow">
-          ESG - {{o.ESG}}
-        </h5>
-        {% elif o.ESG < 40 %}
-        <h5 style="color: orange">
-          ESG - {{o.ESG}}
-        </h5>
-        {% else %}
-        <h5 style="color: red">
-          ESG - {{o.ESG}}
-        </h5>
-        {% endif %}
-        <!-- <small>*ESG data is not available for all stocks. ESG mearsures risk </small> -->
-    </div>
-</div>
-
-<div class="row">
-    <div class="col">
-        <h5 >52 Week Low - {{o.week52low}}</h5>
-        {% if price >= a  %}
-        <h5 style="color: green">
-          The current price is more than 50% more than the 52 week low.
-        </h5>
-        {% elif price >= b  %}
-        <h5 style="color: yellowgreen">
-          The current price is more than 30% more than the 52 week low.
-        </h5>
-        {% elif price >= c  %}
-        <h5 style="color: yellow">
-          The current price is more than 20% more than the 52 week low.
-        </h5>
-        {% elif price >= d  %}
-        <h5 style="color: orange">
-          The current price is more than 10% more than the 52 week low.
-        </h5>
-        {% else %}
-        <h5 style="color: red">
-          The current price is less than the 52 week low.
-        </h5>
-        {% endif %}
-    </div>
-    <div class="col">
-        <h5>200 Days Moving average - {{o.ma200}}</h5>
-        <h5>50 Days Moving average - {{o.ma50}}</h5>
-        {% if o.ma50 >= o.ma200 %}
-        <h5 style="color: green">
-          The 50 day moving average is more than the 200 day moving average.
-        </h5>
-        {% else %}
-        <h5 style="color: red">
-          The 50 day moving average is less than the 200 day moving average.
-        </h5>
-        {% endif %}
-    </div>
-</div>
-<div class="row">
-    <div class="col">
-        <h5>52 Weeks high - {{o.week52high}}</h5>
-        {% if price >= f and price <= e  %}
-        <h5 style="color: green">
-          The current price is within 25% of than the 52 week high.
+        <form method='get' action="{% url 'stock_sell' %}">
+            <input type="hidden" name="name" value="{{name}}">
+            <button type="submit" class="btn btn-danger">Sell</button>
+        </form>
         </div>
-        {% endif %}
+      </div>
+      {% if o.category == 'l' %}
+      <h5>Large Cap</h5>
+      {% elif o.category == 'm' %}
+      <h5>Mid Cap</h5>
+      {% elif o.category == 's' %}
+      <h5>Small Cap</h5>
+      {% else %}
+      <h5>Not Available</h5>
+      {% endif %}
     </div>
-    <div class="col">
-        {% if o.rsi <= 30 %}
-        <h5 style="color: green">
-          RSI - {{o.rsi}}
-        </h5>
-        {% elif o.rsi <= 40 %}
-        <h5 style="color: yellowgreen">
-          RSI - {{o.rsi}}
-        </h5>
-        {% elif o.rsi <= 60 %}
-        <h5 style="color: yellow">
-          RSI - {{o.rsi}}
-        </h5>
-        {% elif o.rsi <= 70 %}
-        <h5 style="color: orange">
-          RSI - {{o.rsi}}
-        </h5>
-        {% else %}
-        <h5 style="color: red">
-          RSI - {{o.rsi}}
-        </h5>
-        {% endif %}
-    </div>
-</div>
-<div class="container pt-5">
-    <h4 style="color:deeppink">Final Rating - {{o.rating}}</h4>
-    <h4 style="color:deeppink">Buy Signal - {{o.buysignal}}</h4>
-    {% if o.ta == 'sb' %}
-    <h4 style="color:deeppink">External Source Signal - Strong buy </h4>
-    {% elif o.ta == 'b' %}
-    <h4 style="color:deeppink">External Source Signal - Buy </h4>
-    {% elif o.ta == 's' %}
-    <h4 style="color:deeppink">External Source Signal - Sell </h4>
-    {% elif o.ta == 'ss' %}
-    <h4 style="color:deeppink">External Source Signal - Strong Sell </h4>
-    {% else %}
-    <h4 style="color:deeppink">External Source Signal - Neutral </h4>
-    {% endif %}
-</div>
-</div>
-<br>
-<br>
-<br>
-<div class="container">
+    <div class="container">
+  </div>
+  </div>
 
+<div class="container pt-5">
+  <table class="table table-striped" style="font-size:medium;">
+    <thead>
+      <tr>
+        <th scope="col">Indicator</th>
+        <th scope="col">Value</th>
+        <th scope="col">Inference</th>
+      </tr>
+      </thead>
+      <tbody>
+        {% if o.nifty50 %}
+    <tr class="bg-success" style="color:black">
+      <td>Index</td>
+      <td> Nifty 50 index.</td>
+      <td></td>
+    </tr>
+    {%endif%} {% if o.niftybank %}
+    <tr class="bg-success" style="color:black">
+      <td>Index</td>
+
+      <td> Nifty Bank index.</td>
+      <td></td>
+
+    </tr>
+    {%endif%} {% if o.niftyit %}
+    <tr class="bg-success" style="color:black">
+      <td>Index</td>
+
+      <td> Nifty IT index.</td>
+      <td></td>
+
+    </tr>
+    {%endif%} {% if o.niftyfmcg %}
+    <tr class="bg-success" style="color:black">
+      <td>Index</td>
+
+      <td> Nifty FMCG index.</td>
+      <td></td>
+
+    </tr>
+    {%endif%} {% if o.niftypharma %}
+    <tr class="bg-success" style="color:black">
+      <td>Index</td>
+
+      <td> Nifty Pharma index.</td>
+      <td></td>
+
+    </tr>
+    {%endif%} {% if o.niftyauto %}
+    <tr class="bg-success" style="color:black">
+      <td>Index</td>
+
+      <td> Nifty Auto index.</td>
+      <td></td>
+
+    </tr>
+    {%endif%} {% if o.niftyenergy %}
+    <tr class="bg-success" style="color:black">
+      <td>Index</td>
+
+      <td> Nifty Energy index.</td>
+      <td></td>
+
+    </tr>
+    {%endif%} {% if o.niftynext50 %}
+    <tr class="bg-success" style="color:black">
+      <td>Index</td>
+
+      <td> Nifty Next 50 index.</td>
+      <td></td>
+
+    </tr>
+    {%endif%} {% if o.niftyhealthcare %}
+    <tr class="bg-success" style="color:black">
+      <td> Nifty Healthcare index.</td>
+      <td></td>
+
+    </tr>
+    {%endif%} {% if o.isniftynext50 %}
+    <tr class="bg-success" style="color:black">
+      <td>Index</td>
+
+      <td> Nifty Next 50 index.</td>
+      <td></td>
+
+    </tr>
+    {%endif%}
+
+    {% if o.pe <= 10 %}
+      <tr class='bg-success'>
+
+        <td>P/E</td>
+        <td>{{o.pe}}</td>
+        <td>The Stock is very Cheap. </td> 
+      </tr>
+      {% elif o.pe > 10 and o.pe <= 15 %}
+      <tr style="background-color:yellowgreen">
+        <td>P/E</td>
+        <td>{{o.pe}}</td>
+        <td>The Stock is slightly on Cheaper side.</td>
+      </tr>
+      {% elif o.pe <= 25 %}
+      <tr style="background-color:yellow">
+        <td>P/E</td>
+        <td>{{o.pe}}</td>
+        <td>The Stock Price is OK .</td>
+      </tr>
+      {% elif o.pe <= 30 %}
+      <tr style="background-color: orange">
+        <td>P/E</td>
+        <td>{{o.pe}}</td>
+        <td>The Stock is slightly overvalued.</td> 
+      </tr>
+      {% else %}
+      <tr style="background-color: red">
+        <td>P/E</td>
+        <td>{{o.pe}}</td>
+        <td>The Stock is Highly overvalued</td> 
+      </tr>
+      {% endif %}
+      {% if o.pb <= 1 %}
+      <tr class="bg-primary">
+        <td>P/B</td>
+        <td>{{o.pb}}</td>
+        <td>Trading at cheaper price compared to book value</td>
+      </tr>
+      {% elif o.pb <= 3 %}
+      <tr style="background-color:yellowgreen">
+        <td>P/B</td>
+        <td>{{o.pb}}</td>
+        <td>The stock is trading at {{o.pb}} times book value.</td> 
+      </tr>
+      {% elif o.pb <= 5 %}
+      <tr style="background-color:yellow">
+        <td>P/B</td>
+        <td>{{o.pb}}</td>
+        <td></td>
+      </tr>
+      {% elif o.pb <= 9 %}
+      <tr  style="background-color:orange">
+        <td>P/B</td>
+        <td>{{o.pb}}</td>
+        <td>The stock is slightly overvalued. 
+        </td>
+      </tr>
+      {% else %}
+      <tr class="bg-danger">
+        <td>P/B</td>
+        <td>{{o.pb}}</td>
+        <td>The stock is trading at higher price that book value. It is expensive. </td>
+      </tr>
+
+      {% endif %}
+      {% if o.roe >= 0.20 %}
+      <tr class="bg-success">
+        <td>ROE</td>
+        <td>{{o.roe}}</td>  
+        <td></td>
+      </tr>
+      {% elif o.roe >= 0.15 %}
+      <tr style='background-color:yellowgreen'>
+        <td>ROE</td>
+        <td>{{o.roe}}</td>  
+        <td></td>
+      </tr>
+      {% elif o.roe >= 0.10 %}
+      <tr style="background-color: yellow;">
+        <td>ROE</td>
+        <td>{{o.roe}}</td>  
+        <td></td>
+      </tr>
+      {% elif o.roe >= 0.05 %}
+      <tr style="background-color: orange;">
+        <td>ROE</td>
+        <td>{{o.roe}}</td>  
+        <td></td>
+      </tr>
+      {% else %}
+      <tr style="background-color: red;">
+        <td>ROE</td>
+        <td>{{o.roe}}</td>  
+        <td></td>
+      </tr>
+      {%endif%}
+      {% if o.doe <= 0.5 and o.doe >= 0 %}
+      <tr class="bg-success">
+        <td>Debt to Equity</td>
+        <td> {{o.doe}} </td>
+        <td>Lower Debt to Equity. Less Risky</td>
+      </tr>
+      {% elif o.doe <= 1 %}
+      <tr style='background-color:yellowgreen'>
+        <td>Debt to Equity</td>
+        <td>{{o.doe}}</td>  
+        <td>Good,but would be better if below 0.5</td>
+      </tr>
+      {% elif o.doe <= 2 %}
+      <tr style="background-color: yellow;">
+        <td>Debt to Equity</td>
+        <td>{{o.doe}}</td>  
+        <td>Consider this stock only if other factors are good</td>
+      </tr>
+      {% elif  o.doe <= 3  %}
+      <tr style="background-color: orange;">
+        <td>Debt to Equity</td>
+        <td>{{o.doe}}</td>  
+        <td>Company has high Debt. Avoid </td>
+      </tr>
+      {% else %}
+      <tr style="background-color: red;">
+        <td>Debt to Equity</td>
+        <td>{{o.doe}}</td>  
+        <td>Very Risky</td>
+      </tr>
+      {% endif %}
+      {% if o.enterpriseToEbitda <= 10 %}
+      <tr class="bg-success">
+        <td>EV/EBDITA</td>
+        <td> {{o.enterpriseToEbitda}} </td>
+        <td>Lower EV/EBDITA. Good</td>
+      </tr>
+      {% elif o.enterpriseToEbitda <= 15 %}
+      <tr style='background-color:yellowgreen'>
+        <td>EV/EBDITA</td>
+        <td>{{o.enterpriseToEbitda}}</td>  
+        <td></td>
+      </tr>
+      {% elif o.enterpriseToEbitda <= 20 %}
+      <tr style="background-color: yellow;">
+        <td>EV/EBDITA</td>
+        <td>{{o.enterpriseToEbitda}}</td>  
+        <td></td>
+      </tr>
+      {% elif o.enterpriseToEbitda <= 25 %}
+      <tr style="background-color: orange;">
+        <td>EV/EBDITA</td>
+        <td>{{o.enterpriseToEbitda}}</td>  
+        <td> </td>
+      </tr>
+      {% else %}
+      <tr style="background-color: red;">
+        <td>EV/EBDITA</td>
+        <td>{{o.enterpriseToEbitda}}</td>  
+        <td></td>
+      </tr>
+      {% endif %}
+      {% if o.dividendYield >= 5 %}
+      <tr class="bg-success">
+        <td>Dividend Yield</td>
+        <td> {{o.dividendYield}} </td>
+        <td>Higher Dividend Yield => Higher Cashflow</td>
+      </tr>
+      {% elif o.dividendYield >= 3 %}
+      <tr style='background-color:yellowgreen'>
+        <td>Dividend Yield</td>
+        <td>{{o.dividendYield}}</td>  
+        <td>Higher Dividend Yield => Higher Cashflow</td>
+
+      </tr>
+      {% elif o.dividendYield >= 2 %}
+      <tr style="background-color: yellow;">
+        <td>Dividend Yield</td>
+        <td>{{o.dividendYield}}</td>  
+        <td>Dividend Yield Normal (Average)</td>
+      </tr>
+      {% elif o.dividendYield >= 1 %}
+      <tr style="background-color: orange;">
+        <td>Dividend Yield</td>
+        <td>{{o.dividendYield}}</td>  
+        <td> Lower Dividend Yield</td>
+      </tr>
+      {% else %}
+      <tr style="background-image:radial-gradient(circle at 0.2% 1.8%, rgb(255, 90, 8) 0%, rgb(88, 0, 0) 100.2%);color:#ffffff ">
+        <!-- Your table cells (td/th) content goes here -->
+      
+        <td>Dividend Yield</td>
+        <td>{{o.dividendYield}}</td>  
+        <td > Lower Dividend Yield</td>
+      </tr>
+      {% endif %}
+
+      {% if o.ESG == 100 %}
+      <tr style="background-color: plum;">
+        <td>ESG</td>
+        <td>Data Unable To Fetch</td>  
+        <td> </td>
+      </tr>
+      {%elif o.ESG < 10 %}
+      <tr class="bg-success">
+        <td>ESG </td>
+        <td> {{o.ESG}} </td>
+        <td>Very Low Risk</td>
+      </tr>
+      {% elif o.ESG < 20 %}
+      <tr style='background-color:yellowgreen'>
+        <td>ESG </td>
+        <td>{{o.ESG}}</td>  
+        <td>Low Risk</td>
+      </tr>
+      {% elif o.ESG < 30 %}
+      <tr style="background-color: yellow;">
+        <td>ESG </td>
+        <td>{{o.ESG}}</td>  
+        <td>Average Risk</td>
+      </tr>
+      {% elif o.ESG < 40 %}
+      <tr style="background-color: orange;">
+        <td>ESG </td>
+        <td>{{o.ESG}}</td>  
+        <td> High Risk </td>
+      </tr>
+      {% else %}
+      <tr style="background-color: red;">
+        <td>ESG </td>
+        <td>{{o.ESG}}</td>  
+        <td>Very High Risk</td>
+      </tr>
+      {% endif %}
+      
+      {% if price >= a  %}
+      <tr class="bg-success">
+        <td>52 Weeks Low </td>
+        <td> {{o.week52low}} </td>
+        <td>The current price is more than 50% more than the 52 week low.</td>
+      </tr>
+      {% elif o.week52low < 20 %}
+      <tr style='background-color:yellowgreen'>
+        <td>52 Weeks Low </td>
+        <td>{{o.week52low}}</td>  
+        <td>The current price is more than 30% more than the 52 week low</td>
+      </tr>
+      {% elif o.week52low < 30 %}
+      <tr style="background-color: yellow;">
+        <td>52 Weeks Low </td>
+        <td>{{o.week52low}}</td>  
+        <td>The current price is more than 20% more than the 52 week low.</td>
+      </tr>
+      {% elif o.week52low < 40 %}
+      <tr style="background-color: orange;">
+        <td>52 Weeks Low </td>
+        <td>{{o.week52low}}</td>  
+        <td>The current price is more than 10% more than the 52 week low.</td>
+      </tr>
+      {% else %}
+      {% endif %}
+
+      <tr style="background-color: red;">
+        <td>52 Weeks Low </td>
+        <td>{{o.week52low}}</td>  
+        <td> The current price is less than the 52 week low.</td>
+      </tr>
+      {% if o.ma50 >= o.ma200 %}
+      <tr class="bg-success">
+        <td>50 Days Moving Average </td>
+        <td> {{o.ma50}} </td>
+        <td>The 50 day moving average is more than the 200 day moving average.</td>
+      </tr>
+      <tr class="bg-success">
+        <td>200 Days Moving Average </td>
+        <td> {{o.ma200}} </td>
+        <td>The 50 day moving average is more than the 200 day moving average.</td>
+      </tr>
+      {% else %}
+      <tr style="background-color: yellow;">
+        <td>50 Days Moving Average </td>
+        <td> {{o.ma50}} </td>
+        <td>The 50 day moving average is less than the 200 day moving average.</td>
+      {% endif %}
+      {% if price >= f and price <= e  %}
+      <tr class="bg-success">
+        <td>52 Weeks high </td>
+        <td> {{o.week52high}} </td>
+        <td>The current price is within 25% of the 52 week high.</td>
+      </tr>
+      {% else %}
+      <tr style="background-color: yellow;">
+        <td>52 Weeks high </td>
+        <td>{{o.week52high}}</td>
+        <td></td>
+        </tr>
+      {% endif %}
+      {% if o.rsi <= 30 %}
+      <tr class="bg-success">
+        <td>RSI</td>
+        <td> {{o.rsi}} </td>
+        <td>OverSold</td>
+      </tr>
+      {% elif o.rsi <= 40 %}
+      <tr style='background-color:yellowgreen'>
+        <td>RSI</td>
+        <td>{{o.rsi}}</td>  
+        <td>Slight OverSold</td>
+
+      </tr>
+      {% elif o.rsi <= 60 %}
+      <tr style="background-color: yellow;">
+        <td>RSI</td>
+        <td>{{o.rsi}}</td>  
+        <td>In Normal Range</td>
+      </tr>
+      {% elif o.rsi <= 70 %}
+      <tr style="background-color: orange;">
+        <td>RSI</td>
+        <td>{{o.rsi}}</td>  
+        <td> Slightly Overbought</td>
+      </tr>
+      {% else %}
+      <tr style="background-color: red;">
+        <td>RSI</td>
+        <td>{{o.rsi}}</td>  
+        <td> Overbought</td>
+      </tr>
+      {% endif %}
+      <tr style="background-color: deeppink;">
+        <td>Final Rating (Out of 5)</td>
+        <td>{{o.rating}}</td>  
+        <td></td>
+      </tr>
+      <tr style="background-color: deeppink;">
+        <td>Long Term Buy Signal (Out of 5)</td>
+        <td>{{o.buysignal}}</td>  
+        <td></td>
+      </tr>
+      <tr style="background-color: deeppink;">
+        <td>Short Term Buy Signal </td>
+        {% if o.ta == 'sb' %}
+        <td>Strong buy</td>  
+        {% elif o.ta == 'b' %}
+        <td>Buy</td>  
+        {% elif o.ta == 's' %}
+        <td>Sell</td>  
+        {% elif o.ta == 'ss' %}
+        <td>Strong Sell</td>  
+        {% else %}
+        <td>Neutral</td>  
+        {% endif %}
+        <td></td>
+      </tr>
+
+      </tbody>
+  </table>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+  </div>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% else %}
+<div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </div>
 {% endif %}
 

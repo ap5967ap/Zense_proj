@@ -27,4 +27,5 @@ urlpatterns = [
     path("investment/", include("Investments.urls"),name="investment"),
     path("expense/", include("expense.urls"),name="expense"),
     path("temp/", views.temp,name="temp"),
+    path("balance/", include("balance.urls"),name="balance"),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

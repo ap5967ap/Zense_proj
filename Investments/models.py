@@ -124,9 +124,20 @@ class Other(models.Model):
     interest=models.DecimalField(default=0,max_digits=20,decimal_places=2,blank=True,null=True)
     sell_price=models.DecimalField(default=0,max_digits=20,decimal_places=2,blank=True,null=True)
     sell_date=models.DateField(blank=True,null=True)
-    category=models.CharField(max_length=100,choices=(('FD','FD'),('SGB','SGB'),('Smallcase','Smallcase')))
+    category=models.CharField(max_length=100,choices=(('FD','FD'),))
     def __str__(self):
         return f"{self.user} {self.name}"
     class Meta:
-        verbose_name_plural = "Other"
-        verbose_name="Other"
+        verbose_name_plural = "FD"
+        verbose_name="FD"
+        
+        
+        
+class SGB(models.Model):
+    price=models.DecimalField(max_digits=20,decimal_places=2)
+    user=models.ForeignKey(Account,on_delete=models.CASCADE)
+    date=models.DateField()
+    duration=models.IntegerField(choices=((5,5),(8,8),(11,11)))
+    sell_date=models.DateField(blank=True,null=True)
+    sell_price=models.DecimalField(default=0,max_digits=20,decimal_places=2,blank=True,null=True)
+    is_active=models.BooleanField(default=True)

@@ -12,13 +12,16 @@
          
 
           <li class="nav-item">
-            <a href="{#% url 'profile' %#}" class="nav-link">
+            <a href="{% url 'profile' %}" class="nav-link">
              <p style="color: white;"> Welcome {{user.first_name}} {{user.last_name}}!</p>
              
             </a>
         </li> 
           <li >
             <a class = "nav-link" href ="{% url 'logout' %}"><p style="color:white">Logout</p></a>
+          </li>
+          <li >
+            <a class = "nav-link" href ="{% url 'balance' %}"><p style="color:white">{{user.balance.balance}}</p></a>
           </li>
           <li>
             <a class="nav-link"><p style="color:white">{% now 'jS M Y' %}</p></a>
@@ -90,12 +93,69 @@
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+                Stocks
               </a>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="{% url 'investment_summary' %}">Investment Summary</a></li>
+
+                <li><a class="dropdown-item" href="{% url 'stock_predict' %}">Stock Predictor</a></li>
+                <li><a class="dropdown-item" href="{% url 'stock_recomm' %}">Stock Recommendation</a></li>
+                <li><a class="dropdown-item" href="{% url 'stock_home' %}">Stock Home</a></li>
+                <li><a class="dropdown-item" href="{% url 'stock_sell' %}">Stock Sell</a></li>
+                <li><a class="dropdown-item" href="{% url 'stock_transact' %}">Stock Buy</a></li>
+                <li><a class="dropdown-item" href="{% url 'stock_prev_sold' %}">Stock Previous Holdings</a></li>
+
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mutual Funds
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="{% url 'investment_summary' %}">Investment Summary</a></li>
+
+                <li><a class="dropdown-item" href="{% url 'mf_home' %}">Mutual Funds Home</a></li>
+                <li><a class="dropdown-item" href="{% url 'mf_recomm' %}">Mutual Fund Recommendation</a></li>
+                <li><a class="dropdown-item" href="{% url 'mf_predict' %}">Mutual Fund Price Predictor</a></li>
+                <li><a class="dropdown-item" href="{% url 'mf_transact' %}">Mutual Fund Buy</a></li>
+                <li><a class="dropdown-item" href="{% url 'sold_prev' %}">Mutual Fund Previous Holdings</a></li>
+                <li><a class="dropdown-item" href="{% url 'mf_sell' %}">Mutual Fund Sell</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                FD and SGB
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="{% url 'investment_summary' %}">Investment Summary</a></li>
+               
+                
+                <li><a class="dropdown-item" href="{% url 'fd_home' %}">FD Home</a></li>
+                <li><a class="dropdown-item" href="{% url 'fd_buy' %}">FD Buy</a></li>
+                <li><a class="dropdown-item" href="{% url 'fd_sell' %}">FD Sell</a></li>
+                <li><a class="dropdown-item" href="{% url 'sgb_home' %}">SGB Home</a></li>
+                <li><a class="dropdown-item" href="{% url 'sgb_buy' %}">SGB Sell</a></li>
+                <li><a class="dropdown-item" href="{% url 'sgb_sell' %}">SGB Sell</a></li>
+
               </ul>
             </li>
           </ul>

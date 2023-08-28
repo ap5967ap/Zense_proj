@@ -3,6 +3,7 @@
 {% block content %}
 <div class="container pt-5">
     <form method="post" action="{% url 'increase_buy_date' need.id %}">
+        {% include 'messages.html' %}
         {% csrf_token %}
         <div class="form-group">
             <label for="Wants">Name of The Want</label>
