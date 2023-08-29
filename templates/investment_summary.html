@@ -43,7 +43,7 @@
                 {% elif i.Name == 'Fixed Deposits' %}
                 <td><a href="{% url 'fd_home' %}">{{i.Name}}</a></td>  
                 {% else %}
-                <td><a href="{#% url 'fd_home' %#}">{{i.Name}}</a></td><!--TODO  Add link -->
+                <td><a href="{% url 'sgb_home' %}">{{i.Name}}</a></td><!--TODO  Add link -->
                 {% endif %}
                 <td> &#x20b9;​{{i.Amount}}</td>
                 <td> &#x20b9;​{{i.Invested}}</td>

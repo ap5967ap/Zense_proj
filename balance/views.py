@@ -1,9 +1,17 @@
-from datetime import datetime
+from datetime import datetime, timedelta
+import decimal
 from django.shortcuts import render
 from .models import Balance
 from expense.models import Expense
 from Investments.models import Investment
 from account.models import Account
+from expense.models import Expense,Needs,Wants
+from Investments.models import Investment,MF,Stock,Other,SGB,StockData
+from income.models import IncomeObject
+from django.db.models import Sum
+import random
+
+
 def balance(request):
     user=request.user
     balance = Balance.objects.get(user=user)

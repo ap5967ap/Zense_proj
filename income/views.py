@@ -5,6 +5,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.contrib.auth.decorators import login_required
 from .models import IncomeObject
 from datetime import timedelta
+import random
 from balance.models import Balance
 from .forms import IncomeAdd
 from django.db.models import Sum
@@ -56,7 +57,7 @@ def add_income(request):
         message = 'Income added successfully'
         return redirect('view_income')
     lis=[]
-    for i in IncomeObject.objects.filter(user=request.user).all():
+    for i in IncomeObject.objects.filter(user=request.user):
         lis.append(i.source)
     l=[]
     for i in lis:
@@ -72,6 +73,7 @@ def view_income(request):
         user=request.user).order_by('-next_date')
     income1 = []
     income2 = []
+    
     for i in income:
         if (i.source not in income2 or i.frequency == 'Once') and (i.is_active == True):
             income1.append(i)
@@ -162,9 +164,12 @@ def income_summary_data(request):
     user=request.user
     inflation_dict=get_inflation()
     one_year_ago = datetime.datetime.now() - timedelta(days=365)
-    lis=IncomeObject.objects.filter(user=user,added=True,last_date__gt=one_year_ago).all()
+    lis=IncomeObject.objects.filter(user=user,added=True,last_date__gt=one_year_ago)
     if not lis:
-        return JsonResponse(data={"error":"No data available"})
+        # return JsonResponse(data={"error":"No data available"})
+        lis=IncomeObject.objects.filter(user=user,added=True)
+        if not lis:
+            return JsonResponse(data={"error":"No data available"})
     l=[]
     l2=[]
     for i in lis:

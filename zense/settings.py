@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
     "income",
     "balance",
-    "UserDetails",
     "Investments",
     "expense",
 ]

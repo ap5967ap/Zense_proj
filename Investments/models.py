@@ -6,9 +6,7 @@ class Investment(models.Model):
     '''Its instance for each user will be created every year'''
     '''first year of income it will be not investing and will invest from subsequent years'''
     user=models.ForeignKey(Account,on_delete=models.CASCADE)
-    to_invest=models.DecimalField(max_digits=20,decimal_places=2) #TODO income me i add it to passive when i sell 
-    #TODO I WILL REINVEST THAT AMOUNT as my expenses are covered by active income
-    #TODO I will add the amount i got by selling to to_invest
+    to_invest=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     invested_this_year=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     MF_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     large_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)#!_i is how much invested this year
@@ -18,14 +16,14 @@ class Investment(models.Model):
     SGB_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     year=models.IntegerField(default=datetime.now().year)
     done=models.BooleanField(default=False)
-    risky=models.IntegerField()#!stored in %
-    safe=models.IntegerField()#!stored in %
-    MF=models.IntegerField() #!Stored in currency
-    large=models.IntegerField() #!Stored in currency
-    mid=models.IntegerField() #!Stored in currency
-    small=models.IntegerField() #!Stored in currency
-    FD=models.IntegerField() #!Stored in currency
-    SGB=models.IntegerField() #!Stored in currency
+    risky=models.IntegerField(default=0)#!stored in %
+    safe=models.IntegerField(default=0)#!stored in %
+    MF=models.IntegerField(default=0) #!Stored in currency
+    large=models.IntegerField(default=0) #!Stored in currency
+    mid=models.IntegerField(default=0) #!Stored in currency
+    small=models.IntegerField(default=0) #!Stored in currency
+    FD=models.IntegerField(default=0) #!Stored in currency
+    SGB=models.IntegerField(default=0) #!Stored in currency
     def __str__(self):
         return f"{self.user} {self.year}"
     class Meta:
@@ -141,3 +139,8 @@ class SGB(models.Model):
     sell_date=models.DateField(blank=True,null=True)
     sell_price=models.DecimalField(default=0,max_digits=20,decimal_places=2,blank=True,null=True)
     is_active=models.BooleanField(default=True)
+    
+    class Meta:
+        verbose_name_plural='SGB'
+        verbose_name='SGB'
+        

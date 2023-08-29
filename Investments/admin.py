@@ -1,7 +1,15 @@
 from django.contrib import admin
-from .models import Investment,MF,MFData,StockData,Stock,Other
+from .models import Investment,MF,MFData,StockData,Stock,Other,SGB
 from .mutual_fund_data import func
 from .other import fd_sync
+
+
+class SGBadmin(admin.ModelAdmin):
+    list_display = ['user','price','date','is_active','sell_date','sell_price']
+    list_filter = ['user','date','is_active']
+    search_fields = ['user','date','is_active']
+
+admin.site.register(SGB,SGBadmin)
 class InvestmentAdmin(admin.ModelAdmin):
     list_display=('user','year','to_invest','invested_this_year','done','risky','safe','MF','large','mid','small','FD','SGB')
     list_filter=('user','year','done')

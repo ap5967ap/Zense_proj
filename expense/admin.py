@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import *
 
 class AdminExpenseObject(admin.ModelAdmin):
-    list_display=('user','date','to_expense','used_this_month','wants','needs','wants_i','needs_i')
+    list_display=('user','date','to_expense','used_this_month','wants','needs','wants_i','needs_i','buffer','buffer2')
     list_filter=('user','date')
     search_fields=('user','date')
     ordering=('-date',)

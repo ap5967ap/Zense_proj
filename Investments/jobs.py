@@ -12,6 +12,8 @@ import decimal
 import yfinance as yf
 from expense.models import Expense
 from django.template.loader import render_to_string
+
+
 def job(do=False):
     try:
        all_user=Account.objects.all()

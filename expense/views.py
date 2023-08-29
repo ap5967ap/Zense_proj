@@ -687,26 +687,29 @@ def expense_summary(request):
         start=(start+timedelta(1)).date()
         end=end.date()
     sl=[]
-    g=Wants.objects.filter(user=request.user).order_by('-last_date').first().last_date
-    for i in range(g.year,datetime.now().year+1):
-        sl.append(i)
-    month=datetime.now().month
-    year=datetime.now().year
-    try:    
-        month=request.GET.get('month')
-        year=request.GET.get('year')
-    except:
-        pass
-    ex=''
-    if not (month and year):
+    g=ex=month=year=''
+    try:
+        g=Wants.objects.filter(user=request.user).order_by('-last_date').first().last_date
+        for i in range(g.year,datetime.now().year+1):
+            sl.append(i)
         month=datetime.now().month
         year=datetime.now().year
-    if month and year:
-        try:
-            ex=Expense.objects.get(user=request.user,date__month=month,date__year=year)
+        try:    
+            month=request.GET.get('month')
+            year=request.GET.get('year')
         except:
-            ex='85'
+            pass
+        ex=''
+        if not (month and year):
+            month=datetime.now().month
+            year=datetime.now().year
+        if month and year:
+            try:
+                ex=Expense.objects.get(user=request.user,date__month=month,date__year=year)
+            except:
+                ex='85'
 
+    except:...
     return render(request,'expense_summary.html',{'startd':start,'endd':end,'d':d,'lis':lis,'lis2':lis2,'start':g,'end':end,'lis3':lis3,'total':sum(lis3),'yr':sl,'ex':ex,'month':month,'year':year})
     
     

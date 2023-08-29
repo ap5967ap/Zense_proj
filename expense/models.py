@@ -1,19 +1,20 @@
 from django.db import models
 from account.models import Account
-
+from django.utils import timezone
+from datetime import datetime
 
 # Create your models here.
 class Expense(models.Model):
     '''Its instance for each user will be created every month'''
-    '''first month of income it will be not investing and will invest from subsequent months'''
+    '''first month of income it will be not investing and will invest from subsequent /months'''
     user=models.ForeignKey(Account,on_delete=models.CASCADE)
-    to_expense=models.DecimalField(max_digits=20,decimal_places=2)
+    to_expense=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     used_this_month=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     wants=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     needs=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     wants_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
     needs_i=models.DecimalField(max_digits=20,decimal_places=2,default=0)
-    date=models.DateField()
+    date=models.DateField(default=timezone.now)
     buffer=models.DecimalField(max_digits=20,decimal_places=2,default=0) #? to be used for purchases of larger frequency as they typically have larger amount
     buffer2=models.DecimalField(max_digits=20,decimal_places=2,default=0) #? for needs Model
     def __str__(self):
@@ -26,7 +27,7 @@ class Wants(models.Model):
     '''Stores the wants of the user'''
     user=models.ForeignKey(Account,on_delete=models.CASCADE)
     source=models.CharField(max_length=255,blank=False)
-    amount=models.DecimalField(max_digits=20,decimal_places=2,blank=False)
+    amount=models.DecimalField(max_digits=20,decimal_places=2,blank=False,default=0)
     frequency=models.CharField(max_length=255,choices=(('Daily','Daily'),('Weekly','Weekly'),('Monthly','Monthly'),('Quaterly','Quaterly'),('Biannually','Biannually'),('Yearly','Yearly'),('Once','Once')),blank=False,default='Monthly')
     last_date=models.DateField(blank=False)
     next_date=models.DateField(blank=True,null=True)

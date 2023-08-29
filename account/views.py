@@ -15,6 +15,9 @@ from .forms import SetPasswordForm
 from .tokens import account_activation_token
 from .models import Account
 from balance.models import Balance
+from expense.models import Expense
+from Investments.models import Investment
+
 
 def activate(request, uidb64, token):
     User = get_user_model()
@@ -94,10 +97,14 @@ def register(request):
                     user=Account.objects.create_user(first_name=first,last_name=last,username=username,email=email,dob=dob,pan=pan,phone=phone,password=password1)
                     user.is_active=False
                     user.save()
+                    Balance.objects.create(user=user)
+                    Expense.objects.create(user=user)
+                    Investment.objects.create(user=user)
                     activateEmail(request,user,email)
                     return redirect('login')
-                except:
-                    return render(request,'register.html',{'e8':'Password must contain at least 8 characters, 1 uppercase letter, 1 lowercase letter, 1 number and 1 special character'})
+                except Exception as e:
+                    return HttpResponse(e)
+                    return render(request,'register.html',{'e8':'Password is not secure. Try a strong password.'})
 
     else:
         return render(request=request,template_name="register.html")
