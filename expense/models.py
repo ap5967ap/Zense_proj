@@ -24,7 +24,7 @@ class Expense(models.Model):
         verbose_name_plural='Expense'
     
 class Wants(models.Model):
-    '''Stores the wants of the user'''
+    '''Stores the Needs of the user'''
     user=models.ForeignKey(Account,on_delete=models.CASCADE)
     source=models.CharField(max_length=255,blank=False)
     amount=models.DecimalField(max_digits=20,decimal_places=2,blank=False,default=0)
@@ -44,6 +44,7 @@ class Wants(models.Model):
         
         
 class Needs(models.Model):
+    '''Stores wants of the user'''
     user=models.ForeignKey(Account,on_delete=models.CASCADE)
     source=models.CharField(max_length=255,blank=False)
     amount=models.DecimalField(max_digits=20,decimal_places=2,blank=False) #!amount per month

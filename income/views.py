@@ -10,6 +10,8 @@ from balance.models import Balance
 from .forms import IncomeAdd
 from django.db.models import Sum
 from .analysis import get_inflation
+
+
 def _re(frequency: str):
     '''Returns the number of days after which the income will be repeated'''
     if frequency == 'Daily':

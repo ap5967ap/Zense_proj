@@ -29,6 +29,17 @@ def _re(frequency: str)->int:
     
 @login_required(login_url='/account/login/')
 def add_needs(request):
+    x=Wants.objects.filter(user=request.user)
+    l=[]
+    for i in x:
+        if i.category not in l:
+            l.append(i.category)
+    y=Needs.objects.filter(user=request.user)
+    exp=Expense.objects.get(user=request.user,date__month=datetime.now().month,date__year=datetime.now().year)
+    
+    for i in y:
+        if i.category not in l:
+            l.append(i.category)
     if request.method=='POST':
         source=request.POST.get('source')
         amount=decimal.Decimal(request.POST.get('amount'))
@@ -56,7 +67,7 @@ def add_needs(request):
                     exp.save()
             elif (exp.needs)<decimal.Decimal(amount):
                 messages.error(request,'Your budget is not enough to buy this item. Either increase buy date or withdraw from other needs')
-                return redirect('add_needs')
+                return render(request,'add_needs.html',{'l':l,'bu':exp.buffer2,'aaa':True})
             
             bal=Balance.objects.get(user=user)
             if bal.balance<decimal.Decimal(amount):
@@ -101,7 +112,7 @@ def add_needs(request):
                 l.append(i.category)
         y=Needs.objects.filter(user=request.user)
         exp=Expense.objects.get(user=request.user,date__month=datetime.now().month,date__year=datetime.now().year)
-        
+            
         for i in y:
             if i.category not in l:
                 l.append(i.category)

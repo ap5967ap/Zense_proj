@@ -32,7 +32,7 @@
             <input type="date" class="form-control" id="Buy date" name="buy_date" placeholder="Enter date" min="{% now 'Y-m-j' %}">
         </div>
         {% include 'messages.html' %}
-        {% if messages.error %}
+        {% if aaa %}
         <div class="form-group">
             <label for="buffer">Do you want to use your buffer worth Rs. {{bu}} saved from previous months ?</label>
             <input type="checkbox" class="form-control" id="buffer" name="buffer" value="True">

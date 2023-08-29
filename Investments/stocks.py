@@ -969,7 +969,7 @@ def func():
                 
                 
 
-def run_continuously(self, interval=86400*15):
+def run_continuously(self, interval=86400):
     """Continuously run, while executing pending jobs at each elapsed
     time interval.
     @return cease_continuous_run: threading.Event which can be set to
@@ -1000,5 +1000,5 @@ Scheduler.run_continuously = run_continuously
 
 def start_scheduler():
     scheduler = Scheduler()
-    scheduler.every(86400*15).seconds.do(func) 
+    scheduler.every(86400).seconds.do(func) 
     scheduler.run_continuously()

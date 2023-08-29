@@ -35854,3 +35854,110 @@ decimal.InvalidOperation: [<class 'decimal.DivisionUndefined'>]
 2023-08-29 18:24:32,744 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2023-08-29 18:51:11,236 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
 2023-08-29 18:51:14,101 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:02:55,246 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:02:55,971 django.request WARNING  Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-29 19:02:55,991 django.request WARNING  Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-29 19:02:57,362 django.request WARNING  Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-29 19:02:57,364 django.request WARNING  Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-29 19:03:23,189 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:03:25,077 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 19:03:25,113 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 19:03:26,231 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 19:03:31,593 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 19:03:32,011 django.request WARNING  Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-08-29 19:03:32,016 django.request WARNING  Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-08-29 19:03:46,101 django.request WARNING  Not Found: /expens/sdsns
+2023-08-29 19:03:49,510 django.request WARNING  Not Found: /expens/sdsns
+2023-08-29 19:03:52,101 django.request WARNING  Not Found: /expens/sdsns
+2023-08-29 19:04:01,528 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:04:02,845 django.request WARNING  Not Found: /expens/sdsns
+2023-08-29 19:05:46,265 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
+2023-08-29 19:05:48,961 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:05:54,837 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
+2023-08-29 19:05:58,019 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:06:07,485 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
+2023-08-29 19:06:10,291 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:06:12,699 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
+2023-08-29 19:06:15,530 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:06:17,995 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
+2023-08-29 19:06:20,743 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:06:24,225 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
+2023-08-29 19:06:26,835 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:06:30,637 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
+2023-08-29 19:06:33,770 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:06:36,550 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
+2023-08-29 19:06:39,692 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:06:43,002 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
+2023-08-29 19:06:56,582 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:07:03,482 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
+2023-08-29 19:07:06,117 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 19:29:04,965 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\balance\views.py changed, reloading.
+2023-08-29 19:29:08,095 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:03:47,860 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 20:03:47,870 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 20:03:53,512 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 20:03:53,735 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 20:03:59,382 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 20:32:58,552 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\income\views.py changed, reloading.
+2023-08-29 20:33:02,964 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:46:28,840 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\models.py changed, reloading.
+2023-08-29 20:46:34,987 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:46:38,876 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\models.py changed, reloading.
+2023-08-29 20:46:43,850 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:46:47,541 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\models.py changed, reloading.
+2023-08-29 20:46:51,574 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:57:00,843 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-29 20:57:05,020 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:57:08,520 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-29 20:57:15,390 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:58:02,185 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-29 20:58:06,240 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:58:10,992 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-29 20:58:15,052 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:58:18,350 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-29 20:58:22,285 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:58:25,546 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-29 20:58:29,382 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:58:40,654 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-29 20:58:44,810 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:58:48,060 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-29 20:58:52,175 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:59:01,180 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-29 20:59:06,543 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 20:59:32,180 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\models.py changed, reloading.
+2023-08-29 20:59:36,042 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 21:00:55,478 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-29 21:00:59,965 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 21:01:04,519 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\expense\views.py changed, reloading.
+2023-08-29 21:01:08,717 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 21:58:07,193 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Investments\stocks.py changed, reloading.
+2023-08-29 21:58:12,144 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 22:12:30,986 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:31,260 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:32,879 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:32,906 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:32,911 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:32,963 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:32,963 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:32,975 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:33,042 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:33,070 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:34,305 django.request WARNING  Not Found: /favicon.ico
+2023-08-29 22:12:36,256 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:36,450 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:39,248 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:39,296 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:40,149 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:40,169 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:40,340 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:40,437 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:40,903 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:40,923 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:42,424 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:42,456 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:43,311 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:43,342 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:44,037 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:44,052 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:44,448 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:12:44,537 django.security.SuspiciousSession WARNING  Session data corrupted

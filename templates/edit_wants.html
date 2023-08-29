@@ -1,11 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-{% now "jS F Y " %}
-<div class="container">
+<div class="container" style="display:flex-box;align-items:center;justify-content:center">
 <form method="post" action="{% url 'edit_wants' income.id %}">
     {% include 'messages.html' %}
-
     {% csrf_token %}
     <input type="text" name="source" class="form-control" value="{{income.source}}" placeholder="Source" disabled>
     <input type="number" name="amount" class="form-control" value="{{income.amount}}" placeholder="Amount" >
@@ -37,11 +35,14 @@
         {% endif %}
     </select>
 
-    <input type="text" name="last_date" class="form-control" value="{{income.last_date}}" placeholder="Last Date" disabled>
+    <input type="text" name="last_date" value="{{income.last_date}}" placeholder="Last Date" disabled>
+    <br>
+
     {% if not income.frequency == 'Once' %}
-    <input type="checkbox" name="status" class="form-control" value="True" {% if income.status %} checked {% endif %} title="Sync automatically"> Sync with calendar<br>
+    <input type="checkbox" name="status" value="True" {% if income.status %} checked {% endif %} title="Sync automatically"> Sync with calendar<br>
     {% endif %}
     <button type="submit" id="income_submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
 </div>
 {% endblock content %}
