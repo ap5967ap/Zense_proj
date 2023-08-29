@@ -35961,3 +35961,70 @@ decimal.InvalidOperation: [<class 'decimal.DivisionUndefined'>]
 2023-08-29 22:12:44,052 django.security.SuspiciousSession WARNING  Session data corrupted
 2023-08-29 22:12:44,448 django.security.SuspiciousSession WARNING  Session data corrupted
 2023-08-29 22:12:44,537 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 22:32:18,645 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 22:44:42,466 django.request ERROR    Internal Server Error: /account/activate/MjY/btpttl-3a4ae3af1b6215cc1ff999af08d98264
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\account\views.py", line 30, in activate
+    if user is not None and account_activation_token.check_token(user, token):
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\tokens.py", line 79, in check_token
+    if (self._num_seconds(self._now()) - ts) > settings.PASSWORD_RESET_TIMEOUT:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'int' and 'str'
+2023-08-29 22:45:21,736 django.request ERROR    Internal Server Error: /account/activate/MjY/btpttl-3a4ae3af1b6215cc1ff999af08d98264
+Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\account\views.py", line 30, in activate
+    if user is not None and account_activation_token.check_token(user, token):
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\django\contrib\auth\tokens.py", line 79, in check_token
+    if (self._num_seconds(self._now()) - ts) > settings.PASSWORD_RESET_TIMEOUT:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'int' and 'str'
+2023-08-29 22:45:51,731 django.utils.autoreload INFO     D:\Aditya Priyadarshi\Web 2.0\Zense_proj\zense\settings.py changed, reloading.
+2023-08-29 22:48:23,076 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-08-29 23:01:24,155 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 23:01:24,184 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 23:01:27,442 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 23:01:27,648 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 23:01:28,442 django.request WARNING  Not Found: /favicon.ico
+2023-08-29 23:01:29,554 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 23:01:30,553 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 23:01:30,770 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 23:01:32,669 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 23:01:32,843 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 23:01:33,672 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 23:01:33,876 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 23:01:34,954 django.security.SuspiciousSession WARNING  Session data corrupted
+2023-08-29 23:20:15,948 yfinance     DEBUG    Entering download()
+2023-08-29 23:20:15,949 yfinance     DEBUG    Disabling multithreading because DEBUG logging enabled
+2023-08-29 23:20:15,950 yfinance     DEBUG     Entering history()
+2023-08-29 23:20:20,726 yfinance     DEBUG    0P0000XWAT.BO: Yahoo GET parameters: {'range': '1d', 'interval': '1d', 'includePrePost': False, 'events': 'div,splits,capitalGains'}
+2023-08-29 23:20:20,735 urllib3.connectionpool DEBUG    Starting new HTTPS connection (1): query2.finance.yahoo.com:443
+2023-08-29 23:20:21,539 urllib3.connectionpool DEBUG    https://query2.finance.yahoo.com:443 "GET /v8/finance/chart/0P0000XWAT.BO?range=1d&interval=1d&includePrePost=False&events=div%2Csplits%2CcapitalGains HTTP/1.1" 200 753
+2023-08-29 23:20:21,566 yfinance     ERROR    
+1 Failed download:
+2023-08-29 23:20:21,568 yfinance     ERROR    ['0P0000XWAT.BO']: Exception("%ticker%: Period '1d' is invalid, must be one of ['1mo', '3mo', '6mo', 'ytd', '1y', '2y', '5y', '10y', 'max']")
+2023-08-29 23:20:21,570 yfinance     DEBUG    ['0P0000XWAT.BO']: Traceback (most recent call last):
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\yfinance\multi.py", line 275, in _download_one
+    data = Ticker(ticker, session=session).history(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\yfinance\utils.py", line 114, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Aditya Priyadarshi\Web 2.0\Zense_proj\Lib\site-packages\yfinance\base.py", line 267, in history
+    raise Exception(f'{self.ticker}: {err_msg}')
+Exception: %ticker%: Period '1d' is invalid, must be one of ['1mo', '3mo', '6mo', 'ytd', '1y', '2y', '5y', '10y', 'max']
+
+2023-08-29 23:20:21,578 yfinance     DEBUG    Exiting download()
